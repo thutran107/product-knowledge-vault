@@ -17,6 +17,10 @@ wiki/        ← Claude writes organized knowledge pages here
 claude.md    ← Rules file: tells Claude how to navigate and write
 ```
 
+![Karpathy's Cheat Code RAG — A Lightweight Obsidian Setup](assets/obsidian_claude_code_guide.png)
+
+The setup has two phases: building the file structure and configuring Claude (Phase 1), then ingesting content and generating the wiki (Phase 2). The comparison on the right shows why this approach beats traditional RAG for most use cases — no vector database, no infrastructure, solo-friendly complexity.
+
 ---
 
 ## Step 1: Download and Install Obsidian
