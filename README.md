@@ -244,3 +244,4 @@ The schema in `CLAUDE.md` is the part worth stealing. It works for any knowledge
 |-------|---------------|
 | [Generic Obsidian + Claude Code setup](docs/guide-generic-obsidian-setup.md) | The six-step baseline: Obsidian, Web Clipper, minimal claude.md |
 | [Full vault guide with Web Clipper + ingest patterns](docs/guide-obsidian-claude-code.md) | End-to-end: capture, schema design, ingest, query, maintenance |
+| [Starter CLAUDE.md template](docs/starter-claude-md.md) | Copy-ready schema with page templates, ingest workflow, trust hierarchy, and domain taxonomy — swap out entity names and go |
