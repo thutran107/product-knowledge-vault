@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Vim swapfiles
+*.swp
+*.swo
+
+# Obsidian app config (personal, not shared)
+.obsidian/
+
+# Playwright MCP browser session
+.playwright-mcp/
+
+# Source documents (proprietary — never publish)
+raw/
+
+# Clipped images (MD5-named files from Obsidian Web Clipper)
+*_MD5.png
+
+# Session state
+INGEST_PROGRESS.md
+
+# Default Obsidian welcome note
+Welcome.md
