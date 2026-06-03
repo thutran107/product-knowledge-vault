@@ -4,6 +4,28 @@ Append-only record of all operations. Format: `## [YYYY-MM-DD] <operation> | <ti
 
 ---
 
+## [2026-06-03] ingest | Batch 6 — E-signature (5 of 6 entries)
+
+**Operation:** ingest
+**Source file:** Notion (5 entries; entry 6 already ingested in Batch 3)
+**Document type:** security-whitepaper (×1), sales-deck (×1), client-training (×1), note (×1), faq (×1)
+**Product(s):** E-signature, FundSub
+**As-of date:** undated to 2026-01-16
+**Conflicts found:** None
+**Summary:** Ingested Batch 6 E-signature sources. Rich content from entries 3 (Reuse Signature Pages feature — SES-only post-signing edit capability) and 5 (DocuSign/QES Internal FAQ — comprehensive eIDAS coverage, pricing, security, edge cases). Entries 1/2/4 are metadata-only (Google Drive/Slides links). Entry 6 (Schwab workflow guide) was already ingested in Batch 3. Created qes-aes-compliance concept page and DocuSign entity page. Significantly expanded e-signature product page.
+**Pages touched:**
+- wiki/sources/esignature-whitepaper.md (created)
+- wiki/sources/esignature-docusign-sales-deck.md (created)
+- wiki/sources/esignature-reuse-signature-pages.md (created)
+- wiki/sources/esignature-sample-signed-documents.md (created)
+- wiki/sources/esignature-docusign-qes-faq.md (created)
+- wiki/concepts/qes-aes-compliance.md (created)
+- wiki/entities/docusign.md (created)
+- wiki/products/e-signature.md (rebuilt — source_count 2→7, added QES/AES/SES, DocuSign, reuse signature, Schwab)
+- index.md (updated — 5 sources added, Sources 55→60, Concepts 8→9, Integrations 4→5, e-signature 2→7)
+
+---
+
 ## [2026-05-12] ingest | FundSub — 4 Google Drive placeholders fetched
 
 **Operation:** ingest

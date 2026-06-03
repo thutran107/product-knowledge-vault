@@ -1,11 +1,11 @@
 # Wiki Index
-Last updated: 2026-05-26
+Last updated: 2026-06-03
 
 ## Overview
 - [[wiki/overview]] — High-level synthesis: Integration Hub architecture, integration patterns, Anduin product suite, Neuberger Berman case study.
 - [[wiki/onboarding]] — Must-read list for new CS and Sales hires.
 
-## Sources (55)
+## Sources (60)
 | Page | Title | Type | Products | Date |
 |------|-------|------|----------|------|
 | [[wiki/sources/mission-and-core-components]] | Mission and Core Components | article | Integration Hub | 2026-04-20 |
@@ -63,6 +63,11 @@ Last updated: 2026-05-26
 | [[wiki/sources/data-room-demo-sandbox-guide]] | Guide to Data Room Demo Sandbox/Simulator Environment | implementation-guide | Data Room | undated |
 | [[wiki/sources/ih-salesforce-dataroom-release-notes]] | Automated Onboarding to Data Room from Salesforce (Release Notes) | release-notes | Integration Hub | undated |
 | [[wiki/sources/ih-salesforce-dataroom-implementation-guide]] | Automated Onboarding to Data Room from Salesforce (Implementation Guide) | implementation-guide | Integration Hub | undated |
+| [[wiki/sources/esignature-whitepaper]] | Anduin e-Signature Guide Whitepaper | security-whitepaper | E-signature | undated |
+| [[wiki/sources/esignature-docusign-sales-deck]] | Anduin x DocuSign — Simple Electronic Signatures (Sales Deck) | sales-deck | E-signature | undated |
+| [[wiki/sources/esignature-reuse-signature-pages]] | User Guide — Allowing Post-Signing Changes Without New Signatures | client-training | E-signature, FundSub | 2025-09-16 |
+| [[wiki/sources/esignature-sample-signed-documents]] | Sample SES, AES, and QES Signed Documents | note | E-signature | 2025-08-25 |
+| [[wiki/sources/esignature-docusign-qes-faq]] | DocuSign and Qualified E-Signature (QES) — Internal FAQ | faq | E-signature | 2026-01-16 |
 
 ## Products (13)
 | Page | Title | Status | Sources |
@@ -73,7 +78,7 @@ Last updated: 2026-05-26
 | [[wiki/products/investor-data-management]] | Investor Data Management (IDM) | GA | 12 |
 | [[wiki/products/investor-access]] | Investor Access | GA | 1 |
 | [[wiki/products/platform]] | Platform | GA | 0 |
-| [[wiki/products/e-signature]] | E-signature | GA | 2 |
+| [[wiki/products/e-signature]] | E-signature | GA | 7 |
 | [[wiki/products/investor-portal]] | Investor Portal | GA | 0 |
 | [[wiki/products/ocr-data-extraction]] | OCR Data Extraction | GA | 11 |
 | [[wiki/products/aaa]] | AAA (Advisor Advantage) | GA | 1 |
@@ -81,13 +86,14 @@ Last updated: 2026-05-26
 | [[wiki/products/side-letter]] | Side Letter | GA | 0 |
 | [[wiki/products/engagement-hub]] | Engagement Hub | GA | 0 |
 
-## Integrations (4)
+## Integrations (5)
 | Page | Title | Type | Sources |
 |------|-------|------|---------|
 | [[wiki/entities/dealcloud]] | DealCloud | integration | 3 |
 | [[wiki/entities/affinity]] | Affinity | integration | 1 |
 | [[wiki/entities/box]] | Box | integration | 1 |
 | [[wiki/entities/salesforce]] | Salesforce | integration | 2 |
+| [[wiki/entities/docusign]] | DocuSign | integration | 4 |
 
 ## Customers (17)
 | Page | Title | Products in Use | Sources |
@@ -110,7 +116,7 @@ Last updated: 2026-05-26
 | [[wiki/customers/accolade]] | Accolade Partners | Data Room, FundSub | 1 |
 | [[wiki/customers/nxstep]] | NXSTEP | FundSub | 1 |
 
-## Concepts (8)
+## Concepts (9)
 | Page | Title | Sources |
 |------|-------|---------|
 | [[wiki/concepts/integration-patterns]] | Integration Patterns | 7 |
@@ -121,6 +127,7 @@ Last updated: 2026-05-26
 | [[wiki/concepts/investor-onboarding-workflow]] | Investor Onboarding Workflow | 4 |
 | [[wiki/concepts/crm-integration-playbook]] | CRM Integration Playbook | 3 |
 | [[wiki/concepts/data-mapping]] | Data Mapping | 4 |
+| [[wiki/concepts/qes-aes-compliance]] | QES/AES/SES Compliance (eIDAS Signature Types) | 2 |
 
 ## Competitors (0)
 *No competitor pages yet.*

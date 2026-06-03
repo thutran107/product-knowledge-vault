@@ -2,48 +2,80 @@
 type: product
 title: "E-signature"
 status: GA
-source_count: 2
-last_updated: 2026-05-26
+source_count: 7
+last_updated: 2026-06-03
 tags: [e-signature, signature, qes, aes, schwab, docusign]
 ---
 
 ## What it does
-Anduin's electronic signature product supporting standard e-signature as well as advanced (AES) and qualified (QES) signatures for regulated markets. Also enables custodian-based signing workflows (e.g., Schwab DocuSign) for RIA and advisor-driven subscription flows.
+Anduin's electronic signature product supporting three tiers of e-signature (SES, AES, QES) for fund subscription workflows. Enables EU-regulated qualified signatures via DocuSign + IDnow, custodian-based signing via the Schwab DocuSign integration, and a native SES flow with post-signing edit capabilities.
 
 ## Key capabilities
-- Standard e-signature for subscription documents in FundSub.
-- AES and QES for EU and regulated jurisdictions.
-- Schwab DocuSign integration: advisor-initiated signing flow routing subscription docs through Schwab's custodian process (Alternative Investment Letter of Authorization).
-- DocuSign used as the underlying provider for Schwab workflow; signers authenticate via phone number.
-- Post-signing document delivery: automatically routes completed docs to Schwab after all parties sign.
+- **Standard e-signature (SES)**: Anduin native signature for most fund subscription flows. Low overhead, no ID verification.
+- **Advanced e-signature (AES)**: Identity-linked signature via GlobalSign eSeal for elevated assurance.
+- **Qualified e-signature (QES)**: Highest eIDAS tier — legally equivalent to handwritten signature. Delivered via DocuSign + IDnow face-to-face video verification. Valid for EU entities requiring strict eIDAS compliance.
+- **DocuSign integration**: Funds can choose DocuSign as their signature provider (instead of Anduin native). Supports SES, AES, and QES within DocuSign; covers subscription docs, tax forms, GP countersign, and additional docs.
+- **Schwab custodian signing**: Advisor-initiated DocuSign workflow routing subscription docs through Schwab's Advisor Center (SAC). Requires per-RIA setup and Schwab addendum. Phone authentication; auto-CC to Schwab on completion.
+- **Reuse signature pages**: Post-signing form edits without re-signature, if conditions met (SES only; same signers, fields, and values in signature pages). Requires Anduin activation per fund.
+
+## Pricing & packaging
+- **DocuSign SES/QES**: Charged per signature credits (not DocuSign envelope pricing). QES, SES, and LexisNexis credits tracked in Salesforce. Customers can purchase QES-only credits; GP countersign can be done offline (free) or via SES credits.
+- A fund can have both QES and SES within a DocuSign environment.
+- No pricing docs in the vault for native SES or AES; DocuSign/QES pricing referenced in [[wiki/sources/esignature-docusign-qes-faq]].
 
 ## Implementation notes
-Five setup components required per RIA firm onboarding (not sequential):
-1. **RIA + Anduin setup**: Anduin creates a DocuSign sender email (`{ria-name}-docusign-sender@anduintransact.com`); RIA adds it to their Schwab Advisor Center (SAC) account.
-2. **Schwab addendum**: RIA obtains Schwab approval for Anduin as third-party DocuSign provider via SAC → Account Management → Advisor-Owned DocuSign → "Anduin Transaction."
-3. **Technical validation**: Anduin sends a test envelope to Schwab; Schwab approves before RIA can go live.
-4. **Digitization setup**: Schwab form PDF must have `[Schwab form]` in filename to trigger the template. Logic gating question required to scope form to Schwab investors only.
-5. **Fund app setup**: DocuSign must be enabled per fund. Form QA POC.
 
-Setup effort: ~2–3 days; start 2–3 weeks before first live use. Internal testing backdoor: `+ceritypartners@anduin.fund` (Cerity). Email domain enforcement is hard-coded — only advisors with the registered RIA domain can initiate the Schwab flow.
+### Choosing a signature provider
+- A fund must choose **either** Anduin native signing OR DocuSign — cannot mix on the same fund.
+- DocuSign is required for QES (Anduin cannot be a Qualified Trust Service Provider on the European Trust List).
+- DocuSign SES batch countersigning is available; QES batch countersign is NOT (individual consent required).
 
-Advisor Advantage (AAA product) is the GP-side interface where advisors manage investor subscriptions.
+### DocuSign/QES fund setup
+1. In FundSub fund settings, choose DocuSign as signature provider (enables SES for all 4 processes).
+2. To enable QES per-process, check the `QES (Qualified e-signature with IDnow)` checkbox.
+3. GP countersign forced to match LP's signature type under QES (forced logic).
+4. Available authentication: Email OTP (all funds), Access code (DocuSign funds only).
+
+### Schwab custodian signing setup (5 components, not sequential)
+1. **RIA + Anduin**: Anduin creates DocuSign sender email (`{ria-name}-docusign-sender@anduintransact.com`); RIA adds to Schwab Advisor Center.
+2. **Schwab addendum**: RIA obtains Schwab approval for Anduin as third-party DocuSign provider via SAC.
+3. **Technical validation**: Anduin sends test envelope to Schwab; Schwab approves before go-live.
+4. **Digitization setup**: Schwab form PDF must have `[Schwab form]` in filename. Logic gating required.
+5. **Fund app setup**: DocuSign must be enabled per fund. Start 2–3 weeks before first live use.
+
+### Reuse signature pages
+- Requires Anduin activation; then enabled by Fund Admin in Fund Settings.
+- SES only — AES and DocuSign flows not compatible.
+- Conditions: same number of signers, same signature field type/location/count, unchanged form field values within signature pages.
+- No new signature certificate generated for updated version; free-text changes not auto-detected (manual review required).
 
 ## Known limitations
-- Schwab workflow deployed for Cerity Partners and Blue Arc; may have additional or varying requirements for other RIA firms.
-- QES/AES compliance details require separate review of compliance sources.
+- A fund cannot use both Anduin native signing and DocuSign on the same fund.
+- QES batch countersign not available (DocuSign constraint).
+- Safari + date picker fields known to freeze — advise Chrome or Edge for DocuSign users.
+- Schwab workflow deployed for Cerity Partners and Blue Arc; RIA-specific requirements may vary.
+- Reuse signature pages: SES only; no AES or DocuSign support.
+- AES (GlobalSign eSeal) implementation details not fully documented in the vault — no dedicated implementation guide.
 
 ## Features & sub-modules
-- Schwab integration (sub-feature)
-- QES/AES compliance
+- [[wiki/concepts/qes-aes-compliance|QES/AES/SES compliance]] — eIDAS signature tier framework
+- Schwab integration (see [[wiki/sources/esignature-schwab-implementation-guide]])
+- Reuse signature pages (see [[wiki/sources/esignature-reuse-signature-pages]])
+- DocuSign integration (see [[wiki/entities/docusign]])
 
 ## Related customers
 - [[wiki/customers/cerity-partners]] — Schwab workflow deployed for this RIA
 
 ## Sources
-- [[wiki/sources/esignature-schwab-implementation-guide|Internal Guide: How to Set Up Schwab Signature Workflow]] — implementation guide (trust 2)
-- [[wiki/sources/esignature-schwab-cerity-training|Schwab Integration — External Training Flow for Cerity Partners]] — client training (trust 7)
+- [[wiki/sources/esignature-docusign-qes-faq|DocuSign and QES — Internal FAQ]] — faq (trust 4, Jan 2026)
+- [[wiki/sources/esignature-schwab-implementation-guide|Internal Guide: Schwab Signature Workflow]] — implementation-guide (trust 2)
+- [[wiki/sources/esignature-reuse-signature-pages|User Guide: Reuse Signature Pages]] — client-training (trust 7)
+- [[wiki/sources/esignature-schwab-cerity-training|Schwab Training — Cerity Partners]] — client-training (trust 7)
+- [[wiki/sources/esignature-whitepaper|Anduin e-Signature Guide Whitepaper]] — security-whitepaper (trust 8)
+- [[wiki/sources/esignature-docusign-sales-deck|Anduin x DocuSign Sales Deck]] — sales-deck (trust 5)
+- [[wiki/sources/esignature-sample-signed-documents|Sample SES/AES/QES Signed Documents]] — note (trust 10)
 
 ## Related
-- [[wiki/products/fundsub|FundSub]] — context for e-signature workflows
+- [[wiki/products/fundsub|FundSub]] — subscription platform context for all e-signature workflows
 - [[wiki/products/aaa|AAA]] — Advisor Advantage interface used in Schwab flow
+- [[wiki/entities/docusign|DocuSign]] — integration partner for QES and Schwab workflows
