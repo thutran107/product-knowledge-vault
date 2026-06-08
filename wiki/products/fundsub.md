@@ -2,8 +2,8 @@
 type: product
 title: "FundSub (Fund Subscription)"
 status: GA
-source_count: 13
-last_updated: 2026-05-12
+source_count: 15
+last_updated: 2026-06-08
 tags: [fundsub, subscription, fund-management, workflows]
 ---
 
@@ -79,3 +79,5 @@ Essentials supports: Domestic/Offshore, Open/Close-ended, Single or Multiple fun
 - [[wiki/products/e-signature|E-signature]]
 - [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]
 - [[wiki/concepts/import-export-templates|Import/Export Templates]]
+- [[wiki/sources/fundsub-investor-email-support]] — investor-initiated support email feature (Sep 2025)
+- [[wiki/sources/fundsub-primary-vs-collaborator]] — Primary vs. Collaborator distinction in orders

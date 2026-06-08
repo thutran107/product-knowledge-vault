@@ -26,3 +26,4 @@ Curated reading list for new CS and Sales + RM hires. Sources flagged `onboardin
 | [[wiki/sources/ih-sales-deck-feb-2025\|Integration Hub Sales Deck (Feb 2025)]] | Integration Hub | sales-deck | High-level concepts, use cases, and benefits for prospect conversations |
 | [[wiki/sources/ocr-managed-services-sales-deck\|OCR/AI Managed Services Sales Deck]] | OCR Data Extraction | sales-deck | Intro OCR capabilities to prospects |
 | [[wiki/sources/fundsub-essentials-sales-deck\|FundSub — Anduin Essentials Sales Deck]] | FundSub | sales-deck | Core FundSub sales deck covering subscription workflows; flagged onboarding required |
+| [[wiki/sources/investor-portal-sales-deck\|Investor Portal — Main Sales Deck]] | Investor Portal | sales-deck | Full Portal capabilities deck; flagged onboarding required |

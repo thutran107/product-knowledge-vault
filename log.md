@@ -4,6 +4,37 @@ Append-only record of all operations. Format: `## [YYYY-MM-DD] <operation> | <ti
 
 ---
 
+## [2026-06-08] ingest | Batch 7 — Investor Portal (11 entries + 1 bonus file)
+
+**Operation:** ingest
+**Source file:** Notion (11 entries); 7 PPTX files downloaded and converted with markitdown; 2 entries have full Notion content; 3 entries metadata-only
+**Document type:** sales-deck (×2), pricing (×1), gtm-training (×3), client-training (×2), spec (×1), implementation-guide (×1), rfp (×1), note (×1)
+**Product(s):** Investor Portal (9 sources), FundSub (2 sources)
+**As-of date:** 2025-02-21 to 2026-01-01
+**Conflicts found:** None
+**Summary:** Full Batch 7 ingest. Rich content from 7 downloaded PPTX files. Key additions: complete Investor Portal pricing table by AUM tier (Emerging $6K → Super Whale $30K/fund/yr) from the Boston Popup pricing deck; full product capabilities from the main sales deck (2026 roadmap, financial reporting 3-layer framework, document distribution methods); contact matrix data model spec; CS onboarding training script. Two bonus FundSub entries (investor email support feature, Primary vs. Collaborator distinction) filed under FundSub. Created 2 competitor pages (InvestorFlow, AtomInvest). markitdown installed and used for all PPTX conversions.
+**Pages touched:**
+- wiki/sources/investor-portal-sales-deck.md (created)
+- wiki/sources/investor-portal-pricing-faqs-boston.md (created)
+- wiki/sources/investor-portal-gtm-primer.md (created)
+- wiki/sources/investor-portal-product-overview.md (created)
+- wiki/sources/investor-portal-rfp.md (created, metadata only)
+- wiki/sources/investor-portal-prerelease-training-boston.md (created, metadata only)
+- wiki/sources/investor-portal-customer-training-guide.md (created)
+- wiki/sources/investor-portal-contact-management.md (created)
+- wiki/sources/investor-portal-training-materials.md (created, metadata only)
+- wiki/sources/anduin-investor-guide-may-2025.md (created)
+- wiki/sources/fundsub-investor-email-support.md (created)
+- wiki/sources/fundsub-primary-vs-collaborator.md (created)
+- wiki/products/investor-portal.md (rebuilt — stub → full product page, source_count 0→9)
+- wiki/products/fundsub.md (updated — source_count 13→15, added 2 new sources)
+- wiki/competitors/investorflow.md (created)
+- wiki/competitors/atominvest.md (created)
+- wiki/onboarding.md (updated — Investor Portal sales deck added to Sales + RM must-reads)
+- index.md (updated — Sources 60→72, Investor Portal 0→9, FundSub 13→15, Competitors 0→2)
+
+---
+
 ## [2026-06-03] ingest | Batch 6 — E-signature (5 of 6 entries)
 
 **Operation:** ingest
