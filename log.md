@@ -4,6 +4,14 @@ Append-only record of all operations. Format: `## [YYYY-MM-DD] <operation> | <ti
 
 ---
 
+## [2026-06-08] query | Investor Portal vs. Integration Hub
+
+**Operation:** query
+**Summary:** Synthesized a comparison of Investor Portal and Integration Hub covering purpose, buyer profile, lifecycle fit, pricing, and competitive positioning. Filed as analysis page.
+**Pages touched:** wiki/analyses/investor-portal-vs-integration-hub.md (created), index.md (updated)
+
+---
+
 ## [2026-06-08] ingest | Batch 7 — Investor Portal (11 entries + 1 bonus file)
 
 **Operation:** ingest
