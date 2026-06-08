@@ -147,5 +147,7 @@ Last updated: 2026-06-08
 | [[wiki/competitors/investorflow]] | InvestorFlow | 2 |
 | [[wiki/competitors/atominvest]] | AtomInvest | 2 |
 
-## Analyses (0)
-*No analyses yet.*
+## Analyses (1)
+| Page | Title | Date |
+|------|-------|------|
+| [[wiki/analyses/investor-portal-vs-integration-hub]] | Investor Portal vs. Integration Hub | 2026-06-08 |
