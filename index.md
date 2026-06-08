@@ -1,11 +1,11 @@
 # Wiki Index
-Last updated: 2026-06-03
+Last updated: 2026-06-08
 
 ## Overview
 - [[wiki/overview]] — High-level synthesis: Integration Hub architecture, integration patterns, Anduin product suite, Neuberger Berman case study.
 - [[wiki/onboarding]] — Must-read list for new CS and Sales hires.
 
-## Sources (60)
+## Sources (72)
 | Page | Title | Type | Products | Date |
 |------|-------|------|----------|------|
 | [[wiki/sources/mission-and-core-components]] | Mission and Core Components | article | Integration Hub | 2026-04-20 |
@@ -68,18 +68,30 @@ Last updated: 2026-06-03
 | [[wiki/sources/esignature-reuse-signature-pages]] | User Guide — Allowing Post-Signing Changes Without New Signatures | client-training | E-signature, FundSub | 2025-09-16 |
 | [[wiki/sources/esignature-sample-signed-documents]] | Sample SES, AES, and QES Signed Documents | note | E-signature | 2025-08-25 |
 | [[wiki/sources/esignature-docusign-qes-faq]] | DocuSign and Qualified E-Signature (QES) — Internal FAQ | faq | E-signature | 2026-01-16 |
+| [[wiki/sources/investor-portal-sales-deck]] | Anduin Investor Portal — Main Sales Deck | sales-deck | Investor Portal | undated |
+| [[wiki/sources/investor-portal-pricing-faqs-boston]] | Portal Launch Plan, Pricing & FAQs (Boston Popup) | pricing | Investor Portal | 2025-05-14 |
+| [[wiki/sources/investor-portal-gtm-primer]] | Investor Portal — Internal GTM Primer | gtm-training | Investor Portal | 2025-02-21 |
+| [[wiki/sources/investor-portal-product-overview]] | Investor Portal — Product Overview | note | Investor Portal | undated |
+| [[wiki/sources/investor-portal-rfp]] | Investor Portal — RFP | rfp | Investor Portal | undated |
+| [[wiki/sources/investor-portal-prerelease-training-boston]] | Product Pre-release Training for Portal (Boston Popup) | gtm-training | Investor Portal | 2025-05-14 |
+| [[wiki/sources/investor-portal-customer-training-guide]] | GTM Enablement — Investor Portal Customer Training Guide | client-training | Investor Portal | 2025-10-01 |
+| [[wiki/sources/investor-portal-contact-management]] | Investor Portal — Contact Management (Feature Deep-Dive) | spec | Investor Portal, IDM | undated |
+| [[wiki/sources/investor-portal-training-materials]] | New Enablement Material: Investor Portal Training Materials | gtm-training | Investor Portal | undated |
+| [[wiki/sources/anduin-investor-guide-may-2025]] | Anduin Investor Guide (LP-Facing, Jan 2026) | client-training | Investor Portal, FundSub | 2026-01-01 |
+| [[wiki/sources/fundsub-investor-email-support]] | Investor Sends Email Support Directly from Platform | implementation-guide | FundSub | 2025-09-18 |
+| [[wiki/sources/fundsub-primary-vs-collaborator]] | Distinction Between Primary Investor and Collaborator in FundSub | gtm-training | FundSub | 2025-11-10 |
 
 ## Products (13)
 | Page | Title | Status | Sources |
 |------|-------|--------|---------|
 | [[wiki/products/integration-hub]] | Integration Hub | GA | 14 |
-| [[wiki/products/fundsub]] | FundSub (Fund Subscription) | GA | 13 |
+| [[wiki/products/fundsub]] | FundSub (Fund Subscription) | GA | 15 |
 | [[wiki/products/data-room]] | Data Room | GA | 10 |
 | [[wiki/products/investor-data-management]] | Investor Data Management (IDM) | GA | 12 |
 | [[wiki/products/investor-access]] | Investor Access | GA | 1 |
 | [[wiki/products/platform]] | Platform | GA | 0 |
 | [[wiki/products/e-signature]] | E-signature | GA | 7 |
-| [[wiki/products/investor-portal]] | Investor Portal | GA | 0 |
+| [[wiki/products/investor-portal]] | Investor Portal | GA | 9 |
 | [[wiki/products/ocr-data-extraction]] | OCR Data Extraction | GA | 11 |
 | [[wiki/products/aaa]] | AAA (Advisor Advantage) | GA | 1 |
 | [[wiki/products/landing-page]] | Landing Page | GA | 0 |
@@ -129,8 +141,11 @@ Last updated: 2026-06-03
 | [[wiki/concepts/data-mapping]] | Data Mapping | 4 |
 | [[wiki/concepts/qes-aes-compliance]] | QES/AES/SES Compliance (eIDAS Signature Types) | 2 |
 
-## Competitors (0)
-*No competitor pages yet.*
+## Competitors (2)
+| Page | Title | Sources |
+|------|-------|---------|
+| [[wiki/competitors/investorflow]] | InvestorFlow | 2 |
+| [[wiki/competitors/atominvest]] | AtomInvest | 2 |
 
 ## Analyses (0)
 *No analyses yet.*
