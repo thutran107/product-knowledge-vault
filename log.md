@@ -395,3 +395,11 @@ Append-only record of all operations. Format: `## [YYYY-MM-DD] <operation> | <ti
 - wiki/products/data-room.md (rebuilt — source_count 4→10, full product template)
 - wiki/products/integration-hub.md (updated — source_count 12→14, added 2 Salesforce IH sources)
 - index.md (updated — 46→54 sources, Data Room 4→10, IH 12→14)
+
+## [2026-06-09] note | Query Answering Showcase — The Karpathy Method
+
+**Operation:** note
+**Summary:** Filed a methodology showcase as an analysis: 5 vault queries + grounded responses (distinct angles) generated on Haiku, selected via a comparative single-elimination tournament (the "Karpathy method" — pairwise judging over absolute scoring). Created at repo root, then moved to wiki/analyses/ at user request with analysis frontmatter.
+**Pages touched:**
+- wiki/analyses/query-answering-karpathy-method.md (created)
+- index.md (updated — Analyses 1→2, last-updated 2026-06-09)
