@@ -69,6 +69,8 @@ Data fidelity depends on [[wiki/concepts/import-export-templates|Import/Export T
 | [[wiki/products/data-room|Data Room]] | Investor document access; source for engagement data integrations |
 | [[wiki/products/investor-data-management|IDM]] | Centralized investor data repo; enables reusable investor profiles |
 | [[wiki/products/investor-access|Investor Access]] | Referenced in Neuberger Berman deployment; minimal documentation |
+| [[wiki/products/investor-portal|Investor Portal]] | GP-branded LP portal: documents, comms, reporting, profiles; spans pre-marketing → post-close |
+| [[wiki/products/engagement-hub|Engagement Hub]] | IDM-based investor engagement layer (branded landing pages, document distribution, inbox, profile sharing); Portal minus the per-fund instance & reporting |
 
 ---
 
