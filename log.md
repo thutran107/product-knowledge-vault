@@ -403,3 +403,51 @@ Append-only record of all operations. Format: `## [YYYY-MM-DD] <operation> | <ti
 **Pages touched:**
 - wiki/analyses/query-answering-karpathy-method.md (created)
 - index.md (updated — Analyses 1→2, last-updated 2026-06-09)
+
+## [2026-06-10] ingest | Engagement Hub (3 sources from Notion Product Knowledge Library)
+
+**Operation:** ingest
+**Source file:** raw/engagement-hub-product-overview.md, raw/engagement-hub-pricing-proposal.md, raw/engagement-hub-one-pager.md
+**Document type:** spec (Product Overview), pricing (Pricing Proposal), one-pager (Brochure)
+**Product(s):** Engagement Hub (3), Investor Portal (2 cross-refs), IDM (1 cross-ref)
+**As-of date:** 2026-02-02 (overview), 2025-09-18 (pricing), 2025-08-27 (one-pager)
+**Conflicts found:** Investor Portal pricing structure — EH decks (newer, trust-3 pricing 2025-09-18 + spec 2026-02-02) restructure Portal pricing to "annual EH fee + lower per-fund Portal fee," superseding the structure in investor-portal-pricing-faqs-boston (2025-05-14). Per user decision: legacy Portal AUM table RETAINED, conflict FLAGGED on the Portal page (not overwritten); exact new per-fund figures not captured (data gap). Secondary tension: EH tier naming ("Ultimate" vs Starter/Growth/Unlimited).
+**Summary:** Engagement Hub stub rebuilt into a full product page from 3 Notion/Drive sources (all backed by Google Slides/PDF, pulled via the Google Drive connector — no separate conversion tooling needed). Per user dedup decision, the standalone "Landing Page" product was FOLDED INTO Engagement Hub: Branded Landing Pages is now a feature page under EH, and wiki/products/landing-page.md became a redirect pointer (status: deprecated). New concept page created for the EH/Portal/IDM packaging & bundling motion. EH priced by # of published landing pages (Starter ≤5 / Growth ≤10 / Unlimited; 30% beta discount). Known data gaps: exact EH tier $ figures and new Portal per-fund numbers (on slide tables not captured in text extraction).
+**Pages touched:**
+- raw/engagement-hub-product-overview.md (created)
+- raw/engagement-hub-pricing-proposal.md (created)
+- raw/engagement-hub-one-pager.md (created)
+- wiki/sources/engagement-hub-product-overview.md (created)
+- wiki/sources/engagement-hub-pricing.md (created)
+- wiki/sources/engagement-hub-one-pager.md (created)
+- wiki/products/engagement-hub.md (rebuilt — source_count 0→3, full product template)
+- wiki/features/engagement-hub-branded-landing-pages.md (created — first feature page in vault)
+- wiki/products/landing-page.md (folded into EH — now a redirect pointer, status deprecated)
+- wiki/products/investor-portal.md (updated — flagged pricing conflict, EH relationship, related links; last_updated 2026-06-10)
+- wiki/concepts/product-packaging-bundling.md (created)
+- wiki/overview.md (added Investor Portal + Engagement Hub to products table)
+- index.md (updated — Sources 72→75, added Features section (1), Concepts 9→10, EH 0→3, Landing Page deprecated)
+
+## [2026-06-10] lint | 0 issues found (auto-triggered by trust-1/trust-3 ingest)
+
+**Operation:** lint
+**Summary:** Auto-lint after the Engagement Hub ingest (trust-1 spec + trust-3 pricing). Scoped to the 8 new/edited pages. Broken wikilinks: none (all targets resolve). Orphans: none (new pages have 2–7 inbound links each). Frontmatter: complete per §2 templates. Known data gaps recorded on the pages themselves (exact EH tier $ figures; new Portal per-fund numbers) rather than treated as lint defects.
+**Pages touched:** none (no fixes needed).
+
+## [2026-06-10] note | Re-synthesize overview.md against current index
+
+**Operation:** note
+**Summary:** Re-synthesized wiki/overview.md from a stale 13-source Integration-Hub-only snapshot (last_updated 2026-05-04) to the current 75-source, 13-product suite view; fixed frontmatter (source_count 13→75), rewrote scope statement, added all products by layer, EH/Portal packaging story, pricing models, known conflicts, customers, competitors, onboarding essentials, and data gaps.
+**Pages touched:** wiki/overview.md, index.md (overview description)
+
+## [2026-06-10] lint | Critical + High issues fixed (post overview re-synthesis)
+
+**Operation:** lint
+**Summary:** Ran full lint after overview.md re-synthesis. Confirmed re-synthesis introduced no new issues. Fixed 1 Critical broken wikilink and all 14 High orphans; index remained complete. Remaining: Medium (5 product pages missing `status`), Low (7 fragile source_count:1 pages), Style (1 page >200 lines) — left for a later content pass.
+**Pages touched:** wiki/sources/investor-portal-sales-deck.md (broken link idm→investor-data-management), wiki/overview.md (13 customer placeholders linked), wiki/products/integration-hub.md (linked orphaned ih-implementation-guide-pdf source)
+
+## [2026-06-10] lint | Medium frontmatter fixed (status fields)
+
+**Operation:** lint
+**Summary:** Added missing `status: GA` frontmatter field to 5 product pages (per index status). Re-validated: all product frontmatter now conforms to §2. Remaining open: Low (7 fragile source_count:1 pages), Style (1 page >200 lines).
+**Pages touched:** wiki/products/integration-hub.md, wiki/products/investor-data-management.md, wiki/products/investor-access.md, wiki/products/platform.md, wiki/products/side-letter.md

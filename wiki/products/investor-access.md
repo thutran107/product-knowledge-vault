@@ -1,6 +1,7 @@
 ---
 type: product
 title: "Investor Access"
+status: GA
 source_count: 1
 last_updated: 2026-04-20
 tags: [investor-access, anduin]

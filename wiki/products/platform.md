@@ -1,6 +1,7 @@
 ---
 type: product
 title: "Platform"
+status: GA
 source_count: 0
 last_updated: 2026-05-04
 tags: [platform, anduin]

@@ -3,7 +3,7 @@ type: product
 title: "Investor Portal"
 status: GA
 source_count: 9
-last_updated: 2026-06-08
+last_updated: 2026-06-10
 tags: [investor-portal, investor-access, sales-motion]
 ---
 
@@ -43,6 +43,8 @@ Pricing as of May 2025. Annual fee per fund/SPV, tiered by AUM; plus one-time da
 If customer already has FundSub + IDM: keep existing pricing, add Portal fees on top.
 
 See [[wiki/sources/investor-portal-pricing-faqs-boston]] for full pricing detail and beta prospect proposals.
+
+> ⚠️ **Pricing structure conflict (flagged, unresolved).** The Engagement Hub decks ([[wiki/sources/engagement-hub-pricing]], pricing/trust 3, as-of 2025-09-18; and [[wiki/sources/engagement-hub-product-overview]], as-of 2026-02-02) state Portal pricing is being **restructured** to **"annual Engagement Hub platform fee + a *lower* annual per-fund Portal fee."** Those sources are newer than the Boston pricing deck above (as-of 2025-05-14), so per §10 the *structure* is superseded. Per user decision, the AUM table above is **retained as-is** and the conflict flagged here rather than overwritten — the EH decks did **not** include the actual new per-fund figures (data gap). Treat the table above as the legacy structure; confirm current numbers with the EH/Portal pricing slides before quoting to a client. EH is bundled into Portal by default (top/"Ultimate" tier). See [[wiki/concepts/product-packaging-bundling]].
 
 ## Implementation notes
 Onboarding sequence: Kickoff call (30 min) → IDM setup → Portal setup → Data migration → Live training (1 hr) → Customer testing → Go live.
@@ -107,11 +109,13 @@ See [[wiki/sources/investor-portal-pricing-faqs-boston]] for competitive pricing
 - [[wiki/sources/anduin-investor-guide-may-2025]] — LP-facing guide (client-training, trust 7)
 
 ## Related
+- [[wiki/products/engagement-hub]] — Portal = Engagement Hub + per-fund instance + Reporting; EH is bundled into Portal by default
 - [[wiki/products/investor-data-management]] — IDM is prerequisite; contact matrix and data profiles shared
 - [[wiki/products/data-room]] — embedded in vehicle landing pages
 - [[wiki/products/fundsub]] — onboarding feeds into Portal; pricing kept separate
-- [[wiki/products/landing-page]] — marketed as Portal complement for fund marketing
+- [[wiki/features/engagement-hub-branded-landing-pages]] — branded landing pages (formerly the "Landing Page" product) used for fund marketing
 - [[wiki/products/integration-hub]] — Portal connectivity layer
+- [[wiki/concepts/product-packaging-bundling]] — EH/Portal/IDM packaging & pricing motion
 - [[wiki/concepts/investor-onboarding-workflow]]
 - [[wiki/competitors/investorflow]]
 - [[wiki/competitors/atominvest]]

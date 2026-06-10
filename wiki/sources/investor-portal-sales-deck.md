@@ -59,7 +59,7 @@ Primary Investor Portal sales deck covering the full product vision, investor ex
 - [[wiki/sources/investor-portal-pricing-faqs-boston]] — companion pricing deck
 - [[wiki/sources/investor-portal-contact-management]] — detailed Contact Management feature deck
 - [[wiki/products/data-room]] — Data Room embedded in Portal vehicle pages
-- [[wiki/products/idm]] — contact matrix / data profiles shared with Portal
+- [[wiki/products/investor-data-management]] — contact matrix / data profiles shared with Portal
 - [[wiki/products/integration-hub]] — Portal integration layer
 - [[wiki/products/landing-page]] — Landing Pages positioned as Portal complement
 

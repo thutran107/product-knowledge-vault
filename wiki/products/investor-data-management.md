@@ -1,6 +1,7 @@
 ---
 type: product
 title: "Investor Data Management (IDM)"
+status: GA
 source_count: 12
 last_updated: 2026-05-11
 tags: [idm, anduin, investor-data, crm]
