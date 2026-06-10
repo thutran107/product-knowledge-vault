@@ -1,6 +1,7 @@
 ---
 type: product
 title: "Integration Hub"
+status: GA
 source_count: 14
 last_updated: 2026-05-11
 tags: [integration-hub, anduin, platform]
@@ -33,6 +34,7 @@ The central product. Nearly every source document describes either the Hub's arc
 - [[wiki/sources/configuration-vs-permission|Configuration vs Permission]]
 - [[wiki/sources/user-role|User Role]]
 - [[wiki/sources/ih-implementation-guide|IH Implementation Guide]]
+- [[wiki/sources/ih-implementation-guide-pdf|IH Implementation Guide (PDF)]]
 - [[wiki/sources/neuberger-berman-case-study|Neuberger Berman Case Study]]
 - [[wiki/sources/ih-intro-overview|Intro for Integration Hub (Internal)]]
 - [[wiki/sources/ih-sop|Integration SOP]]

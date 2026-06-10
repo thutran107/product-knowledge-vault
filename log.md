@@ -433,3 +433,21 @@ Append-only record of all operations. Format: `## [YYYY-MM-DD] <operation> | <ti
 **Operation:** lint
 **Summary:** Auto-lint after the Engagement Hub ingest (trust-1 spec + trust-3 pricing). Scoped to the 8 new/edited pages. Broken wikilinks: none (all targets resolve). Orphans: none (new pages have 2–7 inbound links each). Frontmatter: complete per §2 templates. Known data gaps recorded on the pages themselves (exact EH tier $ figures; new Portal per-fund numbers) rather than treated as lint defects.
 **Pages touched:** none (no fixes needed).
+
+## [2026-06-10] note | Re-synthesize overview.md against current index
+
+**Operation:** note
+**Summary:** Re-synthesized wiki/overview.md from a stale 13-source Integration-Hub-only snapshot (last_updated 2026-05-04) to the current 75-source, 13-product suite view; fixed frontmatter (source_count 13→75), rewrote scope statement, added all products by layer, EH/Portal packaging story, pricing models, known conflicts, customers, competitors, onboarding essentials, and data gaps.
+**Pages touched:** wiki/overview.md, index.md (overview description)
+
+## [2026-06-10] lint | Critical + High issues fixed (post overview re-synthesis)
+
+**Operation:** lint
+**Summary:** Ran full lint after overview.md re-synthesis. Confirmed re-synthesis introduced no new issues. Fixed 1 Critical broken wikilink and all 14 High orphans; index remained complete. Remaining: Medium (5 product pages missing `status`), Low (7 fragile source_count:1 pages), Style (1 page >200 lines) — left for a later content pass.
+**Pages touched:** wiki/sources/investor-portal-sales-deck.md (broken link idm→investor-data-management), wiki/overview.md (13 customer placeholders linked), wiki/products/integration-hub.md (linked orphaned ih-implementation-guide-pdf source)
+
+## [2026-06-10] lint | Medium frontmatter fixed (status fields)
+
+**Operation:** lint
+**Summary:** Added missing `status: GA` frontmatter field to 5 product pages (per index status). Re-validated: all product frontmatter now conforms to §2. Remaining open: Low (7 fragile source_count:1 pages), Style (1 page >200 lines).
+**Pages touched:** wiki/products/integration-hub.md, wiki/products/investor-data-management.md, wiki/products/investor-access.md, wiki/products/platform.md, wiki/products/side-letter.md

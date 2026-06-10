@@ -2,7 +2,7 @@
 Last updated: 2026-06-10
 
 ## Overview
-- [[wiki/overview]] — High-level synthesis: Integration Hub architecture, integration patterns, Anduin product suite, Neuberger Berman case study.
+- [[wiki/overview]] — High-level synthesis of the full 13-product Anduin suite: onboarding stack, IDM data layer, engagement layer (EH/Portal/Data Room), Integration Hub, pricing models, conflicts, customers & competitors.
 - [[wiki/onboarding]] — Must-read list for new CS and Sales hires.
 
 ## Sources (75)
