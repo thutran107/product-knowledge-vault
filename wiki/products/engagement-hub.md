@@ -2,13 +2,15 @@
 type: product
 title: "Engagement Hub"
 status: GA
-source_count: 3
-last_updated: 2026-06-10
+source_count: 4
+last_updated: 2026-06-16
 tags: [engagement-hub, investor-engagement, sales-motion]
 ---
 
 ## What it does
 Anduin Engagement Hub is an IDM-based investor engagement layer that gives a fund manager's LPs a single, branded, invite-only destination — one URL and one login — spanning fund marketing, document distribution, communications, and investor-profile management. It is positioned to "own the investor experience, from first touchpoint to post-close," replacing fragmented apps, logins, and insecure email threads with one secure hub. It sits between IDM (data) and the full [[wiki/products/investor-portal|Investor Portal]] (which adds a per-fund portal instance and reporting on top of EH).
+
+> **Naming & history:** Engagement Hub launched publicly on **Aug 27, 2025** as a repackaging of the **Branded Landing Page** product (originally called *"IDM Branding"* internally, Oct 2024). Rather than renaming Branded Landing Page outright, Anduin made it **one of four features** within the Engagement Hub solution — alongside Inbox/Communication, Document Sharing, and Profile Sharing. So "landing page" / "branded landing page" refers to that one feature, while "Engagement Hub" is the full bundle. See [[wiki/sources/engagement-hub-naming-history-slack]].
 
 ## Key capabilities
 - **Branded Landing Pages** — self-service web builder; per-purpose pages with granular access controls; deep white-labeling and custom/white-label URLs; invitation emails and permissioned invite links per investor group. (See [[wiki/features/engagement-hub-branded-landing-pages]].)

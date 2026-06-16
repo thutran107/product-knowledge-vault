@@ -3,8 +3,8 @@ type: feature
 title: "Branded Landing Pages"
 parent_product: "Engagement Hub"
 status: GA
-source_count: 3
-last_updated: 2026-06-10
+source_count: 4
+last_updated: 2026-06-16
 tags: [engagement-hub, landing-page, investor-engagement, branding]
 ---
 
@@ -12,6 +12,12 @@ tags: [engagement-hub, landing-page, investor-engagement, branding]
 Branded Landing Pages are the self-service, fully white-labeled investor-facing pages at the core of [[wiki/products/engagement-hub|Engagement Hub]]. GPs build private, permissioned pages to showcase fund opportunities, share resources and data rooms, surface subscription workflows, and present high-level reporting — all under the firm's own branding and (optionally) its own custom domain. The number of *published* landing pages is the metering unit for Engagement Hub pricing.
 
 > **Note:** This page consolidates what was previously the standalone "Landing Page" product. Per the Engagement Hub sources, Branded Landing Pages are a feature *of* Engagement Hub, not a separate product. The [[wiki/products/landing-page]] entry now redirects here.
+
+## Also known as / naming history
+- **"Landing page" = "Branded Landing Page" = the same thing.** "Landing page" is just shorthand; the full name is Branded Landing Page. (Watch context: people sometimes say "landing page" when they mean the whole Engagement Hub bundle — but the feature itself is the Branded Landing Page.)
+- **Originally "IDM Branding"** — the internal working name when the feature was first introduced (Oct 2024) before "Branded Landing Page" was adopted.
+- **Repackaged under Engagement Hub (Aug 2025).** Marketing initially proposed renaming Branded Landing Page → "Engagement Hub" outright; the final outcome was that Branded Landing Page became **one of four features** within the Engagement Hub solution (alongside Inbox, Document Sharing, and Profile Sharing) rather than a straight rename.
+- Source: [[wiki/sources/engagement-hub-naming-history-slack]] (internal Slack, low trust — naming/history only).
 
 ## How it works
 - **Self-serve web builder** — full control over page content; ready-to-use templates; intuitive DIY UX, no technical skills needed.
@@ -42,6 +48,7 @@ Branded Landing Pages are the self-service, fully white-labeled investor-facing 
 - [[wiki/sources/engagement-hub-product-overview]] — capability detail (spec, trust 1)
 - [[wiki/sources/engagement-hub-pricing]] — published-page metering (pricing, trust 3)
 - [[wiki/sources/engagement-hub-one-pager]] — positioning (one-pager, trust 10)
+- [[wiki/sources/engagement-hub-naming-history-slack]] — naming & repackaging history (internal Slack, note, trust 10)
 
 ## Related
 - [[wiki/products/engagement-hub]] — parent product

@@ -468,3 +468,19 @@ Append-only record of all operations. Format: `## [YYYY-MM-DD] <operation> | <ti
 **Operation:** lint
 **Summary:** Auto-lint after Batch 8 (trust-2 AAA User Guide implementation guide). Scoped to the 9 new/edited pages. Found and fixed 1 Critical broken wikilink (investor-access-faq.md pointed to non-existent wiki/products/idm → corrected to investor-data-management). All other wikilinks resolve; no orphans (every new source is linked from its product page + onboarding); index complete (Sources 82); frontmatter conforms to §2.
 **Pages touched:** wiki/sources/investor-access-faq.md
+
+## [2026-06-16] ingest | Engagement Hub naming history (internal Slack)
+
+**Operation:** ingest
+**Source file:** N/A — internal Slack threads (#data-room, #product, #product-launch-coordination, #marketing); not stored in raw/
+**Document type:** note (Slack provenance; below §10 trust hierarchy — naming/history only)
+**Product(s):** Engagement Hub
+**As-of date:** 2025-08-27 (spans 2024-10-08 → 2025-08-27)
+**Conflicts found:** none on naming (additive). Minor: Slack (Aug 2025) projected Profile Sharing Phase 1 ~Sept / Phase 2 ~Oct-Nov 2025; EH spec deck (Feb 2026) says Dec 2025 / Q3 2026 — spec deck wins per §10, noted not changed.
+**Summary:** Verified 5 user-relayed naming claims directly in Slack before writing. Confirmed: "landing page" = "branded landing page" (same product, shorthand); originally "IDM Branding" (Oct 2024); repackaged under Engagement Hub Aug 2025 (public launch Aug 27); EH = 4 features; rename proposal → BLP became a feature, not renamed. Cross-confirmed the launch one-pager Drive ID matches the Batch 9 ingest. Recorded provenance as a low-trust note source page; added a naming/history block to the feature page, corrected the Aug-2025-vs-June-2026 date framing on the landing-page pointer, and added a naming note + public-launch date to the EH product page.
+**Pages touched:**
+- wiki/sources/engagement-hub-naming-history-slack.md (created — note, trust 10)
+- wiki/features/engagement-hub-branded-landing-pages.md (added "Also known as / naming history"; source_count 3→4)
+- wiki/products/landing-page.md (corrected repackaging-date framing; stated synonym)
+- wiki/products/engagement-hub.md (added Naming & history note + Aug 27 2025 launch; source_count 3→4)
+- index.md (Sources 82→83, EH 3→4, Branded Landing Pages 3→4, last_updated 2026-06-16)

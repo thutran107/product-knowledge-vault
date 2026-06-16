@@ -3,12 +3,16 @@ type: product
 title: "Landing Page"
 status: deprecated
 source_count: 0
-last_updated: 2026-06-10
+last_updated: 2026-06-16
 tags: [landing-page, engagement-hub, redirect]
 ---
 
 ## ➡️ Folded into Engagement Hub
-As of the June 2026 Engagement Hub ingest, "Landing Page" is **not maintained as a standalone product**. Anduin's Branded Landing Pages are a feature *of* [[wiki/products/engagement-hub|Engagement Hub]], where they are the core capability and the unit that meters EH pricing (Starter ≤5 / Growth ≤10 / Unlimited published pages).
+**"Landing Page" = "Branded Landing Page" = the same product** — "landing page" is just shorthand. (Originally called **"IDM Branding"** internally, Oct 2024.)
+
+**Anduin repackaged it under Engagement Hub in August 2025** (public launch Aug 27, 2025): Branded Landing Page became one of four features within the Engagement Hub solution. Accordingly this vault does **not** maintain "Landing Page" as a standalone product — its substance lives under [[wiki/products/engagement-hub|Engagement Hub]], where Branded Landing Pages are the core capability and the unit that meters EH pricing (Starter ≤5 / Growth ≤10 / Unlimited published pages).
+
+> Date note: the **Aug 2025** date is when *Anduin* repackaged the product; the vault first *ingested* Engagement Hub in June 2026. See [[wiki/sources/engagement-hub-naming-history-slack]] for the naming timeline.
 
 **See instead:**
 - [[wiki/features/engagement-hub-branded-landing-pages]] — the canonical feature page
