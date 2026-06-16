@@ -451,3 +451,20 @@ Append-only record of all operations. Format: `## [YYYY-MM-DD] <operation> | <ti
 **Operation:** lint
 **Summary:** Added missing `status: GA` frontmatter field to 5 product pages (per index status). Re-validated: all product frontmatter now conforms to §2. Remaining open: Low (7 fragile source_count:1 pages), Style (1 page >200 lines).
 **Pages touched:** wiki/products/integration-hub.md, wiki/products/investor-data-management.md, wiki/products/investor-access.md, wiki/products/platform.md, wiki/products/side-letter.md
+
+## [2026-06-15] ingest | Batch 8 — AAA & Investor Access
+
+**Operation:** ingest
+**Source file:** Notion Product Knowledge Library (collection://1973f653-b1df-80b6-a036-000b27bbefb2) — 11 batch entries
+**Document type:** mixed (product brief/note, sales deck, GTM training, client training, implementation guide, release notes, FAQ)
+**Product(s):** AAA (6 sources), Investor Access (1 source)
+**As-of date:** ranges 2024-11-01 → 2026-01-06
+**Conflicts found:** none factual. Notes: (1) FDM vs IDM terminology in the Investor Access FAQ — FDM is an older internal name for IDM, flagged for CS; (2) AAA RIA-count differs across decks (365 in brief vs 630 in GTM) — later count wins, not a conflict; (3) Nov-2024 GTM deck self-flags as partly superseded by the Jan-2026 CS training + sales deck.
+**Summary:** Ingested 7 of 11 Batch-8 entries. Notion `Product(s)` tags reassigned the batch away from the tracker's AAA/Investor-Access split: only 1 entry is Investor Access, 6 are AAA, 3 are Platform (SSO + Branding — deferred to a future Platform batch per user), and 1 (Primary-vs-Collaborator) was already ingested in Batch 7 (skipped as duplicate). Three AAA Google Slides decks were extracted as full text via the Google Drive connector (not metadata-only). Rebuilt both product pages.
+**Pages touched:** wiki/sources/aaa-product-brief.md, wiki/sources/aaa-sales-deck.md, wiki/sources/aaa-gtm-training.md, wiki/sources/aaa-cs-training.md, wiki/sources/aaa-user-guide.md, wiki/sources/aaa-advisor-tags.md, wiki/sources/investor-access-faq.md (created); wiki/products/aaa.md (rebuilt, 1→7), wiki/products/investor-access.md (rebuilt, 1→2); wiki/onboarding.md (4 sources added); index.md (Sources 75→82, AAA 1→7, Investor Access 1→2, date)
+
+## [2026-06-15] lint | 1 issue fixed (auto-triggered by trust-2 ingest)
+
+**Operation:** lint
+**Summary:** Auto-lint after Batch 8 (trust-2 AAA User Guide implementation guide). Scoped to the 9 new/edited pages. Found and fixed 1 Critical broken wikilink (investor-access-faq.md pointed to non-existent wiki/products/idm → corrected to investor-data-management). All other wikilinks resolve; no orphans (every new source is linked from its product page + onboarding); index complete (Sources 82); frontmatter conforms to §2.
+**Pages touched:** wiki/sources/investor-access-faq.md
