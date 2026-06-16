@@ -1,11 +1,11 @@
 # Wiki Index
-Last updated: 2026-06-15
+Last updated: 2026-06-16
 
 ## Overview
 - [[wiki/overview]] — High-level synthesis of the full 13-product Anduin suite: onboarding stack, IDM data layer, engagement layer (EH/Portal/Data Room), Integration Hub, pricing models, conflicts, customers & competitors.
 - [[wiki/onboarding]] — Must-read list for new CS and Sales hires.
 
-## Sources (82)
+## Sources (83)
 | Page | Title | Type | Products | Date |
 |------|-------|------|----------|------|
 | [[wiki/sources/mission-and-core-components]] | Mission and Core Components | article | Integration Hub | 2026-04-20 |
@@ -83,6 +83,7 @@ Last updated: 2026-06-15
 | [[wiki/sources/engagement-hub-product-overview]] | Engagement Hub — Product Overview | spec | Engagement Hub, Investor Portal, IDM | 2026-02-02 |
 | [[wiki/sources/engagement-hub-pricing]] | Engagement Hub — Pricing Proposal | pricing | Engagement Hub, Investor Portal | 2025-09-18 |
 | [[wiki/sources/engagement-hub-one-pager]] | Anduin Engagement Hub — One Pager | one-pager | Engagement Hub | 2025-08-27 |
+| [[wiki/sources/engagement-hub-naming-history-slack]] | Engagement Hub / Branded Landing Page — Naming History (internal Slack) | note | Engagement Hub | 2025-08-27 |
 | [[wiki/sources/aaa-product-brief]] | AAA (Advisor Advantage) — Product Brief | note | AAA | 2024-12-31 |
 | [[wiki/sources/aaa-sales-deck]] | AAA (Advisor Advantage) — Sales Deck (Demo Screens) | sales-deck | AAA | 2026-01-06 |
 | [[wiki/sources/aaa-gtm-training]] | AAA (Advisor Advantage) — GTM Training (Nov 2024) | gtm-training | AAA | 2024-11-01 |
@@ -106,12 +107,12 @@ Last updated: 2026-06-15
 | [[wiki/products/aaa]] | AAA (Advisor Advantage) | GA | 7 |
 | [[wiki/products/landing-page]] | Landing Page → folded into Engagement Hub | deprecated | 0 |
 | [[wiki/products/side-letter]] | Side Letter | GA | 0 |
-| [[wiki/products/engagement-hub]] | Engagement Hub | GA | 3 |
+| [[wiki/products/engagement-hub]] | Engagement Hub | GA | 4 |
 
 ## Features (1)
 | Page | Title | Parent Product | Sources |
 |------|-------|----------------|---------|
-| [[wiki/features/engagement-hub-branded-landing-pages]] | Branded Landing Pages | Engagement Hub | 3 |
+| [[wiki/features/engagement-hub-branded-landing-pages]] | Branded Landing Pages | Engagement Hub | 4 |
 
 ## Integrations (5)
 | Page | Title | Type | Sources |
