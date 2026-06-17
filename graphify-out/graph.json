@@ -1,0 +1,5781 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "engagement_tier_idm_stack",
+        "label": "IDM / Engagement Hub / Investor Portal share one IDM Firm space",
+        "nodes": [
+          "investor-data-management",
+          "engagement-hub",
+          "investor-portal"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "neuberger_full_stack_deployment",
+        "label": "Neuberger Berman full-stack deployment",
+        "nodes": [
+          "neuberger-berman",
+          "fundsub",
+          "investor-data-management",
+          "integration-hub",
+          "salesforce"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.85
+      },
+      {
+        "id": "automated_investor_onboarding_flow",
+        "label": "Automated Investor Onboarding via Integration Hub",
+        "nodes": [
+          "investor-onboarding-workflow",
+          "integration-patterns",
+          "import-export-templates",
+          "data-mapping",
+          "fundsub"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "engagement_hub_packaging_stack",
+        "label": "Engagement Hub / Portal / IDM Packaging Stack",
+        "nodes": [
+          "product-packaging-bundling",
+          "engagement-hub",
+          "investor-portal",
+          "investor-data-management",
+          "engagement-hub-branded-landing-pages"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.85
+      },
+      {
+        "id": "config_vs_permission_apps",
+        "label": "Configuration vs Permission across Anduin apps",
+        "nodes": [
+          "configuration-vs-permission",
+          "integration-hub",
+          "fundsub",
+          "investor-data-management",
+          "data-room"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.85
+      },
+      {
+        "id": "anduin_object_model_scoping",
+        "label": "Anduin Object Model spans products",
+        "nodes": [
+          "anduin-object-model",
+          "fundsub",
+          "investor-data-management",
+          "data-room",
+          "integration-hub"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.85
+      },
+      {
+        "id": "aaa_advisor_workflow_stack",
+        "label": "AAA advisor workflow concept stack",
+        "nodes": [
+          "aaa-cs-training",
+          "aaa",
+          "anduin-object-model",
+          "user-roles",
+          "configuration-vs-permission"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.8
+      },
+      {
+        "id": "ih_anduin_objects",
+        "label": "Integration Hub configuration over Anduin Objects",
+        "nodes": [
+          "integration-hub",
+          "fundsub",
+          "investor-data-management",
+          "data-room",
+          "anduin-object-model"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "data_movement_flow",
+        "label": "Import/Export data movement via Templates and Mapping",
+        "nodes": [
+          "data-management",
+          "import-export-templates",
+          "data-mapping",
+          "fundsub"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.85
+      },
+      {
+        "id": "eh_naming_repackaging",
+        "label": "Branded Landing Page repackaged into Engagement Hub",
+        "nodes": [
+          "engagement-hub-naming-history-slack",
+          "engagement-hub",
+          "engagement-hub-branded-landing-pages",
+          "landing-page"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.85
+      },
+      {
+        "id": "schwab_docusign_signing_flow",
+        "label": "Schwab DocuSign Custodian Signing Flow",
+        "nodes": [
+          "esignature-schwab-implementation-guide",
+          "esignature-schwab-cerity-training",
+          "e-signature",
+          "fundsub",
+          "cerity-partners"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "eh_portal_idm_packaging",
+        "label": "Engagement Hub / Portal / IDM Bundling Strategy",
+        "nodes": [
+          "engagement-hub-product-overview",
+          "engagement-hub-pricing",
+          "engagement-hub",
+          "investor-portal",
+          "investor-data-management",
+          "product-packaging-bundling"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.85
+      },
+      {
+        "id": "docusign_qes_signature_offering",
+        "label": "DocuSign QES/SES Signature Offering",
+        "nodes": [
+          "esignature-docusign-qes-faq",
+          "esignature-docusign-sales-deck",
+          "docusign",
+          "qes-aes-compliance"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "ocr_security_pipeline",
+        "label": "OCR End-to-End Security Pipeline (Textract + Human Review)",
+        "nodes": [
+          "ocr-security-whitepaper-textract",
+          "ocr-security-whitepaper-human-augmented",
+          "ocr-data-extraction"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "idm_fundsub_onboarding_flow",
+        "label": "IDM + FundSub Investor Onboarding Flow",
+        "nodes": [
+          "idm-fundsub-investor-onboarding-may-2025",
+          "investor-data-management",
+          "fundsub",
+          "investor-onboarding-workflow"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8
+      },
+      {
+        "id": "crm_order_creation_integrations",
+        "label": "CRM Order Creation Integrations into FundSub",
+        "nodes": [
+          "dealcloud",
+          "affinity",
+          "salesforce",
+          "fundsub"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85
+      },
+      {
+        "id": "standalone_portal_competitive_set",
+        "label": "Standalone Investor Portal Competitive Set",
+        "nodes": [
+          "investorflow",
+          "atominvest",
+          "investor-portal",
+          "investor-portal-pricing-faqs-boston"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8
+      },
+      {
+        "id": "docusign_signing_paths",
+        "label": "DocuSign Dual Signing Paths (QES/SES + Schwab)",
+        "nodes": [
+          "docusign",
+          "e-signature",
+          "qes-aes-compliance",
+          "cerity-partners"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Anduin Product Knowledge Library \u2014 Overview",
+      "file_type": "document",
+      "source_file": "wiki/overview.md",
+      "id": "overview",
+      "community": 4
+    },
+    {
+      "label": "Onboarding Must-Reads",
+      "file_type": "document",
+      "source_file": "wiki/onboarding.md",
+      "id": "onboarding",
+      "community": 5
+    },
+    {
+      "label": "Sequoia Heritage",
+      "file_type": "document",
+      "source_file": "wiki/customers/sequoia-heritage.md",
+      "id": "sequoia-heritage",
+      "community": 4
+    },
+    {
+      "label": "Accolade Partners",
+      "file_type": "document",
+      "source_file": "wiki/customers/accolade.md",
+      "id": "accolade",
+      "community": 6
+    },
+    {
+      "label": "Neuberger Berman",
+      "file_type": "document",
+      "source_file": "wiki/customers/neuberger-berman.md",
+      "id": "neuberger-berman",
+      "community": 4
+    },
+    {
+      "label": "Proskauer",
+      "file_type": "document",
+      "source_file": "wiki/customers/proskauer.md",
+      "id": "proskauer",
+      "community": 4
+    },
+    {
+      "label": "NXSTEP",
+      "file_type": "document",
+      "source_file": "wiki/customers/nxstep.md",
+      "id": "nxstep",
+      "community": 4
+    },
+    {
+      "label": "Antler",
+      "file_type": "document",
+      "source_file": "wiki/customers/antler.md",
+      "id": "antler",
+      "community": 4
+    },
+    {
+      "label": "Clearlake",
+      "file_type": "document",
+      "source_file": "wiki/customers/clearlake.md",
+      "id": "clearlake",
+      "community": 4
+    },
+    {
+      "label": "Hg Capital",
+      "file_type": "document",
+      "source_file": "wiki/customers/hg-capital.md",
+      "id": "hg-capital",
+      "community": 4
+    },
+    {
+      "label": "Oakley",
+      "file_type": "document",
+      "source_file": "wiki/customers/oakley.md",
+      "id": "oakley",
+      "community": 4
+    },
+    {
+      "label": "Blackstone",
+      "file_type": "document",
+      "source_file": "wiki/customers/blackstone.md",
+      "id": "blackstone",
+      "community": 4
+    },
+    {
+      "label": "KKR",
+      "file_type": "document",
+      "source_file": "wiki/customers/kkr.md",
+      "id": "kkr",
+      "community": 4
+    },
+    {
+      "label": "EQT",
+      "file_type": "document",
+      "source_file": "wiki/customers/eqt.md",
+      "id": "eqt",
+      "community": 4
+    },
+    {
+      "label": "Stone Ridge",
+      "file_type": "document",
+      "source_file": "wiki/customers/stone-ridge.md",
+      "id": "stone-ridge",
+      "community": 4
+    },
+    {
+      "label": "Cerity Partners",
+      "file_type": "document",
+      "source_file": "wiki/customers/cerity-partners.md",
+      "id": "cerity-partners",
+      "community": 3
+    },
+    {
+      "label": "PAG",
+      "file_type": "document",
+      "source_file": "wiki/customers/pag.md",
+      "id": "pag",
+      "community": 4
+    },
+    {
+      "label": "Atalaya",
+      "file_type": "document",
+      "source_file": "wiki/customers/atalaya.md",
+      "id": "atalaya",
+      "community": 4
+    },
+    {
+      "label": "Audax",
+      "file_type": "document",
+      "source_file": "wiki/customers/audax.md",
+      "id": "audax",
+      "community": 4
+    },
+    {
+      "label": "Engagement Hub",
+      "file_type": "document",
+      "source_file": "wiki/products/engagement-hub.md",
+      "id": "engagement-hub",
+      "community": 0
+    },
+    {
+      "label": "Engagement Hub naming: Branded Landing Page repackaged as one of four EH features",
+      "file_type": "document",
+      "source_file": "wiki/products/engagement-hub.md",
+      "source_location": "Naming & history note",
+      "id": "engagement-hub-naming-rationale",
+      "community": 0
+    },
+    {
+      "label": "Integration Hub",
+      "file_type": "document",
+      "source_file": "wiki/products/integration-hub.md",
+      "id": "integration-hub",
+      "community": 1
+    },
+    {
+      "label": "Investor Data Management (IDM)",
+      "file_type": "document",
+      "source_file": "wiki/products/investor-data-management.md",
+      "id": "investor-data-management",
+      "community": 1
+    },
+    {
+      "label": "Investor Access",
+      "file_type": "document",
+      "source_file": "wiki/products/investor-access.md",
+      "id": "investor-access",
+      "community": 3
+    },
+    {
+      "label": "Platform",
+      "file_type": "document",
+      "source_file": "wiki/products/platform.md",
+      "id": "platform",
+      "community": 6
+    },
+    {
+      "label": "Data Room",
+      "file_type": "document",
+      "source_file": "wiki/products/data-room.md",
+      "id": "data-room",
+      "community": 6
+    },
+    {
+      "label": "OCR Data Extraction",
+      "file_type": "document",
+      "source_file": "wiki/products/ocr-data-extraction.md",
+      "id": "ocr-data-extraction",
+      "community": 5
+    },
+    {
+      "label": "Investor Portal",
+      "file_type": "document",
+      "source_file": "wiki/products/investor-portal.md",
+      "id": "investor-portal",
+      "community": 0
+    },
+    {
+      "label": "FundSub (Fund Subscription)",
+      "file_type": "document",
+      "source_file": "wiki/products/fundsub.md",
+      "id": "fundsub",
+      "community": 2
+    },
+    {
+      "label": "AAA (Advisor Advantage)",
+      "file_type": "document",
+      "source_file": "wiki/products/aaa.md",
+      "id": "aaa",
+      "community": 3
+    },
+    {
+      "label": "Side Letter",
+      "file_type": "document",
+      "source_file": "wiki/products/side-letter.md",
+      "id": "side-letter",
+      "community": 4
+    },
+    {
+      "label": "E-signature",
+      "file_type": "document",
+      "source_file": "wiki/products/e-signature.md",
+      "id": "e-signature",
+      "community": 3
+    },
+    {
+      "label": "Landing Page",
+      "file_type": "document",
+      "source_file": "wiki/products/landing-page.md",
+      "id": "landing-page",
+      "community": 0
+    },
+    {
+      "label": "Branded Landing Pages",
+      "file_type": "document",
+      "source_file": "wiki/features/engagement-hub-branded-landing-pages.md",
+      "id": "engagement-hub-branded-landing-pages",
+      "community": 0
+    },
+    {
+      "label": "Configuration vs Permission Model",
+      "file_type": "document",
+      "source_file": "wiki/concepts/configuration-vs-permission.md",
+      "id": "configuration-vs-permission",
+      "community": 1
+    },
+    {
+      "label": "Product Packaging & Bundling",
+      "file_type": "document",
+      "source_file": "wiki/concepts/product-packaging-bundling.md",
+      "id": "product-packaging-bundling",
+      "community": 0
+    },
+    {
+      "label": "Import/Export Templates",
+      "file_type": "document",
+      "source_file": "wiki/concepts/import-export-templates.md",
+      "id": "import-export-templates",
+      "community": 2
+    },
+    {
+      "label": "QES/AES/SES Compliance (eIDAS Signature Types)",
+      "file_type": "document",
+      "source_file": "wiki/concepts/qes-aes-compliance.md",
+      "id": "qes-aes-compliance",
+      "community": 3
+    },
+    {
+      "label": "Integration Patterns",
+      "file_type": "document",
+      "source_file": "wiki/concepts/integration-patterns.md",
+      "id": "integration-patterns",
+      "community": 2
+    },
+    {
+      "label": "Data Mapping",
+      "file_type": "document",
+      "source_file": "wiki/concepts/data-mapping.md",
+      "id": "data-mapping",
+      "community": 2
+    },
+    {
+      "label": "Investor Onboarding Workflow",
+      "file_type": "document",
+      "source_file": "wiki/concepts/investor-onboarding-workflow.md",
+      "id": "investor-onboarding-workflow",
+      "community": 2
+    },
+    {
+      "label": "Why Portal AUM table retained despite EH supersession",
+      "file_type": "document",
+      "source_file": "wiki/products/investor-portal.md",
+      "id": "investor-portal-pricing-structure-rationale",
+      "community": 0
+    },
+    {
+      "label": "CRM Integration Playbook",
+      "file_type": "document",
+      "source_file": "wiki/concepts/crm-integration-playbook.md",
+      "id": "crm-integration-playbook",
+      "community": 1
+    },
+    {
+      "label": "User Roles",
+      "file_type": "document",
+      "source_file": "wiki/concepts/user-roles.md",
+      "id": "user-roles",
+      "community": 1
+    },
+    {
+      "label": "Anduin Object Model",
+      "file_type": "document",
+      "source_file": "wiki/concepts/anduin-object-model.md",
+      "id": "anduin-object-model",
+      "community": 1
+    },
+    {
+      "label": "Investor Portal vs. Integration Hub",
+      "file_type": "document",
+      "source_file": "wiki/analyses/investor-portal-vs-integration-hub.md",
+      "id": "investor-portal-vs-integration-hub",
+      "community": 0
+    },
+    {
+      "label": "Query Answering Showcase \u2014 The Karpathy Method",
+      "file_type": "document",
+      "source_file": "wiki/analyses/query-answering-karpathy-method.md",
+      "id": "query-answering-karpathy-method",
+      "community": 3
+    },
+    {
+      "label": "Integration Hub Sales Deck (Feb 2025)",
+      "file_type": "document",
+      "source_file": "wiki/sources/ih-sales-deck-feb-2025.md",
+      "id": "ih-sales-deck-feb-2025",
+      "community": 1
+    },
+    {
+      "label": "OCR/AI Managed Services - Sales Deck",
+      "file_type": "document",
+      "source_file": "wiki/sources/ocr-managed-services-sales-deck.md",
+      "id": "ocr-managed-services-sales-deck",
+      "community": 5
+    },
+    {
+      "label": "User Guide \u2014 Allowing Post-Signing Changes Without New Signatures",
+      "file_type": "document",
+      "source_file": "wiki/sources/esignature-reuse-signature-pages.md",
+      "id": "esignature-reuse-signature-pages",
+      "community": 3
+    },
+    {
+      "label": "AAA \u2014 Product x CS Demo + Training (Jan 2026)",
+      "file_type": "document",
+      "source_file": "wiki/sources/aaa-cs-training.md",
+      "id": "aaa-cs-training",
+      "community": 1
+    },
+    {
+      "label": "Data Extraction - Pricing Guide",
+      "file_type": "document",
+      "source_file": "wiki/sources/ocr-pricing-guide.md",
+      "id": "ocr-pricing-guide",
+      "community": 5
+    },
+    {
+      "label": "New OCR User Experience \u2014 Overview",
+      "file_type": "document",
+      "source_file": "wiki/sources/ocr-new-ux-overview.md",
+      "id": "ocr-new-ux-overview",
+      "community": 5
+    },
+    {
+      "label": "AAA \u2014 Feature: Advisor's Tags for GP to Communicate with RIAs",
+      "file_type": "document",
+      "source_file": "wiki/sources/aaa-advisor-tags.md",
+      "id": "aaa-advisor-tags",
+      "community": 3
+    },
+    {
+      "label": "GTM Enablement \u2014 Investor Portal Customer Training Guide (Oct 2025)",
+      "file_type": "document",
+      "source_file": "wiki/sources/investor-portal-customer-training-guide.md",
+      "id": "investor-portal-customer-training-guide",
+      "community": 0
+    },
+    {
+      "label": "IDM - Release Notes",
+      "file_type": "document",
+      "source_file": "wiki/sources/idm-release-notes.md",
+      "id": "idm-release-notes",
+      "community": 1
+    },
+    {
+      "label": "Retrieve Subscription Data (DealCloud)",
+      "file_type": "document",
+      "source_file": "wiki/sources/retrieve-subscription-data.md",
+      "id": "retrieve-subscription-data",
+      "community": 2
+    },
+    {
+      "label": "Building a Digital Foundation for Growth at Neuberger Berman",
+      "file_type": "document",
+      "source_file": "wiki/sources/neuberger-berman-case-study.md",
+      "id": "neuberger-berman-case-study",
+      "community": 1
+    },
+    {
+      "label": "AAA (Advisor Advantage) \u2014 Sales Deck (Demo Screens)",
+      "file_type": "document",
+      "source_file": "wiki/sources/aaa-sales-deck.md",
+      "id": "aaa-sales-deck",
+      "community": 3
+    },
+    {
+      "label": "AAA (Advisor Advantage) \u2014 Product Brief",
+      "file_type": "document",
+      "source_file": "wiki/sources/aaa-product-brief.md",
+      "id": "aaa-product-brief",
+      "community": 3
+    },
+    {
+      "label": "Theme Customization for FundSub and Data Room \u2014 Internal Guide",
+      "file_type": "document",
+      "source_file": "wiki/sources/fundsub-dataroom-theme-customization.md",
+      "id": "fundsub-dataroom-theme-customization",
+      "community": 6
+    },
+    {
+      "label": "FundSub Email Configuration & SMTP Integration \u2014 Mar 2025",
+      "file_type": "document",
+      "source_file": "wiki/sources/fundsub-email-smtp-implementation-guide.md",
+      "id": "fundsub-email-smtp-implementation-guide",
+      "community": 2
+    },
+    {
+      "label": "Data Extraction Sales Deck",
+      "file_type": "document",
+      "source_file": "wiki/sources/ocr-data-extraction-sales-deck.md",
+      "id": "ocr-data-extraction-sales-deck",
+      "community": 5
+    },
+    {
+      "label": "OCR Table View \u2014 How It Works",
+      "file_type": "document",
+      "source_file": "wiki/sources/ocr-table-view-how-it-works.md",
+      "id": "ocr-table-view-how-it-works",
+      "community": 5
+    },
+    {
+      "label": "IDM Sprint 362 Release Notes",
+      "file_type": "document",
+      "source_file": "wiki/sources/idm-release-notes-sprint-362.md",
+      "id": "idm-release-notes-sprint-362",
+      "community": 1
+    },
+    {
+      "label": "Investor Portal Pricing FAQs (Boston)",
+      "file_type": "document",
+      "source_file": "wiki/sources/investor-portal-pricing-faqs-boston.md",
+      "id": "investor-portal-pricing-faqs-boston",
+      "community": 0
+    },
+    {
+      "label": "Investor Portal GTM Primer",
+      "file_type": "document",
+      "source_file": "wiki/sources/investor-portal-gtm-primer.md",
+      "id": "investor-portal-gtm-primer",
+      "community": 0
+    },
+    {
+      "label": "Investor Portal Sales Deck",
+      "file_type": "document",
+      "source_file": "wiki/sources/investor-portal-sales-deck.md",
+      "id": "investor-portal-sales-deck",
+      "community": 0
+    },
+    {
+      "label": "IH SOP",
+      "file_type": "document",
+      "source_file": "wiki/sources/ih-sop.md",
+      "id": "ih-sop",
+      "community": 2
+    },
+    {
+      "label": "Schwab Signature Setup Implementation Guide",
+      "file_type": "document",
+      "source_file": "wiki/sources/esignature-schwab-implementation-guide.md",
+      "id": "esignature-schwab-implementation-guide",
+      "community": 3
+    },
+    {
+      "label": "Schwab Cerity Training",
+      "file_type": "document",
+      "source_file": "wiki/sources/esignature-schwab-cerity-training.md",
+      "id": "esignature-schwab-cerity-training",
+      "community": 3
+    },
+    {
+      "label": "OCR Implementation Journey",
+      "file_type": "document",
+      "source_file": "wiki/sources/ocr-implementation-journey.md",
+      "id": "ocr-implementation-journey",
+      "community": 5
+    },
+    {
+      "label": "OCR-FundSub Process Client Training",
+      "file_type": "document",
+      "source_file": "wiki/sources/ocr-fundsub-process-client-training.md",
+      "id": "ocr-fundsub-process-client-training",
+      "community": 5
+    },
+    {
+      "label": "Investor Portal Contact Management",
+      "file_type": "document",
+      "source_file": "wiki/sources/investor-portal-contact-management.md",
+      "id": "investor-portal-contact-management",
+      "community": 0
+    },
+    {
+      "label": "AAA GTM Training (Nov 2024)",
+      "file_type": "document",
+      "source_file": "wiki/sources/aaa-gtm-training.md",
+      "id": "aaa-gtm-training",
+      "community": 3
+    },
+    {
+      "label": "Assign/Unassign Subscriptions to Advisor Entities",
+      "file_type": "document",
+      "source_file": "wiki/sources/aaa-advisor-subscription-assign.md",
+      "id": "aaa-advisor-subscription-assign",
+      "community": 3
+    },
+    {
+      "label": "IH SMTP GTM Training",
+      "file_type": "document",
+      "source_file": "wiki/sources/ih-smtp-gtm-training.md",
+      "id": "ih-smtp-gtm-training",
+      "community": 2
+    },
+    {
+      "label": "FundSub Duplicate Fund Config",
+      "file_type": "document",
+      "source_file": "wiki/sources/fundsub-duplicate-fund-config.md",
+      "id": "fundsub-duplicate-fund-config",
+      "community": 2
+    },
+    {
+      "label": "Configuration vs Permission (source)",
+      "file_type": "document",
+      "source_file": "wiki/sources/configuration-vs-permission.md",
+      "id": "configuration-vs-permission-src",
+      "community": 1
+    },
+    {
+      "label": "Automated Onboarding to Data Room from Salesforce (Implementation Guide)",
+      "file_type": "document",
+      "source_file": "wiki/sources/ih-salesforce-dataroom-implementation-guide.md",
+      "id": "ih-salesforce-dataroom-implementation-guide",
+      "community": 6
+    },
+    {
+      "label": "[Internal use] Intro for Integration Hub",
+      "file_type": "document",
+      "source_file": "wiki/sources/ih-intro-overview.md",
+      "id": "ih-intro-overview",
+      "community": 1
+    },
+    {
+      "label": "Data Room - Multiple Group Internal Training Video",
+      "file_type": "document",
+      "source_file": "wiki/sources/data-room-multi-group-training-video.md",
+      "id": "data-room-multi-group-training-video",
+      "community": 6
+    },
+    {
+      "label": "Integration Hub Implementation Guide (PDF)",
+      "file_type": "document",
+      "source_file": "wiki/sources/ih-implementation-guide-pdf.md",
+      "id": "ih-implementation-guide-pdf",
+      "community": 1
+    },
+    {
+      "label": "Data Room - Customer Setup Guide for API Access to DR",
+      "file_type": "document",
+      "source_file": "wiki/sources/data-room-api-implementation-guide.md",
+      "id": "data-room-api-implementation-guide",
+      "community": 6
+    },
+    {
+      "label": "Anduin Engagement Hub \u2014 One Pager",
+      "file_type": "document",
+      "source_file": "wiki/sources/engagement-hub-one-pager.md",
+      "id": "engagement-hub-one-pager",
+      "community": 0
+    },
+    {
+      "label": "New Enablement Material: Investor Portal Training Materials",
+      "file_type": "document",
+      "source_file": "wiki/sources/investor-portal-training-materials.md",
+      "id": "investor-portal-training-materials",
+      "community": 0
+    },
+    {
+      "label": "Automated Onboarding with FundSub \u2014 DealCloud (Primary Investor)",
+      "file_type": "document",
+      "source_file": "wiki/sources/automated-onboarding-fundsub-primary.md",
+      "id": "automated-onboarding-fundsub-primary",
+      "community": 2
+    },
+    {
+      "label": "Data Room - FAQ",
+      "file_type": "document",
+      "source_file": "wiki/sources/data-room-faq.md",
+      "id": "data-room-faq",
+      "community": 6
+    },
+    {
+      "label": "Engagement Hub / Branded Landing Page \u2014 Naming History (internal Slack)",
+      "file_type": "document",
+      "source_file": "wiki/sources/engagement-hub-naming-history-slack.md",
+      "id": "engagement-hub-naming-history-slack",
+      "community": 0
+    },
+    {
+      "label": "Product Pre-release Training for Portal (Boston Popup, May 2025)",
+      "file_type": "document",
+      "source_file": "wiki/sources/investor-portal-prerelease-training-boston.md",
+      "id": "investor-portal-prerelease-training-boston",
+      "community": 0
+    },
+    {
+      "label": "IDM Feature Guide Library",
+      "file_type": "document",
+      "source_file": "wiki/sources/idm-feature-documentation.md",
+      "id": "idm-feature-documentation",
+      "community": 1
+    },
+    {
+      "label": "IH Knowledge Hub \u2014 Guide to All Available Implementations",
+      "file_type": "document",
+      "source_file": "wiki/sources/ih-knowledge-hub.md",
+      "id": "ih-knowledge-hub",
+      "community": 1
+    },
+    {
+      "label": "Mission and Core Components",
+      "file_type": "document",
+      "source_file": "wiki/sources/mission-and-core-components.md",
+      "id": "mission-and-core-components",
+      "community": 1
+    },
+    {
+      "label": "Data Management",
+      "file_type": "document",
+      "source_file": "wiki/sources/data-management.md",
+      "id": "data-management",
+      "community": 2
+    },
+    {
+      "label": "IH Salesforce-DataRoom Release Notes",
+      "file_type": "document",
+      "source_file": "wiki/sources/ih-salesforce-dataroom-release-notes.md",
+      "id": "ih-salesforce-dataroom-release-notes",
+      "community": 6
+    },
+    {
+      "label": "IH Implementation Guide",
+      "file_type": "document",
+      "source_file": "wiki/sources/ih-implementation-guide.md",
+      "id": "ih-implementation-guide",
+      "community": 1
+    },
+    {
+      "label": "IH Setup Guide",
+      "file_type": "document",
+      "source_file": "wiki/sources/ih-setup-guide.md",
+      "id": "ih-setup-guide",
+      "community": 1
+    },
+    {
+      "label": "Engagement Hub Product Overview",
+      "file_type": "document",
+      "source_file": "wiki/sources/engagement-hub-product-overview.md",
+      "id": "engagement-hub-product-overview",
+      "community": 0
+    },
+    {
+      "label": "Why Branded Landing Page became Engagement Hub",
+      "file_type": "document",
+      "source_file": "wiki/sources/engagement-hub-naming-history-slack.md",
+      "id": "rationale-eh-naming-history",
+      "community": 0
+    },
+    {
+      "label": "Anduin Investor Guide (LP-Facing, Jan 2026)",
+      "file_type": "document",
+      "source_file": "wiki/sources/anduin-investor-guide-may-2025.md",
+      "id": "anduin-investor-guide-may-2025",
+      "community": 0
+    },
+    {
+      "label": "Anduin e-Signature Guide Whitepaper",
+      "file_type": "document",
+      "source_file": "wiki/sources/esignature-whitepaper.md",
+      "id": "esignature-whitepaper",
+      "community": 3
+    },
+    {
+      "label": "Investor Portal \u2014 Product Overview",
+      "file_type": "document",
+      "source_file": "wiki/sources/investor-portal-product-overview.md",
+      "id": "investor-portal-product-overview",
+      "community": 0
+    },
+    {
+      "label": "Investor Onboarding \u2014 Affinity (Primary Investor + Collaborators)",
+      "file_type": "document",
+      "source_file": "wiki/sources/investor-onboarding-primary-collaborators.md",
+      "id": "investor-onboarding-primary-collaborators",
+      "community": 2
+    },
+    {
+      "label": "Data Extraction - Implementation Guide",
+      "file_type": "document",
+      "source_file": "wiki/sources/ocr-implementation-guide.md",
+      "id": "ocr-implementation-guide",
+      "community": 5
+    },
+    {
+      "label": "Guide to Data Room Demo Sandbox/Simulator Environment",
+      "file_type": "document",
+      "source_file": "wiki/sources/data-room-demo-sandbox-guide.md",
+      "id": "data-room-demo-sandbox-guide",
+      "community": 6
+    },
+    {
+      "label": "FundSub \u2014 Anduin Essentials Sales Deck",
+      "file_type": "document",
+      "source_file": "wiki/sources/fundsub-essentials-sales-deck.md",
+      "id": "fundsub-essentials-sales-deck",
+      "community": 4
+    },
+    {
+      "label": "Distinction Between Primary Investor and Collaborator in FundSub",
+      "file_type": "document",
+      "source_file": "wiki/sources/fundsub-primary-vs-collaborator.md",
+      "id": "fundsub-primary-vs-collaborator",
+      "community": 2
+    },
+    {
+      "label": "Automated Data Room Insights Retrievals (DealCloud)",
+      "file_type": "document",
+      "source_file": "wiki/sources/automated-data-room-insights.md",
+      "id": "automated-data-room-insights",
+      "community": 2
+    },
+    {
+      "label": "IDM - Client Training Deck",
+      "file_type": "document",
+      "source_file": "wiki/sources/idm-client-training.md",
+      "id": "idm-client-training",
+      "community": 1
+    },
+    {
+      "label": "Engagement Hub \u2014 Pricing Proposal",
+      "file_type": "document",
+      "source_file": "wiki/sources/engagement-hub-pricing.md",
+      "id": "engagement-hub-pricing",
+      "community": 0
+    },
+    {
+      "label": "Rationale: Retain Portal AUM table, flag EH pricing conflict",
+      "file_type": "document",
+      "source_file": "wiki/sources/engagement-hub-product-overview.md",
+      "id": "rationale-eh-portal-pricing-conflict",
+      "community": 0
+    },
+    {
+      "label": "Rationale: Schwab implementation guide vs Cerity training are complementary",
+      "file_type": "document",
+      "source_file": "wiki/sources/esignature-schwab-implementation-guide.md",
+      "id": "rationale-schwab-guide-vs-training",
+      "community": 3
+    },
+    {
+      "label": "FundSub \u2014 New LP View Update One-Pager",
+      "file_type": "document",
+      "source_file": "wiki/sources/fundsub-new-lp-view-one-pager.md",
+      "id": "fundsub-new-lp-view-one-pager",
+      "community": 2
+    },
+    {
+      "label": "IDM - Internal Implementation Guide",
+      "file_type": "document",
+      "source_file": "wiki/sources/idm-implementation-guide.md",
+      "id": "idm-implementation-guide",
+      "community": 1
+    },
+    {
+      "label": "Investor Access \u2014 Internal FAQ",
+      "file_type": "document",
+      "source_file": "wiki/sources/investor-access-faq.md",
+      "id": "investor-access-faq",
+      "community": 2
+    },
+    {
+      "label": "Security Whitepaper \u2014 Secure Human-Augmented Data Processing Procedure",
+      "file_type": "document",
+      "source_file": "wiki/sources/ocr-security-whitepaper-human-augmented.md",
+      "id": "ocr-security-whitepaper-human-augmented",
+      "community": 5
+    },
+    {
+      "label": "Streamline Investor Onboarding with IDM Profiles \u2014 May 2025",
+      "file_type": "document",
+      "source_file": "wiki/sources/idm-fundsub-investor-onboarding-may-2025.md",
+      "id": "idm-fundsub-investor-onboarding-may-2025",
+      "community": 2
+    },
+    {
+      "label": "DocuSign and Qualified E-Signature (QES) \u2014 Internal FAQ",
+      "file_type": "document",
+      "source_file": "wiki/sources/esignature-docusign-qes-faq.md",
+      "id": "esignature-docusign-qes-faq",
+      "community": 3
+    },
+    {
+      "label": "IDM - GTM Training",
+      "file_type": "document",
+      "source_file": "wiki/sources/idm-gtm-training.md",
+      "id": "idm-gtm-training",
+      "community": 1
+    },
+    {
+      "label": "Security Whitepaper \u2014 Secure Amazon Textract for Data Extraction Services",
+      "file_type": "document",
+      "source_file": "wiki/sources/ocr-security-whitepaper-textract.md",
+      "id": "ocr-security-whitepaper-textract",
+      "community": 5
+    },
+    {
+      "label": "Anduin x DocuSign \u2014 Simple Electronic Signatures (Sales Deck)",
+      "file_type": "document",
+      "source_file": "wiki/sources/esignature-docusign-sales-deck.md",
+      "id": "esignature-docusign-sales-deck",
+      "community": 3
+    },
+    {
+      "label": "IDM - Sales Brochure",
+      "file_type": "document",
+      "source_file": "wiki/sources/idm-sales-brochure.md",
+      "id": "idm-sales-brochure",
+      "community": 1
+    },
+    {
+      "label": "Data Extraction - GTM Training",
+      "file_type": "document",
+      "source_file": "wiki/sources/ocr-gtm-training.md",
+      "id": "ocr-gtm-training",
+      "community": 5
+    },
+    {
+      "label": "FundSub \u2014 One Envelope Experience for Investors",
+      "file_type": "document",
+      "source_file": "wiki/sources/fundsub-one-envelope-experience.md",
+      "id": "fundsub-one-envelope-experience",
+      "community": 3
+    },
+    {
+      "label": "Automated Document Repository (Box)",
+      "file_type": "document",
+      "source_file": "wiki/sources/automated-document-repository.md",
+      "id": "automated-document-repository",
+      "community": 2
+    },
+    {
+      "label": "AAA (Advisor Advantage) \u2014 User Guide (RIA User Guide)",
+      "file_type": "document",
+      "source_file": "wiki/sources/aaa-user-guide.md",
+      "id": "aaa-user-guide",
+      "community": 5
+    },
+    {
+      "label": "Data Room - Internal Slide on System Limits",
+      "file_type": "document",
+      "source_file": "wiki/sources/data-room-system-limits.md",
+      "id": "data-room-system-limits",
+      "community": 6
+    },
+    {
+      "label": "User Role",
+      "file_type": "document",
+      "source_file": "wiki/sources/user-role.md",
+      "id": "user-role",
+      "community": 1
+    },
+    {
+      "label": "Sample SES, AES, and QES Signed Documents",
+      "file_type": "document",
+      "source_file": "wiki/sources/esignature-sample-signed-documents.md",
+      "id": "esignature-sample-signed-documents",
+      "community": 3
+    },
+    {
+      "label": "IDM + FundSub Onboarding Deck (Oct 2025)",
+      "file_type": "document",
+      "source_file": "wiki/sources/idm-fundsub-onboarding-deck-oct2025.md",
+      "id": "idm-fundsub-onboarding-deck-oct2025",
+      "community": 2
+    },
+    {
+      "label": "Investor Portal \u2014 RFP",
+      "file_type": "document",
+      "source_file": "wiki/sources/investor-portal-rfp.md",
+      "id": "investor-portal-rfp",
+      "community": 0
+    },
+    {
+      "label": "[Internal Guide] Investor Sends Email Support Directly from Platform",
+      "file_type": "document",
+      "source_file": "wiki/sources/fundsub-investor-email-support.md",
+      "id": "fundsub-investor-email-support",
+      "community": 2
+    },
+    {
+      "label": "Data Room - Brochure v2",
+      "file_type": "document",
+      "source_file": "wiki/sources/data-room-brochure-v2.md",
+      "id": "data-room-brochure-v2",
+      "community": 6
+    },
+    {
+      "label": "InvestorFlow",
+      "file_type": "document",
+      "source_file": "wiki/competitors/investorflow.md",
+      "id": "investorflow",
+      "community": 0
+    },
+    {
+      "label": "AtomInvest",
+      "file_type": "document",
+      "source_file": "wiki/competitors/atominvest.md",
+      "id": "atominvest",
+      "community": 0
+    },
+    {
+      "label": "DealCloud",
+      "file_type": "document",
+      "source_file": "wiki/entities/dealcloud.md",
+      "id": "dealcloud",
+      "community": 2
+    },
+    {
+      "label": "DocuSign",
+      "file_type": "document",
+      "source_file": "wiki/entities/docusign.md",
+      "id": "docusign",
+      "community": 3
+    },
+    {
+      "label": "Box",
+      "file_type": "document",
+      "source_file": "wiki/entities/box.md",
+      "id": "box",
+      "community": 2
+    },
+    {
+      "label": "Affinity",
+      "file_type": "document",
+      "source_file": "wiki/entities/affinity.md",
+      "id": "affinity",
+      "community": 2
+    },
+    {
+      "label": "Salesforce",
+      "file_type": "document",
+      "source_file": "wiki/entities/salesforce.md",
+      "id": "salesforce",
+      "community": 1
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "fundsub",
+      "source": "overview",
+      "target": "fundsub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "e-signature",
+      "source": "overview",
+      "target": "e-signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "ocr-data-extraction",
+      "source": "overview",
+      "target": "ocr-data-extraction"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "aaa",
+      "source": "overview",
+      "target": "aaa"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "investor-data-management",
+      "source": "overview",
+      "target": "investor-data-management"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "engagement-hub",
+      "source": "overview",
+      "target": "engagement-hub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "investor-portal",
+      "source": "overview",
+      "target": "investor-portal"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "data-room",
+      "source": "overview",
+      "target": "data-room"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "investor-access",
+      "source": "overview",
+      "target": "investor-access"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "integration-hub",
+      "source": "overview",
+      "target": "integration-hub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "platform",
+      "source": "overview",
+      "target": "platform"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "side-letter",
+      "source": "overview",
+      "target": "side-letter"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "landing-page",
+      "source": "overview",
+      "target": "landing-page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "engagement-hub-branded-landing-pages",
+      "source": "overview",
+      "target": "engagement-hub-branded-landing-pages"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "integration-patterns",
+      "source": "overview",
+      "target": "integration-patterns"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "import-export-templates",
+      "source": "overview",
+      "target": "import-export-templates"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "data-mapping",
+      "source": "overview",
+      "target": "data-mapping"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "anduin-object-model",
+      "source": "overview",
+      "target": "anduin-object-model"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "configuration-vs-permission",
+      "source": "overview",
+      "target": "configuration-vs-permission"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "user-roles",
+      "source": "overview",
+      "target": "user-roles"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "crm-integration-playbook",
+      "source": "overview",
+      "target": "crm-integration-playbook"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "overview",
+      "target": "investor-onboarding-workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "product-packaging-bundling",
+      "source": "overview",
+      "target": "product-packaging-bundling"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "qes-aes-compliance",
+      "source": "overview",
+      "target": "qes-aes-compliance"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "neuberger-berman",
+      "source": "overview",
+      "target": "neuberger-berman"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "cerity-partners",
+      "source": "overview",
+      "target": "cerity-partners"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "accolade",
+      "source": "overview",
+      "target": "accolade"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "nxstep",
+      "source": "overview",
+      "target": "nxstep"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "kkr",
+      "source": "overview",
+      "target": "kkr"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "eqt",
+      "source": "overview",
+      "target": "eqt"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "blackstone",
+      "source": "overview",
+      "target": "blackstone"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "hg-capital",
+      "source": "overview",
+      "target": "hg-capital"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "sequoia-heritage",
+      "source": "overview",
+      "target": "sequoia-heritage"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "clearlake",
+      "source": "overview",
+      "target": "clearlake"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "atalaya",
+      "source": "overview",
+      "target": "atalaya"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "audax",
+      "source": "overview",
+      "target": "audax"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "proskauer",
+      "source": "overview",
+      "target": "proskauer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "stone-ridge",
+      "source": "overview",
+      "target": "stone-ridge"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "pag",
+      "source": "overview",
+      "target": "pag"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "oakley",
+      "source": "overview",
+      "target": "oakley"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "antler",
+      "source": "overview",
+      "target": "antler"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "investorflow",
+      "source": "overview",
+      "target": "investorflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "atominvest",
+      "source": "overview",
+      "target": "atominvest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "onboarding",
+      "source": "overview",
+      "target": "onboarding"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "ih-intro-overview",
+      "source": "overview",
+      "target": "ih-intro-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "ih-knowledge-hub",
+      "source": "overview",
+      "target": "ih-knowledge-hub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "ih-setup-guide",
+      "source": "overview",
+      "target": "ih-setup-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "ocr-implementation-guide",
+      "source": "overview",
+      "target": "ocr-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "ocr-implementation-journey",
+      "source": "overview",
+      "target": "ocr-implementation-journey"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "ih-sales-deck-feb-2025",
+      "source": "overview",
+      "target": "ih-sales-deck-feb-2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "ocr-managed-services-sales-deck",
+      "source": "overview",
+      "target": "ocr-managed-services-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "fundsub-essentials-sales-deck",
+      "source": "overview",
+      "target": "fundsub-essentials-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "investor-portal-sales-deck",
+      "source": "overview",
+      "target": "investor-portal-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "investor-portal-vs-integration-hub",
+      "source": "overview",
+      "target": "investor-portal-vs-integration-hub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "overview",
+      "_tgt": "query-answering-karpathy-method",
+      "source": "overview",
+      "target": "query-answering-karpathy-method"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "onboarding",
+      "_tgt": "ih-intro-overview",
+      "source": "onboarding",
+      "target": "ih-intro-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "onboarding",
+      "_tgt": "ih-knowledge-hub",
+      "source": "onboarding",
+      "target": "ih-knowledge-hub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "onboarding",
+      "_tgt": "ih-setup-guide",
+      "source": "onboarding",
+      "target": "ih-setup-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "onboarding",
+      "_tgt": "aaa-user-guide",
+      "source": "onboarding",
+      "target": "aaa-user-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "onboarding",
+      "_tgt": "investor-access-faq",
+      "source": "onboarding",
+      "target": "investor-access-faq"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "onboarding",
+      "_tgt": "ocr-implementation-guide",
+      "source": "onboarding",
+      "target": "ocr-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "onboarding",
+      "_tgt": "ocr-implementation-journey",
+      "source": "onboarding",
+      "target": "ocr-implementation-journey"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "onboarding",
+      "_tgt": "ih-sales-deck-feb-2025",
+      "source": "onboarding",
+      "target": "ih-sales-deck-feb-2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "onboarding",
+      "_tgt": "ocr-managed-services-sales-deck",
+      "source": "onboarding",
+      "target": "ocr-managed-services-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-essentials-sales-deck",
+      "_tgt": "onboarding",
+      "source": "onboarding",
+      "target": "fundsub-essentials-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "onboarding",
+      "_tgt": "investor-portal-sales-deck",
+      "source": "onboarding",
+      "target": "investor-portal-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "onboarding",
+      "_tgt": "aaa-product-brief",
+      "source": "onboarding",
+      "target": "aaa-product-brief"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "onboarding",
+      "_tgt": "aaa-sales-deck",
+      "source": "onboarding",
+      "target": "aaa-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "sequoia-heritage",
+      "_tgt": "neuberger-berman",
+      "source": "sequoia-heritage",
+      "target": "neuberger-berman"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "accolade",
+      "_tgt": "data-room",
+      "source": "accolade",
+      "target": "data-room"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "accolade",
+      "_tgt": "fundsub",
+      "source": "accolade",
+      "target": "fundsub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-room-brochure-v2",
+      "_tgt": "accolade",
+      "source": "accolade",
+      "target": "data-room-brochure-v2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "neuberger-berman",
+      "_tgt": "fundsub",
+      "source": "neuberger-berman",
+      "target": "fundsub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "neuberger-berman",
+      "_tgt": "investor-data-management",
+      "source": "neuberger-berman",
+      "target": "investor-data-management"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "neuberger-berman",
+      "_tgt": "integration-hub",
+      "source": "neuberger-berman",
+      "target": "integration-hub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "neuberger-berman",
+      "_tgt": "salesforce",
+      "source": "neuberger-berman",
+      "target": "salesforce"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "neuberger-berman",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "neuberger-berman",
+      "target": "investor-onboarding-workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "neuberger-berman-case-study",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "neuberger-berman-case-study"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "proskauer",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "proskauer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "antler",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "antler"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "clearlake",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "clearlake"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "hg-capital",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "hg-capital"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "oakley",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "oakley"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "blackstone",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "blackstone"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "kkr",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "kkr"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eqt",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "eqt"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "stone-ridge",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "stone-ridge"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "pag",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "pag"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "atalaya",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "atalaya"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "audax",
+      "_tgt": "neuberger-berman",
+      "source": "neuberger-berman",
+      "target": "audax"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "nxstep",
+      "_tgt": "fundsub",
+      "source": "nxstep",
+      "target": "fundsub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-essentials-sales-deck",
+      "_tgt": "nxstep",
+      "source": "nxstep",
+      "target": "fundsub-essentials-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "cerity-partners",
+      "_tgt": "fundsub",
+      "source": "cerity-partners",
+      "target": "fundsub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "cerity-partners",
+      "_tgt": "aaa",
+      "source": "cerity-partners",
+      "target": "aaa"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "cerity-partners",
+      "_tgt": "e-signature",
+      "source": "cerity-partners",
+      "target": "e-signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-schwab-implementation-guide",
+      "_tgt": "cerity-partners",
+      "source": "cerity-partners",
+      "target": "esignature-schwab-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-schwab-cerity-training",
+      "_tgt": "cerity-partners",
+      "source": "cerity-partners",
+      "target": "esignature-schwab-cerity-training"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "_src": "cerity-partners",
+      "_tgt": "aaa-sales-deck",
+      "source": "cerity-partners",
+      "target": "aaa-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "query-answering-karpathy-method",
+      "_tgt": "cerity-partners",
+      "source": "cerity-partners",
+      "target": "query-answering-karpathy-method"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "docusign",
+      "_tgt": "cerity-partners",
+      "source": "cerity-partners",
+      "target": "docusign"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal",
+      "_tgt": "engagement-hub",
+      "source": "engagement-hub",
+      "target": "investor-portal"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-naming-history-slack",
+      "_tgt": "engagement-hub",
+      "source": "engagement-hub",
+      "target": "engagement-hub-naming-history-slack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-branded-landing-pages",
+      "_tgt": "engagement-hub",
+      "source": "engagement-hub",
+      "target": "engagement-hub-branded-landing-pages"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-pricing",
+      "_tgt": "engagement-hub",
+      "source": "engagement-hub",
+      "target": "engagement-hub-pricing"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub",
+      "_tgt": "investor-data-management",
+      "source": "engagement-hub",
+      "target": "investor-data-management"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub",
+      "_tgt": "data-room",
+      "source": "engagement-hub",
+      "target": "data-room"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub",
+      "_tgt": "fundsub",
+      "source": "engagement-hub",
+      "target": "fundsub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "product-packaging-bundling",
+      "_tgt": "engagement-hub",
+      "source": "engagement-hub",
+      "target": "product-packaging-bundling"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "engagement-hub",
+      "target": "investor-onboarding-workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-product-overview",
+      "_tgt": "engagement-hub",
+      "source": "engagement-hub",
+      "target": "engagement-hub-product-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-one-pager",
+      "_tgt": "engagement-hub",
+      "source": "engagement-hub",
+      "target": "engagement-hub-one-pager"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-naming-rationale",
+      "_tgt": "engagement-hub",
+      "source": "engagement-hub",
+      "target": "engagement-hub-naming-rationale"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "landing-page",
+      "_tgt": "engagement-hub",
+      "source": "engagement-hub",
+      "target": "landing-page"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "_src": "rationale-eh-naming-history",
+      "_tgt": "engagement-hub",
+      "source": "engagement-hub",
+      "target": "rationale-eh-naming-history"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "fundsub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-room",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "data-room"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-data-management",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "investor-data-management"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "integration-hub",
+      "_tgt": "integration-patterns",
+      "source": "integration-hub",
+      "target": "integration-patterns"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "configuration-vs-permission",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "configuration-vs-permission"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "platform",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "platform"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "investor-portal"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "crm-integration-playbook",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "crm-integration-playbook"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "user-roles",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "user-roles"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "anduin-object-model",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "anduin-object-model"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-vs-integration-hub",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "investor-portal-vs-integration-hub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-sales-deck-feb-2025",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "ih-sales-deck-feb-2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "neuberger-berman-case-study",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "neuberger-berman-case-study"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "configuration-vs-permission-src",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "configuration-vs-permission-src"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-salesforce-dataroom-implementation-guide",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "ih-salesforce-dataroom-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-intro-overview",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "ih-intro-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-sop",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "ih-sop"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-knowledge-hub",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "ih-knowledge-hub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "mission-and-core-components",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "mission-and-core-components"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-implementation-guide",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "ih-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-sales-deck",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "investor-portal-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-setup-guide",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "ih-setup-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-salesforce-dataroom-release-notes",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "ih-salesforce-dataroom-release-notes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "user-role",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "user-role"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-smtp-gtm-training",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "ih-smtp-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "fundsub"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "_src": "investor-access",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "investor-access"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "platform",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "platform"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-data-extraction",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "ocr-data-extraction"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "investor-portal"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "aaa"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "configuration-vs-permission",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "configuration-vs-permission"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "product-packaging-bundling",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "product-packaging-bundling"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "anduin-object-model",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "anduin-object-model"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-customer-training-guide",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "investor-portal-customer-training-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-release-notes",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "idm-release-notes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "neuberger-berman-case-study",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "neuberger-berman-case-study"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "configuration-vs-permission-src",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "configuration-vs-permission-src"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-intro-overview",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "ih-intro-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-sop",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "ih-sop"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-feature-documentation",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "idm-feature-documentation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "mission-and-core-components",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "mission-and-core-components"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-release-notes-sprint-362",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "idm-release-notes-sprint-362"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-sales-deck",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "investor-portal-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-product-overview",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "engagement-hub-product-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-client-training",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "idm-client-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-implementation-guide",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "idm-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-access-faq",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "investor-access-faq"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-fundsub-investor-onboarding-may-2025",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "idm-fundsub-investor-onboarding-may-2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-gtm-training",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "idm-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-sales-brochure",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "idm-sales-brochure"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-fundsub-onboarding-deck-oct2025",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "idm-fundsub-onboarding-deck-oct2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-contact-management",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "investor-portal-contact-management"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "salesforce",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "salesforce"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-access",
+      "_tgt": "fundsub",
+      "source": "investor-access",
+      "target": "fundsub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa",
+      "_tgt": "investor-access",
+      "source": "investor-access",
+      "target": "aaa"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-access",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "investor-access",
+      "target": "investor-onboarding-workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-access",
+      "_tgt": "import-export-templates",
+      "source": "investor-access",
+      "target": "import-export-templates"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "landing-page",
+      "_tgt": "investor-access",
+      "source": "investor-access",
+      "target": "landing-page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "neuberger-berman-case-study",
+      "_tgt": "investor-access",
+      "source": "investor-access",
+      "target": "neuberger-berman-case-study"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-sales-deck",
+      "_tgt": "investor-access",
+      "source": "investor-access",
+      "target": "aaa-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-product-brief",
+      "_tgt": "investor-access",
+      "source": "investor-access",
+      "target": "aaa-product-brief"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-gtm-training",
+      "_tgt": "investor-access",
+      "source": "investor-access",
+      "target": "aaa-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-access-faq",
+      "_tgt": "investor-access",
+      "source": "investor-access",
+      "target": "investor-access-faq"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "platform",
+      "_tgt": "fundsub",
+      "source": "platform",
+      "target": "fundsub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "platform",
+      "_tgt": "data-room",
+      "source": "platform",
+      "target": "data-room"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "fundsub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-room",
+      "_tgt": "integration-patterns",
+      "source": "data-room",
+      "target": "integration-patterns"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "investor-portal"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-branded-landing-pages",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "engagement-hub-branded-landing-pages"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "configuration-vs-permission",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "configuration-vs-permission"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "anduin-object-model",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "anduin-object-model"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "neuberger-berman-case-study",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "neuberger-berman-case-study"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-dataroom-theme-customization",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "fundsub-dataroom-theme-customization"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "configuration-vs-permission-src",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "configuration-vs-permission-src"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-salesforce-dataroom-implementation-guide",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "ih-salesforce-dataroom-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-intro-overview",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "ih-intro-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-room-multi-group-training-video",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "data-room-multi-group-training-video"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-room-api-implementation-guide",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "data-room-api-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-room-faq",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "data-room-faq"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "mission-and-core-components",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "mission-and-core-components"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-room-demo-sandbox-guide",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "data-room-demo-sandbox-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-sales-deck",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "investor-portal-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-essentials-sales-deck",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "fundsub-essentials-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-product-overview",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "engagement-hub-product-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "automated-data-room-insights",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "automated-data-room-insights"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-salesforce-dataroom-release-notes",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "ih-salesforce-dataroom-release-notes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-room-system-limits",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "data-room-system-limits"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-room-brochure-v2",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "data-room-brochure-v2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "dealcloud",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "dealcloud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-data-extraction",
+      "_tgt": "fundsub",
+      "source": "ocr-data-extraction",
+      "target": "fundsub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "query-answering-karpathy-method",
+      "_tgt": "ocr-data-extraction",
+      "source": "ocr-data-extraction",
+      "target": "query-answering-karpathy-method"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-managed-services-sales-deck",
+      "_tgt": "ocr-data-extraction",
+      "source": "ocr-data-extraction",
+      "target": "ocr-managed-services-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-pricing-guide",
+      "_tgt": "ocr-data-extraction",
+      "source": "ocr-data-extraction",
+      "target": "ocr-pricing-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-new-ux-overview",
+      "_tgt": "ocr-data-extraction",
+      "source": "ocr-data-extraction",
+      "target": "ocr-new-ux-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-implementation-journey",
+      "_tgt": "ocr-data-extraction",
+      "source": "ocr-data-extraction",
+      "target": "ocr-implementation-journey"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-implementation-guide",
+      "_tgt": "ocr-data-extraction",
+      "source": "ocr-data-extraction",
+      "target": "ocr-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-data-extraction-sales-deck",
+      "_tgt": "ocr-data-extraction",
+      "source": "ocr-data-extraction",
+      "target": "ocr-data-extraction-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-fundsub-process-client-training",
+      "_tgt": "ocr-data-extraction",
+      "source": "ocr-data-extraction",
+      "target": "ocr-fundsub-process-client-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-security-whitepaper-human-augmented",
+      "_tgt": "ocr-data-extraction",
+      "source": "ocr-data-extraction",
+      "target": "ocr-security-whitepaper-human-augmented"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-table-view-how-it-works",
+      "_tgt": "ocr-data-extraction",
+      "source": "ocr-data-extraction",
+      "target": "ocr-table-view-how-it-works"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-security-whitepaper-textract",
+      "_tgt": "ocr-data-extraction",
+      "source": "ocr-data-extraction",
+      "target": "ocr-security-whitepaper-textract"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-gtm-training",
+      "_tgt": "ocr-data-extraction",
+      "source": "ocr-data-extraction",
+      "target": "ocr-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal",
+      "_tgt": "fundsub",
+      "source": "investor-portal",
+      "target": "fundsub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-branded-landing-pages",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "engagement-hub-branded-landing-pages"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "product-packaging-bundling",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "product-packaging-bundling"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "investor-portal",
+      "target": "investor-onboarding-workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "landing-page",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "landing-page"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-pricing-structure-rationale",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "investor-portal-pricing-structure-rationale"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-vs-integration-hub",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "investor-portal-vs-integration-hub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "query-answering-karpathy-method",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "query-answering-karpathy-method"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-customer-training-guide",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "investor-portal-customer-training-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-training-materials",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "investor-portal-training-materials"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-gtm-primer",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "investor-portal-gtm-primer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-prerelease-training-boston",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "investor-portal-prerelease-training-boston"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "anduin-investor-guide-may-2025",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "anduin-investor-guide-may-2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-product-overview",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "investor-portal-product-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-sales-deck",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "investor-portal-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-product-overview",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "engagement-hub-product-overview"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "rationale-eh-portal-pricing-conflict",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "rationale-eh-portal-pricing-conflict"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-pricing",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "engagement-hub-pricing"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-rfp",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "investor-portal-rfp"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-contact-management",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "investor-portal-contact-management"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-pricing-faqs-boston",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "investor-portal-pricing-faqs-boston"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "_src": "investorflow",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "investorflow"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "_src": "atominvest",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "atominvest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "e-signature",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "e-signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-onboarding-workflow",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "investor-onboarding-workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "import-export-templates",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "import-export-templates"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "aaa"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "side-letter",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "side-letter"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "configuration-vs-permission",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "configuration-vs-permission"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "anduin-object-model",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "anduin-object-model"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-reuse-signature-pages",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "esignature-reuse-signature-pages"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-advisor-tags",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "aaa-advisor-tags"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "retrieve-subscription-data",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "retrieve-subscription-data"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "neuberger-berman-case-study",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "neuberger-berman-case-study"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-product-brief",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "aaa-product-brief"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-dataroom-theme-customization",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "fundsub-dataroom-theme-customization"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-email-smtp-implementation-guide",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "fundsub-email-smtp-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "configuration-vs-permission-src",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "configuration-vs-permission-src"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-intro-overview",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "ih-intro-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-sop",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "ih-sop"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-duplicate-fund-config",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "fundsub-duplicate-fund-config"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "automated-onboarding-fundsub-primary",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "automated-onboarding-fundsub-primary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-feature-documentation",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "idm-feature-documentation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "mission-and-core-components",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "mission-and-core-components"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-management",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "data-management"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "anduin-investor-guide-may-2025",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "anduin-investor-guide-may-2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-schwab-implementation-guide",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "esignature-schwab-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-onboarding-primary-collaborators",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "investor-onboarding-primary-collaborators"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-schwab-cerity-training",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "esignature-schwab-cerity-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-room-demo-sandbox-guide",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "data-room-demo-sandbox-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-essentials-sales-deck",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "fundsub-essentials-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-primary-vs-collaborator",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "fundsub-primary-vs-collaborator"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-fundsub-process-client-training",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "ocr-fundsub-process-client-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-new-lp-view-one-pager",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "fundsub-new-lp-view-one-pager"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-access-faq",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "investor-access-faq"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-fundsub-investor-onboarding-may-2025",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "idm-fundsub-investor-onboarding-may-2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-one-envelope-experience",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "fundsub-one-envelope-experience"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "automated-document-repository",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "automated-document-repository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-investor-email-support",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "fundsub-investor-email-support"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-room-brochure-v2",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "data-room-brochure-v2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-fundsub-onboarding-deck-oct2025",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "idm-fundsub-onboarding-deck-oct2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-smtp-gtm-training",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "ih-smtp-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "dealcloud",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "dealcloud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "box",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "box"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "affinity",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "affinity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "e-signature",
+      "_tgt": "aaa",
+      "source": "aaa",
+      "target": "e-signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "query-answering-karpathy-method",
+      "_tgt": "aaa",
+      "source": "aaa",
+      "target": "query-answering-karpathy-method"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-cs-training",
+      "_tgt": "aaa",
+      "source": "aaa",
+      "target": "aaa-cs-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-advisor-tags",
+      "_tgt": "aaa",
+      "source": "aaa",
+      "target": "aaa-advisor-tags"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-sales-deck",
+      "_tgt": "aaa",
+      "source": "aaa",
+      "target": "aaa-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-product-brief",
+      "_tgt": "aaa",
+      "source": "aaa",
+      "target": "aaa-product-brief"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-gtm-training",
+      "_tgt": "aaa",
+      "source": "aaa",
+      "target": "aaa-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-access-faq",
+      "_tgt": "aaa",
+      "source": "aaa",
+      "target": "investor-access-faq"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-user-guide",
+      "_tgt": "aaa",
+      "source": "aaa",
+      "target": "aaa-user-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-advisor-subscription-assign",
+      "_tgt": "aaa",
+      "source": "aaa",
+      "target": "aaa-advisor-subscription-assign"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "qes-aes-compliance",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "qes-aes-compliance"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-reuse-signature-pages",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "esignature-reuse-signature-pages"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-advisor-tags",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "aaa-advisor-tags"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-sales-deck",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "aaa-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-whitepaper",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "esignature-whitepaper"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-schwab-implementation-guide",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "esignature-schwab-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-schwab-cerity-training",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "esignature-schwab-cerity-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-gtm-training",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "aaa-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-docusign-qes-faq",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "esignature-docusign-qes-faq"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-docusign-sales-deck",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "esignature-docusign-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-one-envelope-experience",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "fundsub-one-envelope-experience"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-sample-signed-documents",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "esignature-sample-signed-documents"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "docusign",
+      "_tgt": "e-signature",
+      "source": "e-signature",
+      "target": "docusign"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-branded-landing-pages",
+      "_tgt": "landing-page",
+      "source": "landing-page",
+      "target": "engagement-hub-branded-landing-pages"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "landing-page",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "landing-page",
+      "target": "investor-onboarding-workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-naming-history-slack",
+      "_tgt": "landing-page",
+      "source": "landing-page",
+      "target": "engagement-hub-naming-history-slack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-sales-deck",
+      "_tgt": "landing-page",
+      "source": "landing-page",
+      "target": "investor-portal-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-branded-landing-pages",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "engagement-hub-branded-landing-pages",
+      "target": "investor-onboarding-workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "product-packaging-bundling",
+      "_tgt": "engagement-hub-branded-landing-pages",
+      "source": "engagement-hub-branded-landing-pages",
+      "target": "product-packaging-bundling"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-one-pager",
+      "_tgt": "engagement-hub-branded-landing-pages",
+      "source": "engagement-hub-branded-landing-pages",
+      "target": "engagement-hub-one-pager"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-naming-history-slack",
+      "_tgt": "engagement-hub-branded-landing-pages",
+      "source": "engagement-hub-branded-landing-pages",
+      "target": "engagement-hub-naming-history-slack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-product-overview",
+      "_tgt": "engagement-hub-branded-landing-pages",
+      "source": "engagement-hub-branded-landing-pages",
+      "target": "engagement-hub-product-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-pricing",
+      "_tgt": "engagement-hub-branded-landing-pages",
+      "source": "engagement-hub-branded-landing-pages",
+      "target": "engagement-hub-pricing"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "_src": "data-mapping",
+      "_tgt": "configuration-vs-permission",
+      "source": "configuration-vs-permission",
+      "target": "data-mapping"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "crm-integration-playbook",
+      "_tgt": "configuration-vs-permission",
+      "source": "configuration-vs-permission",
+      "target": "crm-integration-playbook"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "user-roles",
+      "_tgt": "configuration-vs-permission",
+      "source": "configuration-vs-permission",
+      "target": "user-roles"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "anduin-object-model",
+      "_tgt": "configuration-vs-permission",
+      "source": "configuration-vs-permission",
+      "target": "anduin-object-model"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-cs-training",
+      "_tgt": "configuration-vs-permission",
+      "source": "configuration-vs-permission",
+      "target": "aaa-cs-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-product-brief",
+      "_tgt": "configuration-vs-permission",
+      "source": "configuration-vs-permission",
+      "target": "aaa-product-brief"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "configuration-vs-permission-src",
+      "_tgt": "configuration-vs-permission",
+      "source": "configuration-vs-permission",
+      "target": "configuration-vs-permission-src"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "automated-data-room-insights",
+      "_tgt": "configuration-vs-permission",
+      "source": "configuration-vs-permission",
+      "target": "automated-data-room-insights"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "automated-document-repository",
+      "_tgt": "configuration-vs-permission",
+      "source": "configuration-vs-permission",
+      "target": "automated-document-repository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-product-overview",
+      "_tgt": "product-packaging-bundling",
+      "source": "product-packaging-bundling",
+      "target": "engagement-hub-product-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-pricing",
+      "_tgt": "product-packaging-bundling",
+      "source": "product-packaging-bundling",
+      "target": "engagement-hub-pricing"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-mapping",
+      "_tgt": "import-export-templates",
+      "source": "import-export-templates",
+      "target": "data-mapping"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "integration-patterns",
+      "_tgt": "import-export-templates",
+      "source": "import-export-templates",
+      "target": "integration-patterns"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-onboarding-workflow",
+      "_tgt": "import-export-templates",
+      "source": "import-export-templates",
+      "target": "investor-onboarding-workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "crm-integration-playbook",
+      "_tgt": "import-export-templates",
+      "source": "import-export-templates",
+      "target": "crm-integration-playbook"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "retrieve-subscription-data",
+      "_tgt": "import-export-templates",
+      "source": "import-export-templates",
+      "target": "retrieve-subscription-data"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "automated-onboarding-fundsub-primary",
+      "_tgt": "import-export-templates",
+      "source": "import-export-templates",
+      "target": "automated-onboarding-fundsub-primary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-management",
+      "_tgt": "import-export-templates",
+      "source": "import-export-templates",
+      "target": "data-management"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-onboarding-primary-collaborators",
+      "_tgt": "import-export-templates",
+      "source": "import-export-templates",
+      "target": "investor-onboarding-primary-collaborators"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-access-faq",
+      "_tgt": "import-export-templates",
+      "source": "import-export-templates",
+      "target": "investor-access-faq"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-reuse-signature-pages",
+      "_tgt": "qes-aes-compliance",
+      "source": "qes-aes-compliance",
+      "target": "esignature-reuse-signature-pages"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-whitepaper",
+      "_tgt": "qes-aes-compliance",
+      "source": "qes-aes-compliance",
+      "target": "esignature-whitepaper"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-docusign-qes-faq",
+      "_tgt": "qes-aes-compliance",
+      "source": "qes-aes-compliance",
+      "target": "esignature-docusign-qes-faq"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-sample-signed-documents",
+      "_tgt": "qes-aes-compliance",
+      "source": "qes-aes-compliance",
+      "target": "esignature-sample-signed-documents"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "docusign",
+      "_tgt": "qes-aes-compliance",
+      "source": "qes-aes-compliance",
+      "target": "docusign"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-onboarding-workflow",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "investor-onboarding-workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-mapping",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "data-mapping"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-sales-deck-feb-2025",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "ih-sales-deck-feb-2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "retrieve-subscription-data",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "retrieve-subscription-data"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-intro-overview",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "ih-intro-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-sop",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "ih-sop"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "automated-onboarding-fundsub-primary",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "automated-onboarding-fundsub-primary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-knowledge-hub",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "ih-knowledge-hub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-onboarding-primary-collaborators",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "investor-onboarding-primary-collaborators"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-implementation-guide",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "ih-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "automated-data-room-insights",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "automated-data-room-insights"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "automated-document-repository",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "automated-document-repository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "dealcloud",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "dealcloud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "box",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "box"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "affinity",
+      "_tgt": "integration-patterns",
+      "source": "integration-patterns",
+      "target": "affinity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-onboarding-workflow",
+      "_tgt": "data-mapping",
+      "source": "data-mapping",
+      "target": "investor-onboarding-workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "retrieve-subscription-data",
+      "_tgt": "data-mapping",
+      "source": "data-mapping",
+      "target": "retrieve-subscription-data"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-sop",
+      "_tgt": "data-mapping",
+      "source": "data-mapping",
+      "target": "ih-sop"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "automated-onboarding-fundsub-primary",
+      "_tgt": "data-mapping",
+      "source": "data-mapping",
+      "target": "automated-onboarding-fundsub-primary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "data-management",
+      "_tgt": "data-mapping",
+      "source": "data-mapping",
+      "target": "data-management"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-onboarding-primary-collaborators",
+      "_tgt": "data-mapping",
+      "source": "data-mapping",
+      "target": "investor-onboarding-primary-collaborators"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "dealcloud",
+      "_tgt": "data-mapping",
+      "source": "data-mapping",
+      "target": "dealcloud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "neuberger-berman-case-study",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "investor-onboarding-workflow",
+      "target": "neuberger-berman-case-study"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "automated-onboarding-fundsub-primary",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "investor-onboarding-workflow",
+      "target": "automated-onboarding-fundsub-primary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-onboarding-primary-collaborators",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "investor-onboarding-workflow",
+      "target": "investor-onboarding-primary-collaborators"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-implementation-guide",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "investor-onboarding-workflow",
+      "target": "idm-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-access-faq",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "investor-onboarding-workflow",
+      "target": "investor-access-faq"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-fundsub-investor-onboarding-may-2025",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "investor-onboarding-workflow",
+      "target": "idm-fundsub-investor-onboarding-may-2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-gtm-training",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "investor-onboarding-workflow",
+      "target": "idm-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-one-envelope-experience",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "investor-onboarding-workflow",
+      "target": "fundsub-one-envelope-experience"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-fundsub-onboarding-deck-oct2025",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "investor-onboarding-workflow",
+      "target": "idm-fundsub-onboarding-deck-oct2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "affinity",
+      "_tgt": "investor-onboarding-workflow",
+      "source": "investor-onboarding-workflow",
+      "target": "affinity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-sales-deck-feb-2025",
+      "_tgt": "crm-integration-playbook",
+      "source": "crm-integration-playbook",
+      "target": "ih-sales-deck-feb-2025"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "_src": "crm-integration-playbook",
+      "_tgt": "user-roles",
+      "source": "crm-integration-playbook",
+      "target": "user-roles"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "_src": "crm-integration-playbook",
+      "_tgt": "anduin-object-model",
+      "source": "crm-integration-playbook",
+      "target": "anduin-object-model"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "_src": "retrieve-subscription-data",
+      "_tgt": "crm-integration-playbook",
+      "source": "crm-integration-playbook",
+      "target": "retrieve-subscription-data"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-implementation-guide",
+      "_tgt": "crm-integration-playbook",
+      "source": "crm-integration-playbook",
+      "target": "ih-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "dealcloud",
+      "_tgt": "crm-integration-playbook",
+      "source": "crm-integration-playbook",
+      "target": "dealcloud"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "_src": "salesforce",
+      "_tgt": "crm-integration-playbook",
+      "source": "crm-integration-playbook",
+      "target": "salesforce"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-cs-training",
+      "_tgt": "user-roles",
+      "source": "user-roles",
+      "target": "aaa-cs-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-product-brief",
+      "_tgt": "user-roles",
+      "source": "user-roles",
+      "target": "aaa-product-brief"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-implementation-guide",
+      "_tgt": "user-roles",
+      "source": "user-roles",
+      "target": "ih-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-gtm-training",
+      "_tgt": "user-roles",
+      "source": "user-roles",
+      "target": "idm-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "user-role",
+      "_tgt": "user-roles",
+      "source": "user-roles",
+      "target": "user-role"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-sales-deck-feb-2025",
+      "_tgt": "anduin-object-model",
+      "source": "anduin-object-model",
+      "target": "ih-sales-deck-feb-2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-cs-training",
+      "_tgt": "anduin-object-model",
+      "source": "anduin-object-model",
+      "target": "aaa-cs-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "configuration-vs-permission-src",
+      "_tgt": "anduin-object-model",
+      "source": "anduin-object-model",
+      "target": "configuration-vs-permission-src"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "mission-and-core-components",
+      "_tgt": "anduin-object-model",
+      "source": "anduin-object-model",
+      "target": "mission-and-core-components"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-vs-integration-hub",
+      "_tgt": "investor-portal-pricing-faqs-boston",
+      "source": "investor-portal-vs-integration-hub",
+      "target": "investor-portal-pricing-faqs-boston"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-vs-integration-hub",
+      "_tgt": "investor-portal-gtm-primer",
+      "source": "investor-portal-vs-integration-hub",
+      "target": "investor-portal-gtm-primer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-vs-integration-hub",
+      "_tgt": "investor-portal-sales-deck",
+      "source": "investor-portal-vs-integration-hub",
+      "target": "investor-portal-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-vs-integration-hub",
+      "_tgt": "ih-sales-deck-feb-2025",
+      "source": "investor-portal-vs-integration-hub",
+      "target": "ih-sales-deck-feb-2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-vs-integration-hub",
+      "_tgt": "ih-sop",
+      "source": "investor-portal-vs-integration-hub",
+      "target": "ih-sop"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-vs-integration-hub",
+      "_tgt": "neuberger-berman-case-study",
+      "source": "investor-portal-vs-integration-hub",
+      "target": "neuberger-berman-case-study"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "query-answering-karpathy-method",
+      "_tgt": "ocr-table-view-how-it-works",
+      "source": "query-answering-karpathy-method",
+      "target": "ocr-table-view-how-it-works"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "query-answering-karpathy-method",
+      "_tgt": "ocr-fundsub-process-client-training",
+      "source": "query-answering-karpathy-method",
+      "target": "ocr-fundsub-process-client-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "query-answering-karpathy-method",
+      "_tgt": "ocr-implementation-journey",
+      "source": "query-answering-karpathy-method",
+      "target": "ocr-implementation-journey"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "query-answering-karpathy-method",
+      "_tgt": "investor-portal-pricing-faqs-boston",
+      "source": "query-answering-karpathy-method",
+      "target": "investor-portal-pricing-faqs-boston"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "query-answering-karpathy-method",
+      "_tgt": "atominvest",
+      "source": "query-answering-karpathy-method",
+      "target": "atominvest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "query-answering-karpathy-method",
+      "_tgt": "esignature-schwab-implementation-guide",
+      "source": "query-answering-karpathy-method",
+      "target": "esignature-schwab-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "query-answering-karpathy-method",
+      "_tgt": "esignature-schwab-cerity-training",
+      "source": "query-answering-karpathy-method",
+      "target": "esignature-schwab-cerity-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "salesforce",
+      "_tgt": "ih-sales-deck-feb-2025",
+      "source": "ih-sales-deck-feb-2025",
+      "target": "salesforce"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-sales-deck-feb-2025",
+      "_tgt": "dealcloud",
+      "source": "ih-sales-deck-feb-2025",
+      "target": "dealcloud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-data-extraction-sales-deck",
+      "_tgt": "ocr-managed-services-sales-deck",
+      "source": "ocr-managed-services-sales-deck",
+      "target": "ocr-data-extraction-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-gtm-training",
+      "_tgt": "aaa-cs-training",
+      "source": "aaa-cs-training",
+      "target": "aaa-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-user-guide",
+      "_tgt": "aaa-cs-training",
+      "source": "aaa-cs-training",
+      "target": "aaa-user-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-new-ux-overview",
+      "_tgt": "ocr-table-view-how-it-works",
+      "source": "ocr-new-ux-overview",
+      "target": "ocr-table-view-how-it-works"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-implementation-guide",
+      "_tgt": "ocr-new-ux-overview",
+      "source": "ocr-new-ux-overview",
+      "target": "ocr-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-gtm-training",
+      "_tgt": "ocr-new-ux-overview",
+      "source": "ocr-new-ux-overview",
+      "target": "ocr-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-sales-deck",
+      "_tgt": "aaa-advisor-tags",
+      "source": "aaa-advisor-tags",
+      "target": "aaa-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-contact-management",
+      "_tgt": "investor-portal-customer-training-guide",
+      "source": "investor-portal-customer-training-guide",
+      "target": "investor-portal-contact-management"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-customer-training-guide",
+      "_tgt": "investor-portal-sales-deck",
+      "source": "investor-portal-customer-training-guide",
+      "target": "investor-portal-sales-deck"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "_src": "fundsub-dataroom-theme-customization",
+      "_tgt": "investor-portal-customer-training-guide",
+      "source": "investor-portal-customer-training-guide",
+      "target": "fundsub-dataroom-theme-customization"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-release-notes-sprint-362",
+      "_tgt": "idm-release-notes",
+      "source": "idm-release-notes",
+      "target": "idm-release-notes-sprint-362"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "dealcloud",
+      "_tgt": "retrieve-subscription-data",
+      "source": "retrieve-subscription-data",
+      "target": "dealcloud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "salesforce",
+      "_tgt": "neuberger-berman-case-study",
+      "source": "neuberger-berman-case-study",
+      "target": "salesforce"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-sales-deck",
+      "_tgt": "aaa-advisor-subscription-assign",
+      "source": "aaa-sales-deck",
+      "target": "aaa-advisor-subscription-assign"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-sales-deck",
+      "_tgt": "esignature-schwab-implementation-guide",
+      "source": "aaa-sales-deck",
+      "target": "esignature-schwab-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-gtm-training",
+      "_tgt": "aaa-sales-deck",
+      "source": "aaa-sales-deck",
+      "target": "aaa-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-gtm-training",
+      "_tgt": "aaa-product-brief",
+      "source": "aaa-product-brief",
+      "target": "aaa-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-email-smtp-implementation-guide",
+      "_tgt": "ih-smtp-gtm-training",
+      "source": "fundsub-email-smtp-implementation-guide",
+      "target": "ih-smtp-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-duplicate-fund-config",
+      "_tgt": "fundsub-email-smtp-implementation-guide",
+      "source": "fundsub-email-smtp-implementation-guide",
+      "target": "fundsub-duplicate-fund-config"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-gtm-primer",
+      "_tgt": "investor-portal-pricing-faqs-boston",
+      "source": "investor-portal-pricing-faqs-boston",
+      "target": "investor-portal-gtm-primer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-prerelease-training-boston",
+      "_tgt": "investor-portal-pricing-faqs-boston",
+      "source": "investor-portal-pricing-faqs-boston",
+      "target": "investor-portal-prerelease-training-boston"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-pricing-faqs-boston",
+      "_tgt": "investor-portal-sales-deck",
+      "source": "investor-portal-pricing-faqs-boston",
+      "target": "investor-portal-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-product-overview",
+      "_tgt": "investor-portal-pricing-faqs-boston",
+      "source": "investor-portal-pricing-faqs-boston",
+      "target": "engagement-hub-product-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-pricing",
+      "_tgt": "investor-portal-pricing-faqs-boston",
+      "source": "investor-portal-pricing-faqs-boston",
+      "target": "engagement-hub-pricing"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investorflow",
+      "_tgt": "investor-portal-pricing-faqs-boston",
+      "source": "investor-portal-pricing-faqs-boston",
+      "target": "investorflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "atominvest",
+      "_tgt": "investor-portal-pricing-faqs-boston",
+      "source": "investor-portal-pricing-faqs-boston",
+      "target": "atominvest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-gtm-primer",
+      "_tgt": "investor-portal-sales-deck",
+      "source": "investor-portal-gtm-primer",
+      "target": "investor-portal-sales-deck"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-gtm-primer",
+      "_tgt": "investorflow",
+      "source": "investor-portal-gtm-primer",
+      "target": "investorflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-gtm-primer",
+      "_tgt": "atominvest",
+      "source": "investor-portal-gtm-primer",
+      "target": "atominvest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-product-overview",
+      "_tgt": "investor-portal-gtm-primer",
+      "source": "investor-portal-gtm-primer",
+      "target": "investor-portal-product-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "anduin-investor-guide-may-2025",
+      "_tgt": "investor-portal-sales-deck",
+      "source": "investor-portal-sales-deck",
+      "target": "anduin-investor-guide-may-2025"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "_src": "investor-portal-product-overview",
+      "_tgt": "investor-portal-sales-deck",
+      "source": "investor-portal-sales-deck",
+      "target": "investor-portal-product-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-portal-contact-management",
+      "_tgt": "investor-portal-sales-deck",
+      "source": "investor-portal-sales-deck",
+      "target": "investor-portal-contact-management"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "_src": "ih-knowledge-hub",
+      "_tgt": "ih-sop",
+      "source": "ih-sop",
+      "target": "ih-knowledge-hub"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-schwab-implementation-guide",
+      "_tgt": "esignature-schwab-cerity-training",
+      "source": "esignature-schwab-implementation-guide",
+      "target": "esignature-schwab-cerity-training"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "rationale-schwab-guide-vs-training",
+      "_tgt": "esignature-schwab-implementation-guide",
+      "source": "esignature-schwab-implementation-guide",
+      "target": "rationale-schwab-guide-vs-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-gtm-training",
+      "_tgt": "esignature-schwab-implementation-guide",
+      "source": "esignature-schwab-implementation-guide",
+      "target": "aaa-gtm-training"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "docusign",
+      "_tgt": "esignature-schwab-implementation-guide",
+      "source": "esignature-schwab-implementation-guide",
+      "target": "docusign"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "docusign",
+      "_tgt": "esignature-schwab-cerity-training",
+      "source": "esignature-schwab-cerity-training",
+      "target": "docusign"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ocr-implementation-guide",
+      "_tgt": "ocr-implementation-journey",
+      "source": "ocr-implementation-journey",
+      "target": "ocr-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "aaa-gtm-training",
+      "_tgt": "fundsub-one-envelope-experience",
+      "source": "aaa-gtm-training",
+      "target": "fundsub-one-envelope-experience"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-salesforce-dataroom-release-notes",
+      "_tgt": "ih-salesforce-dataroom-implementation-guide",
+      "source": "ih-salesforce-dataroom-implementation-guide",
+      "target": "ih-salesforce-dataroom-release-notes"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "_src": "automated-onboarding-fundsub-primary",
+      "_tgt": "ih-salesforce-dataroom-implementation-guide",
+      "source": "ih-salesforce-dataroom-implementation-guide",
+      "target": "automated-onboarding-fundsub-primary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-setup-guide",
+      "_tgt": "ih-intro-overview",
+      "source": "ih-intro-overview",
+      "target": "ih-setup-guide"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "_src": "ih-implementation-guide-pdf",
+      "_tgt": "ih-implementation-guide",
+      "source": "ih-implementation-guide-pdf",
+      "target": "ih-implementation-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-one-pager",
+      "_tgt": "engagement-hub-product-overview",
+      "source": "engagement-hub-one-pager",
+      "target": "engagement-hub-product-overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-naming-history-slack",
+      "_tgt": "engagement-hub-one-pager",
+      "source": "engagement-hub-one-pager",
+      "target": "engagement-hub-naming-history-slack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "dealcloud",
+      "_tgt": "automated-onboarding-fundsub-primary",
+      "source": "automated-onboarding-fundsub-primary",
+      "target": "dealcloud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investor-onboarding-primary-collaborators",
+      "_tgt": "automated-onboarding-fundsub-primary",
+      "source": "automated-onboarding-fundsub-primary",
+      "target": "investor-onboarding-primary-collaborators"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-naming-history-slack",
+      "_tgt": "engagement-hub-product-overview",
+      "source": "engagement-hub-naming-history-slack",
+      "target": "engagement-hub-product-overview"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "rationale-eh-naming-history",
+      "_tgt": "engagement-hub-naming-history-slack",
+      "source": "engagement-hub-naming-history-slack",
+      "target": "rationale-eh-naming-history"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-setup-guide",
+      "_tgt": "ih-knowledge-hub",
+      "source": "ih-knowledge-hub",
+      "target": "ih-setup-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "ih-knowledge-hub",
+      "_tgt": "mission-and-core-components",
+      "source": "ih-knowledge-hub",
+      "target": "mission-and-core-components"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "salesforce",
+      "_tgt": "mission-and-core-components",
+      "source": "mission-and-core-components",
+      "target": "salesforce"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "_src": "ih-implementation-guide",
+      "_tgt": "ih-setup-guide",
+      "source": "ih-implementation-guide",
+      "target": "ih-setup-guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "engagement-hub-pricing",
+      "_tgt": "engagement-hub-product-overview",
+      "source": "engagement-hub-product-overview",
+      "target": "engagement-hub-pricing"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "rationale-eh-portal-pricing-conflict",
+      "_tgt": "engagement-hub-product-overview",
+      "source": "engagement-hub-product-overview",
+      "target": "rationale-eh-portal-pricing-conflict"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "fundsub-primary-vs-collaborator",
+      "_tgt": "anduin-investor-guide-may-2025",
+      "source": "anduin-investor-guide-may-2025",
+      "target": "fundsub-primary-vs-collaborator"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "investorflow",
+      "_tgt": "investor-portal-product-overview",
+      "source": "investor-portal-product-overview",
+      "target": "investorflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "atominvest",
+      "_tgt": "investor-portal-product-overview",
+      "source": "investor-portal-product-overview",
+      "target": "atominvest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "affinity",
+      "_tgt": "investor-onboarding-primary-collaborators",
+      "source": "investor-onboarding-primary-collaborators",
+      "target": "affinity"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "_src": "investor-onboarding-primary-collaborators",
+      "_tgt": "fundsub-primary-vs-collaborator",
+      "source": "investor-onboarding-primary-collaborators",
+      "target": "fundsub-primary-vs-collaborator"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "dealcloud",
+      "_tgt": "automated-data-room-insights",
+      "source": "automated-data-room-insights",
+      "target": "dealcloud"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "_src": "ocr-security-whitepaper-textract",
+      "_tgt": "ocr-security-whitepaper-human-augmented",
+      "source": "ocr-security-whitepaper-human-augmented",
+      "target": "ocr-security-whitepaper-textract"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "idm-fundsub-onboarding-deck-oct2025",
+      "_tgt": "idm-fundsub-investor-onboarding-may-2025",
+      "source": "idm-fundsub-investor-onboarding-may-2025",
+      "target": "idm-fundsub-onboarding-deck-oct2025"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "docusign",
+      "_tgt": "esignature-docusign-qes-faq",
+      "source": "esignature-docusign-qes-faq",
+      "target": "docusign"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "esignature-docusign-sales-deck",
+      "_tgt": "esignature-docusign-qes-faq",
+      "source": "esignature-docusign-qes-faq",
+      "target": "esignature-docusign-sales-deck"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "_src": "esignature-sample-signed-documents",
+      "_tgt": "esignature-docusign-qes-faq",
+      "source": "esignature-docusign-qes-faq",
+      "target": "esignature-sample-signed-documents"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "docusign",
+      "_tgt": "esignature-docusign-sales-deck",
+      "source": "esignature-docusign-sales-deck",
+      "target": "docusign"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "box",
+      "_tgt": "automated-document-repository",
+      "source": "automated-document-repository",
+      "target": "box"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "atominvest",
+      "_tgt": "investorflow",
+      "source": "investorflow",
+      "target": "atominvest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "affinity",
+      "_tgt": "dealcloud",
+      "source": "dealcloud",
+      "target": "affinity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "salesforce",
+      "_tgt": "dealcloud",
+      "source": "dealcloud",
+      "target": "salesforce"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "_src": "box",
+      "_tgt": "dealcloud",
+      "source": "dealcloud",
+      "target": "box"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "salesforce",
+      "_tgt": "affinity",
+      "source": "affinity",
+      "target": "salesforce"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "engagement_tier_idm_stack",
+      "label": "IDM / Engagement Hub / Investor Portal share one IDM Firm space",
+      "nodes": [
+        "investor-data-management",
+        "engagement-hub",
+        "investor-portal"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "neuberger_full_stack_deployment",
+      "label": "Neuberger Berman full-stack deployment",
+      "nodes": [
+        "neuberger-berman",
+        "fundsub",
+        "investor-data-management",
+        "integration-hub",
+        "salesforce"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85
+    },
+    {
+      "id": "automated_investor_onboarding_flow",
+      "label": "Automated Investor Onboarding via Integration Hub",
+      "nodes": [
+        "investor-onboarding-workflow",
+        "integration-patterns",
+        "import-export-templates",
+        "data-mapping",
+        "fundsub"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "engagement_hub_packaging_stack",
+      "label": "Engagement Hub / Portal / IDM Packaging Stack",
+      "nodes": [
+        "product-packaging-bundling",
+        "engagement-hub",
+        "investor-portal",
+        "investor-data-management",
+        "engagement-hub-branded-landing-pages"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85
+    },
+    {
+      "id": "config_vs_permission_apps",
+      "label": "Configuration vs Permission across Anduin apps",
+      "nodes": [
+        "configuration-vs-permission",
+        "integration-hub",
+        "fundsub",
+        "investor-data-management",
+        "data-room"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85
+    },
+    {
+      "id": "anduin_object_model_scoping",
+      "label": "Anduin Object Model spans products",
+      "nodes": [
+        "anduin-object-model",
+        "fundsub",
+        "investor-data-management",
+        "data-room",
+        "integration-hub"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85
+    },
+    {
+      "id": "aaa_advisor_workflow_stack",
+      "label": "AAA advisor workflow concept stack",
+      "nodes": [
+        "aaa-cs-training",
+        "aaa",
+        "anduin-object-model",
+        "user-roles",
+        "configuration-vs-permission"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.8
+    },
+    {
+      "id": "ih_anduin_objects",
+      "label": "Integration Hub configuration over Anduin Objects",
+      "nodes": [
+        "integration-hub",
+        "fundsub",
+        "investor-data-management",
+        "data-room",
+        "anduin-object-model"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "data_movement_flow",
+      "label": "Import/Export data movement via Templates and Mapping",
+      "nodes": [
+        "data-management",
+        "import-export-templates",
+        "data-mapping",
+        "fundsub"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85
+    },
+    {
+      "id": "eh_naming_repackaging",
+      "label": "Branded Landing Page repackaged into Engagement Hub",
+      "nodes": [
+        "engagement-hub-naming-history-slack",
+        "engagement-hub",
+        "engagement-hub-branded-landing-pages",
+        "landing-page"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85
+    },
+    {
+      "id": "schwab_docusign_signing_flow",
+      "label": "Schwab DocuSign Custodian Signing Flow",
+      "nodes": [
+        "esignature-schwab-implementation-guide",
+        "esignature-schwab-cerity-training",
+        "e-signature",
+        "fundsub",
+        "cerity-partners"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "eh_portal_idm_packaging",
+      "label": "Engagement Hub / Portal / IDM Bundling Strategy",
+      "nodes": [
+        "engagement-hub-product-overview",
+        "engagement-hub-pricing",
+        "engagement-hub",
+        "investor-portal",
+        "investor-data-management",
+        "product-packaging-bundling"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85
+    },
+    {
+      "id": "docusign_qes_signature_offering",
+      "label": "DocuSign QES/SES Signature Offering",
+      "nodes": [
+        "esignature-docusign-qes-faq",
+        "esignature-docusign-sales-deck",
+        "docusign",
+        "qes-aes-compliance"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "ocr_security_pipeline",
+      "label": "OCR End-to-End Security Pipeline (Textract + Human Review)",
+      "nodes": [
+        "ocr-security-whitepaper-textract",
+        "ocr-security-whitepaper-human-augmented",
+        "ocr-data-extraction"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "idm_fundsub_onboarding_flow",
+      "label": "IDM + FundSub Investor Onboarding Flow",
+      "nodes": [
+        "idm-fundsub-investor-onboarding-may-2025",
+        "investor-data-management",
+        "fundsub",
+        "investor-onboarding-workflow"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8
+    },
+    {
+      "id": "crm_order_creation_integrations",
+      "label": "CRM Order Creation Integrations into FundSub",
+      "nodes": [
+        "dealcloud",
+        "affinity",
+        "salesforce",
+        "fundsub"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85
+    },
+    {
+      "id": "standalone_portal_competitive_set",
+      "label": "Standalone Investor Portal Competitive Set",
+      "nodes": [
+        "investorflow",
+        "atominvest",
+        "investor-portal",
+        "investor-portal-pricing-faqs-boston"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8
+    },
+    {
+      "id": "docusign_signing_paths",
+      "label": "DocuSign Dual Signing Paths (QES/SES + Schwab)",
+      "nodes": [
+        "docusign",
+        "e-signature",
+        "qes-aes-compliance",
+        "cerity-partners"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8
+    }
+  ]
+}
