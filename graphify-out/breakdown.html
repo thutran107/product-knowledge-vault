@@ -1,0 +1,251 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anduin Vault — knowledge graph insight dashboard</title>
+<style>
+:root{--bg:#15110e;--panel:#1f1813;--panel2:#251c16;--line:#3a2c22;--ink:#f3eadf;
+--muted:#a98e7d;--coral:#ff6b3d;--coral2:#ff9166;--blue:#5b8cff;--green:#3fd09a;--amber:#ffcf5c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{max-width:1140px;margin:0 auto;padding:44px 32px 90px}
+.eyebrow{letter-spacing:.22em;font-size:11px;color:var(--coral);text-transform:uppercase;font-weight:700}
+h1{font-size:36px;line-height:1.15;margin:10px 0 6px;font-weight:800}
+h1 .accent{color:var(--coral)}
+.sub{color:var(--muted);max-width:720px;margin-bottom:30px}
+.muted{color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:14px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:18px}
+.stat.hot{background:linear-gradient(160deg,#2a1a12,#3a2113);border-color:var(--coral)}
+.stat .num{font-size:32px;font-weight:800;line-height:1}
+.stat.hot .num{color:var(--coral2)}
+.stat .lbl{color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-top:7px}
+.zone{margin-top:46px}
+.zone-h{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--coral);padding-bottom:10px;margin-bottom:22px}
+.zone-h .tag{background:var(--coral);color:#1a0f08;font-weight:800;padding:3px 10px;border-radius:6px;font-size:13px}
+.zone-h h2{margin:0;font-size:22px}.zone-h .why{color:var(--muted);font-size:13px;margin-left:auto}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:22px;margin-bottom:18px}
+.card h3{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 16px;font-weight:700}
+.bar-row{display:grid;grid-template-columns:185px 1fr 40px;align-items:center;gap:11px;margin-bottom:9px}
+.bar-label{font-size:13px;color:#e9ddd0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-track{background:var(--panel2);border-radius:6px;height:13px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,var(--coral),var(--coral2));border-radius:6px}
+.bar-val{text-align:right;color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+.god{display:flex;align-items:center;gap:11px;padding:7px 0;border-bottom:1px solid var(--line)}
+.god:last-child{border:0}
+.god-deg{min-width:40px;height:30px;padding:0 6px;display:flex;align-items:center;justify-content:center;background:var(--panel2);border-radius:8px;font-weight:800;color:var(--coral2)}
+.god-name{font-size:13.5px}
+.pill{display:inline-block;background:var(--panel2);border:1px solid var(--line);border-radius:18px;padding:4px 11px;font-size:12px;color:#d8c8b8;margin:0 5px 7px 0}
+.pill.warn{border-color:var(--amber);color:var(--amber)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:6px 8px;text-align:center;border-bottom:1px solid var(--line)}
+td.rowname,th.rowname{text-align:left;color:#e9ddd0;white-space:nowrap}
+td.ok{color:var(--green);font-weight:700} td.gap{color:#5a4636}
+tr.empty td.rowname{color:var(--amber)}
+th.rot{height:96px;vertical-align:bottom;padding:0}
+th.rot span{display:inline-block;transform:rotate(-60deg);transform-origin:left;white-space:nowrap;font-size:11px;color:var(--muted);width:18px}
+.pcard{background:var(--panel2);border:1px solid var(--line);border-radius:11px;padding:15px}
+.pcard-top{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:9px}
+.pcard-title{font-weight:700;font-size:14.5px}
+.badge{font-size:10px;font-weight:800;padding:2px 7px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em}
+.badge.ga{background:#16402f;color:var(--green)}.badge.beta{background:#1d3358;color:var(--blue)}.badge.dep{background:#4a2018;color:var(--coral2)}
+.pcard-stats{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--muted);margin-bottom:7px}
+.pcard-stats b{color:var(--ink);font-size:14px}
+.pcard-meta{font-size:11.5px;color:var(--muted)}
+.honesty-bar{display:flex;height:20px;border-radius:6px;overflow:hidden;margin-bottom:14px}
+.seg.extracted{background:var(--green)}.seg.inferred{background:var(--blue)}.seg.ambiguous{background:var(--coral)}
+.legend{display:flex;gap:18px;font-size:13px;flex-wrap:wrap}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px}
+.dot.extracted{background:var(--green)}.dot.inferred{background:var(--blue)}.dot.ambiguous{background:var(--coral)}
+.foot{margin-top:40px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:16px}
+a{color:var(--coral2)}
+@media(max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}.grid2,.grid3{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+
+<div class="eyebrow">Graphify · Product Knowledge Vault · 2026-06-17</div>
+<h1>Vault Insight Dashboard <span class="accent">— health & briefing</span></h1>
+<p class="sub">135 wiki pages · 478 edges · 7 communities. Topology from
+<code>graph.json</code> joined with page frontmatter (trust, dates, source type, audience).</p>
+
+<div class="stats">
+  <div class="stat"><div class="num">135</div><div class="lbl">Pages</div></div>
+  <div class="stat hot"><div class="num">13</div><div class="lbl">Products</div></div>
+  <div class="stat"><div class="num">83</div><div class="lbl">Sources</div></div>
+  <div class="stat"><div class="num">17</div><div class="lbl">Customers</div></div>
+  <div class="stat"><div class="num">7</div><div class="lbl">Communities</div></div>
+</div>
+
+<!-- ============================== ZONE A ============================== -->
+<div class="zone">
+  <div class="zone-h"><span class="tag">A</span><h2>Vault Health</h2>
+    <span class="why">What to fix &amp; document next</span></div>
+
+  <div class="grid2">
+    <div class="card"><h3>Freshness — pages by age (today 2026-06-17)</h3><div class="bar-row"><div class="bar-label" title="Fresh (&lt;30d)">Fresh (&lt;30d)</div><div class="bar-track"><div class="bar-fill" style="width:37%"></div></div><div class="bar-val">15</div></div>
+<div class="bar-row"><div class="bar-label" title="Recent (30-90d)">Recent (30-90d)</div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div><div class="bar-val">37</div></div>
+<div class="bar-row"><div class="bar-label" title="Aging (90-180d)">Aging (90-180d)</div><div class="bar-track"><div class="bar-fill" style="width:15%"></div></div><div class="bar-val">6</div></div>
+<div class="bar-row"><div class="bar-label" title="Stale (&gt;180d)">Stale (&gt;180d)</div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><div class="bar-val">36</div></div>
+<div class="bar-row"><div class="bar-label" title="Undated">Undated</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">41</div></div></div>
+    <div class="card"><h3>Stalest dated pages</h3><div class="god"><span class="god-deg" style="font-size:12px">838d</span><span class="god-name">Data Room - Brochure v2 <em style="color:var(--muted)">· 2024-03-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">685d</span><span class="god-name">IDM - Sales Brochure <em style="color:var(--muted)">· 2024-08-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">593d</span><span class="god-name">AAA (Advisor Advantage) — GTM Training (Nov 2024) <em style="color:var(--muted)">· 2024-11-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">533d</span><span class="god-name">AAA (Advisor Advantage) — Product Brief / RIA Product Brief <em style="color:var(--muted)">· 2024-12-31</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">501d</span><span class="god-name">Integration Hub Sales Deck (Feb 2025) <em style="color:var(--muted)">· 2025-02-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">481d</span><span class="god-name">Investor Portal — Internal GTM Primer (Product Intro) <em style="color:var(--muted)">· 2025-02-21</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">473d</span><span class="god-name">FundSub Email Configuration &amp; SMTP Integration — Mar 2025 <em style="color:var(--muted)">· 2025-03-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">456d</span><span class="god-name">FundSub — One Envelope Experience for Investors <em style="color:var(--muted)">· 2025-03-18</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">412d</span><span class="god-name">Streamline Investor Onboarding with IDM Profiles — May 2025 <em style="color:var(--muted)">· 2025-05-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">399d</span><span class="god-name">New OCR User Experience — Overview <em style="color:var(--muted)">· 2025-05-14</em></span></div></div>
+  </div>
+
+  <div class="grid2">
+    <div class="card"><h3>Trust profile — sources by trust level</h3><div class="bar-row"><div class="bar-label" title="1 · Spec / How-it-works">1 · Spec / How-it-works</div><div class="bar-track"><div class="bar-fill" style="width:76%"></div></div><div class="bar-val">13</div></div>
+<div class="bar-row"><div class="bar-label" title="2 · Impl guide / SOP">2 · Impl guide / SOP</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">17</div></div>
+<div class="bar-row"><div class="bar-label" title="3 · Pricing">3 · Pricing</div><div class="bar-track"><div class="bar-fill" style="width:18%"></div></div><div class="bar-val">3</div></div>
+<div class="bar-row"><div class="bar-label" title="4 · FAQ">4 · FAQ</div><div class="bar-track"><div class="bar-fill" style="width:24%"></div></div><div class="bar-val">4</div></div>
+<div class="bar-row"><div class="bar-label" title="5 · GTM / Sales deck">5 · GTM / Sales deck</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">17</div></div>
+<div class="bar-row"><div class="bar-label" title="6 · CS / GTM training">6 · CS / GTM training</div><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div><div class="bar-val">1</div></div>
+<div class="bar-row"><div class="bar-label" title="7 · Client training">7 · Client training</div><div class="bar-track"><div class="bar-fill" style="width:47%"></div></div><div class="bar-val">8</div></div>
+<div class="bar-row"><div class="bar-label" title="8 · Security whitepaper">8 · Security whitepaper</div><div class="bar-track"><div class="bar-fill" style="width:18%"></div></div><div class="bar-val">3</div></div>
+<div class="bar-row"><div class="bar-label" title="9 · Case study">9 · Case study</div><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div><div class="bar-val">1</div></div>
+<div class="bar-row"><div class="bar-label" title="10 · Release notes / one-pager">10 · Release notes / one-pager</div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><div class="bar-val">15</div></div>
+<div class="bar-row"><div class="bar-label" title="11 · RFP">11 · RFP</div><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div><div class="bar-val">1</div></div></div>
+    <div class="card"><h3>Edge honesty</h3>
+      <div class="honesty-bar">
+        <div class="seg extracted" style="width:95.8%"></div>
+        <div class="seg inferred" style="width:4.2%"></div>
+        <div class="seg ambiguous" style="width:0.0%"></div></div>
+      <div class="legend">
+        <span><i class="dot extracted"></i>Extracted 458</span>
+        <span><i class="dot inferred"></i>Inferred 20</span>
+        <span><i class="dot ambiguous"></i>Ambiguous 0</span></div>
+      <p class="muted" style="margin:14px 0 0;font-size:12px">Relations: references 452, semantically_similar_to 15, rationale_for 7, conceptually_related_to 4</p>
+    </div>
+  </div>
+
+  <div class="card"><h3>Coverage matrix — product × source type (· = gap)</h3>
+    <table><thead><tr><th class="rowname">Product</th><th>Spec</th><th>Impl</th><th>Pricing</th><th>FAQ</th><th>Sales/GTM</th><th>Security</th></tr></thead><tbody><tr><td class="rowname">FundSub (Fund Subscription)</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Investor Data Management (IDM)</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Investor Portal</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Data Room</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Integration Hub</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">E-signature</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td><td class="ok">✓</td></tr><tr><td class="rowname">Engagement Hub</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">OCR Data Extraction</td><td class="ok">✓</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td></tr><tr><td class="rowname">AAA (Advisor Advantage)</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Investor Access</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Landing Page</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Platform</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td></tr><tr><td class="rowname">Side Letter</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td></tr></tbody></table>
+  </div>
+
+  <div class="grid2">
+    <div class="card"><h3>Products lacking a top-3 source (spec/impl/pricing)</h3><span class="pill warn">Investor Access · best=T4</span><span class="pill warn">Landing Page · best=T5</span><span class="pill warn">Platform · no sources</span><span class="pill warn">Side Letter · no sources</span></div>
+    <div class="card"><h3>Fragile pages — single source (5)</h3>
+      <span class="pill warn">Accolade Partners</span><span class="pill warn">Affinity</span><span class="pill warn">Box</span><span class="pill warn">NXSTEP</span><span class="pill warn">Neuberger Berman</span></div>
+  </div>
+
+  <div class="card"><h3>Knowledge gaps — 15 weakly-connected pages (≤1 link)</h3>
+    <span class="pill">Data Extraction - Pricing Guide</span><span class="pill">Data Room - Customer Setup Guide for API Access to DR</span><span class="pill">Data Room - FAQ</span><span class="pill">Data Room - Internal Slide on System Limits</span><span class="pill">Data Room - Multiple Group Internal Training Video</span><span class="pill">Engagement Hub naming: Branded Landing Page repackaged as one of four EH features</span><span class="pill">FundSub — New LP View Update One-Pager</span><span class="pill">IDM - Client Training Deck</span><span class="pill">IDM - Sales Brochure</span><span class="pill">Integration Hub Implementation Guide (PDF)</span><span class="pill">Investor Portal — RFP</span><span class="pill">New Enablement Material: Investor Portal Training Materials</span><span class="pill">Rationale: Schwab implementation guide vs Cerity training are complementary</span><span class="pill">Why Portal AUM table retained despite EH supersession</span><span class="pill">[Internal Guide] Investor Sends Email Support Directly from Platform</span></div>
+</div>
+
+<!-- ============================== ZONE B ============================== -->
+<div class="zone">
+  <div class="zone-h"><span class="tag">B</span><h2>Topical Briefing</h2>
+    <span class="why">Per-product &amp; customer view for CS / Sales / RM</span></div>
+
+  <div class="card"><h3>Product profiles (13)</h3>
+    <div class="grid3"><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">FundSub (Fund Subscription)</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>15</b> sources</span><span><b>0</b> features</span>
+        <span><b>4</b> customers</span><span class="trust"><b>T1–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">9d old · concepts: Anduin Object Model, Configuration vs Permission Model, Import/Export Templates, Investor Onboarding Workflow</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Investor Data Management (IDM)</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>12</b> sources</span><span><b>0</b> features</span>
+        <span><b>1</b> customers</span><span class="trust"><b>T1–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">37d old · concepts: Anduin Object Model, Configuration vs Permission Model, Product Packaging &amp; Bundling</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Investor Portal</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>9</b> sources</span><span><b>0</b> features</span>
+        <span><b>0</b> customers</span><span class="trust"><b>T1–T11</b> trust</span>
+      </div>
+      <div class="pcard-meta">7d old · concepts: Investor Onboarding Workflow, Product Packaging &amp; Bundling</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Data Room</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>10</b> sources</span><span><b>0</b> features</span>
+        <span><b>1</b> customers</span><span class="trust"><b>T1–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">37d old · concepts: Anduin Object Model, Configuration vs Permission Model, Integration Patterns</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Integration Hub</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>14</b> sources</span><span><b>0</b> features</span>
+        <span><b>1</b> customers</span><span class="trust"><b>T1–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">37d old · concepts: Anduin Object Model, CRM Integration Playbook, Configuration vs Permission Model, Integration Patterns</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">E-signature</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>7</b> sources</span><span><b>0</b> features</span>
+        <span><b>1</b> customers</span><span class="trust"><b>T2–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">14d old · concepts: QES/AES/SES Compliance (eIDAS Signature Types)</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Engagement Hub</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>4</b> sources</span><span><b>1</b> features</span>
+        <span><b>0</b> customers</span><span class="trust"><b>T1–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">1d old · concepts: Investor Onboarding Workflow, Product Packaging &amp; Bundling</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">OCR Data Extraction</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>11</b> sources</span><span><b>0</b> features</span>
+        <span><b>0</b> customers</span><span class="trust"><b>T1–T9</b> trust</span>
+      </div>
+      <div class="pcard-meta">37d old · concepts: —</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">AAA (Advisor Advantage)</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>7</b> sources</span><span><b>0</b> features</span>
+        <span><b>1</b> customers</span><span class="trust"><b>T2–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">2d old · concepts: —</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Investor Access</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>2</b> sources</span><span><b>0</b> features</span>
+        <span><b>0</b> customers</span><span class="trust"><b>T4–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">2d old · concepts: Import/Export Templates, Investor Onboarding Workflow</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Landing Page</span><span class="badge dep">deprecated</span></div>
+      <div class="pcard-stats">
+        <span><b>0</b> sources</span><span><b>0</b> features</span>
+        <span><b>0</b> customers</span><span class="trust"><b>T5–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">1d old · concepts: Investor Onboarding Workflow</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Platform</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>0</b> sources</span><span><b>0</b> features</span>
+        <span><b>0</b> customers</span><span class="trust"><b>—</b> trust</span>
+      </div>
+      <div class="pcard-meta">44d old · concepts: —</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Side Letter</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>0</b> sources</span><span><b>0</b> features</span>
+        <span><b>0</b> customers</span><span class="trust"><b>—</b> trust</span>
+      </div>
+      <div class="pcard-meta">44d old · concepts: —</div>
+    </div></div></div>
+
+  <div class="card"><h3>Customer × product — ● = documented link (amber row = none documented)</h3>
+    <table><thead><tr><th class="rowname">Customer</th><th class="rot"><span>FundSub</span></th><th class="rot"><span>Investor Data Management</span></th><th class="rot"><span>Investor Portal</span></th><th class="rot"><span>Data Room</span></th><th class="rot"><span>Integration Hub</span></th><th class="rot"><span>E-signature</span></th><th class="rot"><span>Engagement Hub</span></th><th class="rot"><span>OCR Data Extraction</span></th><th class="rot"><span>AAA</span></th><th class="rot"><span>Investor Access</span></th><th class="rot"><span>Landing Page</span></th><th class="rot"><span>Platform</span></th><th class="rot"><span>Side Letter</span></th></tr></thead><tbody><tr><td class="rowname">Accolade Partners</td><td class="ok">●</td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Antler</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Atalaya</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Audax</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Blackstone</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr><td class="rowname">Cerity Partners</td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Clearlake</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">EQT</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Hg Capital</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">KKR</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr><td class="rowname">NXSTEP</td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr><td class="rowname">Neuberger Berman</td><td class="ok">●</td><td class="ok">●</td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Oakley</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">PAG</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Proskauer</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Sequoia Heritage</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Stone Ridge</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr></tbody></table>
+  </div>
+
+  <div class="grid2">
+    <div class="card"><h3>Audience split — sources by target audience</h3><div class="bar-row"><div class="bar-label" title="CS">CS</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">25</div></div>
+<div class="bar-row"><div class="bar-label" title="Sales + RM">Sales + RM</div><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div><div class="bar-val">23</div></div>
+<div class="bar-row"><div class="bar-label" title="All teams">All teams</div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><div class="bar-val">22</div></div>
+<div class="bar-row"><div class="bar-label" title="CS, Sales + RM">CS, Sales + RM</div><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div><div class="bar-val">3</div></div>
+<div class="bar-row"><div class="bar-label" title="CS | Sales + RM">CS | Sales + RM</div><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div><div class="bar-val">3</div></div>
+<div class="bar-row"><div class="bar-label" title="Sales + RM | CS">Sales + RM | CS</div><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div><div class="bar-val">3</div></div>
+<div class="bar-row"><div class="bar-label" title="CS, Digi">CS, Digi</div><div class="bar-track"><div class="bar-fill" style="width:4%"></div></div><div class="bar-val">1</div></div>
+<div class="bar-row"><div class="bar-label" title="Digi | CS">Digi | CS</div><div class="bar-track"><div class="bar-fill" style="width:4%"></div></div><div class="bar-val">1</div></div>
+<div class="bar-row"><div class="bar-label" title="CS | Digi">CS | Digi</div><div class="bar-track"><div class="bar-fill" style="width:4%"></div></div><div class="bar-val">1</div></div>
+<div class="bar-row"><div class="bar-label" title="Sales + RM, CS">Sales + RM, CS</div><div class="bar-track"><div class="bar-fill" style="width:4%"></div></div><div class="bar-val">1</div></div></div>
+    <div class="card"><h3>Onboarding must-reads (14)</h3><span class="pill">AAA (Advisor Advantage) — Product Brief / RIA Product Brief</span><span class="pill">AAA (Advisor Advantage) — Sales Deck (Demo Screens)</span><span class="pill">AAA (Advisor Advantage) — User Guide (RIA User Guide)</span><span class="pill">Anduin Investor Portal — Main Sales Deck</span><span class="pill">Data Extraction - Implementation Guide</span><span class="pill">Data Extraction Implementation Journey (CS-DEA-Client)</span><span class="pill">FundSub — Anduin Essentials Sales Deck</span><span class="pill">IH Knowledge Hub — Guide to All Available Implementations</span><span class="pill">IH Setup Guide — How to Set Up the Integration Hub Platform</span><span class="pill">Integration Hub Implementation Guide (Internal CS Playbook)</span><span class="pill">Integration Hub Implementation Guide (PDF)</span><span class="pill">Investor Access — Internal FAQ</span><span class="pill">OCR/AI Managed Services - Sales Deck</span><span class="pill">[Internal use] Intro for Integration Hub</span></div>
+  </div>
+</div>
+
+<div class="foot">Generated from graph.json + 135 page frontmatters ·
+<a href="graph.html">interactive graph</a> · <a href="GRAPH_REPORT.md">audit report</a></div>
+</div></body></html>
