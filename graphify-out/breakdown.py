@@ -37,10 +37,35 @@ def parse_fm(text):
     return fm
 
 # meta keyed by source_file path relative to vault, e.g. "wiki/products/fundsub.md"
+# body keeps the full markdown so we can read [[wikilinks]] (ground truth the
+# graph extraction does not reliably capture).
 meta = {}
+body = {}
 for p in (VAULT / "wiki").rglob("*.md"):
     rel = p.relative_to(VAULT).as_posix()
-    meta[rel] = parse_fm(p.read_text(encoding="utf-8", errors="ignore"))
+    txt = p.read_text(encoding="utf-8", errors="ignore")
+    meta[rel] = parse_fm(txt)
+    body[rel] = txt
+
+# customer <-> product links from wikilinks, in BOTH directions:
+#   customer body links [[wiki/products/X]]  AND  product body links [[wiki/customers/Y]]
+_WIKILINK = re.compile(r"\[\[wiki/(products|customers)/([a-z0-9-]+)")
+cust2prods = collections.defaultdict(set)   # "wiki/customers/foo.md" -> {product stems}
+for rel, txt in body.items():
+    t = meta.get(rel, {}).get("type")
+    if t == "customer":
+        for kind, slug in _WIKILINK.findall(txt):
+            if kind == "products":
+                cust2prods[rel].add(slug)
+    elif t == "product":
+        pslug = Path(rel).stem
+        for kind, slug in _WIKILINK.findall(txt):
+            if kind == "customers":
+                cust2prods[f"wiki/customers/{slug}.md"].add(pslug)
+prod2custs = collections.defaultdict(set)   # product stem -> {customer "title"}
+for cf, pslugs in cust2prods.items():
+    for ps in pslugs:
+        prod2custs[ps].add(cf)
 
 # ---------------------------------------------------------------- graph
 g = json.load(open(GRAPH))
@@ -127,7 +152,10 @@ for sf, m in meta.items():
         trust_hist[int(m["trust_level"])] += 1
 
 # ---------------------------------------------------------------- product joins
-PRODUCT_FILES = sorted(files_by_type.get("product", []),
+# All product PAGES on disk — not just those that became graph nodes. The graph
+# extraction misses some product pages (e.g. fundsub, data-room, IDM), which
+# would otherwise drop entire columns/rows from the matrices below.
+PRODUCT_FILES = sorted([sf for sf, m in meta.items() if m.get("type") == "product"],
                        key=lambda sf: -file_degree(sf))
 # Coverage is a CONTENT-gap signal, so derive it from each source's frontmatter
 # `products:` field (ground truth) rather than graph adjacency — the graph does
@@ -185,7 +213,7 @@ for sf in PRODUCT_FILES:
         "sc": m.get("source_count", str(len(srcs))),
         "feat": len([f for f in files_by_type.get("feature", [])
                      if meta.get(f, {}).get("parent_product", "") == m.get("title", "")]),
-        "cust": neighbors_type(sf, "customer"),
+        "cust": sorted(prod2custs.get(Path(sf).stem, set())),
         "concepts": neighbors_type(sf, "concept"),
         "trust_min": min(trusts) if trusts else None,
         "trust_max": max(trusts) if trusts else None,
@@ -207,7 +235,7 @@ CUST_FILES = sorted(files_by_type.get("customer", []),
                     key=lambda sf: meta.get(sf, {}).get("title", sf))
 cust_matrix = []
 for sf in CUST_FILES:
-    prods = {Path(f).stem for f in neighbors_type(sf, "product")}
+    prods = set(cust2prods.get(sf, set()))   # from wikilinks, both directions
     cust_matrix.append((meta.get(sf, {}).get("title", Path(sf).stem), prods))
 PROD_COLS = [(meta.get(sf, {}).get("title", Path(sf).stem).split(" (")[0], Path(sf).stem)
              for sf in PRODUCT_FILES]
