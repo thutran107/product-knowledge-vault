@@ -129,8 +129,38 @@ for sf, m in meta.items():
 # ---------------------------------------------------------------- product joins
 PRODUCT_FILES = sorted(files_by_type.get("product", []),
                        key=lambda sf: -file_degree(sf))
+# Coverage is a CONTENT-gap signal, so derive it from each source's frontmatter
+# `products:` field (ground truth) rather than graph adjacency — the graph does
+# not reliably wire every product node to its source pages.
+def _pnorm(s):
+    return str(s).lower().strip().strip('"').strip("'")
+PRODUCT_ALIASES = {
+    "integration-hub": {"integration hub"},
+    "fundsub": {"fundsub", "fund subscription"},
+    "data-room": {"data room"},
+    "investor-data-management": {"idm", "investor data management"},
+    "investor-access": {"investor access"},
+    "platform": {"platform"},
+    "e-signature": {"e-signature", "esignature", "e signature"},
+    "investor-portal": {"investor portal", "portal"},
+    "ocr-data-extraction": {"ocr data extraction", "ocr", "data extraction"},
+    "aaa": {"aaa", "advisor advantage"},
+    "landing-page": {"landing page"},
+    "side-letter": {"side letter"},
+    "engagement-hub": {"engagement hub"},
+}
 def product_sources(sf):
-    return [f for f in fadj.get(sf, ()) if ftype(f) == "source"]
+    stem = Path(sf).stem
+    aliases = PRODUCT_ALIASES.get(stem, {stem.replace("-", " ")})
+    out = []
+    for f, fmeta in meta.items():
+        if fmeta.get("type") != "source":
+            continue
+        prods = fmeta.get("products", [])
+        prods = [prods] if isinstance(prods, str) else prods
+        if any(_pnorm(p) in aliases for p in prods):
+            out.append(f)
+    return out
 def neighbors_type(sf, t):
     return [f for f in fadj.get(sf, ()) if ftype(f) == t]
 
