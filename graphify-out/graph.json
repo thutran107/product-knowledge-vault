@@ -4,246 +4,45 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "engagement_tier_idm_stack",
-        "label": "IDM / Engagement Hub / Investor Portal share one IDM Firm space",
+        "id": "fund_admin_in_house_build",
+        "label": "Fund admins building in-house onboarding",
         "nodes": [
-          "investor-data-management",
-          "engagement-hub",
-          "investor-portal"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.9
-      },
-      {
-        "id": "neuberger_full_stack_deployment",
-        "label": "Neuberger Berman full-stack deployment",
-        "nodes": [
-          "neuberger-berman",
-          "fundsub",
-          "investor-data-management",
-          "integration-hub",
-          "salesforce"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.85
-      },
-      {
-        "id": "automated_investor_onboarding_flow",
-        "label": "Automated Investor Onboarding via Integration Hub",
-        "nodes": [
-          "investor-onboarding-workflow",
-          "integration-patterns",
-          "import-export-templates",
-          "data-mapping",
-          "fundsub"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.9
-      },
-      {
-        "id": "engagement_hub_packaging_stack",
-        "label": "Engagement Hub / Portal / IDM Packaging Stack",
-        "nodes": [
-          "product-packaging-bundling",
-          "engagement-hub",
-          "investor-portal",
-          "investor-data-management",
-          "engagement-hub-branded-landing-pages"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.85
-      },
-      {
-        "id": "config_vs_permission_apps",
-        "label": "Configuration vs Permission across Anduin apps",
-        "nodes": [
-          "configuration-vs-permission",
-          "integration-hub",
-          "fundsub",
-          "investor-data-management",
-          "data-room"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.85
-      },
-      {
-        "id": "anduin_object_model_scoping",
-        "label": "Anduin Object Model spans products",
-        "nodes": [
-          "anduin-object-model",
-          "fundsub",
-          "investor-data-management",
-          "data-room",
-          "integration-hub"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.85
-      },
-      {
-        "id": "aaa_advisor_workflow_stack",
-        "label": "AAA advisor workflow concept stack",
-        "nodes": [
-          "aaa-cs-training",
-          "aaa",
-          "anduin-object-model",
-          "user-roles",
-          "configuration-vs-permission"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.8
-      },
-      {
-        "id": "ih_anduin_objects",
-        "label": "Integration Hub configuration over Anduin Objects",
-        "nodes": [
-          "integration-hub",
-          "fundsub",
-          "investor-data-management",
-          "data-room",
-          "anduin-object-model"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.9
-      },
-      {
-        "id": "data_movement_flow",
-        "label": "Import/Export data movement via Templates and Mapping",
-        "nodes": [
-          "data-management",
-          "import-export-templates",
-          "data-mapping",
-          "fundsub"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.85
-      },
-      {
-        "id": "eh_naming_repackaging",
-        "label": "Branded Landing Page repackaged into Engagement Hub",
-        "nodes": [
-          "engagement-hub-naming-history-slack",
-          "engagement-hub",
-          "engagement-hub-branded-landing-pages",
-          "landing-page"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.85
-      },
-      {
-        "id": "schwab_docusign_signing_flow",
-        "label": "Schwab DocuSign Custodian Signing Flow",
-        "nodes": [
-          "esignature-schwab-implementation-guide",
-          "esignature-schwab-cerity-training",
-          "e-signature",
-          "fundsub",
-          "cerity-partners"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.9
-      },
-      {
-        "id": "eh_portal_idm_packaging",
-        "label": "Engagement Hub / Portal / IDM Bundling Strategy",
-        "nodes": [
-          "engagement-hub-product-overview",
-          "engagement-hub-pricing",
-          "engagement-hub",
-          "investor-portal",
-          "investor-data-management",
-          "product-packaging-bundling"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.85
-      },
-      {
-        "id": "docusign_qes_signature_offering",
-        "label": "DocuSign QES/SES Signature Offering",
-        "nodes": [
-          "esignature-docusign-qes-faq",
-          "esignature-docusign-sales-deck",
-          "docusign",
-          "qes-aes-compliance"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.9
-      },
-      {
-        "id": "ocr_security_pipeline",
-        "label": "OCR End-to-End Security Pipeline (Textract + Human Review)",
-        "nodes": [
-          "ocr-security-whitepaper-textract",
-          "ocr-security-whitepaper-human-augmented",
-          "ocr-data-extraction"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.9
-      },
-      {
-        "id": "idm_fundsub_onboarding_flow",
-        "label": "IDM + FundSub Investor Onboarding Flow",
-        "nodes": [
-          "idm-fundsub-investor-onboarding-may-2025",
-          "investor-data-management",
-          "fundsub",
-          "investor-onboarding-workflow"
+          "nav",
+          "flow",
+          "dynamo"
         ],
         "relation": "participate_in",
         "confidence": "INFERRED",
-        "confidence_score": 0.8
+        "confidence_score": 0.85,
+        "source_file": "wiki/concepts/private-markets-competitive-landscape.md"
       },
       {
-        "id": "crm_order_creation_integrations",
-        "label": "CRM Order Creation Integrations into FundSub",
+        "id": "ai_lp_side_entrants",
+        "label": "AI-native / LP-side entrants",
         "nodes": [
-          "dealcloud",
-          "affinity",
-          "salesforce",
-          "fundsub"
+          "juniper-square",
+          "vantager",
+          "daphne",
+          "blueflame-ai"
         ],
         "relation": "participate_in",
         "confidence": "INFERRED",
-        "confidence_score": 0.85
+        "confidence_score": 0.8,
+        "source_file": "wiki/concepts/private-markets-competitive-landscape.md"
       },
       {
-        "id": "standalone_portal_competitive_set",
-        "label": "Standalone Investor Portal Competitive Set",
+        "id": "side_letter_rivals",
+        "label": "Side-letter / MFN rivals",
         "nodes": [
-          "investorflow",
-          "atominvest",
-          "investor-portal",
-          "investor-portal-pricing-faqs-boston"
+          "ontra",
+          "pro-vision",
+          "carta",
+          "kirkland-ellis"
         ],
         "relation": "participate_in",
         "confidence": "INFERRED",
-        "confidence_score": 0.8
-      },
-      {
-        "id": "docusign_signing_paths",
-        "label": "DocuSign Dual Signing Paths (QES/SES + Schwab)",
-        "nodes": [
-          "docusign",
-          "e-signature",
-          "qes-aes-compliance",
-          "cerity-partners"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8
+        "confidence_score": 0.8,
+        "source_file": "wiki/competitors/competitor-landscape-watchlist.md"
       }
     ]
   },
@@ -252,982 +51,1490 @@
       "label": "Anduin Product Knowledge Library \u2014 Overview",
       "file_type": "document",
       "source_file": "wiki/overview.md",
-      "id": "overview",
-      "community": 4
+      "community": 5,
+      "id": "overview"
     },
     {
       "label": "Onboarding Must-Reads",
       "file_type": "document",
       "source_file": "wiki/onboarding.md",
-      "id": "onboarding",
-      "community": 5
+      "community": 6,
+      "id": "onboarding"
     },
     {
       "label": "Sequoia Heritage",
       "file_type": "document",
       "source_file": "wiki/customers/sequoia-heritage.md",
-      "id": "sequoia-heritage",
-      "community": 4
+      "community": 5,
+      "id": "sequoia-heritage"
     },
     {
       "label": "Accolade Partners",
       "file_type": "document",
       "source_file": "wiki/customers/accolade.md",
-      "id": "accolade",
-      "community": 6
+      "community": 0,
+      "id": "accolade"
     },
     {
       "label": "Neuberger Berman",
       "file_type": "document",
       "source_file": "wiki/customers/neuberger-berman.md",
-      "id": "neuberger-berman",
-      "community": 4
+      "community": 5,
+      "id": "neuberger-berman"
     },
     {
       "label": "Proskauer",
       "file_type": "document",
       "source_file": "wiki/customers/proskauer.md",
-      "id": "proskauer",
-      "community": 4
+      "community": 5,
+      "id": "proskauer"
     },
     {
       "label": "NXSTEP",
       "file_type": "document",
       "source_file": "wiki/customers/nxstep.md",
-      "id": "nxstep",
-      "community": 4
+      "community": 5,
+      "id": "nxstep"
     },
     {
       "label": "Antler",
       "file_type": "document",
       "source_file": "wiki/customers/antler.md",
-      "id": "antler",
-      "community": 4
+      "community": 5,
+      "id": "antler"
     },
     {
       "label": "Clearlake",
       "file_type": "document",
       "source_file": "wiki/customers/clearlake.md",
-      "id": "clearlake",
-      "community": 4
+      "community": 5,
+      "id": "clearlake"
     },
     {
       "label": "Hg Capital",
       "file_type": "document",
       "source_file": "wiki/customers/hg-capital.md",
-      "id": "hg-capital",
-      "community": 4
+      "community": 5,
+      "id": "hg-capital"
     },
     {
       "label": "Oakley",
       "file_type": "document",
       "source_file": "wiki/customers/oakley.md",
-      "id": "oakley",
-      "community": 4
+      "community": 5,
+      "id": "oakley"
     },
     {
       "label": "Blackstone",
       "file_type": "document",
       "source_file": "wiki/customers/blackstone.md",
-      "id": "blackstone",
-      "community": 4
+      "community": 5,
+      "id": "blackstone"
     },
     {
       "label": "KKR",
       "file_type": "document",
       "source_file": "wiki/customers/kkr.md",
-      "id": "kkr",
-      "community": 4
+      "community": 5,
+      "id": "kkr"
     },
     {
       "label": "EQT",
       "file_type": "document",
       "source_file": "wiki/customers/eqt.md",
-      "id": "eqt",
-      "community": 4
+      "community": 5,
+      "id": "eqt"
     },
     {
       "label": "Stone Ridge",
       "file_type": "document",
       "source_file": "wiki/customers/stone-ridge.md",
-      "id": "stone-ridge",
-      "community": 4
+      "community": 5,
+      "id": "stone-ridge"
     },
     {
       "label": "Cerity Partners",
       "file_type": "document",
       "source_file": "wiki/customers/cerity-partners.md",
-      "id": "cerity-partners",
-      "community": 3
+      "community": 4,
+      "id": "cerity-partners"
     },
     {
       "label": "PAG",
       "file_type": "document",
       "source_file": "wiki/customers/pag.md",
-      "id": "pag",
-      "community": 4
+      "community": 5,
+      "id": "pag"
     },
     {
       "label": "Atalaya",
       "file_type": "document",
       "source_file": "wiki/customers/atalaya.md",
-      "id": "atalaya",
-      "community": 4
+      "community": 5,
+      "id": "atalaya"
     },
     {
       "label": "Audax",
       "file_type": "document",
       "source_file": "wiki/customers/audax.md",
-      "id": "audax",
-      "community": 4
+      "community": 5,
+      "id": "audax"
     },
     {
       "label": "Engagement Hub",
       "file_type": "document",
       "source_file": "wiki/products/engagement-hub.md",
-      "id": "engagement-hub",
-      "community": 0
+      "community": 3,
+      "id": "engagement-hub"
     },
     {
       "label": "Engagement Hub naming: Branded Landing Page repackaged as one of four EH features",
       "file_type": "document",
       "source_file": "wiki/products/engagement-hub.md",
       "source_location": "Naming & history note",
-      "id": "engagement-hub-naming-rationale",
-      "community": 0
+      "community": 3,
+      "id": "engagement-hub-naming-rationale"
     },
     {
       "label": "Integration Hub",
       "file_type": "document",
-      "source_file": "wiki/products/integration-hub.md",
-      "id": "integration-hub",
-      "community": 1
+      "source_file": "wiki/competitors/atominvest.md",
+      "community": 0,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "integration-hub"
     },
     {
       "label": "Investor Data Management (IDM)",
       "file_type": "document",
-      "source_file": "wiki/products/investor-data-management.md",
-      "id": "investor-data-management",
-      "community": 1
+      "source_file": "wiki/competitors/passthrough.md",
+      "community": 0,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "investor-data-management"
     },
     {
       "label": "Investor Access",
       "file_type": "document",
       "source_file": "wiki/products/investor-access.md",
-      "id": "investor-access",
-      "community": 3
+      "community": 4,
+      "id": "investor-access"
     },
     {
       "label": "Platform",
       "file_type": "document",
       "source_file": "wiki/products/platform.md",
-      "id": "platform",
-      "community": 6
+      "community": 0,
+      "id": "platform"
     },
     {
       "label": "Data Room",
       "file_type": "document",
-      "source_file": "wiki/products/data-room.md",
-      "id": "data-room",
-      "community": 6
+      "source_file": "wiki/competitors/passthrough.md",
+      "community": 0,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "data-room"
     },
     {
       "label": "OCR Data Extraction",
       "file_type": "document",
       "source_file": "wiki/products/ocr-data-extraction.md",
-      "id": "ocr-data-extraction",
-      "community": 5
+      "community": 6,
+      "id": "ocr-data-extraction"
     },
     {
       "label": "Investor Portal",
       "file_type": "document",
-      "source_file": "wiki/products/investor-portal.md",
-      "id": "investor-portal",
-      "community": 0
+      "source_file": "wiki/competitors/atominvest.md",
+      "community": 3,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "investor-portal"
     },
     {
-      "label": "FundSub (Fund Subscription)",
+      "label": "Fundsub",
       "file_type": "document",
-      "source_file": "wiki/products/fundsub.md",
-      "id": "fundsub",
-      "community": 2
+      "source_file": "wiki/competitors/passthrough.md",
+      "community": 1,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fundsub"
     },
     {
       "label": "AAA (Advisor Advantage)",
       "file_type": "document",
       "source_file": "wiki/products/aaa.md",
-      "id": "aaa",
-      "community": 3
+      "community": 4,
+      "id": "aaa"
     },
     {
       "label": "Side Letter",
       "file_type": "document",
-      "source_file": "wiki/products/side-letter.md",
-      "id": "side-letter",
-      "community": 4
+      "source_file": "wiki/competitors/ontra.md",
+      "community": 2,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "side-letter"
     },
     {
       "label": "E-signature",
       "file_type": "document",
       "source_file": "wiki/products/e-signature.md",
-      "id": "e-signature",
-      "community": 3
+      "community": 4,
+      "id": "e-signature"
     },
     {
       "label": "Landing Page",
       "file_type": "document",
       "source_file": "wiki/products/landing-page.md",
-      "id": "landing-page",
-      "community": 0
+      "community": 3,
+      "id": "landing-page"
     },
     {
       "label": "Branded Landing Pages",
       "file_type": "document",
       "source_file": "wiki/features/engagement-hub-branded-landing-pages.md",
-      "id": "engagement-hub-branded-landing-pages",
-      "community": 0
+      "community": 3,
+      "id": "engagement-hub-branded-landing-pages"
     },
     {
       "label": "Configuration vs Permission Model",
       "file_type": "document",
       "source_file": "wiki/concepts/configuration-vs-permission.md",
-      "id": "configuration-vs-permission",
-      "community": 1
+      "community": 0,
+      "id": "configuration-vs-permission"
     },
     {
       "label": "Product Packaging & Bundling",
       "file_type": "document",
       "source_file": "wiki/concepts/product-packaging-bundling.md",
-      "id": "product-packaging-bundling",
-      "community": 0
+      "community": 3,
+      "id": "product-packaging-bundling"
     },
     {
       "label": "Import/Export Templates",
       "file_type": "document",
       "source_file": "wiki/concepts/import-export-templates.md",
-      "id": "import-export-templates",
-      "community": 2
+      "community": 1,
+      "id": "import-export-templates"
     },
     {
       "label": "QES/AES/SES Compliance (eIDAS Signature Types)",
       "file_type": "document",
       "source_file": "wiki/concepts/qes-aes-compliance.md",
-      "id": "qes-aes-compliance",
-      "community": 3
+      "community": 4,
+      "id": "qes-aes-compliance"
     },
     {
       "label": "Integration Patterns",
       "file_type": "document",
       "source_file": "wiki/concepts/integration-patterns.md",
-      "id": "integration-patterns",
-      "community": 2
+      "community": 1,
+      "id": "integration-patterns"
     },
     {
       "label": "Data Mapping",
       "file_type": "document",
       "source_file": "wiki/concepts/data-mapping.md",
-      "id": "data-mapping",
-      "community": 2
+      "community": 1,
+      "id": "data-mapping"
     },
     {
       "label": "Investor Onboarding Workflow",
       "file_type": "document",
       "source_file": "wiki/concepts/investor-onboarding-workflow.md",
-      "id": "investor-onboarding-workflow",
-      "community": 2
+      "community": 1,
+      "id": "investor-onboarding-workflow"
     },
     {
       "label": "Why Portal AUM table retained despite EH supersession",
       "file_type": "document",
       "source_file": "wiki/products/investor-portal.md",
-      "id": "investor-portal-pricing-structure-rationale",
-      "community": 0
+      "community": 3,
+      "id": "investor-portal-pricing-structure-rationale"
     },
     {
       "label": "CRM Integration Playbook",
       "file_type": "document",
       "source_file": "wiki/concepts/crm-integration-playbook.md",
-      "id": "crm-integration-playbook",
-      "community": 1
+      "community": 0,
+      "id": "crm-integration-playbook"
     },
     {
       "label": "User Roles",
       "file_type": "document",
       "source_file": "wiki/concepts/user-roles.md",
-      "id": "user-roles",
-      "community": 1
+      "community": 0,
+      "id": "user-roles"
     },
     {
       "label": "Anduin Object Model",
       "file_type": "document",
       "source_file": "wiki/concepts/anduin-object-model.md",
-      "id": "anduin-object-model",
-      "community": 1
+      "community": 0,
+      "id": "anduin-object-model"
     },
     {
       "label": "Investor Portal vs. Integration Hub",
       "file_type": "document",
       "source_file": "wiki/analyses/investor-portal-vs-integration-hub.md",
-      "id": "investor-portal-vs-integration-hub",
-      "community": 0
+      "community": 3,
+      "id": "investor-portal-vs-integration-hub"
     },
     {
       "label": "Query Answering Showcase \u2014 The Karpathy Method",
       "file_type": "document",
       "source_file": "wiki/analyses/query-answering-karpathy-method.md",
-      "id": "query-answering-karpathy-method",
-      "community": 3
+      "community": 6,
+      "id": "query-answering-karpathy-method"
     },
     {
       "label": "Integration Hub Sales Deck (Feb 2025)",
       "file_type": "document",
       "source_file": "wiki/sources/ih-sales-deck-feb-2025.md",
-      "id": "ih-sales-deck-feb-2025",
-      "community": 1
+      "community": 0,
+      "id": "ih-sales-deck-feb-2025"
     },
     {
       "label": "OCR/AI Managed Services - Sales Deck",
       "file_type": "document",
       "source_file": "wiki/sources/ocr-managed-services-sales-deck.md",
-      "id": "ocr-managed-services-sales-deck",
-      "community": 5
+      "community": 6,
+      "id": "ocr-managed-services-sales-deck"
     },
     {
       "label": "User Guide \u2014 Allowing Post-Signing Changes Without New Signatures",
       "file_type": "document",
       "source_file": "wiki/sources/esignature-reuse-signature-pages.md",
-      "id": "esignature-reuse-signature-pages",
-      "community": 3
+      "community": 4,
+      "id": "esignature-reuse-signature-pages"
     },
     {
       "label": "AAA \u2014 Product x CS Demo + Training (Jan 2026)",
       "file_type": "document",
       "source_file": "wiki/sources/aaa-cs-training.md",
-      "id": "aaa-cs-training",
-      "community": 1
+      "community": 0,
+      "id": "aaa-cs-training"
     },
     {
       "label": "Data Extraction - Pricing Guide",
       "file_type": "document",
       "source_file": "wiki/sources/ocr-pricing-guide.md",
-      "id": "ocr-pricing-guide",
-      "community": 5
+      "community": 6,
+      "id": "ocr-pricing-guide"
     },
     {
       "label": "New OCR User Experience \u2014 Overview",
       "file_type": "document",
       "source_file": "wiki/sources/ocr-new-ux-overview.md",
-      "id": "ocr-new-ux-overview",
-      "community": 5
+      "community": 6,
+      "id": "ocr-new-ux-overview"
     },
     {
       "label": "AAA \u2014 Feature: Advisor's Tags for GP to Communicate with RIAs",
       "file_type": "document",
       "source_file": "wiki/sources/aaa-advisor-tags.md",
-      "id": "aaa-advisor-tags",
-      "community": 3
+      "community": 4,
+      "id": "aaa-advisor-tags"
     },
     {
       "label": "GTM Enablement \u2014 Investor Portal Customer Training Guide (Oct 2025)",
       "file_type": "document",
       "source_file": "wiki/sources/investor-portal-customer-training-guide.md",
-      "id": "investor-portal-customer-training-guide",
-      "community": 0
+      "community": 3,
+      "id": "investor-portal-customer-training-guide"
     },
     {
       "label": "IDM - Release Notes",
       "file_type": "document",
       "source_file": "wiki/sources/idm-release-notes.md",
-      "id": "idm-release-notes",
-      "community": 1
+      "community": 0,
+      "id": "idm-release-notes"
     },
     {
       "label": "Retrieve Subscription Data (DealCloud)",
       "file_type": "document",
       "source_file": "wiki/sources/retrieve-subscription-data.md",
-      "id": "retrieve-subscription-data",
-      "community": 2
+      "community": 1,
+      "id": "retrieve-subscription-data"
     },
     {
       "label": "Building a Digital Foundation for Growth at Neuberger Berman",
       "file_type": "document",
       "source_file": "wiki/sources/neuberger-berman-case-study.md",
-      "id": "neuberger-berman-case-study",
-      "community": 1
+      "community": 0,
+      "id": "neuberger-berman-case-study"
     },
     {
       "label": "AAA (Advisor Advantage) \u2014 Sales Deck (Demo Screens)",
       "file_type": "document",
       "source_file": "wiki/sources/aaa-sales-deck.md",
-      "id": "aaa-sales-deck",
-      "community": 3
+      "community": 4,
+      "id": "aaa-sales-deck"
     },
     {
       "label": "AAA (Advisor Advantage) \u2014 Product Brief",
       "file_type": "document",
       "source_file": "wiki/sources/aaa-product-brief.md",
-      "id": "aaa-product-brief",
-      "community": 3
+      "community": 4,
+      "id": "aaa-product-brief"
     },
     {
       "label": "Theme Customization for FundSub and Data Room \u2014 Internal Guide",
       "file_type": "document",
       "source_file": "wiki/sources/fundsub-dataroom-theme-customization.md",
-      "id": "fundsub-dataroom-theme-customization",
-      "community": 6
+      "community": 0,
+      "id": "fundsub-dataroom-theme-customization"
     },
     {
       "label": "FundSub Email Configuration & SMTP Integration \u2014 Mar 2025",
       "file_type": "document",
       "source_file": "wiki/sources/fundsub-email-smtp-implementation-guide.md",
-      "id": "fundsub-email-smtp-implementation-guide",
-      "community": 2
+      "community": 1,
+      "id": "fundsub-email-smtp-implementation-guide"
     },
     {
       "label": "Data Extraction Sales Deck",
       "file_type": "document",
       "source_file": "wiki/sources/ocr-data-extraction-sales-deck.md",
-      "id": "ocr-data-extraction-sales-deck",
-      "community": 5
+      "community": 6,
+      "id": "ocr-data-extraction-sales-deck"
     },
     {
       "label": "OCR Table View \u2014 How It Works",
       "file_type": "document",
       "source_file": "wiki/sources/ocr-table-view-how-it-works.md",
-      "id": "ocr-table-view-how-it-works",
-      "community": 5
+      "community": 6,
+      "id": "ocr-table-view-how-it-works"
     },
     {
       "label": "IDM Sprint 362 Release Notes",
       "file_type": "document",
       "source_file": "wiki/sources/idm-release-notes-sprint-362.md",
-      "id": "idm-release-notes-sprint-362",
-      "community": 1
+      "community": 0,
+      "id": "idm-release-notes-sprint-362"
     },
     {
       "label": "Investor Portal Pricing FAQs (Boston)",
       "file_type": "document",
       "source_file": "wiki/sources/investor-portal-pricing-faqs-boston.md",
-      "id": "investor-portal-pricing-faqs-boston",
-      "community": 0
+      "community": 3,
+      "id": "investor-portal-pricing-faqs-boston"
     },
     {
       "label": "Investor Portal GTM Primer",
       "file_type": "document",
       "source_file": "wiki/sources/investor-portal-gtm-primer.md",
-      "id": "investor-portal-gtm-primer",
-      "community": 0
+      "community": 3,
+      "id": "investor-portal-gtm-primer"
     },
     {
       "label": "Investor Portal Sales Deck",
       "file_type": "document",
       "source_file": "wiki/sources/investor-portal-sales-deck.md",
-      "id": "investor-portal-sales-deck",
-      "community": 0
+      "community": 3,
+      "id": "investor-portal-sales-deck"
     },
     {
       "label": "IH SOP",
       "file_type": "document",
       "source_file": "wiki/sources/ih-sop.md",
-      "id": "ih-sop",
-      "community": 2
+      "community": 1,
+      "id": "ih-sop"
     },
     {
       "label": "Schwab Signature Setup Implementation Guide",
       "file_type": "document",
       "source_file": "wiki/sources/esignature-schwab-implementation-guide.md",
-      "id": "esignature-schwab-implementation-guide",
-      "community": 3
+      "community": 4,
+      "id": "esignature-schwab-implementation-guide"
     },
     {
       "label": "Schwab Cerity Training",
       "file_type": "document",
       "source_file": "wiki/sources/esignature-schwab-cerity-training.md",
-      "id": "esignature-schwab-cerity-training",
-      "community": 3
+      "community": 4,
+      "id": "esignature-schwab-cerity-training"
     },
     {
       "label": "OCR Implementation Journey",
       "file_type": "document",
       "source_file": "wiki/sources/ocr-implementation-journey.md",
-      "id": "ocr-implementation-journey",
-      "community": 5
+      "community": 6,
+      "id": "ocr-implementation-journey"
     },
     {
       "label": "OCR-FundSub Process Client Training",
       "file_type": "document",
       "source_file": "wiki/sources/ocr-fundsub-process-client-training.md",
-      "id": "ocr-fundsub-process-client-training",
-      "community": 5
+      "community": 6,
+      "id": "ocr-fundsub-process-client-training"
     },
     {
       "label": "Investor Portal Contact Management",
       "file_type": "document",
       "source_file": "wiki/sources/investor-portal-contact-management.md",
-      "id": "investor-portal-contact-management",
-      "community": 0
+      "community": 3,
+      "id": "investor-portal-contact-management"
     },
     {
       "label": "AAA GTM Training (Nov 2024)",
       "file_type": "document",
       "source_file": "wiki/sources/aaa-gtm-training.md",
-      "id": "aaa-gtm-training",
-      "community": 3
+      "community": 4,
+      "id": "aaa-gtm-training"
     },
     {
       "label": "Assign/Unassign Subscriptions to Advisor Entities",
       "file_type": "document",
       "source_file": "wiki/sources/aaa-advisor-subscription-assign.md",
-      "id": "aaa-advisor-subscription-assign",
-      "community": 3
+      "community": 4,
+      "id": "aaa-advisor-subscription-assign"
     },
     {
       "label": "IH SMTP GTM Training",
       "file_type": "document",
       "source_file": "wiki/sources/ih-smtp-gtm-training.md",
-      "id": "ih-smtp-gtm-training",
-      "community": 2
+      "community": 1,
+      "id": "ih-smtp-gtm-training"
     },
     {
       "label": "FundSub Duplicate Fund Config",
       "file_type": "document",
       "source_file": "wiki/sources/fundsub-duplicate-fund-config.md",
-      "id": "fundsub-duplicate-fund-config",
-      "community": 2
+      "community": 1,
+      "id": "fundsub-duplicate-fund-config"
     },
     {
       "label": "Configuration vs Permission (source)",
       "file_type": "document",
       "source_file": "wiki/sources/configuration-vs-permission.md",
-      "id": "configuration-vs-permission-src",
-      "community": 1
+      "community": 0,
+      "id": "configuration-vs-permission-src"
     },
     {
       "label": "Automated Onboarding to Data Room from Salesforce (Implementation Guide)",
       "file_type": "document",
       "source_file": "wiki/sources/ih-salesforce-dataroom-implementation-guide.md",
-      "id": "ih-salesforce-dataroom-implementation-guide",
-      "community": 6
+      "community": 0,
+      "id": "ih-salesforce-dataroom-implementation-guide"
     },
     {
       "label": "[Internal use] Intro for Integration Hub",
       "file_type": "document",
       "source_file": "wiki/sources/ih-intro-overview.md",
-      "id": "ih-intro-overview",
-      "community": 1
+      "community": 0,
+      "id": "ih-intro-overview"
     },
     {
       "label": "Data Room - Multiple Group Internal Training Video",
       "file_type": "document",
       "source_file": "wiki/sources/data-room-multi-group-training-video.md",
-      "id": "data-room-multi-group-training-video",
-      "community": 6
+      "community": 0,
+      "id": "data-room-multi-group-training-video"
     },
     {
       "label": "Integration Hub Implementation Guide (PDF)",
       "file_type": "document",
       "source_file": "wiki/sources/ih-implementation-guide-pdf.md",
-      "id": "ih-implementation-guide-pdf",
-      "community": 1
+      "community": 0,
+      "id": "ih-implementation-guide-pdf"
     },
     {
       "label": "Data Room - Customer Setup Guide for API Access to DR",
       "file_type": "document",
       "source_file": "wiki/sources/data-room-api-implementation-guide.md",
-      "id": "data-room-api-implementation-guide",
-      "community": 6
+      "community": 0,
+      "id": "data-room-api-implementation-guide"
     },
     {
       "label": "Anduin Engagement Hub \u2014 One Pager",
       "file_type": "document",
       "source_file": "wiki/sources/engagement-hub-one-pager.md",
-      "id": "engagement-hub-one-pager",
-      "community": 0
+      "community": 3,
+      "id": "engagement-hub-one-pager"
     },
     {
       "label": "New Enablement Material: Investor Portal Training Materials",
       "file_type": "document",
       "source_file": "wiki/sources/investor-portal-training-materials.md",
-      "id": "investor-portal-training-materials",
-      "community": 0
+      "community": 3,
+      "id": "investor-portal-training-materials"
     },
     {
       "label": "Automated Onboarding with FundSub \u2014 DealCloud (Primary Investor)",
       "file_type": "document",
       "source_file": "wiki/sources/automated-onboarding-fundsub-primary.md",
-      "id": "automated-onboarding-fundsub-primary",
-      "community": 2
+      "community": 1,
+      "id": "automated-onboarding-fundsub-primary"
     },
     {
       "label": "Data Room - FAQ",
       "file_type": "document",
       "source_file": "wiki/sources/data-room-faq.md",
-      "id": "data-room-faq",
-      "community": 6
+      "community": 0,
+      "id": "data-room-faq"
     },
     {
       "label": "Engagement Hub / Branded Landing Page \u2014 Naming History (internal Slack)",
       "file_type": "document",
       "source_file": "wiki/sources/engagement-hub-naming-history-slack.md",
-      "id": "engagement-hub-naming-history-slack",
-      "community": 0
+      "community": 3,
+      "id": "engagement-hub-naming-history-slack"
     },
     {
       "label": "Product Pre-release Training for Portal (Boston Popup, May 2025)",
       "file_type": "document",
       "source_file": "wiki/sources/investor-portal-prerelease-training-boston.md",
-      "id": "investor-portal-prerelease-training-boston",
-      "community": 0
+      "community": 3,
+      "id": "investor-portal-prerelease-training-boston"
     },
     {
       "label": "IDM Feature Guide Library",
       "file_type": "document",
       "source_file": "wiki/sources/idm-feature-documentation.md",
-      "id": "idm-feature-documentation",
-      "community": 1
+      "community": 0,
+      "id": "idm-feature-documentation"
     },
     {
       "label": "IH Knowledge Hub \u2014 Guide to All Available Implementations",
       "file_type": "document",
       "source_file": "wiki/sources/ih-knowledge-hub.md",
-      "id": "ih-knowledge-hub",
-      "community": 1
+      "community": 0,
+      "id": "ih-knowledge-hub"
     },
     {
       "label": "Mission and Core Components",
       "file_type": "document",
       "source_file": "wiki/sources/mission-and-core-components.md",
-      "id": "mission-and-core-components",
-      "community": 1
+      "community": 0,
+      "id": "mission-and-core-components"
     },
     {
       "label": "Data Management",
       "file_type": "document",
       "source_file": "wiki/sources/data-management.md",
-      "id": "data-management",
-      "community": 2
+      "community": 1,
+      "id": "data-management"
     },
     {
       "label": "IH Salesforce-DataRoom Release Notes",
       "file_type": "document",
       "source_file": "wiki/sources/ih-salesforce-dataroom-release-notes.md",
-      "id": "ih-salesforce-dataroom-release-notes",
-      "community": 6
+      "community": 0,
+      "id": "ih-salesforce-dataroom-release-notes"
     },
     {
       "label": "IH Implementation Guide",
       "file_type": "document",
       "source_file": "wiki/sources/ih-implementation-guide.md",
-      "id": "ih-implementation-guide",
-      "community": 1
+      "community": 0,
+      "id": "ih-implementation-guide"
     },
     {
       "label": "IH Setup Guide",
       "file_type": "document",
       "source_file": "wiki/sources/ih-setup-guide.md",
-      "id": "ih-setup-guide",
-      "community": 1
+      "community": 0,
+      "id": "ih-setup-guide"
     },
     {
       "label": "Engagement Hub Product Overview",
       "file_type": "document",
       "source_file": "wiki/sources/engagement-hub-product-overview.md",
-      "id": "engagement-hub-product-overview",
-      "community": 0
+      "community": 3,
+      "id": "engagement-hub-product-overview"
     },
     {
       "label": "Why Branded Landing Page became Engagement Hub",
       "file_type": "document",
       "source_file": "wiki/sources/engagement-hub-naming-history-slack.md",
-      "id": "rationale-eh-naming-history",
-      "community": 0
+      "community": 3,
+      "id": "rationale-eh-naming-history"
     },
     {
       "label": "Anduin Investor Guide (LP-Facing, Jan 2026)",
       "file_type": "document",
       "source_file": "wiki/sources/anduin-investor-guide-may-2025.md",
-      "id": "anduin-investor-guide-may-2025",
-      "community": 0
+      "community": 1,
+      "id": "anduin-investor-guide-may-2025"
     },
     {
       "label": "Anduin e-Signature Guide Whitepaper",
       "file_type": "document",
       "source_file": "wiki/sources/esignature-whitepaper.md",
-      "id": "esignature-whitepaper",
-      "community": 3
+      "community": 4,
+      "id": "esignature-whitepaper"
     },
     {
       "label": "Investor Portal \u2014 Product Overview",
       "file_type": "document",
       "source_file": "wiki/sources/investor-portal-product-overview.md",
-      "id": "investor-portal-product-overview",
-      "community": 0
+      "community": 3,
+      "id": "investor-portal-product-overview"
     },
     {
       "label": "Investor Onboarding \u2014 Affinity (Primary Investor + Collaborators)",
       "file_type": "document",
       "source_file": "wiki/sources/investor-onboarding-primary-collaborators.md",
-      "id": "investor-onboarding-primary-collaborators",
-      "community": 2
+      "community": 1,
+      "id": "investor-onboarding-primary-collaborators"
     },
     {
       "label": "Data Extraction - Implementation Guide",
       "file_type": "document",
       "source_file": "wiki/sources/ocr-implementation-guide.md",
-      "id": "ocr-implementation-guide",
-      "community": 5
+      "community": 6,
+      "id": "ocr-implementation-guide"
     },
     {
       "label": "Guide to Data Room Demo Sandbox/Simulator Environment",
       "file_type": "document",
       "source_file": "wiki/sources/data-room-demo-sandbox-guide.md",
-      "id": "data-room-demo-sandbox-guide",
-      "community": 6
+      "community": 0,
+      "id": "data-room-demo-sandbox-guide"
     },
     {
       "label": "FundSub \u2014 Anduin Essentials Sales Deck",
       "file_type": "document",
       "source_file": "wiki/sources/fundsub-essentials-sales-deck.md",
-      "id": "fundsub-essentials-sales-deck",
-      "community": 4
+      "community": 5,
+      "id": "fundsub-essentials-sales-deck"
     },
     {
       "label": "Distinction Between Primary Investor and Collaborator in FundSub",
       "file_type": "document",
       "source_file": "wiki/sources/fundsub-primary-vs-collaborator.md",
-      "id": "fundsub-primary-vs-collaborator",
-      "community": 2
+      "community": 1,
+      "id": "fundsub-primary-vs-collaborator"
     },
     {
       "label": "Automated Data Room Insights Retrievals (DealCloud)",
       "file_type": "document",
       "source_file": "wiki/sources/automated-data-room-insights.md",
-      "id": "automated-data-room-insights",
-      "community": 2
+      "community": 1,
+      "id": "automated-data-room-insights"
     },
     {
       "label": "IDM - Client Training Deck",
       "file_type": "document",
       "source_file": "wiki/sources/idm-client-training.md",
-      "id": "idm-client-training",
-      "community": 1
+      "community": 0,
+      "id": "idm-client-training"
     },
     {
       "label": "Engagement Hub \u2014 Pricing Proposal",
       "file_type": "document",
       "source_file": "wiki/sources/engagement-hub-pricing.md",
-      "id": "engagement-hub-pricing",
-      "community": 0
+      "community": 3,
+      "id": "engagement-hub-pricing"
     },
     {
       "label": "Rationale: Retain Portal AUM table, flag EH pricing conflict",
       "file_type": "document",
       "source_file": "wiki/sources/engagement-hub-product-overview.md",
-      "id": "rationale-eh-portal-pricing-conflict",
-      "community": 0
+      "community": 3,
+      "id": "rationale-eh-portal-pricing-conflict"
     },
     {
       "label": "Rationale: Schwab implementation guide vs Cerity training are complementary",
       "file_type": "document",
       "source_file": "wiki/sources/esignature-schwab-implementation-guide.md",
-      "id": "rationale-schwab-guide-vs-training",
-      "community": 3
+      "community": 4,
+      "id": "rationale-schwab-guide-vs-training"
     },
     {
       "label": "FundSub \u2014 New LP View Update One-Pager",
       "file_type": "document",
       "source_file": "wiki/sources/fundsub-new-lp-view-one-pager.md",
-      "id": "fundsub-new-lp-view-one-pager",
-      "community": 2
+      "community": 1,
+      "id": "fundsub-new-lp-view-one-pager"
     },
     {
       "label": "IDM - Internal Implementation Guide",
       "file_type": "document",
       "source_file": "wiki/sources/idm-implementation-guide.md",
-      "id": "idm-implementation-guide",
-      "community": 1
+      "community": 0,
+      "id": "idm-implementation-guide"
     },
     {
       "label": "Investor Access \u2014 Internal FAQ",
       "file_type": "document",
       "source_file": "wiki/sources/investor-access-faq.md",
-      "id": "investor-access-faq",
-      "community": 2
+      "community": 1,
+      "id": "investor-access-faq"
     },
     {
       "label": "Security Whitepaper \u2014 Secure Human-Augmented Data Processing Procedure",
       "file_type": "document",
       "source_file": "wiki/sources/ocr-security-whitepaper-human-augmented.md",
-      "id": "ocr-security-whitepaper-human-augmented",
-      "community": 5
+      "community": 6,
+      "id": "ocr-security-whitepaper-human-augmented"
     },
     {
       "label": "Streamline Investor Onboarding with IDM Profiles \u2014 May 2025",
       "file_type": "document",
       "source_file": "wiki/sources/idm-fundsub-investor-onboarding-may-2025.md",
-      "id": "idm-fundsub-investor-onboarding-may-2025",
-      "community": 2
+      "community": 1,
+      "id": "idm-fundsub-investor-onboarding-may-2025"
     },
     {
       "label": "DocuSign and Qualified E-Signature (QES) \u2014 Internal FAQ",
       "file_type": "document",
       "source_file": "wiki/sources/esignature-docusign-qes-faq.md",
-      "id": "esignature-docusign-qes-faq",
-      "community": 3
+      "community": 4,
+      "id": "esignature-docusign-qes-faq"
     },
     {
       "label": "IDM - GTM Training",
       "file_type": "document",
       "source_file": "wiki/sources/idm-gtm-training.md",
-      "id": "idm-gtm-training",
-      "community": 1
+      "community": 0,
+      "id": "idm-gtm-training"
     },
     {
       "label": "Security Whitepaper \u2014 Secure Amazon Textract for Data Extraction Services",
       "file_type": "document",
       "source_file": "wiki/sources/ocr-security-whitepaper-textract.md",
-      "id": "ocr-security-whitepaper-textract",
-      "community": 5
+      "community": 6,
+      "id": "ocr-security-whitepaper-textract"
     },
     {
       "label": "Anduin x DocuSign \u2014 Simple Electronic Signatures (Sales Deck)",
       "file_type": "document",
       "source_file": "wiki/sources/esignature-docusign-sales-deck.md",
-      "id": "esignature-docusign-sales-deck",
-      "community": 3
+      "community": 4,
+      "id": "esignature-docusign-sales-deck"
     },
     {
       "label": "IDM - Sales Brochure",
       "file_type": "document",
       "source_file": "wiki/sources/idm-sales-brochure.md",
-      "id": "idm-sales-brochure",
-      "community": 1
+      "community": 0,
+      "id": "idm-sales-brochure"
     },
     {
       "label": "Data Extraction - GTM Training",
       "file_type": "document",
       "source_file": "wiki/sources/ocr-gtm-training.md",
-      "id": "ocr-gtm-training",
-      "community": 5
+      "community": 6,
+      "id": "ocr-gtm-training"
     },
     {
       "label": "FundSub \u2014 One Envelope Experience for Investors",
       "file_type": "document",
       "source_file": "wiki/sources/fundsub-one-envelope-experience.md",
-      "id": "fundsub-one-envelope-experience",
-      "community": 3
+      "community": 4,
+      "id": "fundsub-one-envelope-experience"
     },
     {
       "label": "Automated Document Repository (Box)",
       "file_type": "document",
       "source_file": "wiki/sources/automated-document-repository.md",
-      "id": "automated-document-repository",
-      "community": 2
+      "community": 1,
+      "id": "automated-document-repository"
     },
     {
       "label": "AAA (Advisor Advantage) \u2014 User Guide (RIA User Guide)",
       "file_type": "document",
       "source_file": "wiki/sources/aaa-user-guide.md",
-      "id": "aaa-user-guide",
-      "community": 5
+      "community": 6,
+      "id": "aaa-user-guide"
     },
     {
       "label": "Data Room - Internal Slide on System Limits",
       "file_type": "document",
       "source_file": "wiki/sources/data-room-system-limits.md",
-      "id": "data-room-system-limits",
-      "community": 6
+      "community": 0,
+      "id": "data-room-system-limits"
     },
     {
       "label": "User Role",
       "file_type": "document",
       "source_file": "wiki/sources/user-role.md",
-      "id": "user-role",
-      "community": 1
+      "community": 0,
+      "id": "user-role"
     },
     {
       "label": "Sample SES, AES, and QES Signed Documents",
       "file_type": "document",
       "source_file": "wiki/sources/esignature-sample-signed-documents.md",
-      "id": "esignature-sample-signed-documents",
-      "community": 3
+      "community": 4,
+      "id": "esignature-sample-signed-documents"
     },
     {
       "label": "IDM + FundSub Onboarding Deck (Oct 2025)",
       "file_type": "document",
       "source_file": "wiki/sources/idm-fundsub-onboarding-deck-oct2025.md",
-      "id": "idm-fundsub-onboarding-deck-oct2025",
-      "community": 2
+      "community": 1,
+      "id": "idm-fundsub-onboarding-deck-oct2025"
     },
     {
       "label": "Investor Portal \u2014 RFP",
       "file_type": "document",
       "source_file": "wiki/sources/investor-portal-rfp.md",
-      "id": "investor-portal-rfp",
-      "community": 0
+      "community": 3,
+      "id": "investor-portal-rfp"
     },
     {
       "label": "[Internal Guide] Investor Sends Email Support Directly from Platform",
       "file_type": "document",
       "source_file": "wiki/sources/fundsub-investor-email-support.md",
-      "id": "fundsub-investor-email-support",
-      "community": 2
+      "community": 1,
+      "id": "fundsub-investor-email-support"
     },
     {
       "label": "Data Room - Brochure v2",
       "file_type": "document",
       "source_file": "wiki/sources/data-room-brochure-v2.md",
-      "id": "data-room-brochure-v2",
-      "community": 6
+      "community": 0,
+      "id": "data-room-brochure-v2"
     },
     {
       "label": "InvestorFlow",
       "file_type": "document",
-      "source_file": "wiki/competitors/investorflow.md",
-      "id": "investorflow",
-      "community": 0
+      "source_file": "wiki/competitors/atominvest.md",
+      "community": 3,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "investorflow"
     },
     {
       "label": "AtomInvest",
       "file_type": "document",
       "source_file": "wiki/competitors/atominvest.md",
-      "id": "atominvest",
-      "community": 0
+      "community": 3,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "atominvest"
     },
     {
       "label": "DealCloud",
       "file_type": "document",
       "source_file": "wiki/entities/dealcloud.md",
-      "id": "dealcloud",
-      "community": 2
+      "community": 1,
+      "id": "dealcloud"
     },
     {
       "label": "DocuSign",
       "file_type": "document",
       "source_file": "wiki/entities/docusign.md",
-      "id": "docusign",
-      "community": 3
+      "community": 4,
+      "id": "docusign"
     },
     {
       "label": "Box",
       "file_type": "document",
       "source_file": "wiki/entities/box.md",
-      "id": "box",
-      "community": 2
+      "community": 1,
+      "id": "box"
     },
     {
       "label": "Affinity",
       "file_type": "document",
       "source_file": "wiki/entities/affinity.md",
-      "id": "affinity",
-      "community": 2
+      "community": 1,
+      "id": "affinity"
     },
     {
       "label": "Salesforce",
       "file_type": "document",
       "source_file": "wiki/entities/salesforce.md",
-      "id": "salesforce",
+      "community": 0,
+      "id": "salesforce"
+    },
+    {
+      "label": "Passthrough",
+      "file_type": "document",
+      "source_file": "wiki/competitors/passthrough.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "passthrough",
+      "community": 2
+    },
+    {
+      "label": "Subscribe",
+      "file_type": "document",
+      "source_file": "wiki/competitors/subscribe.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "subscribe",
+      "community": 2
+    },
+    {
+      "label": "Ontra",
+      "file_type": "document",
+      "source_file": "wiki/competitors/ontra.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ontra",
+      "community": 2
+    },
+    {
+      "label": "iCapital & CAIS",
+      "file_type": "document",
+      "source_file": "wiki/competitors/icapital-cais.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "icapital-cais",
+      "community": 2
+    },
+    {
+      "label": "Vega",
+      "file_type": "document",
+      "source_file": "wiki/competitors/vega.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "vega",
       "community": 1
+    },
+    {
+      "label": "Juniper Square",
+      "file_type": "document",
+      "source_file": "wiki/competitors/juniper-square.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "juniper-square",
+      "community": 2
+    },
+    {
+      "label": "bunch",
+      "file_type": "document",
+      "source_file": "wiki/competitors/bunch.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bunch",
+      "community": 3
+    },
+    {
+      "label": "NAV Fund Services",
+      "file_type": "document",
+      "source_file": "wiki/competitors/nav.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "nav",
+      "community": 2
+    },
+    {
+      "label": "IDR (Sonata One)",
+      "file_type": "document",
+      "source_file": "wiki/competitors/idr.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "idr",
+      "community": 2
+    },
+    {
+      "label": "Funded (Kirkland & Ellis)",
+      "file_type": "document",
+      "source_file": "wiki/competitors/funded.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "funded",
+      "community": 2
+    },
+    {
+      "label": "Flow",
+      "file_type": "document",
+      "source_file": "wiki/competitors/flow.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "flow",
+      "community": 2
+    },
+    {
+      "label": "Fenergo",
+      "file_type": "document",
+      "source_file": "wiki/competitors/fenergo.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fenergo",
+      "community": 2
+    },
+    {
+      "label": "BiteStream (Investor Pointe)",
+      "file_type": "document",
+      "source_file": "wiki/competitors/bitestream.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bitestream",
+      "community": 2
+    },
+    {
+      "label": "Backstop",
+      "file_type": "document",
+      "source_file": "wiki/competitors/backstop.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "backstop",
+      "community": 2
+    },
+    {
+      "label": "Kirkland & Ellis",
+      "file_type": "document",
+      "source_file": "wiki/competitors/kirkland-ellis.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "kirkland-ellis",
+      "community": 2
+    },
+    {
+      "label": "Competitor Landscape Watchlist",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "competitor-landscape-watchlist",
+      "community": 2
+    },
+    {
+      "label": "Competitor Pricing Benchmarks",
+      "file_type": "document",
+      "source_file": "wiki/concepts/competitor-pricing-benchmarks.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "competitor-pricing-benchmarks",
+      "community": 2
+    },
+    {
+      "label": "Competitive Win/Loss Patterns",
+      "file_type": "document",
+      "source_file": "wiki/concepts/competitive-win-loss.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "competitive-win-loss",
+      "community": 2
+    },
+    {
+      "label": "Private Markets Competitive Landscape",
+      "file_type": "document",
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "private-markets-competitive-landscape",
+      "community": 2
+    },
+    {
+      "label": "Competitive Intel Tracking Table",
+      "file_type": "document",
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "competitive-intel-tracking-table",
+      "community": 2
+    },
+    {
+      "label": "Pro-Vision",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "pro-vision",
+      "community": 2
+    },
+    {
+      "label": "Carta",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "carta",
+      "community": 2
+    },
+    {
+      "label": "Robin AI",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "robin-ai",
+      "community": 2
+    },
+    {
+      "label": "Vantager",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "vantager",
+      "community": 2
+    },
+    {
+      "label": "Daphne",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "daphne",
+      "community": 2
+    },
+    {
+      "label": "BlueFlame.ai",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "blueflame-ai",
+      "community": 2
+    },
+    {
+      "label": "Privatize",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "privatize",
+      "community": 2
+    },
+    {
+      "label": "Vestlane",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "vestlane",
+      "community": 3
+    },
+    {
+      "label": "iAltA",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ialta",
+      "community": 1
+    },
+    {
+      "label": "Verivend / Veriform",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "verivend-veriform",
+      "community": 1
+    },
+    {
+      "label": "Arcesium",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "arcesium",
+      "community": 7
+    },
+    {
+      "label": "Mantle Portal",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "mantle-portal",
+      "community": 8
+    },
+    {
+      "label": "Dynamo (InvestHub)",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "dynamo",
+      "community": 2
+    },
+    {
+      "label": "Zanbato",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "zanbato",
+      "community": 2
+    },
+    {
+      "label": "LYRA",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "lyra",
+      "community": 1
+    },
+    {
+      "label": "Intralinks (InvestorVision)",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "intralinks",
+      "community": 0
+    },
+    {
+      "label": "Altruist",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "altruist",
+      "community": 9
+    },
+    {
+      "label": "Techquity",
+      "file_type": "document",
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "techquity",
+      "community": 10
+    },
+    {
+      "label": "SideTrack (K&E)",
+      "file_type": "document",
+      "source_file": "wiki/competitors/kirkland-ellis.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sidetrack",
+      "community": 2
     }
   ],
   "links": [
@@ -2483,6 +2790,18 @@
       "target": "ih-smtp-gtm-training"
     },
     {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/atominvest.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "atominvest",
+      "_tgt": "integration-hub",
+      "source": "integration-hub",
+      "target": "atominvest"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -2742,6 +3061,30 @@
       "_tgt": "investor-data-management",
       "source": "investor-data-management",
       "target": "salesforce"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/passthrough.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "passthrough",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "passthrough"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/icapital-cais.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "icapital-cais",
+      "_tgt": "investor-data-management",
+      "source": "investor-data-management",
+      "target": "icapital-cais"
     },
     {
       "relation": "references",
@@ -3068,6 +3411,66 @@
       "target": "dealcloud"
     },
     {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/passthrough.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "passthrough",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "passthrough"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/funded.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "funded",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "funded"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-intel-tracking-table",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "blueflame-ai",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "blueflame-ai"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "intralinks",
+      "_tgt": "data-room",
+      "source": "data-room",
+      "target": "intralinks"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -3383,13 +3786,100 @@
       "target": "investorflow"
     },
     {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.9,
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "_src": "atominvest",
       "_tgt": "investor-portal",
+      "source_file": "wiki/competitors/atominvest.md",
+      "source_location": null,
+      "weight": 1.0,
       "source": "investor-portal",
       "target": "atominvest"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/subscribe.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "subscribe",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "subscribe"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/juniper-square.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "juniper-square",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "juniper-square"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/bunch.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "bunch",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "bunch"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/fenergo.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "fenergo",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "fenergo"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/bitestream.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "bitestream",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "bitestream"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/backstop.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "backstop",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "backstop"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-intel-tracking-table",
+      "_tgt": "investor-portal",
+      "source": "investor-portal",
+      "target": "competitive-intel-tracking-table"
     },
     {
       "relation": "references",
@@ -3770,6 +4260,246 @@
       "target": "affinity"
     },
     {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/passthrough.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "passthrough",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "passthrough"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/atominvest.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "atominvest",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "atominvest"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/subscribe.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "subscribe",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "subscribe"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/ontra.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "ontra",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "ontra"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/icapital-cais.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "icapital-cais",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "icapital-cais"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/vega.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "vega",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "vega"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/juniper-square.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "juniper-square",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "juniper-square"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/bunch.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "bunch",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "bunch"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/nav.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "nav",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "nav"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/idr.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "idr",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "idr"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/funded.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "funded",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "funded"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/flow.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "flow",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "flow"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/fenergo.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "fenergo",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "fenergo"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/bitestream.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "bitestream",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "bitestream"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/kirkland-ellis.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "kirkland-ellis",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "kirkland-ellis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-intel-tracking-table",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "verivend-veriform",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "verivend-veriform"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "dynamo",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "dynamo"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lyra",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "lyra"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "ialta",
+      "_tgt": "fundsub",
+      "source": "fundsub",
+      "target": "ialta"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -3858,6 +4588,78 @@
       "_tgt": "aaa",
       "source": "aaa",
       "target": "aaa-advisor-subscription-assign"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/ontra.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "ontra",
+      "_tgt": "side-letter",
+      "source": "side-letter",
+      "target": "ontra"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/kirkland-ellis.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "kirkland-ellis",
+      "_tgt": "side-letter",
+      "source": "side-letter",
+      "target": "kirkland-ellis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-intel-tracking-table",
+      "_tgt": "side-letter",
+      "source": "side-letter",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "pro-vision",
+      "_tgt": "side-letter",
+      "source": "side-letter",
+      "target": "pro-vision"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "carta",
+      "_tgt": "side-letter",
+      "source": "side-letter",
+      "target": "carta"
+    },
+    {
+      "relation": "overlaps_product",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "robin-ai",
+      "_tgt": "side-letter",
+      "source": "side-letter",
+      "target": "robin-ai"
     },
     {
       "relation": "references",
@@ -5489,13 +6291,100 @@
       "target": "box"
     },
     {
-      "relation": "references",
+      "relation": "competes_with",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "_src": "atominvest",
       "_tgt": "investorflow",
+      "source_file": "wiki/competitors/atominvest.md",
+      "source_location": null,
+      "weight": 1.0,
       "source": "investorflow",
       "target": "atominvest"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/atominvest.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "atominvest",
+      "_tgt": "passthrough",
+      "source": "atominvest",
+      "target": "passthrough"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/competitor-pricing-benchmarks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitor-pricing-benchmarks",
+      "_tgt": "atominvest",
+      "source": "atominvest",
+      "target": "competitor-pricing-benchmarks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/competitive-win-loss.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-win-loss",
+      "_tgt": "atominvest",
+      "source": "atominvest",
+      "target": "competitive-win-loss"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-intel-tracking-table",
+      "_tgt": "atominvest",
+      "source": "atominvest",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/subscribe.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "subscribe",
+      "_tgt": "atominvest",
+      "source": "atominvest",
+      "target": "subscribe"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/bunch.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "bunch",
+      "_tgt": "atominvest",
+      "source": "atominvest",
+      "target": "bunch"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "vestlane",
+      "_tgt": "atominvest",
+      "source": "atominvest",
+      "target": "vestlane"
     },
     {
       "relation": "references",
@@ -5532,250 +6421,877 @@
       "_tgt": "affinity",
       "source": "affinity",
       "target": "salesforce"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/competitor-pricing-benchmarks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitor-pricing-benchmarks",
+      "_tgt": "passthrough",
+      "source": "passthrough",
+      "target": "competitor-pricing-benchmarks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/competitive-win-loss.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-win-loss",
+      "_tgt": "passthrough",
+      "source": "passthrough",
+      "target": "competitive-win-loss"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-intel-tracking-table",
+      "_tgt": "passthrough",
+      "source": "passthrough",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/subscribe.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "subscribe",
+      "_tgt": "passthrough",
+      "source": "passthrough",
+      "target": "subscribe"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/ontra.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "ontra",
+      "_tgt": "passthrough",
+      "source": "passthrough",
+      "target": "ontra"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitor-landscape-watchlist",
+      "_tgt": "passthrough",
+      "source": "passthrough",
+      "target": "competitor-landscape-watchlist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "dynamo",
+      "_tgt": "passthrough",
+      "source": "passthrough",
+      "target": "dynamo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/competitor-pricing-benchmarks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitor-pricing-benchmarks",
+      "_tgt": "subscribe",
+      "source": "subscribe",
+      "target": "competitor-pricing-benchmarks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/competitive-win-loss.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-win-loss",
+      "_tgt": "subscribe",
+      "source": "subscribe",
+      "target": "competitive-win-loss"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-intel-tracking-table",
+      "_tgt": "subscribe",
+      "source": "subscribe",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/competitor-pricing-benchmarks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitor-pricing-benchmarks",
+      "_tgt": "ontra",
+      "source": "ontra",
+      "target": "competitor-pricing-benchmarks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/competitive-win-loss.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-win-loss",
+      "_tgt": "ontra",
+      "source": "ontra",
+      "target": "competitive-win-loss"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-intel-tracking-table",
+      "_tgt": "ontra",
+      "source": "ontra",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitor-landscape-watchlist",
+      "_tgt": "ontra",
+      "source": "ontra",
+      "target": "competitor-landscape-watchlist"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/kirkland-ellis.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "kirkland-ellis",
+      "_tgt": "ontra",
+      "source": "ontra",
+      "target": "kirkland-ellis"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "wiki/competitors/ontra.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "ontra",
+      "_tgt": "pro-vision",
+      "source": "ontra",
+      "target": "pro-vision"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "wiki/competitors/ontra.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "ontra",
+      "_tgt": "carta",
+      "source": "ontra",
+      "target": "carta"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "ontra",
+      "_tgt": "sidetrack",
+      "source": "ontra",
+      "target": "sidetrack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "private-markets-competitive-landscape",
+      "_tgt": "icapital-cais",
+      "source": "icapital-cais",
+      "target": "private-markets-competitive-landscape"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/icapital-cais.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "icapital-cais",
+      "_tgt": "competitor-landscape-watchlist",
+      "source": "icapital-cais",
+      "target": "competitor-landscape-watchlist"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/icapital-cais.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "icapital-cais",
+      "_tgt": "competitive-intel-tracking-table",
+      "source": "icapital-cais",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "privatize",
+      "_tgt": "icapital-cais",
+      "source": "icapital-cais",
+      "target": "privatize"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "private-markets-competitive-landscape",
+      "_tgt": "vega",
+      "source": "vega",
+      "target": "private-markets-competitive-landscape"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitor-landscape-watchlist",
+      "_tgt": "vega",
+      "source": "vega",
+      "target": "competitor-landscape-watchlist"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/vega.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "vega",
+      "_tgt": "competitive-intel-tracking-table",
+      "source": "vega",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lyra",
+      "_tgt": "vega",
+      "source": "vega",
+      "target": "lyra"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "private-markets-competitive-landscape",
+      "_tgt": "juniper-square",
+      "source": "juniper-square",
+      "target": "private-markets-competitive-landscape"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/juniper-square.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "juniper-square",
+      "_tgt": "competitive-win-loss",
+      "source": "juniper-square",
+      "target": "competitive-win-loss"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/juniper-square.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "juniper-square",
+      "_tgt": "competitive-intel-tracking-table",
+      "source": "juniper-square",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "daphne",
+      "_tgt": "juniper-square",
+      "source": "juniper-square",
+      "target": "daphne"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "private-markets-competitive-landscape",
+      "_tgt": "bunch",
+      "source": "bunch",
+      "target": "private-markets-competitive-landscape"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "wiki/competitors/bunch.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "bunch",
+      "_tgt": "vestlane",
+      "source": "bunch",
+      "target": "vestlane"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/bunch.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "bunch",
+      "_tgt": "competitive-intel-tracking-table",
+      "source": "bunch",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "nav",
+      "_tgt": "flow",
+      "source": "nav",
+      "target": "flow"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/nav.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "nav",
+      "_tgt": "dynamo",
+      "source": "nav",
+      "target": "dynamo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "private-markets-competitive-landscape",
+      "_tgt": "nav",
+      "source": "nav",
+      "target": "private-markets-competitive-landscape"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/nav.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "nav",
+      "_tgt": "competitive-intel-tracking-table",
+      "source": "nav",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "private-markets-competitive-landscape",
+      "_tgt": "idr",
+      "source": "idr",
+      "target": "private-markets-competitive-landscape"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/idr.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "idr",
+      "_tgt": "competitive-intel-tracking-table",
+      "source": "idr",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/kirkland-ellis.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "kirkland-ellis",
+      "_tgt": "funded",
+      "source": "funded",
+      "target": "kirkland-ellis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/funded.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "funded",
+      "_tgt": "competitive-win-loss",
+      "source": "funded",
+      "target": "competitive-win-loss"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/funded.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "funded",
+      "_tgt": "competitive-intel-tracking-table",
+      "source": "funded",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "wiki/competitors/funded.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "funded",
+      "_tgt": "sidetrack",
+      "source": "funded",
+      "target": "sidetrack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "private-markets-competitive-landscape",
+      "_tgt": "flow",
+      "source": "flow",
+      "target": "private-markets-competitive-landscape"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/flow.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "flow",
+      "_tgt": "competitive-intel-tracking-table",
+      "source": "flow",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "flow",
+      "_tgt": "dynamo",
+      "source": "flow",
+      "target": "dynamo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "private-markets-competitive-landscape",
+      "_tgt": "fenergo",
+      "source": "fenergo",
+      "target": "private-markets-competitive-landscape"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/fenergo.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "fenergo",
+      "_tgt": "competitive-intel-tracking-table",
+      "source": "fenergo",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "private-markets-competitive-landscape",
+      "_tgt": "bitestream",
+      "source": "bitestream",
+      "target": "private-markets-competitive-landscape"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/bitestream.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "bitestream",
+      "_tgt": "competitive-intel-tracking-table",
+      "source": "bitestream",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/backstop.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "backstop",
+      "_tgt": "competitive-win-loss",
+      "source": "backstop",
+      "target": "competitive-win-loss"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/backstop.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "backstop",
+      "_tgt": "competitive-intel-tracking-table",
+      "source": "backstop",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/competitive-win-loss.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-win-loss",
+      "_tgt": "kirkland-ellis",
+      "source": "kirkland-ellis",
+      "target": "competitive-win-loss"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/kirkland-ellis.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "kirkland-ellis",
+      "_tgt": "competitive-intel-tracking-table",
+      "source": "kirkland-ellis",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/competitors/kirkland-ellis.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "kirkland-ellis",
+      "_tgt": "sidetrack",
+      "source": "kirkland-ellis",
+      "target": "sidetrack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-intel-tracking-table",
+      "_tgt": "competitor-landscape-watchlist",
+      "source": "competitor-landscape-watchlist",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "private-markets-competitive-landscape",
+      "_tgt": "competitor-landscape-watchlist",
+      "source": "competitor-landscape-watchlist",
+      "target": "private-markets-competitive-landscape"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/competitive-win-loss.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-win-loss",
+      "_tgt": "competitor-pricing-benchmarks",
+      "source": "competitor-pricing-benchmarks",
+      "target": "competitive-win-loss"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-intel-tracking-table",
+      "_tgt": "competitor-pricing-benchmarks",
+      "source": "competitor-pricing-benchmarks",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "private-markets-competitive-landscape",
+      "_tgt": "competitor-pricing-benchmarks",
+      "source": "competitor-pricing-benchmarks",
+      "target": "private-markets-competitive-landscape"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-intel-tracking-table",
+      "_tgt": "competitive-win-loss",
+      "source": "competitive-win-loss",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "private-markets-competitive-landscape",
+      "_tgt": "competitive-win-loss",
+      "source": "competitive-win-loss",
+      "target": "private-markets-competitive-landscape"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "vantager",
+      "_tgt": "private-markets-competitive-landscape",
+      "source": "private-markets-competitive-landscape",
+      "target": "vantager"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "daphne",
+      "_tgt": "private-markets-competitive-landscape",
+      "source": "private-markets-competitive-landscape",
+      "target": "daphne"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "zanbato",
+      "_tgt": "private-markets-competitive-landscape",
+      "source": "private-markets-competitive-landscape",
+      "target": "zanbato"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/sources/competitive-intel-tracking-table.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "competitive-intel-tracking-table",
+      "_tgt": "private-markets-competitive-landscape",
+      "source": "private-markets-competitive-landscape",
+      "target": "competitive-intel-tracking-table"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "vantager",
+      "_tgt": "daphne",
+      "source": "vantager",
+      "target": "daphne"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "vantager",
+      "_tgt": "blueflame-ai",
+      "source": "vantager",
+      "target": "blueflame-ai"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "privatize",
+      "_tgt": "vestlane",
+      "source": "privatize",
+      "target": "vestlane"
     }
   ],
   "hyperedges": [
     {
-      "id": "engagement_tier_idm_stack",
-      "label": "IDM / Engagement Hub / Investor Portal share one IDM Firm space",
+      "id": "fund_admin_in_house_build",
+      "label": "Fund admins building in-house onboarding",
       "nodes": [
-        "investor-data-management",
-        "engagement-hub",
-        "investor-portal"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.9
-    },
-    {
-      "id": "neuberger_full_stack_deployment",
-      "label": "Neuberger Berman full-stack deployment",
-      "nodes": [
-        "neuberger-berman",
-        "fundsub",
-        "investor-data-management",
-        "integration-hub",
-        "salesforce"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.85
-    },
-    {
-      "id": "automated_investor_onboarding_flow",
-      "label": "Automated Investor Onboarding via Integration Hub",
-      "nodes": [
-        "investor-onboarding-workflow",
-        "integration-patterns",
-        "import-export-templates",
-        "data-mapping",
-        "fundsub"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.9
-    },
-    {
-      "id": "engagement_hub_packaging_stack",
-      "label": "Engagement Hub / Portal / IDM Packaging Stack",
-      "nodes": [
-        "product-packaging-bundling",
-        "engagement-hub",
-        "investor-portal",
-        "investor-data-management",
-        "engagement-hub-branded-landing-pages"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.85
-    },
-    {
-      "id": "config_vs_permission_apps",
-      "label": "Configuration vs Permission across Anduin apps",
-      "nodes": [
-        "configuration-vs-permission",
-        "integration-hub",
-        "fundsub",
-        "investor-data-management",
-        "data-room"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.85
-    },
-    {
-      "id": "anduin_object_model_scoping",
-      "label": "Anduin Object Model spans products",
-      "nodes": [
-        "anduin-object-model",
-        "fundsub",
-        "investor-data-management",
-        "data-room",
-        "integration-hub"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.85
-    },
-    {
-      "id": "aaa_advisor_workflow_stack",
-      "label": "AAA advisor workflow concept stack",
-      "nodes": [
-        "aaa-cs-training",
-        "aaa",
-        "anduin-object-model",
-        "user-roles",
-        "configuration-vs-permission"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.8
-    },
-    {
-      "id": "ih_anduin_objects",
-      "label": "Integration Hub configuration over Anduin Objects",
-      "nodes": [
-        "integration-hub",
-        "fundsub",
-        "investor-data-management",
-        "data-room",
-        "anduin-object-model"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.9
-    },
-    {
-      "id": "data_movement_flow",
-      "label": "Import/Export data movement via Templates and Mapping",
-      "nodes": [
-        "data-management",
-        "import-export-templates",
-        "data-mapping",
-        "fundsub"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.85
-    },
-    {
-      "id": "eh_naming_repackaging",
-      "label": "Branded Landing Page repackaged into Engagement Hub",
-      "nodes": [
-        "engagement-hub-naming-history-slack",
-        "engagement-hub",
-        "engagement-hub-branded-landing-pages",
-        "landing-page"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.85
-    },
-    {
-      "id": "schwab_docusign_signing_flow",
-      "label": "Schwab DocuSign Custodian Signing Flow",
-      "nodes": [
-        "esignature-schwab-implementation-guide",
-        "esignature-schwab-cerity-training",
-        "e-signature",
-        "fundsub",
-        "cerity-partners"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.9
-    },
-    {
-      "id": "eh_portal_idm_packaging",
-      "label": "Engagement Hub / Portal / IDM Bundling Strategy",
-      "nodes": [
-        "engagement-hub-product-overview",
-        "engagement-hub-pricing",
-        "engagement-hub",
-        "investor-portal",
-        "investor-data-management",
-        "product-packaging-bundling"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.85
-    },
-    {
-      "id": "docusign_qes_signature_offering",
-      "label": "DocuSign QES/SES Signature Offering",
-      "nodes": [
-        "esignature-docusign-qes-faq",
-        "esignature-docusign-sales-deck",
-        "docusign",
-        "qes-aes-compliance"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.9
-    },
-    {
-      "id": "ocr_security_pipeline",
-      "label": "OCR End-to-End Security Pipeline (Textract + Human Review)",
-      "nodes": [
-        "ocr-security-whitepaper-textract",
-        "ocr-security-whitepaper-human-augmented",
-        "ocr-data-extraction"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.9
-    },
-    {
-      "id": "idm_fundsub_onboarding_flow",
-      "label": "IDM + FundSub Investor Onboarding Flow",
-      "nodes": [
-        "idm-fundsub-investor-onboarding-may-2025",
-        "investor-data-management",
-        "fundsub",
-        "investor-onboarding-workflow"
+        "nav",
+        "flow",
+        "dynamo"
       ],
       "relation": "participate_in",
       "confidence": "INFERRED",
-      "confidence_score": 0.8
+      "confidence_score": 0.85,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md"
     },
     {
-      "id": "crm_order_creation_integrations",
-      "label": "CRM Order Creation Integrations into FundSub",
+      "id": "ai_lp_side_entrants",
+      "label": "AI-native / LP-side entrants",
       "nodes": [
-        "dealcloud",
-        "affinity",
-        "salesforce",
-        "fundsub"
+        "juniper-square",
+        "vantager",
+        "daphne",
+        "blueflame-ai"
       ],
       "relation": "participate_in",
       "confidence": "INFERRED",
-      "confidence_score": 0.85
+      "confidence_score": 0.8,
+      "source_file": "wiki/concepts/private-markets-competitive-landscape.md"
     },
     {
-      "id": "standalone_portal_competitive_set",
-      "label": "Standalone Investor Portal Competitive Set",
+      "id": "side_letter_rivals",
+      "label": "Side-letter / MFN rivals",
       "nodes": [
-        "investorflow",
-        "atominvest",
-        "investor-portal",
-        "investor-portal-pricing-faqs-boston"
+        "ontra",
+        "pro-vision",
+        "carta",
+        "kirkland-ellis"
       ],
       "relation": "participate_in",
       "confidence": "INFERRED",
-      "confidence_score": 0.8
-    },
-    {
-      "id": "docusign_signing_paths",
-      "label": "DocuSign Dual Signing Paths (QES/SES + Schwab)",
-      "nodes": [
-        "docusign",
-        "e-signature",
-        "qes-aes-compliance",
-        "cerity-partners"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8
+      "confidence_score": 0.8,
+      "source_file": "wiki/competitors/competitor-landscape-watchlist.md"
     }
   ]
 }
