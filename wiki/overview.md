@@ -110,7 +110,14 @@ Documented integrations: **DealCloud** (order creation, data retrieval, Data Roo
 ---
 
 ## Competitors
-- [[wiki/competitors/investorflow|InvestorFlow]] and [[wiki/competitors/atominvest|AtomInvest]] — standalone investor portals. Anduin differentiates on the end-to-end platform (onboarding → portal → data room → IDM → IH), branding/UX, and lower-friction adoption for existing FundSub/IDM customers.
+The competitive picture is anchored by the **Competitive Intel Repository** ([[wiki/sources/competitive-intel-tracking-table|153 field-intel entries]], 2022–2026). 18 competitor pages plus three cross-cutting concept pages: [[wiki/concepts/competitor-pricing-benchmarks|pricing benchmarks]], [[wiki/concepts/competitive-win-loss|win/loss patterns]], and the [[wiki/concepts/private-markets-competitive-landscape|market landscape]].
+
+- **Fundsub (primary battleground):** [[wiki/competitors/passthrough|Passthrough]] is the #1 competitor — wins on price (one-time non-recurring fee), LP UI, in-app AML/KYC, and the Goodwin law-firm channel; loses on maturity, CS, and SSO. [[wiki/competitors/atominvest|AtomInvest]] (broad all-in-one, weak data integrity + security gaps) and [[wiki/competitors/subscribe|Subscribe]] ($45K all-in + managed services + Altscape marketplace) round out the top three.
+- **Side letter / MFN:** [[wiki/competitors/ontra|Ontra]] is the category leader (AI terms tracking, ~$75–80K/yr); also Carta, Pro-Vision, Robin AI, and [[wiki/competitors/kirkland-ellis|K&E]]'s SideTrack.
+- **Portals & standalones:** [[wiki/competitors/investorflow|InvestorFlow]], [[wiki/competitors/juniper-square|Juniper Square]], [[wiki/competitors/bunch|bunch]], [[wiki/competitors/backstop|Backstop]], [[wiki/competitors/bitestream|BiteStream/Investor Pointe]].
+- **Structural threats:** fund admins building in-house onboarding ([[wiki/competitors/nav|NAV]], [[wiki/competitors/flow|Flow→Apex]], Dynamo); AI-native LP-side entrants (JunieAI, Vantager, Daphne, BlueFlame.ai); wealth-channel platforms ([[wiki/competitors/icapital-cais|iCapital]], Privatize). See the [[wiki/competitors/competitor-landscape-watchlist|watchlist]] for 20 single-mention firms.
+
+Anduin differentiates on the end-to-end platform (onboarding → portal → data room → IDM → IH), branding/UX, platform maturity, SSO, and lower-friction adoption for existing FundSub/IDM customers.
 
 ---
 

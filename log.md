@@ -484,3 +484,33 @@ Append-only record of all operations. Format: `## [YYYY-MM-DD] <operation> | <ti
 - wiki/products/landing-page.md (corrected repackaging-date framing; stated synonym)
 - wiki/products/engagement-hub.md (added Naming & history note + Aug 27 2025 launch; source_count 3→4)
 - index.md (Sources 82→83, EH 3→4, Branded Landing Pages 3→4, last_updated 2026-06-16)
+
+## [2026-06-16] note | Architecture Decision Records for the vault
+
+**Operation:** note
+**Summary:** Created a retrospective ADR set documenting the vault's own design decisions (meta-documentation, kept outside `wiki/` since that layer is reserved for Anduin product knowledge). Five focused ADRs in a new `docs/adr/` folder, grounded in the decision history in this log: (0001) raw/ immutable vs wiki/ LLM-owned four-layer split; (0002) recency-then-trust conflict resolution per §10; (0003) typed entity folders over the original flat `wiki/entities/` store (schema v2 migration); (0004) Obsidian wiki-link graph + six-dimension lint workflow; (0005) discuss-before-write 9-step ingest + append-only log. Added a `docs/adr/README.md` index.
+**Pages touched:** docs/adr/README.md, docs/adr/0001-raw-vs-wiki-separation.md, docs/adr/0002-trust-hierarchy-conflict-resolution.md, docs/adr/0003-entity-type-taxonomy.md, docs/adr/0004-wikilink-graph-and-lint.md, docs/adr/0005-ingest-discipline-and-log.md, log.md
+
+## [2026-06-19] ingest | Competitive Intel Repository — Tracking Table (Notion export)
+
+**Operation:** ingest
+**Source file:** raw/notion-competitive-intel-tracking-table/ (153 .md files + _tracking-table-all.csv, exported from Notion)
+**Document type:** note (competitive field intel)
+**Product(s):** Fundsub (primary), Side Letter, Investor Portal, Data Room, IDM, OCR
+**As-of date:** 2026-06-17 (spans 2022-06 → 2026-06)
+**Conflicts found:** none requiring overwrite. Directional source (trust 9) — yields to authoritative pricing/spec sources (trust 1–3). Corroborated existing AtomInvest pricing (Boston deck) and merged, not overwritten. De-duplicated re-logged events (iCapital/Parallel Markets, IDR→Sonata One).
+**Summary:** Ingested the Notion Competitive Intel "Tracking Table" (153 dated field-intel entries across 37 companies) as one source page, then synthesized into competitor and concept pages. Routed by the export's own Company-type tags: direct/potential competitors → competitor pages; partners/fund-admins/law-firms folded in or noted (K&E kept due to lost deals). 16 companies with ≥2 entries got full pages (Passthrough merged 46, AtomInvest merged 24, etc.); 20 single-mention firms captured compactly in one watchlist roundup; 7 no-company market-intel entries → landscape concept. All competitor/concept pages carry a confidence rating (single underlying source).
+**Pages touched:**
+- wiki/sources/competitive-intel-tracking-table.md (created — note, trust 9)
+- wiki/competitors/passthrough.md, subscribe.md, ontra.md, icapital-cais.md, vega.md, juniper-square.md, bunch.md, nav.md, idr.md, funded.md, flow.md, fenergo.md, bitestream.md, backstop.md, kirkland-ellis.md (created)
+- wiki/competitors/atominvest.md (merged 24 new entries; source_count 2→3)
+- wiki/competitors/competitor-landscape-watchlist.md (created — 20 single-mention firms)
+- wiki/concepts/competitor-pricing-benchmarks.md, competitive-win-loss.md, private-markets-competitive-landscape.md (created)
+- index.md (Sources 83→84, Competitors 2→18, Concepts 10→13, last_updated 2026-06-19)
+- raw/notion-competitive-intel-tracking-table/ (immutable source copy)
+
+## [2026-06-19] lint | 3 issues found, all fixed
+
+**Operation:** lint
+**Summary:** Auto-triggered lint after the large competitive-intel ingest (~22 new/edited pages). Findings, all fixed: (1) Critical — 3 broken wikilinks to `[[wiki/products/idm]]` (correct slug is `investor-data-management`) in passthrough.md and icapital-cais.md → repointed with display alias. (2) High — 2 orphan pages (idr, fenergo) with no inbound links → wired into the consolidation/rebrands bullet of the private-markets-competitive-landscape concept. Verified: all 20 new pages present in index.md; all frontmatter required fields present; every single-source competitor/concept page carries a `confidence` rating (satisfies §7 fragility check). No broken links remain.
+**Pages touched:** wiki/competitors/passthrough.md, wiki/competitors/icapital-cais.md, wiki/concepts/private-markets-competitive-landscape.md, log.md

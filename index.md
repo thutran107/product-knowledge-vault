@@ -1,11 +1,11 @@
 # Wiki Index
-Last updated: 2026-06-16
+Last updated: 2026-06-19
 
 ## Overview
 - [[wiki/overview]] — High-level synthesis of the full 13-product Anduin suite: onboarding stack, IDM data layer, engagement layer (EH/Portal/Data Room), Integration Hub, pricing models, conflicts, customers & competitors.
 - [[wiki/onboarding]] — Must-read list for new CS and Sales hires.
 
-## Sources (83)
+## Sources (84)
 | Page | Title | Type | Products | Date |
 |------|-------|------|----------|------|
 | [[wiki/sources/mission-and-core-components]] | Mission and Core Components | article | Integration Hub | 2026-04-20 |
@@ -91,6 +91,7 @@ Last updated: 2026-06-16
 | [[wiki/sources/aaa-user-guide]] | AAA (Advisor Advantage) — User Guide | implementation-guide | AAA | 2025-12-31 |
 | [[wiki/sources/aaa-advisor-tags]] | AAA — Feature: Advisor's Tags for GP↔RIA | release-notes | AAA | 2025-08-14 |
 | [[wiki/sources/investor-access-faq]] | Investor Access — Internal FAQ | faq | Investor Access | 2025-09-26 |
+| [[wiki/sources/competitive-intel-tracking-table]] | Competitive Intel Repository — Tracking Table | note | Fundsub, Side Letter, Portal, Data Room | 2026-06-17 |
 
 ## Products (13)
 | Page | Title | Status | Sources |
@@ -144,7 +145,7 @@ Last updated: 2026-06-16
 | [[wiki/customers/accolade]] | Accolade Partners | Data Room, FundSub | 1 |
 | [[wiki/customers/nxstep]] | NXSTEP | FundSub | 1 |
 
-## Concepts (10)
+## Concepts (13)
 | Page | Title | Sources |
 |------|-------|---------|
 | [[wiki/concepts/integration-patterns]] | Integration Patterns | 7 |
@@ -157,12 +158,31 @@ Last updated: 2026-06-16
 | [[wiki/concepts/crm-integration-playbook]] | CRM Integration Playbook | 3 |
 | [[wiki/concepts/data-mapping]] | Data Mapping | 4 |
 | [[wiki/concepts/qes-aes-compliance]] | QES/AES/SES Compliance (eIDAS Signature Types) | 2 |
+| [[wiki/concepts/competitor-pricing-benchmarks]] | Competitor Pricing Benchmarks | 1 |
+| [[wiki/concepts/competitive-win-loss]] | Competitive Win/Loss Patterns | 1 |
+| [[wiki/concepts/private-markets-competitive-landscape]] | Private Markets Competitive Landscape | 1 |
 
-## Competitors (2)
+## Competitors (18)
 | Page | Title | Sources |
 |------|-------|---------|
+| [[wiki/competitors/passthrough]] | Passthrough | 1 |
+| [[wiki/competitors/atominvest]] | AtomInvest | 3 |
+| [[wiki/competitors/subscribe]] | Subscribe | 1 |
+| [[wiki/competitors/ontra]] | Ontra | 1 |
+| [[wiki/competitors/icapital-cais]] | iCapital & CAIS | 1 |
+| [[wiki/competitors/vega]] | Vega | 1 |
+| [[wiki/competitors/juniper-square]] | Juniper Square | 1 |
+| [[wiki/competitors/bunch]] | bunch | 1 |
+| [[wiki/competitors/nav]] | NAV (NAV Fund Services) | 1 |
+| [[wiki/competitors/idr]] | IDR (Sonata One) | 1 |
+| [[wiki/competitors/funded]] | Funded (Kirkland & Ellis) | 1 |
+| [[wiki/competitors/flow]] | Flow | 1 |
+| [[wiki/competitors/fenergo]] | Fenergo | 1 |
+| [[wiki/competitors/bitestream]] | BiteStream (Investor Pointe) | 1 |
+| [[wiki/competitors/backstop]] | Backstop | 1 |
+| [[wiki/competitors/kirkland-ellis]] | K&E (Kirkland & Ellis) | 1 |
 | [[wiki/competitors/investorflow]] | InvestorFlow | 2 |
-| [[wiki/competitors/atominvest]] | AtomInvest | 2 |
+| [[wiki/competitors/competitor-landscape-watchlist]] | Competitor Landscape Watchlist (20 single-mention firms) | 1 |
 
 ## Analyses (2)
 | Page | Title | Date |
