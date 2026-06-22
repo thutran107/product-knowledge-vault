@@ -342,6 +342,81 @@ for title, conf, prods in comp_rows:
     comp_body += f'<tr><td class="rowname">{esc(title)} {CONF_CHIP.get(conf, "")}</td>{cells}</tr>'
 threat_row = "".join(f'<td class="threat">{threat.get(pid, 0) or ""}</td>' for _, pid in PROD_COLS)
 
+# ---------------------------------------------------------------- competitive intel: pricing + win/loss
+# Parsed from the structured raw tracking-table entries (Intel type / summary /
+# segment / date). Gracefully skipped if raw/ is not present (it is gitignored).
+INTEL_DIR = VAULT / "raw" / "notion-competitive-intel-tracking-table"
+def _parse_intel_date(s):
+    for f in ("%B %d, %Y", "%B %Y"):
+        try:
+            return datetime.datetime.strptime(s.strip(), f).date()
+        except ValueError:
+            pass
+    return None
+pricing_rows = []
+winloss = collections.defaultdict(lambda: {"won": 0, "lost": 0, "deals": []})
+won_total = lost_total = 0
+intel_present = INTEL_DIR.is_dir()
+if intel_present:
+    for p in sorted(INTEL_DIR.glob("*.md")):
+        txt = p.read_text(encoding="utf-8", errors="ignore")
+        props, title = {}, ""
+        for line in txt.splitlines():
+            if line.startswith("# ") and not title:
+                title = line[2:].strip()
+            mm = re.match(r"^(Company name|Intel type|Intel summary|Date|Product/Market|Segment):\s*(.*)$", line)
+            if mm:
+                props[mm.group(1)] = mm.group(2).strip()
+        itype = props.get("Intel type", "")
+        comp = props.get("Company name", "").strip()
+        summ = props.get("Intel summary", "").strip() or title
+        date = props.get("Date", "")
+        if "Pricing" in itype and comp:
+            pricing_rows.append({"comp": comp, "seg": props.get("Segment", ""),
+                                 "prod": props.get("Product/Market", ""), "summ": summ,
+                                 "date": date, "d": _parse_intel_date(date)})
+        if "Win/loss" in itype:
+            who = comp or "?"
+            tl = title.lower()
+            if tl.startswith("won") or tl.startswith("renewed"):
+                winloss[who]["won"] += 1; won_total += 1; winloss[who]["deals"].append(("W", title))
+            elif tl.startswith("lost"):
+                winloss[who]["lost"] += 1; lost_total += 1; winloss[who]["deals"].append(("L", title))
+    pricing_rows.sort(key=lambda r: (r["comp"], r["d"] or datetime.date(1900, 1, 1)))
+
+if pricing_rows:
+    price_body = "".join(
+        f'<tr><td class="rowname">{esc(r["comp"])}</td><td>{esc(r["seg"] or "—")}</td>'
+        f'<td>{esc(r["prod"] or "—")}</td><td>{esc(r["summ"][:150])}</td>'
+        f'<td class="muted nowrap">{esc(r["date"] or "—")}</td></tr>' for r in pricing_rows)
+    pricing_card = (f'<div class="card"><h3>Competitor pricing benchmarks — {len(pricing_rows)} '
+                    'directional data points (individual deal quotes, not list prices)</h3>'
+                    '<table><thead><tr><th class="rowname">Competitor</th><th>Segment</th>'
+                    '<th>Product</th><th>Quote / detail</th><th>Date</th></tr></thead>'
+                    f'<tbody>{price_body}</tbody></table></div>')
+else:
+    pricing_card = ('<div class="card"><h3>Competitor pricing benchmarks</h3>'
+                    '<p class="muted">Raw tracking-table not present at generation time — '
+                    'regenerate with <code>raw/</code> available to populate.</p></div>')
+
+if won_total or lost_total:
+    wl_sorted = sorted(winloss.items(), key=lambda kv: -(kv[1]["won"] + kv[1]["lost"]))
+    wl_body = "".join(
+        f'<tr><td class="rowname">{esc(c)}</td>'
+        f'<td class="win" title="{esc(chr(10).join(t for s,t in v["deals"] if s=="W"))}">{v["won"] or ""}</td>'
+        f'<td class="loss" title="{esc(chr(10).join(t for s,t in v["deals"] if s=="L"))}">{v["lost"] or ""}</td>'
+        f'<td class="muted">{v["won"]-v["lost"]:+d}</td></tr>' for c, v in wl_sorted)
+    winloss_card = (f'<div class="card"><h3>Anduin win / loss vs competitor — {won_total} won · {lost_total} lost '
+                    f'(net {won_total-lost_total:+d}) across {len(wl_sorted)} competitors</h3>'
+                    '<table><thead><tr><th class="rowname">Competitor</th><th>Anduin won</th><th>Anduin lost</th><th>Net</th></tr></thead>'
+                    f'<tbody>{wl_body}</tbody></table>'
+                    '<p class="muted" style="margin:10px 2px 0;font-size:12px">Anduin\'s outcome in deals where this competitor was named. '
+                    'Hover a number to see the deals. Renewals counted as wins. <b>Directional, not a complete record</b> — '
+                    'logged intel skews toward losses (teams log competitive losses more often than wins).</p></div>')
+else:
+    winloss_card = ('<div class="card"><h3>Win / loss by competitor</h3>'
+                    '<p class="muted">Raw tracking-table not present at generation time.</p></div>')
+
 # audience
 aud_rows = sorted(aud.items(), key=lambda x: -x[1])
 aud_html = bars(aud_rows, max(aud.values()) if aud else 1)
@@ -367,6 +442,9 @@ h1 .accent{{color:var(--coral)}}
 .cf.md{{background:#2b2410;color:var(--amber);border:1px solid #6b561f}}
 .cf.lo{{background:#1c2433;color:var(--blue);border:1px solid #2f4470}}
 td.threat{{text-align:center;font-weight:800;color:var(--coral2)}}
+td.win{{text-align:center;font-weight:800;color:var(--green)}}
+td.loss{{text-align:center;font-weight:800;color:var(--coral2)}}
+td.nowrap{{white-space:nowrap}}
 tr.threatrow td{{border-top:2px solid var(--line);color:var(--coral2)}}
 tr.threatrow .rowname{{font-weight:700;color:var(--muted)}}
 .stat{{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:18px}}
@@ -488,6 +566,10 @@ a{{color:var(--coral2)}}
     <tr class="threatrow"><td class="rowname">Competitors / product</td>{threat_row}</tr></tbody></table>
     <p class="muted" style="margin:10px 2px 0;font-size:12px">Source: <a href="graph.html">{n_competitors} competitor pages</a> from the Competitive Intel Repository. Confidence reflects how many corroborating intel entries back the page. The watchlist of single-mention firms is excluded from rows.</p>
   </div>
+
+  {pricing_card}
+
+  {winloss_card}
 
   <div class="grid2">
     <div class="card"><h3>Audience split — sources by target audience</h3>{aud_html}</div>
