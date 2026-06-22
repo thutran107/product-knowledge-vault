@@ -316,6 +316,32 @@ for name, prods in cust_matrix:
     cls = ' class="empty"' if not prods else ""
     cm_body += f'<tr{cls}><td class="rowname">{esc(name)}</td>{cells}</tr>'
 
+# competitor × product overlap matrix (rows = competitor pages, cols = products)
+CONF_RANK = {"high": 0, "medium": 1, "low": 2}
+CONF_CHIP = {"high": '<span class="cf hi">high</span>',
+             "medium": '<span class="cf md">med</span>',
+             "low": '<span class="cf lo">low</span>'}
+comp_rows = []
+for sf, m in meta.items():
+    if m.get("type") != "competitor" or Path(sf).stem == "competitor-landscape-watchlist":
+        continue
+    prods = {slug for kind, slug in _WIKILINK.findall(body[sf]) if kind == "products"}
+    comp_rows.append((m.get("title", Path(sf).stem), m.get("confidence", "—"), prods))
+comp_rows.sort(key=lambda r: (CONF_RANK.get(r[1], 3), -len(r[2]), r[0]))
+n_competitors = sum(1 for m in meta.values() if m.get("type") == "competitor")
+threat = collections.Counter()
+for _, _, prods in comp_rows:
+    for p in prods:
+        threat[p] += 1
+
+comp_head = "".join(f'<th class="rot"><span>{esc(c)}</span></th>' for c, _ in PROD_COLS)
+comp_body = ""
+for title, conf, prods in comp_rows:
+    cells = "".join(f'<td class="{"ok" if pid in prods else ""}">{"●" if pid in prods else ""}</td>'
+                    for _, pid in PROD_COLS)
+    comp_body += f'<tr><td class="rowname">{esc(title)} {CONF_CHIP.get(conf, "")}</td>{cells}</tr>'
+threat_row = "".join(f'<td class="threat">{threat.get(pid, 0) or ""}</td>' for _, pid in PROD_COLS)
+
 # audience
 aud_rows = sorted(aud.items(), key=lambda x: -x[1])
 aud_html = bars(aud_rows, max(aud.values()) if aud else 1)
@@ -335,7 +361,14 @@ h1{{font-size:36px;line-height:1.15;margin:10px 0 6px;font-weight:800}}
 h1 .accent{{color:var(--coral)}}
 .sub{{color:var(--muted);max-width:720px;margin-bottom:30px}}
 .muted{{color:var(--muted)}}
-.stats{{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:14px}}
+.stats{{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:14px}}
+.cf{{font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;vertical-align:middle;text-transform:uppercase;letter-spacing:.05em}}
+.cf.hi{{background:#3a1410;color:var(--coral2);border:1px solid var(--coral)}}
+.cf.md{{background:#2b2410;color:var(--amber);border:1px solid #6b561f}}
+.cf.lo{{background:#1c2433;color:var(--blue);border:1px solid #2f4470}}
+td.threat{{text-align:center;font-weight:800;color:var(--coral2)}}
+tr.threatrow td{{border-top:2px solid var(--line);color:var(--coral2)}}
+tr.threatrow .rowname{{font-weight:700;color:var(--muted)}}
 .stat{{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:18px}}
 .stat.hot{{background:linear-gradient(160deg,#2a1a12,#3a2113);border-color:var(--coral)}}
 .stat .num{{font-size:32px;font-weight:800;line-height:1}}
@@ -395,6 +428,7 @@ a{{color:var(--coral2)}}
   <div class="stat hot"><div class="num">{len(PRODUCT_FILES)}</div><div class="lbl">Products</div></div>
   <div class="stat"><div class="num">{len(files_by_type.get("source", []))}</div><div class="lbl">Sources</div></div>
   <div class="stat"><div class="num">{len(CUST_FILES)}</div><div class="lbl">Customers</div></div>
+  <div class="stat"><div class="num">{n_competitors}</div><div class="lbl">Competitors</div></div>
   <div class="stat"><div class="num">{n_comm}</div><div class="lbl">Communities</div></div>
 </div>
 
@@ -447,6 +481,12 @@ a{{color:var(--coral2)}}
 
   <div class="card"><h3>Customer × product — ● = documented link (amber row = none documented)</h3>
     <table><thead><tr><th class="rowname">Customer</th>{cm_head}</tr></thead><tbody>{cm_body}</tbody></table>
+  </div>
+
+  <div class="card"><h3>Competitor × product overlap — ● = competes here · chip = intel confidence · bottom row = competitors per product</h3>
+    <table><thead><tr><th class="rowname">Competitor</th>{comp_head}</tr></thead><tbody>{comp_body}
+    <tr class="threatrow"><td class="rowname">Competitors / product</td>{threat_row}</tr></tbody></table>
+    <p class="muted" style="margin:10px 2px 0;font-size:12px">Source: <a href="graph.html">{n_competitors} competitor pages</a> from the Competitive Intel Repository. Confidence reflects how many corroborating intel entries back the page. The watchlist of single-mention firms is excluded from rows.</p>
   </div>
 
   <div class="grid2">
