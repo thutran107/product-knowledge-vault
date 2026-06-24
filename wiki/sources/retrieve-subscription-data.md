@@ -26,10 +26,10 @@ Describes the DealCloud (Data retrieval) integration that automatically syncs co
 - Target persona: FundSub customers using DealCloud as CRM needing to sync high volumes of subscription data.
 
 ## Connections
-- [[wiki/concepts/integration-patterns|Integration Patterns]] — Data Retrieval pattern.
-- [[wiki/concepts/import-export-templates|Import/Export Templates]] — export templates used here.
-- [[wiki/concepts/data-mapping|Data Mapping]].
-- [[wiki/entities/dealcloud|DealCloud]], [[wiki/products/fundsub|FundSub]].
+- [[concepts/integration-patterns|Integration Patterns]] — Data Retrieval pattern.
+- [[concepts/import-export-templates|Import/Export Templates]] — export templates used here.
+- [[concepts/data-mapping|Data Mapping]].
+- [[entities/dealcloud|DealCloud]], [[products/fundsub|FundSub]].
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

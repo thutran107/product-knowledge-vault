@@ -23,9 +23,9 @@ A 16-step visual walkthrough of the Schwab DocuSign signature workflow in FundSu
 - Customer: **Cerity Partners** (RIA using Advisor Advantage / AAA product).
 
 ## Connections
-- [[wiki/products/e-signature]] — Schwab DocuSign is a sub-workflow of the e-signature product
-- [[wiki/products/fundsub]] — FundSub is the context for the subscription workflow
-- [[wiki/customers/cerity-partners]] — this doc was created specifically for Cerity Partners
+- [[products/e-signature]] — Schwab DocuSign is a sub-workflow of the e-signature product
+- [[products/fundsub]] — FundSub is the context for the subscription workflow
+- [[customers/cerity-partners]] — this doc was created specifically for Cerity Partners
 
 ## Conflicts & Supersessions
 - No conflicts. First Schwab-specific workflow document ingested.

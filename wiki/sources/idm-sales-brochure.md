@@ -20,7 +20,7 @@ Sales-facing brochure for IDM, intended for use by Sales and RM in prospect conv
 - As-of date: 2024-08-01 — may not reflect features shipped after August 2024.
 
 ## Connections
-- [[wiki/products/investor-data-management|IDM]]
+- [[products/investor-data-management|IDM]]
 
 ## Conflicts & Supersessions
 As-of date is August 2024. Any IDM capabilities added after that date will not be reflected here. Cross-check with the IDM Feature Guide Library for current state.

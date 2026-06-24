@@ -20,8 +20,8 @@ Running release notes log for IDM, stored as a Notion database. Tracks feature r
 - Linked to a Notion database view of all IDM release entries.
 
 ## Connections
-- [[wiki/products/investor-data-management|IDM]]
-- [[wiki/sources/idm-release-notes-sprint-362|IDM Sprint 362 Release Notes]] — a specific sprint entry.
+- [[products/investor-data-management|IDM]]
+- [[sources/idm-release-notes-sprint-362|IDM Sprint 362 Release Notes]] — a specific sprint entry.
 
 ## Conflicts & Supersessions
 None. Release notes are additive by nature.

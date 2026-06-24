@@ -42,9 +42,9 @@ LP-facing guide to the Anduin platform (Jan 2026 cover date). Covers the complet
 **Support:** Help → "Contact this fund" → view fund's points of contact.
 
 ## Connections
-- [[wiki/products/investor-portal]]
-- [[wiki/products/fundsub]] — this guide primarily describes FundSub from the LP side
-- [[wiki/sources/investor-portal-sales-deck]]
+- [[products/investor-portal]]
+- [[products/fundsub]] — this guide primarily describes FundSub from the LP side
+- [[sources/investor-portal-sales-deck]]
 
 ## Conflicts & Supersessions
 None found. This is the current LP-facing guide.

@@ -37,10 +37,35 @@ def parse_fm(text):
     return fm
 
 # meta keyed by source_file path relative to vault, e.g. "wiki/products/fundsub.md"
+# body keeps the full markdown so we can read [[wikilinks]] (ground truth the
+# graph extraction does not reliably capture).
 meta = {}
+body = {}
 for p in (VAULT / "wiki").rglob("*.md"):
     rel = p.relative_to(VAULT).as_posix()
-    meta[rel] = parse_fm(p.read_text(encoding="utf-8", errors="ignore"))
+    txt = p.read_text(encoding="utf-8", errors="ignore")
+    meta[rel] = parse_fm(txt)
+    body[rel] = txt
+
+# customer <-> product links from wikilinks, in BOTH directions:
+#   customer body links [[wiki/products/X]]  AND  product body links [[wiki/customers/Y]]
+_WIKILINK = re.compile(r"\[\[(?:wiki/)?(products|customers)/([a-z0-9-]+)")
+cust2prods = collections.defaultdict(set)   # "wiki/customers/foo.md" -> {product stems}
+for rel, txt in body.items():
+    t = meta.get(rel, {}).get("type")
+    if t == "customer":
+        for kind, slug in _WIKILINK.findall(txt):
+            if kind == "products":
+                cust2prods[rel].add(slug)
+    elif t == "product":
+        pslug = Path(rel).stem
+        for kind, slug in _WIKILINK.findall(txt):
+            if kind == "customers":
+                cust2prods[f"wiki/customers/{slug}.md"].add(pslug)
+prod2custs = collections.defaultdict(set)   # product stem -> {customer "title"}
+for cf, pslugs in cust2prods.items():
+    for ps in pslugs:
+        prod2custs[ps].add(cf)
 
 # ---------------------------------------------------------------- graph
 g = json.load(open(GRAPH))
@@ -127,10 +152,43 @@ for sf, m in meta.items():
         trust_hist[int(m["trust_level"])] += 1
 
 # ---------------------------------------------------------------- product joins
-PRODUCT_FILES = sorted(files_by_type.get("product", []),
+# All product PAGES on disk — not just those that became graph nodes. The graph
+# extraction misses some product pages (e.g. fundsub, data-room, IDM), which
+# would otherwise drop entire columns/rows from the matrices below.
+PRODUCT_FILES = sorted([sf for sf, m in meta.items() if m.get("type") == "product"],
                        key=lambda sf: -file_degree(sf))
+# Coverage is a CONTENT-gap signal, so derive it from each source's frontmatter
+# `products:` field (ground truth) rather than graph adjacency — the graph does
+# not reliably wire every product node to its source pages.
+def _pnorm(s):
+    return str(s).lower().strip().strip('"').strip("'")
+PRODUCT_ALIASES = {
+    "integration-hub": {"integration hub"},
+    "fundsub": {"fundsub", "fund subscription"},
+    "data-room": {"data room"},
+    "investor-data-management": {"idm", "investor data management"},
+    "investor-access": {"investor access"},
+    "platform": {"platform"},
+    "e-signature": {"e-signature", "esignature", "e signature"},
+    "investor-portal": {"investor portal", "portal"},
+    "ocr-data-extraction": {"ocr data extraction", "ocr", "data extraction"},
+    "aaa": {"aaa", "advisor advantage"},
+    "landing-page": {"landing page"},
+    "side-letter": {"side letter"},
+    "engagement-hub": {"engagement hub"},
+}
 def product_sources(sf):
-    return [f for f in fadj.get(sf, ()) if ftype(f) == "source"]
+    stem = Path(sf).stem
+    aliases = PRODUCT_ALIASES.get(stem, {stem.replace("-", " ")})
+    out = []
+    for f, fmeta in meta.items():
+        if fmeta.get("type") != "source":
+            continue
+        prods = fmeta.get("products", [])
+        prods = [prods] if isinstance(prods, str) else prods
+        if any(_pnorm(p) in aliases for p in prods):
+            out.append(f)
+    return out
 def neighbors_type(sf, t):
     return [f for f in fadj.get(sf, ()) if ftype(f) == t]
 
@@ -155,7 +213,7 @@ for sf in PRODUCT_FILES:
         "sc": m.get("source_count", str(len(srcs))),
         "feat": len([f for f in files_by_type.get("feature", [])
                      if meta.get(f, {}).get("parent_product", "") == m.get("title", "")]),
-        "cust": neighbors_type(sf, "customer"),
+        "cust": sorted(prod2custs.get(Path(sf).stem, set())),
         "concepts": neighbors_type(sf, "concept"),
         "trust_min": min(trusts) if trusts else None,
         "trust_max": max(trusts) if trusts else None,
@@ -177,7 +235,7 @@ CUST_FILES = sorted(files_by_type.get("customer", []),
                     key=lambda sf: meta.get(sf, {}).get("title", sf))
 cust_matrix = []
 for sf in CUST_FILES:
-    prods = {Path(f).stem for f in neighbors_type(sf, "product")}
+    prods = set(cust2prods.get(sf, set()))   # from wikilinks, both directions
     cust_matrix.append((meta.get(sf, {}).get("title", Path(sf).stem), prods))
 PROD_COLS = [(meta.get(sf, {}).get("title", Path(sf).stem).split(" (")[0], Path(sf).stem)
              for sf in PRODUCT_FILES]
@@ -258,6 +316,107 @@ for name, prods in cust_matrix:
     cls = ' class="empty"' if not prods else ""
     cm_body += f'<tr{cls}><td class="rowname">{esc(name)}</td>{cells}</tr>'
 
+# competitor × product overlap matrix (rows = competitor pages, cols = products)
+CONF_RANK = {"high": 0, "medium": 1, "low": 2}
+CONF_CHIP = {"high": '<span class="cf hi">high</span>',
+             "medium": '<span class="cf md">med</span>',
+             "low": '<span class="cf lo">low</span>'}
+comp_rows = []
+for sf, m in meta.items():
+    if m.get("type") != "competitor" or Path(sf).stem == "competitor-landscape-watchlist":
+        continue
+    prods = {slug for kind, slug in _WIKILINK.findall(body[sf]) if kind == "products"}
+    comp_rows.append((m.get("title", Path(sf).stem), m.get("confidence", "—"), prods))
+comp_rows.sort(key=lambda r: (CONF_RANK.get(r[1], 3), -len(r[2]), r[0]))
+n_competitors = sum(1 for m in meta.values() if m.get("type") == "competitor")
+threat = collections.Counter()
+for _, _, prods in comp_rows:
+    for p in prods:
+        threat[p] += 1
+
+comp_head = "".join(f'<th class="rot"><span>{esc(c)}</span></th>' for c, _ in PROD_COLS)
+comp_body = ""
+for title, conf, prods in comp_rows:
+    cells = "".join(f'<td class="{"ok" if pid in prods else ""}">{"●" if pid in prods else ""}</td>'
+                    for _, pid in PROD_COLS)
+    comp_body += f'<tr><td class="rowname">{esc(title)} {CONF_CHIP.get(conf, "")}</td>{cells}</tr>'
+threat_row = "".join(f'<td class="threat">{threat.get(pid, 0) or ""}</td>' for _, pid in PROD_COLS)
+
+# ---------------------------------------------------------------- competitive intel: pricing + win/loss
+# Parsed from the structured raw tracking-table entries (Intel type / summary /
+# segment / date). Gracefully skipped if raw/ is not present (it is gitignored).
+INTEL_DIR = VAULT / "raw" / "notion-competitive-intel-tracking-table"
+def _parse_intel_date(s):
+    for f in ("%B %d, %Y", "%B %Y"):
+        try:
+            return datetime.datetime.strptime(s.strip(), f).date()
+        except ValueError:
+            pass
+    return None
+pricing_rows = []
+winloss = collections.defaultdict(lambda: {"won": 0, "lost": 0, "deals": []})
+won_total = lost_total = 0
+intel_present = INTEL_DIR.is_dir()
+if intel_present:
+    for p in sorted(INTEL_DIR.glob("*.md")):
+        txt = p.read_text(encoding="utf-8", errors="ignore")
+        props, title = {}, ""
+        for line in txt.splitlines():
+            if line.startswith("# ") and not title:
+                title = line[2:].strip()
+            mm = re.match(r"^(Company name|Intel type|Intel summary|Date|Product/Market|Segment):\s*(.*)$", line)
+            if mm:
+                props[mm.group(1)] = mm.group(2).strip()
+        itype = props.get("Intel type", "")
+        comp = props.get("Company name", "").strip()
+        summ = props.get("Intel summary", "").strip() or title
+        date = props.get("Date", "")
+        if "Pricing" in itype and comp:
+            pricing_rows.append({"comp": comp, "seg": props.get("Segment", ""),
+                                 "prod": props.get("Product/Market", ""), "summ": summ,
+                                 "date": date, "d": _parse_intel_date(date)})
+        if "Win/loss" in itype:
+            who = comp or "?"
+            tl = title.lower()
+            if tl.startswith("won") or tl.startswith("renewed"):
+                winloss[who]["won"] += 1; won_total += 1; winloss[who]["deals"].append(("W", title))
+            elif tl.startswith("lost"):
+                winloss[who]["lost"] += 1; lost_total += 1; winloss[who]["deals"].append(("L", title))
+    pricing_rows.sort(key=lambda r: (r["comp"], r["d"] or datetime.date(1900, 1, 1)))
+
+if pricing_rows:
+    price_body = "".join(
+        f'<tr><td class="rowname">{esc(r["comp"])}</td><td>{esc(r["seg"] or "—")}</td>'
+        f'<td>{esc(r["prod"] or "—")}</td><td>{esc(r["summ"][:150])}</td>'
+        f'<td class="muted nowrap">{esc(r["date"] or "—")}</td></tr>' for r in pricing_rows)
+    pricing_card = (f'<div class="card"><h3>Competitor pricing benchmarks — {len(pricing_rows)} '
+                    'directional data points (individual deal quotes, not list prices)</h3>'
+                    '<table><thead><tr><th class="rowname">Competitor</th><th>Segment</th>'
+                    '<th>Product</th><th>Quote / detail</th><th>Date</th></tr></thead>'
+                    f'<tbody>{price_body}</tbody></table></div>')
+else:
+    pricing_card = ('<div class="card"><h3>Competitor pricing benchmarks</h3>'
+                    '<p class="muted">Raw tracking-table not present at generation time — '
+                    'regenerate with <code>raw/</code> available to populate.</p></div>')
+
+if won_total or lost_total:
+    wl_sorted = sorted(winloss.items(), key=lambda kv: -(kv[1]["won"] + kv[1]["lost"]))
+    wl_body = "".join(
+        f'<tr><td class="rowname">{esc(c)}</td>'
+        f'<td class="win" title="{esc(chr(10).join(t for s,t in v["deals"] if s=="W"))}">{v["won"] or ""}</td>'
+        f'<td class="loss" title="{esc(chr(10).join(t for s,t in v["deals"] if s=="L"))}">{v["lost"] or ""}</td>'
+        f'<td class="muted">{v["won"]-v["lost"]:+d}</td></tr>' for c, v in wl_sorted)
+    winloss_card = (f'<div class="card"><h3>Anduin win / loss vs competitor — {won_total} won · {lost_total} lost '
+                    f'(net {won_total-lost_total:+d}) across {len(wl_sorted)} competitors</h3>'
+                    '<table><thead><tr><th class="rowname">Competitor</th><th>Anduin won</th><th>Anduin lost</th><th>Net</th></tr></thead>'
+                    f'<tbody>{wl_body}</tbody></table>'
+                    '<p class="muted" style="margin:10px 2px 0;font-size:12px">Anduin\'s outcome in deals where this competitor was named. '
+                    'Hover a number to see the deals. Renewals counted as wins. <b>Directional, not a complete record</b> — '
+                    'logged intel skews toward losses (teams log competitive losses more often than wins).</p></div>')
+else:
+    winloss_card = ('<div class="card"><h3>Win / loss by competitor</h3>'
+                    '<p class="muted">Raw tracking-table not present at generation time.</p></div>')
+
 # audience
 aud_rows = sorted(aud.items(), key=lambda x: -x[1])
 aud_html = bars(aud_rows, max(aud.values()) if aud else 1)
@@ -277,7 +436,17 @@ h1{{font-size:36px;line-height:1.15;margin:10px 0 6px;font-weight:800}}
 h1 .accent{{color:var(--coral)}}
 .sub{{color:var(--muted);max-width:720px;margin-bottom:30px}}
 .muted{{color:var(--muted)}}
-.stats{{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:14px}}
+.stats{{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:14px}}
+.cf{{font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;vertical-align:middle;text-transform:uppercase;letter-spacing:.05em}}
+.cf.hi{{background:#3a1410;color:var(--coral2);border:1px solid var(--coral)}}
+.cf.md{{background:#2b2410;color:var(--amber);border:1px solid #6b561f}}
+.cf.lo{{background:#1c2433;color:var(--blue);border:1px solid #2f4470}}
+td.threat{{text-align:center;font-weight:800;color:var(--coral2)}}
+td.win{{text-align:center;font-weight:800;color:var(--green)}}
+td.loss{{text-align:center;font-weight:800;color:var(--coral2)}}
+td.nowrap{{white-space:nowrap}}
+tr.threatrow td{{border-top:2px solid var(--line);color:var(--coral2)}}
+tr.threatrow .rowname{{font-weight:700;color:var(--muted)}}
 .stat{{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:18px}}
 .stat.hot{{background:linear-gradient(160deg,#2a1a12,#3a2113);border-color:var(--coral)}}
 .stat .num{{font-size:32px;font-weight:800;line-height:1}}
@@ -337,6 +506,7 @@ a{{color:var(--coral2)}}
   <div class="stat hot"><div class="num">{len(PRODUCT_FILES)}</div><div class="lbl">Products</div></div>
   <div class="stat"><div class="num">{len(files_by_type.get("source", []))}</div><div class="lbl">Sources</div></div>
   <div class="stat"><div class="num">{len(CUST_FILES)}</div><div class="lbl">Customers</div></div>
+  <div class="stat"><div class="num">{n_competitors}</div><div class="lbl">Competitors</div></div>
   <div class="stat"><div class="num">{n_comm}</div><div class="lbl">Communities</div></div>
 </div>
 
@@ -390,6 +560,16 @@ a{{color:var(--coral2)}}
   <div class="card"><h3>Customer × product — ● = documented link (amber row = none documented)</h3>
     <table><thead><tr><th class="rowname">Customer</th>{cm_head}</tr></thead><tbody>{cm_body}</tbody></table>
   </div>
+
+  <div class="card"><h3>Competitor × product overlap — ● = competes here · chip = intel confidence · bottom row = competitors per product</h3>
+    <table><thead><tr><th class="rowname">Competitor</th>{comp_head}</tr></thead><tbody>{comp_body}
+    <tr class="threatrow"><td class="rowname">Competitors / product</td>{threat_row}</tr></tbody></table>
+    <p class="muted" style="margin:10px 2px 0;font-size:12px">Source: <a href="graph.html">{n_competitors} competitor pages</a> from the Competitive Intel Repository. Confidence reflects how many corroborating intel entries back the page. The watchlist of single-mention firms is excluded from rows.</p>
+  </div>
+
+  {pricing_card}
+
+  {winloss_card}
 
   <div class="grid2">
     <div class="card"><h3>Audience split — sources by target audience</h3>{aud_html}</div>

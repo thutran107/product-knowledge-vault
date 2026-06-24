@@ -27,12 +27,12 @@ Describes the Affinity (Order creation) integration that invites investors (Prim
 - Roadmap note: multi-fund integration planned (single instance → multiple funds).
 
 ## Connections
-- [[wiki/concepts/integration-patterns|Integration Patterns]] — Order Creation pattern.
-- [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]].
-- [[wiki/concepts/data-mapping|Data Mapping]].
-- [[wiki/concepts/import-export-templates|Import/Export Templates]].
-- [[wiki/entities/affinity|Affinity]], [[wiki/products/fundsub|FundSub]].
-- Compare with [[wiki/sources/automated-onboarding-fundsub-primary|DealCloud Order Creation]] — similar pattern, Affinity adds Collaborator support.
+- [[concepts/integration-patterns|Integration Patterns]] — Order Creation pattern.
+- [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]].
+- [[concepts/data-mapping|Data Mapping]].
+- [[concepts/import-export-templates|Import/Export Templates]].
+- [[entities/affinity|Affinity]], [[products/fundsub|FundSub]].
+- Compare with [[sources/automated-onboarding-fundsub-primary|DealCloud Order Creation]] — similar pattern, Affinity adds Collaborator support.
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

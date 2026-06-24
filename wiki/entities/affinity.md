@@ -24,10 +24,10 @@ A relationship intelligence CRM popular with venture capital and growth equity f
 Second CRM with Order Creation support. Key differentiator: Collaborator field support that DealCloud integration lacks.
 
 ## Sources
-- [[wiki/sources/investor-onboarding-primary-collaborators|Affinity Order Creation]]
+- [[sources/investor-onboarding-primary-collaborators|Affinity Order Creation]]
 
 ## Related
-- [[wiki/products/fundsub|FundSub]]
-- [[wiki/entities/dealcloud|DealCloud]]
-- [[wiki/concepts/integration-patterns|Integration Patterns]]
-- [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]
+- [[products/fundsub|FundSub]]
+- [[entities/dealcloud|DealCloud]]
+- [[concepts/integration-patterns|Integration Patterns]]
+- [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]

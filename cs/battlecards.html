@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anduin CS — Competitor Battlecards</title>
+<style>
+  :root{
+    --paper:#f7f3ec; --paper2:#fffdf9; --ink:#221d17; --muted:#6d6157; --faint:#9a8d80;
+    --line:#e0d6c6; --line2:#d2c5b2;
+    --accent:#a83a22; --accent2:#c75a3e; --accent-bg:#f4e6df;
+    --win:#2f7d5b; --win-bg:#e4efe7; --loss:#a83a22; --loss-bg:#f4e2dc;
+    --gold:#8a6d22; --gold-bg:#f1e9d4;
+    --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,"Times New Roman",serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Helvetica,sans-serif;
+    --mono:ui-monospace,"SF Mono","Cascadia Mono",Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+    font-size:15px;line-height:1.5;
+    background-image:radial-gradient(circle at 1px 1px,rgba(120,90,60,.05) 1px,transparent 0);
+    background-size:22px 22px;}
+  .wrap{max-width:940px;margin:0 auto;padding:40px 28px 80px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* ---- controls ---- */
+  .controls{position:sticky;top:0;z-index:20;display:flex;gap:12px;align-items:center;
+    justify-content:space-between;padding:12px 16px;margin:-12px 0 28px;
+    background:rgba(247,243,236,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .controls .brand{font-family:var(--serif);font-weight:600;letter-spacing:.01em}
+  .controls .brand b{color:var(--accent)}
+  .btn{font:600 13px/1 var(--sans);border:1px solid var(--line2);background:var(--paper2);
+    color:var(--ink);padding:9px 14px;border-radius:7px;cursor:pointer;letter-spacing:.02em}
+  .btn:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* ---- cover ---- */
+  .cover{padding:18px 0 36px;border-bottom:2px solid var(--ink)}
+  .eyebrow{font:700 11px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--accent)}
+  h1{font-family:var(--serif);font-size:52px;line-height:1.02;margin:14px 0 10px;font-weight:600;letter-spacing:-.01em}
+  .cover .lede{color:var(--muted);max-width:640px;font-size:16px}
+  .meta{margin-top:18px;font:600 12px/1.4 var(--mono);color:var(--faint);letter-spacing:.02em}
+
+  .howto{margin-top:26px;background:var(--paper2);border:1px solid var(--line);
+    border-left:4px solid var(--accent);border-radius:9px;padding:16px 20px}
+  .howto h4{margin:0 0 8px;font:700 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+  .howto ol{margin:0;padding-left:18px;color:var(--muted)}
+  .howto li{margin:3px 0}
+  .howto b{color:var(--ink)}
+
+  /* ---- index ---- */
+  .index{margin:30px 0 8px}
+  .index h4{font:700 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+  .idx-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .idx{display:flex;align-items:center;gap:12px;padding:12px 14px;background:var(--paper2);
+    border:1px solid var(--line);border-radius:9px}
+  .idx:hover{border-color:var(--accent2)}
+  .idx .rank{font:700 13px/1 var(--mono);color:var(--faint);width:18px}
+  .idx .nm{font-family:var(--serif);font-size:17px;font-weight:600;flex:1}
+  .idx .nm small{display:block;font-family:var(--sans);font-weight:400;font-size:11.5px;color:var(--muted);margin-top:2px}
+
+  /* ---- threat dot ---- */
+  .threat{display:inline-flex;gap:3px;align-items:center}
+  .threat i{width:7px;height:7px;border-radius:50%;background:var(--line2);display:inline-block}
+  .threat i.on{background:var(--accent)}
+
+  /* ---- card ---- */
+  .card{position:relative;background:var(--paper2);border:1px solid var(--line2);border-radius:14px;
+    padding:30px 32px;margin:26px 0;box-shadow:0 1px 0 rgba(0,0,0,.02),0 18px 40px -30px rgba(80,40,20,.4)}
+  .card::before{content:"";position:absolute;left:0;top:22px;bottom:22px;width:4px;border-radius:4px;background:var(--accent)}
+  .chead{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;
+    padding-bottom:16px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+  .chead .name{font-family:var(--serif);font-size:30px;font-weight:600;line-height:1;letter-spacing:-.01em}
+  .chead .desc{color:var(--muted);margin-top:8px;max-width:560px;font-size:14px}
+  .chead .right{text-align:right;white-space:nowrap;flex-shrink:0}
+  .wl{font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.02em}
+  .wl .w{color:var(--win)} .wl .l{color:var(--loss)}
+  .chip{display:inline-block;font:700 10px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;
+    padding:4px 9px;border-radius:20px;margin-top:8px}
+  .chip.hi{background:var(--loss-bg);color:var(--accent);border:1px solid var(--accent2)}
+  .chip.md{background:var(--gold-bg);color:var(--gold);border:1px solid #cdb877}
+  .chip.lo{background:#eee9e0;color:var(--muted);border:1px solid var(--line2)}
+  .ov{margin-top:7px;font:600 11px/1.3 var(--mono);color:var(--faint)}
+
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px 30px}
+  .sec{margin-bottom:4px}
+  .sec h5{font:700 10.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
+    margin:0 0 9px;display:flex;align-items:center;gap:8px}
+  .sec h5::after{content:"";flex:1;height:1px;background:var(--line)}
+  .sec.win h5{color:var(--win)} .sec.lose h5{color:var(--gold)}
+  ul.pts{margin:0;padding:0;list-style:none}
+  ul.pts li{position:relative;padding:0 0 7px 16px;font-size:13.5px;color:var(--ink)}
+  ul.pts li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+  .sec.win li::before{background:var(--win)}
+  .sec.lose li::before{background:var(--gold)}
+  .price{margin:0;padding:0;list-style:none}
+  .price li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed var(--line);font-size:13px}
+  .price li:last-child{border-bottom:0}
+  .price .q{font-family:var(--mono);font-weight:700;color:var(--accent);white-space:nowrap}
+  .price .ctx{color:var(--muted)}
+
+  /* objections */
+  .obj{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+  .obj h5{font:700 10.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin:0 0 12px}
+  .qa{margin-bottom:13px;padding-left:16px;border-left:3px solid var(--accent2)}
+  .qa .q{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--ink);margin-bottom:3px}
+  .qa .q::before{content:"“"} .qa .q::after{content:"”"}
+  .qa .a{font-size:13.5px;color:var(--muted)}
+  .qa .a b{color:var(--ink)}
+  .cfoot{margin-top:18px;font:500 11px/1.4 var(--mono);color:var(--faint);letter-spacing:.01em}
+
+  /* reference table card */
+  .ref h5{font:700 10.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+  table.ref-t{width:100%;border-collapse:collapse;font-size:13px}
+  table.ref-t th{text-align:left;font:700 10px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;
+    color:var(--muted);padding:0 10px 8px;border-bottom:1px solid var(--line2)}
+  table.ref-t td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.ref-t td:first-child{font-family:var(--serif);font-weight:600;font-size:14px;white-space:nowrap}
+  table.ref-t .c{font:700 9px/1 var(--sans);text-transform:uppercase;letter-spacing:.06em;padding:2px 7px;border-radius:10px}
+  .c.md{background:var(--gold-bg);color:var(--gold)} .c.lo{background:#eee9e0;color:var(--muted)}
+
+  .foot{margin-top:40px;padding-top:18px;border-top:1px solid var(--line2);color:var(--faint);
+    font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+  @media(max-width:720px){.cols,.idx-grid{grid-template-columns:1fr}h1{font-size:40px}.card{padding:24px 20px}}
+
+  /* ---------- PRINT: one competitor per page ---------- */
+  @media print{
+    @page{margin:14mm}
+    body{background:#fff;font-size:11pt}
+    body::before{display:none}
+    .controls{display:none}
+    .wrap{max-width:none;padding:0}
+    .cover{break-after:page}
+    .card{break-inside:avoid;break-after:page;box-shadow:none;border:1px solid #bbb;margin:0}
+    .idx:hover,.card{box-shadow:none}
+    a{color:var(--ink)}
+  }
+</style>
+</head>
+<body>
+<div class="controls">
+  <div class="brand">Anduin <b>·</b> Competitor Battlecards</div>
+  <button class="btn" onclick="window.print()">⎙ Print / Save as PDF</button>
+</div>
+
+<div class="wrap">
+
+  <!-- ============ COVER ============ -->
+  <header class="cover">
+    <div class="eyebrow">Customer Success · Renewal & Retention Field Guide</div>
+    <h1>Competitor<br>Battlecards</h1>
+    <p class="lede">One card per competitor — where they overlap, what they charge, where we win and lose, and the exact objections you'll hear in a renewal with the responses that work.</p>
+    <div class="meta">SOURCE: COMPETITIVE INTEL REPOSITORY (153 ENTRIES, 2022–2026) · DIRECTIONAL FIELD INTEL · REVIEW BEFORE QUOTING</div>
+
+    <div class="howto">
+      <h4>How CS uses this</h4>
+      <ol>
+        <li><b>Renewal at risk?</b> Find the named competitor's card. Lead the save conversation from its <b>Objections → Responses</b>.</li>
+        <li><b>Price pushback?</b> Check <b>Their pricing</b> to sanity-check the customer's quote, then frame Anduin's bundle.</li>
+        <li><b>Know the matchup</b> — the <b>W–L</b> badge is Anduin's logged record against them (directional, skews toward losses).</li>
+        <li>Deeper detail lives in the <a href="../wiki/competitors/passthrough.md">vault competitor pages</a>; ask <b>/product-wiki</b> for live answers.</li>
+      </ol>
+    </div>
+
+    <div class="index">
+      <h4>The field — threat ranked by deal volume & confidence</h4>
+      <div class="idx-grid">
+        <a class="idx" href="#passthrough"><span class="rank">1</span><span class="nm">Passthrough<small>FundSub · price + AML/KYC + law-firm channel</small></span><span class="threat"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></a>
+        <a class="idx" href="#atominvest"><span class="rank">2</span><span class="nm">AtomInvest<small>Portal · broad suite, weak data integrity</small></span><span class="threat"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></a>
+        <a class="idx" href="#subscribe"><span class="rank">3</span><span class="nm">Subscribe<small>FundSub · flat fee + managed services</small></span><span class="threat"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></a>
+        <a class="idx" href="#ontra"><span class="rank">4</span><span class="nm">Ontra<small>Side Letter · category leader</small></span><span class="threat"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></a>
+        <a class="idx" href="#juniper-square"><span class="rank">5</span><span class="nm">Juniper Square<small>Portal · emerging mgrs, AI push</small></span><span class="threat"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></a>
+        <a class="idx" href="#icapital"><span class="rank">6</span><span class="nm">iCapital &amp; CAIS<small>Wealth channel · investor passport</small></span><span class="threat"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PASSTHROUGH ============ -->
+  <section class="card" id="passthrough">
+    <div class="chead">
+      <div>
+        <div class="name">Passthrough</div>
+        <div class="desc">Our #1 competitor in FundSub, especially emerging/mid-market. Two products — digital sub-docs + managed AML/KYC — sold cheap up front and cross-sold downstream. Strong law-firm channel (Goodwin).</div>
+        <div class="ov">OVERLAPS: FUNDSUB · IDM · DATA ROOM</div>
+      </div>
+      <div class="right">
+        <div class="wl">Anduin <span class="w">6W</span> – <span class="l">9L</span></div>
+        <span class="chip hi">High confidence</span>
+      </div>
+    </div>
+    <div class="cols">
+      <div class="sec win">
+        <h5>Why we win</h5>
+        <ul class="pts">
+          <li><b>Platform maturity</b> — Apollo's pilot found PT "not mature enough"; won Silver Point despite quoting 2×.</li>
+          <li><b>UI + SSO</b> — won Lattice Capital on sleek UI + SSO though PT was cheaper.</li>
+          <li><b>CS quality</b> — Fin Capital ($1B) left PT for poor support &amp; slow response.</li>
+          <li><b>Conditional logic / digitization depth</b> — PT logic is basic, repeats questions.</li>
+        </ul>
+      </div>
+      <div class="sec lose">
+        <h5>Where they're strong</h5>
+        <ul class="pts">
+          <li><b>Price</b> — one-time, non-recurring per-fund fee "good for the life of the fund."</li>
+          <li><b>LP UI</b> — "the TurboTax of private markets."</li>
+          <li><b>In-app AML/KYC + OFAC</b> — ongoing screening; stickier.</li>
+          <li><b>Goodwin channel</b> — referrals; has pushed to replace us at renewal (2150 VC).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sec" style="margin-top:16px">
+      <h5>Their pricing — directional deal quotes</h5>
+      <ul class="price">
+        <li><span class="ctx">Emerging fund (FundSub)</span><span class="q">$5–7.5K</span></li>
+        <li><span class="ctx">General per fundraise</span><span class="q">$15–20K</span></li>
+        <li><span class="ctx">NYCA — one-time, 3 vehicles (vs Anduin $61.5K)</span><span class="q">$18K one-time</span></li>
+        <li><span class="ctx">Blue Torch ($7.2B) — negotiated</span><span class="q">$40K+$7.5K → $20K/yr</span></li>
+        <li><span class="ctx">AML/KYC per investor</span><span class="q">$75–100/yr</span></li>
+        <li><span class="ctx">2026 managed sub-doc review</span><span class="q">$250/LP</span></li>
+      </ul>
+    </div>
+    <div class="obj">
+      <h5>Objections → Responses</h5>
+      <div class="qa"><div class="q">Passthrough is cheaper — and it's a one-time fee.</div><div class="a">Their single strongest lever. Reframe on <b>total cost of ownership</b>: our bundle (FundSub + IDM + Data Room + Portal + IH) replaces multiple tools. Lead with maturity, CS quality, and SSO — not price.</div></div>
+      <div class="qa"><div class="q">Passthrough does our AML/KYC in-app.</div><div class="a">Known loss driver — address head-on. Position Anduin's AML/KYC + managed-services path; note PT's check is human-in-the-loop, not magic.</div></div>
+      <div class="qa"><div class="q">Our law firm (Goodwin) recommends Passthrough.</div><div class="a">Channel-driven, not capability-driven. Counter with references, platform maturity, and LP-experience proof points.</div></div>
+    </div>
+    <div class="cfoot">46 logged intel entries · latest 2026 · directional — verify before quoting · full page: wiki/competitors/passthrough.md</div>
+  </section>
+
+  <!-- ============ ATOMINVEST ============ -->
+  <section class="card" id="atominvest">
+    <div class="chead">
+      <div>
+        <div class="name">AtomInvest</div>
+        <div class="desc">Broad all-in-one platform (CRM, onboarding, LP reporting, portfolio, accounting). Wider but less focused than Anduin — and dogged by data-integrity and security weaknesses.</div>
+        <div class="ov">OVERLAPS: INVESTOR PORTAL · FUNDSUB · INTEGRATION HUB</div>
+      </div>
+      <div class="right">
+        <div class="wl">Anduin <span class="w">1W</span> – <span class="l">3L</span></div>
+        <span class="chip md">Med confidence</span>
+      </div>
+    </div>
+    <div class="cols">
+      <div class="sec win">
+        <h5>Why we win</h5>
+        <ul class="pts">
+          <li><b>Data integrity</b> — GA dropped them ("data structure not good"); data "becomes unusable" post-execution.</li>
+          <li><b>Digitization speed</b> — could take them ~a month per sub-doc.</li>
+          <li><b>QES / DocuSign</b> — they lacked QES, couldn't integrate DocuSign (Redalpine).</li>
+          <li><b>Security</b> — SSO-bypass password reset; weak 4-digit email MFA.</li>
+        </ul>
+      </div>
+      <div class="sec lose">
+        <h5>Where they're strong</h5>
+        <ul class="pts">
+          <li><b>Lower price</b> at enterprise tier.</li>
+          <li><b>Broader suite</b> — portfolio management + fund accounting.</li>
+          <li><b>Distribution</b> — signed J.P. Morgan AM ($3.7T) in 2025.</li>
+          <li>GP/lawyer-side workflow management.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sec" style="margin-top:16px">
+      <h5>Their pricing — directional deal quotes</h5>
+      <ul class="price">
+        <li><span class="ctx">Per fund</span><span class="q">$10K setup + $5–10K/yr</span></li>
+        <li><span class="ctx">Indico (FundSub + 1 fund)</span><span class="q">$20K</span></li>
+        <li><span class="ctx">Blue Torch — enterprise, negotiated</span><span class="q">$45K+$7.5K → $28.4K/yr</span></li>
+      </ul>
+    </div>
+    <div class="obj">
+      <h5>Objections → Responses</h5>
+      <div class="qa"><div class="q">AtomInvest is cheaper at our tier.</div><div class="a">Bundle TCO favors Anduin. Then pivot to the documented <b>data-integrity and post-execution data-usability problems</b> — that's the durable wedge, not price.</div></div>
+      <div class="qa"><div class="q">AtomInvest is all-in-one — it has accounting.</div><div class="a">Anduin owns the investor-relationship layer with superior data integrity; accounting integrates via Integration Hub. All-in-one ≠ best-in-class at onboarding.</div></div>
+    </div>
+    <div class="cfoot">24 logged intel entries · security findings on file · full page: wiki/competitors/atominvest.md</div>
+  </section>
+
+  <!-- ============ SUBSCRIBE ============ -->
+  <section class="card" id="subscribe">
+    <div class="chead">
+      <div>
+        <div class="name">Subscribe</div>
+        <div class="desc">Competes on a flat platform fee with <em>managed services bundled in</em>, plus a growing marketplace play (Altscape). Wins on cost and lift, not capability.</div>
+        <div class="ov">OVERLAPS: FUNDSUB · INVESTOR PORTAL</div>
+      </div>
+      <div class="right">
+        <div class="wl">Anduin <span class="w">0W</span> – <span class="l">5L</span></div>
+        <span class="chip md">Med confidence</span>
+      </div>
+    </div>
+    <div class="cols">
+      <div class="sec win">
+        <h5>Why we win</h5>
+        <ul class="pts">
+          <li><b>Depth &amp; robustness</b> — prospects acknowledge Anduin is "more robust," the "market leader."</li>
+          <li><b>End-to-end integration</b> and stronger workflow/logic.</li>
+        </ul>
+      </div>
+      <div class="sec lose">
+        <h5>Where they're strong</h5>
+        <ul class="pts">
+          <li><b>Flat all-in fee</b> + 3-month free trial — one low number.</li>
+          <li><b>Managed services</b> included (offline collection + manual import).</li>
+          <li><b>API + LP Profile</b> — recurring loss reasons (Adam's Street, GTIS, HPS).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sec" style="margin-top:16px">
+      <h5>Their pricing — directional</h5>
+      <ul class="price">
+        <li><span class="ctx">All-in platform fee (managed services + API + trial)</span><span class="q">$45K/yr</span></li>
+        <li><span class="ctx">Illustrative deal vs itemized Anduin quote</span><span class="q">$45K vs ~$176K</span></li>
+      </ul>
+    </div>
+    <div class="obj">
+      <h5>Objections → Responses</h5>
+      <div class="qa"><div class="q">Subscribe is $45K all-in with managed services included.</div><div class="a">Unpack the <b>itemization gap</b> — much of the delta is managed services + line-item framing. Bundle proactively and position our managed-services path; sell depth and data integrity.</div></div>
+      <div class="qa"><div class="q">They include API and LP Profile.</div><div class="a">Match on capability framing; their "managed import" is a manual process, not integration. Emphasize robustness and that we're the market leader they're benchmarking against.</div></div>
+    </div>
+    <div class="cfoot">16 logged intel entries · 0–5 logged record skews to losses · full page: wiki/competitors/subscribe.md</div>
+  </section>
+
+  <!-- ============ ONTRA ============ -->
+  <section class="card" id="ontra">
+    <div class="chead">
+      <div>
+        <div class="name">Ontra</div>
+        <div class="desc">The category leader in side-letter / MFN terms tracking (AI-powered "Insight"). This is our least-mature overlap — an attach/defend motion, not a head-to-head platform fight.</div>
+        <div class="ov">OVERLAPS: SIDE LETTER · FUNDSUB</div>
+      </div>
+      <div class="right">
+        <div class="wl">Anduin <span class="w">0W</span> – <span class="l">2L</span></div>
+        <span class="chip md">Med confidence</span>
+      </div>
+    </div>
+    <div class="cols">
+      <div class="sec win">
+        <h5>Why we win / they're weak</h5>
+        <ul class="pts">
+          <li><b>Law-firm collaboration</b> — Ontra is seen as competitive/onerous to firms; rivals (Pro-Vision) preferred for cross-client visibility.</li>
+          <li><b>End-to-end onboarding</b> is our home turf; side letters attach to it.</li>
+        </ul>
+      </div>
+      <div class="sec lose">
+        <h5>Where they're strong</h5>
+        <ul class="pts">
+          <li><b>Mature side-letter / MFN tracking</b> — the reason we lose these (Ottawa, Pomona).</li>
+          <li><b>AI search</b> (GPT-4 "Insight") for provision sorting.</li>
+          <li>Partnering with <b>Passthrough</b> on side letters/MFNs — watch this combo.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sec" style="margin-top:16px">
+      <h5>Their pricing — directional</h5>
+      <ul class="price">
+        <li><span class="ctx">Terms Tracking, by AUM / # docs / complexity</span><span class="q">$75–80K/yr</span></li>
+      </ul>
+    </div>
+    <div class="obj">
+      <h5>Objections → Responses</h5>
+      <div class="qa"><div class="q">Ontra already tracks our side letters and MFNs.</div><div class="a">Acknowledge their maturity here — don't oversell parity. Position Anduin's end-to-end onboarding + the law-firm-collaborative angle where Ontra is weak. Flag the Ontra×Passthrough partnership as a consolidation risk.</div></div>
+    </div>
+    <div class="cfoot">11 logged intel entries · side-letter is a known product gap · full page: wiki/competitors/ontra.md</div>
+  </section>
+
+  <!-- ============ JUNIPER SQUARE ============ -->
+  <section class="card" id="juniper-square">
+    <div class="chead">
+      <div>
+        <div class="name">Juniper Square</div>
+        <div class="desc">Investor-management platform strongest with emerging managers and simple structures — now investing heavily in AI (JunieAI, $130M Series D; Headless GPX MCP product).</div>
+        <div class="ov">OVERLAPS: FUNDSUB · INVESTOR PORTAL</div>
+      </div>
+      <div class="right">
+        <div class="wl">No head-to-head logged</div>
+        <span class="chip md">Med confidence</span>
+      </div>
+    </div>
+    <div class="cols">
+      <div class="sec win">
+        <h5>Why we win (FundSub)</h5>
+        <ul class="pts">
+          <li><b>Outdated, simple UI</b>; universal-questionnaire hybrid with minimal logic.</li>
+          <li><b>Limited workflow/review</b>, no commenting, weak AML/KYC.</li>
+          <li>2 investor buckets only; <b>no investor passport</b>. Fits simple/emerging mgrs.</li>
+        </ul>
+      </div>
+      <div class="sec lose">
+        <h5>Where they're strong</h5>
+        <ul class="pts">
+          <li><b>Payments</b> through the platform (fund-admin arm) — we don't.</li>
+          <li><b>Aggressive AI roadmap</b> — JunieAI + MCP; a retention/stickiness watch item.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="obj">
+      <h5>Objections → Responses</h5>
+      <div class="qa"><div class="q">Juniper Square does everything — fund admin and payments too.</div><div class="a">Position depth on workflow, conditional logic, AML/KYC, and investor passport. JS fits simpler/emerging managers; for complex fund structures we win on rigor. Take their AI roadmap seriously for renewal stickiness.</div></div>
+    </div>
+    <div class="cfoot">3 logged intel entries · no logged win/loss · full page: wiki/competitors/juniper-square.md</div>
+  </section>
+
+  <!-- ============ ICAPITAL ============ -->
+  <section class="card" id="icapital">
+    <div class="chead">
+      <div>
+        <div class="name">iCapital &amp; CAIS</div>
+        <div class="desc">The dominant wealth-channel alternatives distribution platform. Overlaps Anduin most on wealth/RIA onboarding and — since acquiring Parallel Markets — reusable investor identity.</div>
+        <div class="ov">OVERLAPS: FUNDSUB · IDM</div>
+      </div>
+      <div class="right">
+        <div class="wl">No head-to-head logged</div>
+        <span class="chip md">Med confidence</span>
+      </div>
+    </div>
+    <div class="cols">
+      <div class="sec win">
+        <h5>Why we win / their gaps</h5>
+        <ul class="pts">
+          <li><b>No direct fund communication</b>; pre-review submission workflows.</li>
+          <li><b>Can't pre-fill by entity type</b> — an Anduin strength.</li>
+          <li>Advisors creating own co-invest vehicles to dodge iCapital fees — a structural opening.</li>
+        </ul>
+      </div>
+      <div class="sec lose">
+        <h5>Where they're strong</h5>
+        <ul class="pts">
+          <li><b>Massive distribution</b> network (advisors/wealth).</li>
+          <li><b>iCapital Investor Passport</b> — reusable identity + AI onboarding (Parallel Markets).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="obj">
+      <h5>Objections → Responses</h5>
+      <div class="qa"><div class="q">We already use iCapital for wealth distribution.</div><div class="a">Different layer — they're distribution, we're direct GP↔LP onboarding. Position entity-type prefill, data integrity, and direct fund comms. The co-invest-vehicle trend is a wedge to sell GPs their own tooling.</div></div>
+    </div>
+    <div class="cfoot">4 logged intel entries · adjacent (wealth channel) · full page: wiki/competitors/icapital-cais.md</div>
+  </section>
+
+  <!-- ============ REST OF FIELD ============ -->
+  <section class="card ref" id="rest">
+    <div class="chead">
+      <div>
+        <div class="name">Rest of the field</div>
+        <div class="desc">Lower-volume or emerging competitors — know they exist, escalate to the full vault page if one shows up in a renewal.</div>
+      </div>
+      <div class="right"><span class="chip lo">Lower confidence</span></div>
+    </div>
+    <table class="ref-t">
+      <thead><tr><th>Competitor</th><th>Conf.</th><th>What to know / CS angle</th></tr></thead>
+      <tbody>
+        <tr><td>Funded / K&amp;E</td><td><span class="c lo">low</span></td><td>Kirkland &amp; Ellis law-firm channel pushes its own sub-doc tooling. We win on dashboard completion-visibility (Flexpoint Ford). Lost when K&amp;E is counsel.</td></tr>
+        <tr><td>Fenergo</td><td><span class="c lo">low</span></td><td>Enterprise compliance/KYC incumbent launched sub-doc + portal — but Citadel left their demo "confused." Horizontal, not purpose-built.</td></tr>
+        <tr><td>BiteStream<br>(Investor Pointe)</td><td><span class="c lo">low</span></td><td>Rebranded, raised $25M, moving upmarket from small GPs. Hamilton Lane considered it for an end-to-end story. Position maturity at scale.</td></tr>
+        <tr><td>Backstop</td><td><span class="c lo">low</span></td><td>Incumbent portal/CRM — clunky, poor LP engagement (Sequoia, Jasper Ridge). A displacement opportunity, not a threat.</td></tr>
+        <tr><td>bunch</td><td><span class="c lo">low</span></td><td>German full-suite, expanding to UK ($35M Series B). Watch portal deals outside DACH.</td></tr>
+        <tr><td>NAV · Flow</td><td><span class="c lo">low</span></td><td>Fund admins building in-house onboarding (Flow→Apex). Channel threat to FundSub — partner-vs-compete question.</td></tr>
+        <tr><td>IDR (Sonata One)</td><td><span class="c lo">low</span></td><td>May be exiting FundSub — displaced-client / partnership opportunity.</td></tr>
+        <tr><td>Vega / LYRA</td><td><span class="c lo">low</span></td><td>Apollo-backed, early/MVP. Retail-distribution angle to watch in 2026.</td></tr>
+        <tr><td>Watchlist (20 firms)</td><td><span class="c lo">low</span></td><td>Single-mention firms (Pro-Vision, Vantager, Daphne, Privatize, Intralinks, Dynamo…). See wiki/competitors/competitor-landscape-watchlist.md.</td></tr>
+      </tbody>
+    </table>
+    <div class="cfoot">For any of these, ask <b>/product-wiki</b> or open the competitor page before a renewal call.</div>
+  </section>
+
+  <div class="foot">
+    <span>Anduin · CS Competitor Battlecards · generated from the Competitive Intel Repository</span>
+    <span>Directional field intel — not list pricing. Verify before quoting.</span>
+  </div>
+
+</div>
+</body>
+</html>

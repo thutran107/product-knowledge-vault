@@ -22,8 +22,8 @@ A Notion wiki database serving as the authoritative library of user guides for a
 - Living wiki — check status field before citing a specific guide.
 
 ## Connections
-- [[wiki/products/investor-data-management|IDM]] — this is the primary feature reference for IDM.
-- [[wiki/products/fundsub|FundSub]] — FundSub integration is one of the guide themes.
+- [[products/investor-data-management|IDM]] — this is the primary feature reference for IDM.
+- [[products/fundsub|FundSub]] — FundSub integration is one of the guide themes.
 
 ## Conflicts & Supersessions
 None identified.

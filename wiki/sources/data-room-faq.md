@@ -33,7 +33,7 @@ Comprehensive FAQ covering file upload behavior, notification settings, activity
 - Data room Organization cannot be changed after creation
 
 ## Connections
-- [[wiki/products/data-room]] — operational limits, notification behavior, branding specs
+- [[products/data-room]] — operational limits, notification behavior, branding specs
 
 ## Conflicts & Supersessions
 None identified.

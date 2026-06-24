@@ -23,17 +23,17 @@ Export of the **Tracking Table** database from Anduin's Notion "Competitive Inte
 - **Lots of consolidation/rebrand activity (2025–26)**: IDR→Sonata One, BiteStream→Investor Pointe, Intralinks→InvestorVision, iCapital acquiring Parallel Markets, Subscribe launching the Altscape marketplace.
 
 ## Connections
-- Informs and substantially expands [[wiki/competitors/passthrough]], [[wiki/competitors/atominvest]], [[wiki/competitors/subscribe]], [[wiki/competitors/ontra]] and 12 other competitor pages.
-- Feeds three cross-cutting concept pages: [[wiki/concepts/competitor-pricing-benchmarks]], [[wiki/concepts/competitive-win-loss]], [[wiki/concepts/private-markets-competitive-landscape]].
-- Directly relevant to [[wiki/products/fundsub]] (primary battleground), [[wiki/products/side-letter]] (Ontra/Pro-Vision/Carta), [[wiki/products/investor-portal]], and [[wiki/products/data-room]].
+- Informs and substantially expands [[competitors/passthrough]], [[competitors/atominvest]], [[competitors/subscribe]], [[competitors/ontra]] and 12 other competitor pages.
+- Feeds three cross-cutting concept pages: [[concepts/competitor-pricing-benchmarks]], [[concepts/competitive-win-loss]], [[concepts/private-markets-competitive-landscape]].
+- Directly relevant to [[products/fundsub]] (primary battleground), [[products/side-letter]] (Ontra/Pro-Vision/Carta), [[products/investor-portal]], and [[products/data-room]].
 
 ## Conflicts & Supersessions
 - This is a **directional** source (trust_level 9 — field intel / client feedback). Where it conflicts with authoritative Anduin pricing or spec sources (trust 1–3), those win. Competitor pricing figures here are individual deal quotes, not list prices — treat as anecdotal benchmarks, not guaranteed.
-- The existing [[wiki/competitors/atominvest]] page (built from the Boston Popup pricing deck) gave AtomInvest pricing as $6–10K/fund/yr; this source corroborates that range and adds a $20–28.4K enterprise data point and several product/security findings. Merged, not overwritten.
+- The existing [[competitors/atominvest]] page (built from the Boston Popup pricing deck) gave AtomInvest pricing as $6–10K/fund/yr; this source corroborates that range and adds a $20–28.4K enterprise data point and several product/security findings. Merged, not overwritten.
 - Some entries duplicate the same event at different log dates (e.g., iCapital/Parallel Markets logged in both Feb 2025 and Feb 2026; IDR→Sonata One logged twice). Synthesized once on the relevant pages.
 
 ## Raw Notes
-- 7 entries carry no company tag (general market intel on RIAs, secondary markets, automation/hybrid trends, Sydecar, Farther, Revolution Funds) — routed to [[wiki/concepts/private-markets-competitive-landscape]].
+- 7 entries carry no company tag (general market intel on RIAs, secondary markets, automation/hybrid trends, Sydecar, Farther, Revolution Funds) — routed to [[concepts/private-markets-competitive-landscape]].
 - "Company type" tags vary: `competitor`, `potential competitor`, `potential partner` (AXA, K&E), `other`. Partners/law-firms/fund-admins were folded into the most relevant competitor or concept page rather than given competitor pages, except K&E (Kirkland & Ellis), which is tracked due to lost deals to its law-firm-built Fundsub tooling.
 - Most entries cite internal Slack permalinks (not publicly accessible); some cite public announcements and vendor blogs.
-- 20 single-entry companies are captured compactly in [[wiki/competitors/competitor-landscape-watchlist]] rather than as standalone pages.
+- 20 single-entry companies are captured compactly in [[competitors/competitor-landscape-watchlist]] rather than as standalone pages.

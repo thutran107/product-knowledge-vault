@@ -21,7 +21,7 @@ A one-pager (brochure format) summarizing the updated LP view in FundSub. Publis
 - Brochure format — summary level, not a how-to guide.
 
 ## Connections
-- [[wiki/products/fundsub|FundSub]]
+- [[products/fundsub|FundSub]]
 
 ## Conflicts & Supersessions
 No conflicts. First LP view one-pager ingested.

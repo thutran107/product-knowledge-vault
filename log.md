@@ -514,3 +514,9 @@ Append-only record of all operations. Format: `## [YYYY-MM-DD] <operation> | <ti
 **Operation:** lint
 **Summary:** Auto-triggered lint after the large competitive-intel ingest (~22 new/edited pages). Findings, all fixed: (1) Critical — 3 broken wikilinks to `[[wiki/products/idm]]` (correct slug is `investor-data-management`) in passthrough.md and icapital-cais.md → repointed with display alias. (2) High — 2 orphan pages (idr, fenergo) with no inbound links → wired into the consolidation/rebrands bullet of the private-markets-competitive-landscape concept. Verified: all 20 new pages present in index.md; all frontmatter required fields present; every single-source competitor/concept page carries a `confidence` rating (satisfies §7 fragility check). No broken links remain.
 **Pages touched:** wiki/competitors/passthrough.md, wiki/competitors/icapital-cais.md, wiki/concepts/private-markets-competitive-landscape.md, log.md
+
+## [2026-06-24] note | Normalize wikilink citation format (strip `wiki/` prefix)
+
+**Operation:** note
+**Summary:** Completed the §8 wikilink normalization (policy dated 2026-06-23): converted every citation from the legacy `[[wiki/...]]` form to the `wiki/`-relative `[[...]]` form so the link graph resolves in graph tooling and in an Obsidian vault rooted at `wiki/`. Pure prefix-strip — no content changes. All 157 pages under `wiki/` plus `index.md` (155 links) converted; 0 `[[wiki/...]]` references remain vault-wide. Validated every converted link target resolves to a real file (0 broken). `index.md` last_updated bumped to 2026-06-24.
+**Pages touched:** all wiki/ pages (157), index.md, graphify-out/ (regenerated artifacts), log.md

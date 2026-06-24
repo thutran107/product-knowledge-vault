@@ -41,7 +41,7 @@ Internal implementation guide for FundSub's investor-initiated support email fea
 - **Faster resolution:** Investors reach support without leaving the platform
 
 ## Connections
-- [[wiki/products/fundsub]]
+- [[products/fundsub]]
 
 ## Conflicts & Supersessions
 None found. First source on this feature.

@@ -19,11 +19,11 @@ BiteStream **rebranded to Investor Pointe** (2026) and positions as an **end-to-
 - **"BiteStream/Investor Pointe is end-to-end"** — position Anduin's maturity and proof at scale; they're early in the enterprise move.
 
 ## Products that overlap
-- [[wiki/products/fundsub]]
-- [[wiki/products/investor-portal]]
+- [[products/fundsub]]
+- [[products/investor-portal]]
 
 ## Sources
-- [[wiki/sources/competitive-intel-tracking-table]] — 2 field-intel entries (2025–2026)
+- [[sources/competitive-intel-tracking-table]] — 2 field-intel entries (2025–2026)
 
 ## Related
-- [[wiki/concepts/private-markets-competitive-landscape]]
+- [[concepts/private-markets-competitive-landscape]]

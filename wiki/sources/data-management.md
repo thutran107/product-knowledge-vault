@@ -25,9 +25,9 @@ Explains Anduin's two core data movement concepts — Import (external → Andui
 - Customers can now self-create Export Templates via FundSub dashboard (Import self-service not yet available).
 
 ## Connections
-- [[wiki/concepts/import-export-templates|Import/Export Templates]] — concept page.
-- [[wiki/concepts/data-mapping|Data Mapping]] — how fields are mapped between systems.
-- [[wiki/products/fundsub|FundSub]] — where templates are managed.
+- [[concepts/import-export-templates|Import/Export Templates]] — concept page.
+- [[concepts/data-mapping|Data Mapping]] — how fields are mapped between systems.
+- [[products/fundsub|FundSub]] — where templates are managed.
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

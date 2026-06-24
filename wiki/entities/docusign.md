@@ -33,12 +33,12 @@ DocuSign is an electronic signature platform used by Anduin in two distinct inte
 - Safari browser has a known issue with date picker fields — users should use Chrome or Edge.
 
 ## Sources
-- [[wiki/sources/esignature-docusign-qes-faq]] — comprehensive FAQ (trust 4, Jan 2026)
-- [[wiki/sources/esignature-docusign-sales-deck]] — sales positioning deck
-- [[wiki/sources/esignature-schwab-implementation-guide]] — Schwab/DocuSign setup guide (trust 2)
-- [[wiki/sources/esignature-schwab-cerity-training]] — Schwab/DocuSign client training
+- [[sources/esignature-docusign-qes-faq]] — comprehensive FAQ (trust 4, Jan 2026)
+- [[sources/esignature-docusign-sales-deck]] — sales positioning deck
+- [[sources/esignature-schwab-implementation-guide]] — Schwab/DocuSign setup guide (trust 2)
+- [[sources/esignature-schwab-cerity-training]] — Schwab/DocuSign client training
 
 ## Related
-- [[wiki/products/e-signature]]
-- [[wiki/concepts/qes-aes-compliance]]
-- [[wiki/customers/cerity-partners]] — first RIA deployed on Schwab/DocuSign workflow
+- [[products/e-signature]]
+- [[concepts/qes-aes-compliance]]
+- [[customers/cerity-partners]] — first RIA deployed on Schwab/DocuSign workflow

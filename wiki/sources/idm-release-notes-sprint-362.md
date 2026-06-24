@@ -20,8 +20,8 @@ Sprint-level release notes for IDM Sprint 362, shipped September 16, 2025. Docum
 - Additive source; use for feature timing and recency confirmation only.
 
 ## Connections
-- [[wiki/products/investor-data-management|IDM]]
-- [[wiki/sources/idm-release-notes|IDM Release Notes]] — parent release notes database.
+- [[products/investor-data-management|IDM]]
+- [[sources/idm-release-notes|IDM Release Notes]] — parent release notes database.
 
 ## Conflicts & Supersessions
 None. Sprint-level notes are additive.

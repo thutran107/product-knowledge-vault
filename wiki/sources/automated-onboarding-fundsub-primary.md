@@ -27,11 +27,11 @@ Describes the DealCloud (Order creation) integration that automatically invites 
 - Contact mapping: must specify which DealCloud fields map to First Name, Last Name, Email for invitation.
 
 ## Connections
-- [[wiki/concepts/integration-patterns|Integration Patterns]] — Order Creation pattern.
-- [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]].
-- [[wiki/concepts/data-mapping|Data Mapping]] — field mapping between DealCloud and FundSub.
-- [[wiki/concepts/import-export-templates|Import/Export Templates]].
-- [[wiki/entities/dealcloud|DealCloud]], [[wiki/products/fundsub|FundSub]].
+- [[concepts/integration-patterns|Integration Patterns]] — Order Creation pattern.
+- [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]].
+- [[concepts/data-mapping|Data Mapping]] — field mapping between DealCloud and FundSub.
+- [[concepts/import-export-templates|Import/Export Templates]].
+- [[entities/dealcloud|DealCloud]], [[products/fundsub|FundSub]].
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

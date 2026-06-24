@@ -8,7 +8,7 @@ tags: [investor-access, lp, subscription-passport, aml-kyc, data-management]
 ---
 
 ## What it does
-Investor Access is Anduin's LP-side **subscription passport**: it lets investors store their data and AML/KYC documents once and reuse them to complete any fund subscription on Anduin. It is the investor-facing counterpart to [[wiki/products/investor-data-management|IDM]] (which serves the fund/GP side). The goal is to make subscriptions faster for LPs and increase their stickiness with the platform.
+Investor Access is Anduin's LP-side **subscription passport**: it lets investors store their data and AML/KYC documents once and reuse them to complete any fund subscription on Anduin. It is the investor-facing counterpart to [[products/investor-data-management|IDM]] (which serves the fund/GP side). The goal is to make subscriptions faster for LPs and increase their stickiness with the platform.
 
 ## Key capabilities
 - **Investment-entity profiles**: investors create investment entities (the legal entity they subscribe through) and maintain a static profile of reusable data.
@@ -19,7 +19,7 @@ Investor Access is Anduin's LP-side **subscription passport**: it lets investors
 - **Subscription tracking**: link and track all subscriptions made from a given investment entity.
 
 ## Pricing & packaging
-**Free of charge.** Any investor with Anduin access can create an investment entity and use it in FundSub when the GP enables the feature. A future paid model (basic price + add-on price + PDF-update price) is under internal discussion but not set. Source: [[wiki/sources/investor-access-faq|Investor Access FAQ]].
+**Free of charge.** Any investor with Anduin access can create an investment entity and use it in FundSub when the GP enables the feature. A future paid model (basic price + add-on price + PDF-update price) is under internal discussion but not set. Source: [[sources/investor-access-faq|Investor Access FAQ]].
 
 ## Implementation notes
 - Accessed at `investoraccess.anduin.app` or via the FundSub app sidebar.
@@ -36,18 +36,18 @@ Investor Access is Anduin's LP-side **subscription passport**: it lets investors
 - CSV export of profile data is a roadmap item ("working on"), not yet available.
 
 ## Features & sub-modules
-Capabilities documented inline above. Tightly integrated with [[wiki/products/fundsub|FundSub]] (the subscription flow it prefills).
+Capabilities documented inline above. Tightly integrated with [[products/fundsub|FundSub]] (the subscription flow it prefills).
 
 ## Related customers
-- [[wiki/customers/neuberger-berman|Neuberger Berman]] — deployed Investor Access as part of a full Anduin rollout (alongside FundSub, Data Room, IDM, Integration Hub).
+- [[customers/neuberger-berman|Neuberger Berman]] — deployed Investor Access as part of a full Anduin rollout (alongside FundSub, Data Room, IDM, Integration Hub).
 
 ## Sources
-- [[wiki/sources/investor-access-faq|Investor Access — Internal FAQ]] (2025) — comprehensive product FAQ, data model, pricing, objection handling.
-- [[wiki/sources/neuberger-berman-case-study|Neuberger Berman Case Study]] — names Investor Access as a deployed product.
+- [[sources/investor-access-faq|Investor Access — Internal FAQ]] (2025) — comprehensive product FAQ, data model, pricing, objection handling.
+- [[sources/neuberger-berman-case-study|Neuberger Berman Case Study]] — names Investor Access as a deployed product.
 
 ## Related
-- [[wiki/products/investor-data-management|IDM]] — fund-side counterpart (Investor Access is the LP-side mirror).
-- [[wiki/products/fundsub|FundSub]] — the subscription product Investor Access prefills.
-- [[wiki/products/aaa|AAA (Advisor Advantage)]] — advisors leverage the investor passport for auto-fill.
-- [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]
-- [[wiki/concepts/import-export-templates|Import/Export Templates]]
+- [[products/investor-data-management|IDM]] — fund-side counterpart (Investor Access is the LP-side mirror).
+- [[products/fundsub|FundSub]] — the subscription product Investor Access prefills.
+- [[products/aaa|AAA (Advisor Advantage)]] — advisors leverage the investor passport for auto-fill.
+- [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]
+- [[concepts/import-export-templates|Import/Export Templates]]

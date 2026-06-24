@@ -24,12 +24,12 @@ Juniper Square is a private-markets investor-management platform (portal, fund a
 - **"Juniper Square does everything incl. fund admin + payments"** — position Anduin's depth on onboarding workflow, logic, AML/KYC, and investor passport; Juniper fits simpler/emerging managers. Take the AI roadmap (JunieAI/MCP) seriously for retention.
 
 ## Products that overlap
-- [[wiki/products/fundsub]]
-- [[wiki/products/investor-portal]]
+- [[products/fundsub]]
+- [[products/investor-portal]]
 
 ## Sources
-- [[wiki/sources/competitive-intel-tracking-table]] — 3 field-intel entries (2025–2026)
+- [[sources/competitive-intel-tracking-table]] — 3 field-intel entries (2025–2026)
 
 ## Related
-- [[wiki/concepts/private-markets-competitive-landscape]] — AI-native entrants
-- [[wiki/concepts/competitive-win-loss]]
+- [[concepts/private-markets-competitive-landscape]] — AI-native entrants
+- [[concepts/competitive-win-loss]]

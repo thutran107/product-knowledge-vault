@@ -25,7 +25,7 @@ Subscribe (also "Subscribe+" / SUBSCRIBE platform) competes with Anduin in fund 
 - **$45K annual platform fee, all-in**: 6-hr implementation per fund at no extra cost (incl. updates), full managed services (offline collection + manual import), API integration included, 3-month free trial.
 - Illustrative head-to-head (EIG-style deal): Subscribe year-1 ~$45K vs. an itemized Anduin quote reaching ~$176K (platform $45K + data import $8K + data room $10K + API $15K + per-fund $8.5K×5 + OCR ~$11.25K/fund). The gap is largely managed-services bundling and itemization — a key competitive-pricing lesson.
 
-See [[wiki/concepts/competitor-pricing-benchmarks]].
+See [[concepts/competitor-pricing-benchmarks]].
 
 ## Win/loss
 - **Lost to Subscribe:** Adam's Street (lacking API), GTIS (LP Profile + API), HPS (LP Profile), DWS ($84B; redemption experience + streamlined process), EIG (price & time-to-delivery).
@@ -40,14 +40,14 @@ See [[wiki/concepts/competitor-pricing-benchmarks]].
 - **"They include API / managed import"** — match on capability framing; emphasize Anduin's robustness and that Subscribe's manual import is process, not integration.
 
 ## Products that overlap
-- [[wiki/products/fundsub]] — primary overlap
-- [[wiki/products/investor-portal]] — Subscribe added an LP Portal product
+- [[products/fundsub]] — primary overlap
+- [[products/investor-portal]] — Subscribe added an LP Portal product
 
 ## Sources
-- [[wiki/sources/competitive-intel-tracking-table]] — 16 field-intel entries (2022–2025)
+- [[sources/competitive-intel-tracking-table]] — 16 field-intel entries (2022–2025)
 
 ## Related
-- [[wiki/concepts/competitor-pricing-benchmarks]]
-- [[wiki/concepts/competitive-win-loss]]
-- [[wiki/competitors/passthrough]]
-- [[wiki/competitors/atominvest]]
+- [[concepts/competitor-pricing-benchmarks]]
+- [[concepts/competitive-win-loss]]
+- [[competitors/passthrough]]
+- [[competitors/atominvest]]

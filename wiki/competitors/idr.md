@@ -17,10 +17,10 @@ IDR / IDRegister rebranded to **Sonata One** in 2025. It competed in Fundsub but
 - If Sonata One is "throwing in the towel" on FundSub, there's a displaced-client / partnership angle worth tracking.
 
 ## Products that overlap
-- [[wiki/products/fundsub]]
+- [[products/fundsub]]
 
 ## Sources
-- [[wiki/sources/competitive-intel-tracking-table]] — 2 field-intel entries (2025)
+- [[sources/competitive-intel-tracking-table]] — 2 field-intel entries (2025)
 
 ## Related
-- [[wiki/concepts/private-markets-competitive-landscape]] — rebrand/consolidation activity
+- [[concepts/private-markets-competitive-landscape]] — rebrand/consolidation activity

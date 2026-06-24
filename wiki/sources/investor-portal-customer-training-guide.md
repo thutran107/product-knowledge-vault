@@ -72,10 +72,10 @@ Pre-condition: Client already familiar with IDM concepts
 - Integration: data flows to/from other systems via Integration Hub
 
 ## Connections
-- [[wiki/products/investor-portal]]
-- [[wiki/products/investor-data-management]] — IDM setup is pre-condition
-- [[wiki/sources/investor-portal-contact-management]] — contact matrix setup detail
-- [[wiki/sources/investor-portal-sales-deck]] — capabilities overview
+- [[products/investor-portal]]
+- [[products/investor-data-management]] — IDM setup is pre-condition
+- [[sources/investor-portal-contact-management]] — contact matrix setup detail
+- [[sources/investor-portal-sales-deck]] — capabilities overview
 
 ## Conflicts & Supersessions
 None found.

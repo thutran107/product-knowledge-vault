@@ -16,12 +16,12 @@ tags: [integration-hub, implementation, cs-playbook, internal]
 PDF version of the IH Implementation Guide. Content is substantively identical to the markdown version already ingested. No material differences found.
 
 ## Key Takeaways
-- Same content as [[wiki/sources/ih-implementation-guide|IH Implementation Guide (markdown)]].
+- Same content as [[sources/ih-implementation-guide|IH Implementation Guide (markdown)]].
 - Confirms the 5-section structure: Granting access, Learning materials, Enable premium/paid integrations, Configuration, Monitor and troubleshoot.
 - No additional content found beyond what's in the markdown source.
 
 ## Connections
-- [[wiki/sources/ih-implementation-guide|IH Implementation Guide (markdown)]] — duplicate content.
+- [[sources/ih-implementation-guide|IH Implementation Guide (markdown)]] — duplicate content.
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

@@ -18,11 +18,11 @@ Sales deck covering Anduin's DocuSign integration for simple electronic signatur
 ## Key Takeaways
 - Positioning deck for Anduin's DocuSign integration (SES + QES offering).
 - Covers DocuSign as Anduin's e-signature provider for EU/regulated fund subscription flows.
-- Also referenced directly in the [[wiki/sources/esignature-docusign-qes-faq]] as the enablement resource for the DocuSign feature.
+- Also referenced directly in the [[sources/esignature-docusign-qes-faq]] as the enablement resource for the DocuSign feature.
 
 ## Connections
-- [[wiki/products/e-signature]] — sales positioning for DocuSign/QES offering
-- [[wiki/sources/esignature-docusign-qes-faq]] — FAQ references this deck as the DocuSign enablement slide deck
+- [[products/e-signature]] — sales positioning for DocuSign/QES offering
+- [[sources/esignature-docusign-qes-faq]] — FAQ references this deck as the DocuSign enablement slide deck
 
 ## Conflicts & Supersessions
 None (metadata only; content not fetchable).

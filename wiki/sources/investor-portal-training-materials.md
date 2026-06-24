@@ -19,7 +19,7 @@ Investor Portal training materials bundle published in Anduin Data Room. Content
 - No content available.
 
 ## Connections
-- [[wiki/products/investor-portal]]
+- [[products/investor-portal]]
 
 ## Conflicts & Supersessions
 N/A — metadata only.

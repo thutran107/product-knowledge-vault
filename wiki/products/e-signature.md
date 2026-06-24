@@ -21,7 +21,7 @@ Anduin's electronic signature product supporting three tiers of e-signature (SES
 ## Pricing & packaging
 - **DocuSign SES/QES**: Charged per signature credits (not DocuSign envelope pricing). QES, SES, and LexisNexis credits tracked in Salesforce. Customers can purchase QES-only credits; GP countersign can be done offline (free) or via SES credits.
 - A fund can have both QES and SES within a DocuSign environment.
-- No pricing docs in the vault for native SES or AES; DocuSign/QES pricing referenced in [[wiki/sources/esignature-docusign-qes-faq]].
+- No pricing docs in the vault for native SES or AES; DocuSign/QES pricing referenced in [[sources/esignature-docusign-qes-faq]].
 
 ## Implementation notes
 
@@ -58,24 +58,24 @@ Anduin's electronic signature product supporting three tiers of e-signature (SES
 - AES (GlobalSign eSeal) implementation details not fully documented in the vault — no dedicated implementation guide.
 
 ## Features & sub-modules
-- [[wiki/concepts/qes-aes-compliance|QES/AES/SES compliance]] — eIDAS signature tier framework
-- Schwab integration (see [[wiki/sources/esignature-schwab-implementation-guide]])
-- Reuse signature pages (see [[wiki/sources/esignature-reuse-signature-pages]])
-- DocuSign integration (see [[wiki/entities/docusign]])
+- [[concepts/qes-aes-compliance|QES/AES/SES compliance]] — eIDAS signature tier framework
+- Schwab integration (see [[sources/esignature-schwab-implementation-guide]])
+- Reuse signature pages (see [[sources/esignature-reuse-signature-pages]])
+- DocuSign integration (see [[entities/docusign]])
 
 ## Related customers
-- [[wiki/customers/cerity-partners]] — Schwab workflow deployed for this RIA
+- [[customers/cerity-partners]] — Schwab workflow deployed for this RIA
 
 ## Sources
-- [[wiki/sources/esignature-docusign-qes-faq|DocuSign and QES — Internal FAQ]] — faq (trust 4, Jan 2026)
-- [[wiki/sources/esignature-schwab-implementation-guide|Internal Guide: Schwab Signature Workflow]] — implementation-guide (trust 2)
-- [[wiki/sources/esignature-reuse-signature-pages|User Guide: Reuse Signature Pages]] — client-training (trust 7)
-- [[wiki/sources/esignature-schwab-cerity-training|Schwab Training — Cerity Partners]] — client-training (trust 7)
-- [[wiki/sources/esignature-whitepaper|Anduin e-Signature Guide Whitepaper]] — security-whitepaper (trust 8)
-- [[wiki/sources/esignature-docusign-sales-deck|Anduin x DocuSign Sales Deck]] — sales-deck (trust 5)
-- [[wiki/sources/esignature-sample-signed-documents|Sample SES/AES/QES Signed Documents]] — note (trust 10)
+- [[sources/esignature-docusign-qes-faq|DocuSign and QES — Internal FAQ]] — faq (trust 4, Jan 2026)
+- [[sources/esignature-schwab-implementation-guide|Internal Guide: Schwab Signature Workflow]] — implementation-guide (trust 2)
+- [[sources/esignature-reuse-signature-pages|User Guide: Reuse Signature Pages]] — client-training (trust 7)
+- [[sources/esignature-schwab-cerity-training|Schwab Training — Cerity Partners]] — client-training (trust 7)
+- [[sources/esignature-whitepaper|Anduin e-Signature Guide Whitepaper]] — security-whitepaper (trust 8)
+- [[sources/esignature-docusign-sales-deck|Anduin x DocuSign Sales Deck]] — sales-deck (trust 5)
+- [[sources/esignature-sample-signed-documents|Sample SES/AES/QES Signed Documents]] — note (trust 10)
 
 ## Related
-- [[wiki/products/fundsub|FundSub]] — subscription platform context for all e-signature workflows
-- [[wiki/products/aaa|AAA]] — Advisor Advantage interface used in Schwab flow
-- [[wiki/entities/docusign|DocuSign]] — integration partner for QES and Schwab workflows
+- [[products/fundsub|FundSub]] — subscription platform context for all e-signature workflows
+- [[products/aaa|AAA]] — Advisor Advantage interface used in Schwab flow
+- [[entities/docusign|DocuSign]] — integration partner for QES and Schwab workflows

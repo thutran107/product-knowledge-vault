@@ -28,8 +28,8 @@ CS-facing demo/training deck covering the Duplicate Fund Configuration feature i
 - **Review workflow caveat:** Carry-over depends on old fund settings — feature switch must be enabled, GP members must be copied, workflow must not be configured by investor/document group.
 
 ## Connections
-- [[wiki/products/fundsub|FundSub]] — Duplicate Fund is a core configuration capability
-- [[wiki/sources/fundsub-email-smtp-implementation-guide]] — email templates are part of what gets duplicated
+- [[products/fundsub|FundSub]] — Duplicate Fund is a core configuration capability
+- [[sources/fundsub-email-smtp-implementation-guide]] — email templates are part of what gets duplicated
 
 ## Conflicts & Supersessions
 None. Date on slides says "Sep 2024 demo" — Notion page surfaced as Nov 2025; content appears stable.

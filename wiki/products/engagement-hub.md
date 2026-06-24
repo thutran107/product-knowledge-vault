@@ -8,12 +8,12 @@ tags: [engagement-hub, investor-engagement, sales-motion]
 ---
 
 ## What it does
-Anduin Engagement Hub is an IDM-based investor engagement layer that gives a fund manager's LPs a single, branded, invite-only destination — one URL and one login — spanning fund marketing, document distribution, communications, and investor-profile management. It is positioned to "own the investor experience, from first touchpoint to post-close," replacing fragmented apps, logins, and insecure email threads with one secure hub. It sits between IDM (data) and the full [[wiki/products/investor-portal|Investor Portal]] (which adds a per-fund portal instance and reporting on top of EH).
+Anduin Engagement Hub is an IDM-based investor engagement layer that gives a fund manager's LPs a single, branded, invite-only destination — one URL and one login — spanning fund marketing, document distribution, communications, and investor-profile management. It is positioned to "own the investor experience, from first touchpoint to post-close," replacing fragmented apps, logins, and insecure email threads with one secure hub. It sits between IDM (data) and the full [[products/investor-portal|Investor Portal]] (which adds a per-fund portal instance and reporting on top of EH).
 
-> **Naming & history:** Engagement Hub launched publicly on **Aug 27, 2025** as a repackaging of the **Branded Landing Page** product (originally called *"IDM Branding"* internally, Oct 2024). Rather than renaming Branded Landing Page outright, Anduin made it **one of four features** within the Engagement Hub solution — alongside Inbox/Communication, Document Sharing, and Profile Sharing. So "landing page" / "branded landing page" refers to that one feature, while "Engagement Hub" is the full bundle. See [[wiki/sources/engagement-hub-naming-history-slack]].
+> **Naming & history:** Engagement Hub launched publicly on **Aug 27, 2025** as a repackaging of the **Branded Landing Page** product (originally called *"IDM Branding"* internally, Oct 2024). Rather than renaming Branded Landing Page outright, Anduin made it **one of four features** within the Engagement Hub solution — alongside Inbox/Communication, Document Sharing, and Profile Sharing. So "landing page" / "branded landing page" refers to that one feature, while "Engagement Hub" is the full bundle. See [[sources/engagement-hub-naming-history-slack]].
 
 ## Key capabilities
-- **Branded Landing Pages** — self-service web builder; per-purpose pages with granular access controls; deep white-labeling and custom/white-label URLs; invitation emails and permissioned invite links per investor group. (See [[wiki/features/engagement-hub-branded-landing-pages]].)
+- **Branded Landing Pages** — self-service web builder; per-purpose pages with granular access controls; deep white-labeling and custom/white-label URLs; invitation emails and permissioned invite links per investor group. (See [[features/engagement-hub-branded-landing-pages]].)
 - **Document Distribution** — GPs distribute announcements, newsletters, and fund-level reports to selected investors with watermarking, permissions, and audit trails; LPs get a centralized, searchable document repository. *Document activity tracking* (views/downloads, engagement, reminders) was roadmapped for Q2.
 - **Communication (centralized inbox)** — all GP communications sent from IDM captured in one inbox with context-rich linkage to funds/entities/documents; fully customizable newsletter email templates. *In-app Q&A center* (2-way) roadmapped for Q4 2026.
 - **Profile Sharing** — LPs view the data and documents the GP shares (view live since Dec 2025); LPs can request profile updates that apply only after GP review/approval (roadmapped Q3 2026); supports reusing GP-owned investor profiles for new subscriptions.
@@ -22,7 +22,7 @@ Anduin Engagement Hub is an IDM-based investor engagement layer that gives a fun
 Market funds early (collect IOIs to gauge demand/pre-filter); fund marketing & onboarding (opportunities + resources + subscription workflow); high-level portfolio reporting; co-branded pages with advisors/wealth managers; polished co-investment sharing with hand-picked investors; advisory committee engagement via member-only permissioned spaces.
 
 ## Pricing & packaging
-Pricing as of **2025-09-18** (see [[wiki/sources/engagement-hub-pricing]]). Annual subscription, **three tiers metered by number of *published* landing pages**:
+Pricing as of **2025-09-18** (see [[sources/engagement-hub-pricing]]). Annual subscription, **three tiers metered by number of *published* landing pages**:
 
 | Tier | Published landing pages |
 |------|------------------------|
@@ -34,7 +34,7 @@ Pricing as of **2025-09-18** (see [[wiki/sources/engagement-hub-pricing]]). Annu
 - **Published vs. draft:** only published pages (visible to LPs) count; drafts are free; pages can be unpublished/retired to drop back under the limit; usage is visible in Anduin.
 - **Exceeding the limit:** publishing continues; an automated alert prompts RM/CS to upgrade to the next tier; no single add-on pages are sold.
 - **Standalone landing pages:** sellable as a standalone SKU but **not recommended** — offer a first-year discount, with a year-2 increase once value is proven.
-- **Relationship to Portal pricing:** Portal buyers get EH bundled by default (referred to as the "Ultimate"/top tier); new Portal pricing = annual EH fee + a (lower) annual per-fund Portal fee. See the flagged conflict on [[wiki/products/investor-portal]].
+- **Relationship to Portal pricing:** Portal buyers get EH bundled by default (referred to as the "Ultimate"/top tier); new Portal pricing = annual EH fee + a (lower) annual per-fund Portal fee. See the flagged conflict on [[products/investor-portal]].
 
 ## Implementation notes
 - Built on the **IDM Firm space** — IDM is the data foundation for EH.
@@ -59,20 +59,20 @@ Pricing as of **2025-09-18** (see [[wiki/sources/engagement-hub-pricing]]). Annu
 - **Exact tier pricing** not yet captured from the pricing deck.
 
 ## Features & sub-modules
-- [[wiki/features/engagement-hub-branded-landing-pages]] — Branded Landing Pages (the metered, self-service web-builder feature; folded in from the former Landing Page product).
+- [[features/engagement-hub-branded-landing-pages]] — Branded Landing Pages (the metered, self-service web-builder feature; folded in from the former Landing Page product).
 
 ## Related customers
 None documented yet.
 
 ## Sources
-- [[wiki/sources/engagement-hub-product-overview]] — capability authority (spec, trust 1) ⭐
-- [[wiki/sources/engagement-hub-pricing]] — pricing authority (pricing, trust 3) ⭐
-- [[wiki/sources/engagement-hub-one-pager]] — marketing positioning (one-pager, trust 10)
+- [[sources/engagement-hub-product-overview]] — capability authority (spec, trust 1) ⭐
+- [[sources/engagement-hub-pricing]] — pricing authority (pricing, trust 3) ⭐
+- [[sources/engagement-hub-one-pager]] — marketing positioning (one-pager, trust 10)
 
 ## Related
-- [[wiki/products/investor-portal]] — Portal = EH + per-fund instance + Reporting; EH bundled into Portal by default
-- [[wiki/products/investor-data-management]] — IDM Firm space is EH's data foundation
-- [[wiki/products/data-room]] — embedded in landing pages; EH is distinguished from the Data Room homepage in objection handling
-- [[wiki/products/fundsub]] — subscription workflows surfaced through EH landing pages
-- [[wiki/concepts/product-packaging-bundling]] — lead-with-bundles sales motion
-- [[wiki/concepts/investor-onboarding-workflow]]
+- [[products/investor-portal]] — Portal = EH + per-fund instance + Reporting; EH bundled into Portal by default
+- [[products/investor-data-management]] — IDM Firm space is EH's data foundation
+- [[products/data-room]] — embedded in landing pages; EH is distinguished from the Data Room homepage in objection handling
+- [[products/fundsub]] — subscription workflows surfaced through EH landing pages
+- [[concepts/product-packaging-bundling]] — lead-with-bundles sales motion
+- [[concepts/investor-onboarding-workflow]]

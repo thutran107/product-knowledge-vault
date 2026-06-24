@@ -12,13 +12,13 @@ Flow is a fund-subscription/onboarding competitor that was **acquired by Apex Gr
 
 ## How they compare to Anduin
 - Pre-acquisition, a Fundsub competitor; post-acquisition, the threat is **distribution scale** through Apex, not standalone product differentiation.
-- Another instance of the **fund admin absorbing onboarding** pattern (cf. [[wiki/competitors/nav]], Dynamo→InvestHub).
+- Another instance of the **fund admin absorbing onboarding** pattern (cf. [[competitors/nav]], Dynamo→InvestHub).
 
 ## Products that overlap
-- [[wiki/products/fundsub]]
+- [[products/fundsub]]
 
 ## Sources
-- [[wiki/sources/competitive-intel-tracking-table]] — 2 field-intel entries (2025)
+- [[sources/competitive-intel-tracking-table]] — 2 field-intel entries (2025)
 
 ## Related
-- [[wiki/concepts/private-markets-competitive-landscape]] — fund-admin distribution / consolidation
+- [[concepts/private-markets-competitive-landscape]] — fund-admin distribution / consolidation

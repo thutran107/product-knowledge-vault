@@ -43,8 +43,8 @@ The end-to-end process by which an investor is invited to and completes a subscr
 - Complex prefill requiring transformation logic requires Custom Import Templates built with Anduin.
 
 ## Related
-- [[wiki/concepts/integration-patterns|Integration Patterns]]
-- [[wiki/concepts/import-export-templates|Import/Export Templates]]
-- [[wiki/concepts/data-mapping|Data Mapping]]
-- [[wiki/products/fundsub|FundSub]], [[wiki/entities/dealcloud|DealCloud]], [[wiki/entities/affinity|Affinity]]
-- [[wiki/customers/neuberger-berman|Neuberger Berman]]
+- [[concepts/integration-patterns|Integration Patterns]]
+- [[concepts/import-export-templates|Import/Export Templates]]
+- [[concepts/data-mapping|Data Mapping]]
+- [[products/fundsub|FundSub]], [[entities/dealcloud|DealCloud]], [[entities/affinity|Affinity]]
+- [[customers/neuberger-berman|Neuberger Berman]]

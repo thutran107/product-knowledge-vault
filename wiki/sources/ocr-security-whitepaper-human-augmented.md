@@ -22,8 +22,8 @@ Customer-facing security whitepaper covering Anduin's secure human-augmented dat
 - Hosted as a Notion page (fetchable for full content).
 
 ## Connections
-- [[wiki/products/ocr-data-extraction|OCR Data Extraction]]
-- [[wiki/sources/ocr-security-whitepaper-textract|Security Whitepaper — Amazon Textract]] — companion paper covering the automated OCR engine security.
+- [[products/ocr-data-extraction|OCR Data Extraction]]
+- [[sources/ocr-security-whitepaper-textract|Security Whitepaper — Amazon Textract]] — companion paper covering the automated OCR engine security.
 
 ## Conflicts & Supersessions
 No as-of date. Pair with the Textract whitepaper for full security coverage of the end-to-end pipeline.

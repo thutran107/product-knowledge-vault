@@ -22,17 +22,17 @@ Anduin's go-to-market approach to packaging its multi-product platform: **lead w
 - **Metering:** EH is metered by *published* landing pages (Starter/Growth/Unlimited); Portal continues to be metered per fund + per SPV.
 
 ## Evidence & examples
-- [[wiki/sources/engagement-hub-product-overview]] — "lead conversations with bundles by default and apply flexibility as a negotiation tool"; IDM↑ / EH↓ / Portal-restructure strategy; EH/Portal/IDM feature matrix.
-- [[wiki/sources/engagement-hub-pricing]] — three-tier EH metering; standalone-landing-page SKU discouraged; Portal buyers get the top EH tier by default.
+- [[sources/engagement-hub-product-overview]] — "lead conversations with bundles by default and apply flexibility as a negotiation tool"; IDM↑ / EH↓ / Portal-restructure strategy; EH/Portal/IDM feature matrix.
+- [[sources/engagement-hub-pricing]] — three-tier EH metering; standalone-landing-page SKU discouraged; Portal buyers get the top EH tier by default.
 
 ## Tensions & open questions
-- **Portal pricing supersession is unresolved in the vault.** The EH decks restructure Portal pricing, but exact new per-fund figures weren't captured; per user decision the legacy Portal AUM table on [[wiki/products/investor-portal]] is retained and the conflict flagged rather than overwritten.
+- **Portal pricing supersession is unresolved in the vault.** The EH decks restructure Portal pricing, but exact new per-fund figures weren't captured; per user decision the legacy Portal AUM table on [[products/investor-portal]] is retained and the conflict flagged rather than overwritten.
 - **EH tier naming** is inconsistent ("Ultimate tier" vs. Starter/Growth/Unlimited; "higher EH tier by AUM segment"). Which tier is bundled with Portal at which segment is not pinned down.
 - **EH dollar figures** per tier are a known data gap.
 
 ## Related
-- [[wiki/products/engagement-hub]]
-- [[wiki/products/investor-portal]]
-- [[wiki/products/investor-data-management]]
-- [[wiki/features/engagement-hub-branded-landing-pages]]
-- [[wiki/sources/investor-portal-pricing-faqs-boston]]
+- [[products/engagement-hub]]
+- [[products/investor-portal]]
+- [[products/investor-data-management]]
+- [[features/engagement-hub-branded-landing-pages]]
+- [[sources/investor-portal-pricing-faqs-boston]]

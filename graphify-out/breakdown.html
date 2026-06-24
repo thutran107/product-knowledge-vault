@@ -12,7 +12,17 @@ h1{font-size:36px;line-height:1.15;margin:10px 0 6px;font-weight:800}
 h1 .accent{color:var(--coral)}
 .sub{color:var(--muted);max-width:720px;margin-bottom:30px}
 .muted{color:var(--muted)}
-.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:14px}
+.cf{font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;vertical-align:middle;text-transform:uppercase;letter-spacing:.05em}
+.cf.hi{background:#3a1410;color:var(--coral2);border:1px solid var(--coral)}
+.cf.md{background:#2b2410;color:var(--amber);border:1px solid #6b561f}
+.cf.lo{background:#1c2433;color:var(--blue);border:1px solid #2f4470}
+td.threat{text-align:center;font-weight:800;color:var(--coral2)}
+td.win{text-align:center;font-weight:800;color:var(--green)}
+td.loss{text-align:center;font-weight:800;color:var(--coral2)}
+td.nowrap{white-space:nowrap}
+tr.threatrow td{border-top:2px solid var(--line);color:var(--coral2)}
+tr.threatrow .rowname{font-weight:700;color:var(--muted)}
 .stat{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:18px}
 .stat.hot{background:linear-gradient(160deg,#2a1a12,#3a2113);border-color:var(--coral)}
 .stat .num{font-size:32px;font-weight:800;line-height:1}
@@ -62,16 +72,17 @@ a{color:var(--coral2)}
 @media(max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}.grid2,.grid3{grid-template-columns:1fr}}
 </style></head><body><div class="wrap">
 
-<div class="eyebrow">Graphify · Product Knowledge Vault · 2026-06-19</div>
+<div class="eyebrow">Graphify · Product Knowledge Vault · 2026-06-23</div>
 <h1>Vault Insight Dashboard <span class="accent">— health & briefing</span></h1>
 <p class="sub">155 wiki pages · 595 edges · 11 communities. Topology from
 <code>graph.json</code> joined with page frontmatter (trust, dates, source type, audience).</p>
 
 <div class="stats">
   <div class="stat"><div class="num">155</div><div class="lbl">Pages</div></div>
-  <div class="stat hot"><div class="num">8</div><div class="lbl">Products</div></div>
+  <div class="stat hot"><div class="num">13</div><div class="lbl">Products</div></div>
   <div class="stat"><div class="num">84</div><div class="lbl">Sources</div></div>
   <div class="stat"><div class="num">17</div><div class="lbl">Customers</div></div>
+  <div class="stat"><div class="num">18</div><div class="lbl">Competitors</div></div>
   <div class="stat"><div class="num">11</div><div class="lbl">Communities</div></div>
 </div>
 
@@ -81,12 +92,12 @@ a{color:var(--coral2)}
     <span class="why">What to fix &amp; document next</span></div>
 
   <div class="grid2">
-    <div class="card"><h3>Freshness — pages by age (today 2026-06-19)</h3><div class="bar-row"><div class="bar-label" title="Fresh (&lt;30d)">Fresh (&lt;30d)</div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div><div class="bar-val">35</div></div>
+    <div class="card"><h3>Freshness — pages by age (today 2026-06-23)</h3><div class="bar-row"><div class="bar-label" title="Fresh (&lt;30d)">Fresh (&lt;30d)</div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div><div class="bar-val">35</div></div>
 <div class="bar-row"><div class="bar-label" title="Recent (30-90d)">Recent (30-90d)</div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div><div class="bar-val">37</div></div>
 <div class="bar-row"><div class="bar-label" title="Aging (90-180d)">Aging (90-180d)</div><div class="bar-track"><div class="bar-fill" style="width:15%"></div></div><div class="bar-val">6</div></div>
 <div class="bar-row"><div class="bar-label" title="Stale (&gt;180d)">Stale (&gt;180d)</div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><div class="bar-val">36</div></div>
 <div class="bar-row"><div class="bar-label" title="Undated">Undated</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">41</div></div></div>
-    <div class="card"><h3>Stalest dated pages</h3><div class="god"><span class="god-deg" style="font-size:12px">840d</span><span class="god-name">Data Room - Brochure v2 <em style="color:var(--muted)">· 2024-03-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">687d</span><span class="god-name">IDM - Sales Brochure <em style="color:var(--muted)">· 2024-08-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">595d</span><span class="god-name">AAA (Advisor Advantage) — GTM Training (Nov 2024) <em style="color:var(--muted)">· 2024-11-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">535d</span><span class="god-name">AAA (Advisor Advantage) — Product Brief / RIA Product Brief <em style="color:var(--muted)">· 2024-12-31</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">503d</span><span class="god-name">Integration Hub Sales Deck (Feb 2025) <em style="color:var(--muted)">· 2025-02-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">483d</span><span class="god-name">Investor Portal — Internal GTM Primer (Product Intro) <em style="color:var(--muted)">· 2025-02-21</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">475d</span><span class="god-name">FundSub Email Configuration &amp; SMTP Integration — Mar 2025 <em style="color:var(--muted)">· 2025-03-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">458d</span><span class="god-name">FundSub — One Envelope Experience for Investors <em style="color:var(--muted)">· 2025-03-18</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">414d</span><span class="god-name">Streamline Investor Onboarding with IDM Profiles — May 2025 <em style="color:var(--muted)">· 2025-05-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">401d</span><span class="god-name">New OCR User Experience — Overview <em style="color:var(--muted)">· 2025-05-14</em></span></div></div>
+    <div class="card"><h3>Stalest dated pages</h3><div class="god"><span class="god-deg" style="font-size:12px">844d</span><span class="god-name">Data Room - Brochure v2 <em style="color:var(--muted)">· 2024-03-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">691d</span><span class="god-name">IDM - Sales Brochure <em style="color:var(--muted)">· 2024-08-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">599d</span><span class="god-name">AAA (Advisor Advantage) — GTM Training (Nov 2024) <em style="color:var(--muted)">· 2024-11-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">539d</span><span class="god-name">AAA (Advisor Advantage) — Product Brief / RIA Product Brief <em style="color:var(--muted)">· 2024-12-31</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">507d</span><span class="god-name">Integration Hub Sales Deck (Feb 2025) <em style="color:var(--muted)">· 2025-02-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">487d</span><span class="god-name">Investor Portal — Internal GTM Primer (Product Intro) <em style="color:var(--muted)">· 2025-02-21</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">479d</span><span class="god-name">FundSub Email Configuration &amp; SMTP Integration — Mar 2025 <em style="color:var(--muted)">· 2025-03-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">462d</span><span class="god-name">FundSub — One Envelope Experience for Investors <em style="color:var(--muted)">· 2025-03-18</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">418d</span><span class="god-name">Streamline Investor Onboarding with IDM Profiles — May 2025 <em style="color:var(--muted)">· 2025-05-01</em></span></div><div class="god"><span class="god-deg" style="font-size:12px">405d</span><span class="god-name">New OCR User Experience — Overview <em style="color:var(--muted)">· 2025-05-14</em></span></div></div>
   </div>
 
   <div class="grid2">
@@ -115,11 +126,11 @@ a{color:var(--coral2)}
   </div>
 
   <div class="card"><h3>Coverage matrix — product × source type (· = gap)</h3>
-    <table><thead><tr><th class="rowname">Product</th><th>Spec</th><th>Impl</th><th>Pricing</th><th>FAQ</th><th>Sales/GTM</th><th>Security</th></tr></thead><tbody><tr><td class="rowname">E-signature</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td><td class="ok">✓</td></tr><tr><td class="rowname">Engagement Hub</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">AAA (Advisor Advantage)</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">OCR Data Extraction</td><td class="ok">✓</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td></tr><tr><td class="rowname">Investor Access</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Landing Page</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Platform</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td></tr><tr><td class="rowname">Investor Portal</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td></tr></tbody></table>
+    <table><thead><tr><th class="rowname">Product</th><th>Spec</th><th>Impl</th><th>Pricing</th><th>FAQ</th><th>Sales/GTM</th><th>Security</th></tr></thead><tbody><tr><td class="rowname">E-signature</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td><td class="ok">✓</td></tr><tr><td class="rowname">Engagement Hub</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">OCR Data Extraction</td><td class="ok">✓</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td></tr><tr><td class="rowname">AAA (Advisor Advantage)</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Investor Access</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td><td class="gap">·</td></tr><tr><td class="rowname">Landing Page</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td></tr><tr><td class="rowname">Platform</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td></tr><tr><td class="rowname">Investor Portal</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Integration Hub</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Investor Data Management (IDM)</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Data Room</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">FundSub (Fund Subscription)</td><td class="ok">✓</td><td class="ok">✓</td><td class="gap">·</td><td class="gap">·</td><td class="ok">✓</td><td class="gap">·</td></tr><tr><td class="rowname">Side Letter</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td><td class="gap">·</td></tr></tbody></table>
   </div>
 
   <div class="grid2">
-    <div class="card"><h3>Products lacking a top-3 source (spec/impl/pricing)</h3><span class="pill warn">Investor Access · best=T4</span><span class="pill warn">Landing Page · best=T5</span><span class="pill warn">Platform · no sources</span><span class="pill warn">Investor Portal · no sources</span></div>
+    <div class="card"><h3>Products lacking a top-3 source (spec/impl/pricing)</h3><span class="pill warn">Investor Access · best=T4</span><span class="pill warn">Landing Page · no sources</span><span class="pill warn">Platform · no sources</span><span class="pill warn">Side Letter · best=T9</span></div>
     <div class="card"><h3>Fragile pages — single source (24)</h3>
       <span class="pill warn">Accolade Partners</span><span class="pill warn">Affinity</span><span class="pill warn">Backstop</span><span class="pill warn">BiteStream (Investor Pointe)</span><span class="pill warn">Box</span><span class="pill warn">Competitive Win/Loss Patterns</span><span class="pill warn">Competitor Landscape Watchlist</span><span class="pill warn">Competitor Pricing Benchmarks</span><span class="pill warn">Fenergo</span><span class="pill warn">Flow</span><span class="pill warn">Funded (Kirkland &amp; Ellis)</span><span class="pill warn">IDR (Sonata One)</span><span class="pill warn">Juniper Square</span><span class="pill warn">K&amp;E (Kirkland &amp; Ellis)</span><span class="pill warn">NAV (NAV Fund Services)</span><span class="pill warn">NXSTEP</span><span class="pill warn">Neuberger Berman</span><span class="pill warn">Ontra</span><span class="pill warn">Passthrough</span><span class="pill warn">Private Markets Competitive Landscape</span><span class="pill warn">Subscribe</span><span class="pill warn">Vega</span><span class="pill warn">bunch</span><span class="pill warn">iCapital &amp; CAIS</span></div>
   </div>
@@ -133,68 +144,133 @@ a{color:var(--coral2)}
   <div class="zone-h"><span class="tag">B</span><h2>Topical Briefing</h2>
     <span class="why">Per-product &amp; customer view for CS / Sales / RM</span></div>
 
-  <div class="card"><h3>Product profiles (8)</h3>
+  <div class="card"><h3>Product profiles (13)</h3>
     <div class="grid3"><div class="pcard">
       <div class="pcard-top"><span class="pcard-title">E-signature</span><span class="badge ga">GA</span></div>
       <div class="pcard-stats">
         <span><b>7</b> sources</span><span><b>0</b> features</span>
         <span><b>1</b> customers</span><span class="trust"><b>T2–T10</b> trust</span>
       </div>
-      <div class="pcard-meta">16d old · concepts: QES/AES/SES Compliance (eIDAS Signature Types)</div>
+      <div class="pcard-meta">20d old · concepts: QES/AES/SES Compliance (eIDAS Signature Types)</div>
     </div><div class="pcard">
       <div class="pcard-top"><span class="pcard-title">Engagement Hub</span><span class="badge ga">GA</span></div>
       <div class="pcard-stats">
         <span><b>4</b> sources</span><span><b>1</b> features</span>
         <span><b>0</b> customers</span><span class="trust"><b>T1–T10</b> trust</span>
       </div>
-      <div class="pcard-meta">3d old · concepts: Investor Onboarding Workflow, Product Packaging &amp; Bundling</div>
-    </div><div class="pcard">
-      <div class="pcard-top"><span class="pcard-title">AAA (Advisor Advantage)</span><span class="badge ga">GA</span></div>
-      <div class="pcard-stats">
-        <span><b>7</b> sources</span><span><b>0</b> features</span>
-        <span><b>1</b> customers</span><span class="trust"><b>T2–T10</b> trust</span>
-      </div>
-      <div class="pcard-meta">4d old · concepts: —</div>
+      <div class="pcard-meta">7d old · concepts: Investor Onboarding Workflow, Product Packaging &amp; Bundling</div>
     </div><div class="pcard">
       <div class="pcard-top"><span class="pcard-title">OCR Data Extraction</span><span class="badge ga">GA</span></div>
       <div class="pcard-stats">
         <span><b>11</b> sources</span><span><b>0</b> features</span>
         <span><b>0</b> customers</span><span class="trust"><b>T1–T9</b> trust</span>
       </div>
-      <div class="pcard-meta">39d old · concepts: —</div>
+      <div class="pcard-meta">43d old · concepts: —</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">AAA (Advisor Advantage)</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>7</b> sources</span><span><b>0</b> features</span>
+        <span><b>1</b> customers</span><span class="trust"><b>T2–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">8d old · concepts: —</div>
     </div><div class="pcard">
       <div class="pcard-top"><span class="pcard-title">Investor Access</span><span class="badge ga">GA</span></div>
       <div class="pcard-stats">
         <span><b>2</b> sources</span><span><b>0</b> features</span>
-        <span><b>0</b> customers</span><span class="trust"><b>T4–T10</b> trust</span>
+        <span><b>1</b> customers</span><span class="trust"><b>T4–T7</b> trust</span>
       </div>
-      <div class="pcard-meta">4d old · concepts: Import/Export Templates, Investor Onboarding Workflow</div>
+      <div class="pcard-meta">8d old · concepts: Import/Export Templates, Investor Onboarding Workflow</div>
     </div><div class="pcard">
       <div class="pcard-top"><span class="pcard-title">Landing Page</span><span class="badge dep">deprecated</span></div>
       <div class="pcard-stats">
         <span><b>0</b> sources</span><span><b>0</b> features</span>
-        <span><b>0</b> customers</span><span class="trust"><b>T5–T10</b> trust</span>
+        <span><b>0</b> customers</span><span class="trust"><b>—</b> trust</span>
       </div>
-      <div class="pcard-meta">3d old · concepts: Investor Onboarding Workflow</div>
+      <div class="pcard-meta">7d old · concepts: Investor Onboarding Workflow</div>
     </div><div class="pcard">
       <div class="pcard-top"><span class="pcard-title">Platform</span><span class="badge ga">GA</span></div>
       <div class="pcard-stats">
         <span><b>0</b> sources</span><span><b>0</b> features</span>
         <span><b>0</b> customers</span><span class="trust"><b>—</b> trust</span>
       </div>
-      <div class="pcard-meta">46d old · concepts: —</div>
+      <div class="pcard-meta">50d old · concepts: —</div>
     </div><div class="pcard">
       <div class="pcard-top"><span class="pcard-title">Investor Portal</span><span class="badge ga">GA</span></div>
       <div class="pcard-stats">
         <span><b>9</b> sources</span><span><b>0</b> features</span>
-        <span><b>0</b> customers</span><span class="trust"><b>—</b> trust</span>
+        <span><b>0</b> customers</span><span class="trust"><b>T1–T11</b> trust</span>
       </div>
-      <div class="pcard-meta">9d old · concepts: —</div>
+      <div class="pcard-meta">13d old · concepts: —</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Integration Hub</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>14</b> sources</span><span><b>0</b> features</span>
+        <span><b>1</b> customers</span><span class="trust"><b>T1–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">43d old · concepts: —</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Investor Data Management (IDM)</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>12</b> sources</span><span><b>0</b> features</span>
+        <span><b>1</b> customers</span><span class="trust"><b>T1–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">43d old · concepts: —</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Data Room</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>10</b> sources</span><span><b>0</b> features</span>
+        <span><b>2</b> customers</span><span class="trust"><b>T1–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">43d old · concepts: —</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">FundSub (Fund Subscription)</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>15</b> sources</span><span><b>0</b> features</span>
+        <span><b>4</b> customers</span><span class="trust"><b>T1–T10</b> trust</span>
+      </div>
+      <div class="pcard-meta">15d old · concepts: —</div>
+    </div><div class="pcard">
+      <div class="pcard-top"><span class="pcard-title">Side Letter</span><span class="badge ga">GA</span></div>
+      <div class="pcard-stats">
+        <span><b>0</b> sources</span><span><b>0</b> features</span>
+        <span><b>0</b> customers</span><span class="trust"><b>T9</b> trust</span>
+      </div>
+      <div class="pcard-meta">50d old · concepts: —</div>
     </div></div></div>
 
   <div class="card"><h3>Customer × product — ● = documented link (amber row = none documented)</h3>
-    <table><thead><tr><th class="rowname">Customer</th><th class="rot"><span>E-signature</span></th><th class="rot"><span>Engagement Hub</span></th><th class="rot"><span>AAA</span></th><th class="rot"><span>OCR Data Extraction</span></th><th class="rot"><span>Investor Access</span></th><th class="rot"><span>Landing Page</span></th><th class="rot"><span>Platform</span></th><th class="rot"><span>Investor Portal</span></th></tr></thead><tbody><tr class="empty"><td class="rowname">Accolade Partners</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Antler</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Atalaya</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Audax</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Blackstone</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr><td class="rowname">Cerity Partners</td><td class="ok">●</td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Clearlake</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">EQT</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Hg Capital</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">KKR</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">NXSTEP</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Neuberger Berman</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Oakley</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">PAG</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Proskauer</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Sequoia Heritage</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Stone Ridge</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr></tbody></table>
+    <table><thead><tr><th class="rowname">Customer</th><th class="rot"><span>E-signature</span></th><th class="rot"><span>Engagement Hub</span></th><th class="rot"><span>OCR Data Extraction</span></th><th class="rot"><span>AAA</span></th><th class="rot"><span>Investor Access</span></th><th class="rot"><span>Landing Page</span></th><th class="rot"><span>Platform</span></th><th class="rot"><span>Investor Portal</span></th><th class="rot"><span>Integration Hub</span></th><th class="rot"><span>Investor Data Management</span></th><th class="rot"><span>Data Room</span></th><th class="rot"><span>FundSub</span></th><th class="rot"><span>Side Letter</span></th></tr></thead><tbody><tr><td class="rowname">Accolade Partners</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class="ok">●</td><td class=""></td></tr><tr class="empty"><td class="rowname">Antler</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Atalaya</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Audax</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Blackstone</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr><td class="rowname">Cerity Partners</td><td class="ok">●</td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr class="empty"><td class="rowname">Clearlake</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">EQT</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Hg Capital</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">KKR</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr><td class="rowname">NXSTEP</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">Neuberger Berman</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class="ok">●</td><td class="ok">●</td><td class="ok">●</td><td class=""></td></tr><tr class="empty"><td class="rowname">Oakley</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">PAG</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Proskauer</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Sequoia Heritage</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr class="empty"><td class="rowname">Stone Ridge</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr></tbody></table>
   </div>
+
+  <div class="card"><h3>Competitor × product overlap — ● = competes here · chip = intel confidence · bottom row = competitors per product</h3>
+    <table><thead><tr><th class="rowname">Competitor</th><th class="rot"><span>E-signature</span></th><th class="rot"><span>Engagement Hub</span></th><th class="rot"><span>OCR Data Extraction</span></th><th class="rot"><span>AAA</span></th><th class="rot"><span>Investor Access</span></th><th class="rot"><span>Landing Page</span></th><th class="rot"><span>Platform</span></th><th class="rot"><span>Investor Portal</span></th><th class="rot"><span>Integration Hub</span></th><th class="rot"><span>Investor Data Management</span></th><th class="rot"><span>Data Room</span></th><th class="rot"><span>FundSub</span></th><th class="rot"><span>Side Letter</span></th></tr></thead><tbody><tr><td class="rowname">Passthrough <span class="cf hi">high</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class="ok">●</td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">Juniper Square <span class="cf md">med</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">Ontra <span class="cf md">med</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class="ok">●</td></tr><tr><td class="rowname">Subscribe <span class="cf md">med</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">iCapital &amp; CAIS <span class="cf md">med</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">BiteStream (Investor Pointe) <span class="cf lo">low</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">Fenergo <span class="cf lo">low</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">Funded (Kirkland &amp; Ellis) <span class="cf lo">low</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">K&amp;E (Kirkland &amp; Ellis) <span class="cf lo">low</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class="ok">●</td></tr><tr><td class="rowname">bunch <span class="cf lo">low</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">Backstop <span class="cf lo">low</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr><td class="rowname">Flow <span class="cf lo">low</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">IDR (Sonata One) <span class="cf lo">low</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">NAV (NAV Fund Services) <span class="cf lo">low</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">Vega <span class="cf lo">low</span></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">AtomInvest </td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class="ok">●</td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td></tr><tr><td class="rowname">InvestorFlow </td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="ok">●</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr>
+    <tr class="threatrow"><td class="rowname">Competitors / product</td><td class="threat"></td><td class="threat"></td><td class="threat"></td><td class="threat"></td><td class="threat"></td><td class="threat"></td><td class="threat"></td><td class="threat">8</td><td class="threat">1</td><td class="threat">2</td><td class="threat">2</td><td class="threat">15</td><td class="threat">2</td></tr></tbody></table>
+    <p class="muted" style="margin:10px 2px 0;font-size:12px">Source: <a href="graph.html">18 competitor pages</a> from the Competitive Intel Repository. Confidence reflects how many corroborating intel entries back the page. The watchlist of single-mention firms is excluded from rows.</p>
+  </div>
+
+  <div class="card"><h3>Competitor pricing benchmarks — 15 directional data points (individual deal quotes, not list prices)</h3><table><thead><tr><th class="rowname">Competitor</th><th>Segment</th><th>Product</th><th>Quote / detail</th><th>Date</th></tr></thead><tbody><tr><td class="rowname">AtomInvest</td><td>Super whale</td><td>Fundsub</td><td>AtomInvest offered $20K for fundsub + 1 fund set up.</td><td class="muted nowrap">December 7, 2022</td></tr><tr><td class="rowname">AtomInvest</td><td>Unknown</td><td>Fundsub</td><td>One time $10k setup fee, annual licensing fee of $5-10k for life of fund</td><td class="muted nowrap">November 9, 2023</td></tr><tr><td class="rowname">AtomInvest</td><td>Enterprise</td><td>Fundsub</td><td>Atominvest initially came in at $45k + $7,500 implementation → went down to $28,400 annual fee</td><td class="muted nowrap">September 5, 2024</td></tr><tr><td class="rowname">Ontra</td><td>Baby whale</td><td>Side letter</td><td>range from $75,000/yr</td><td class="muted nowrap">October 31, 2024</td></tr><tr><td class="rowname">Ontra</td><td>Enterprise</td><td>Side letter</td><td>$80,000/yr</td><td class="muted nowrap">October 31, 2024</td></tr><tr><td class="rowname">Passthrough</td><td>Emerging</td><td>Fundsub</td><td>Passthrough charging between $5-7.5K depending on how the fund ends up and how many expected investors</td><td class="muted nowrap">June 25, 2022</td></tr><tr><td class="rowname">Passthrough</td><td>Enterprise</td><td>Fundsub</td><td>Passthrough quoted $30K for Fundsub + 1 Fund for an Enterprise prospect</td><td class="muted nowrap">November 25, 2022</td></tr><tr><td class="rowname">Passthrough</td><td>Emerging</td><td>Fundsub</td><td>PT charged an emerging fund $10k + $7k for OFAC checks</td><td class="muted nowrap">January 21, 2023</td></tr><tr><td class="rowname">Passthrough</td><td>—</td><td>Fundsub</td><td>Received insight from an informal partner that Passthrough charges $7k - $15k per fund. However, they noted their implementation process was a challen</td><td class="muted nowrap">March 23, 2023</td></tr><tr><td class="rowname">Passthrough</td><td>Unknown</td><td>KYC/AML</td><td>pricing each entity KYC/AML check at $75</td><td class="muted nowrap">November 10, 2023</td></tr><tr><td class="rowname">Passthrough</td><td>Enterprise</td><td>Fundsub</td><td>$40k + $7,500 implementation → went down to $20k annual fee</td><td class="muted nowrap">September 5, 2024</td></tr><tr><td class="rowname">Passthrough</td><td>Unknown</td><td>Fundsub</td><td>$15-20K per fundraise</td><td class="muted nowrap">September 19, 2024</td></tr><tr><td class="rowname">Passthrough</td><td>Unknown</td><td>KYC/AML</td><td>charges $100/per year/investor on KYC/AML</td><td class="muted nowrap">January 31, 2025</td></tr><tr><td class="rowname">Passthrough</td><td>Unknown</td><td>Fundsub, KYC/AML</td><td>PT quoted $250/LP for a first-pass sub doc review — new managed service not previously on the radar, surfaced via Raine ($3B AUM) prospect call. Updat</td><td class="muted nowrap">March 29, 2026</td></tr><tr><td class="rowname">Subscribe</td><td>Enterprise</td><td>Fundsub</td><td>$45,000 for annual platform fee + 6hr implementation including updates</td><td class="muted nowrap">December 7, 2023</td></tr></tbody></table></div>
+
+  <div class="card"><h3>Anduin win / loss vs competitor — 8 won · 21 lost (net -13) across 7 competitors</h3><table><thead><tr><th class="rowname">Competitor</th><th>Anduin won</th><th>Anduin lost</th><th>Net</th></tr></thead><tbody><tr><td class="rowname">Passthrough</td><td class="win" title="Renewed 2150 VC by signing Urban Partners
+Won $30k deal over Passthrough
+Won Lattice Capital over Passthrough due to SSO and sleek UI
+Won Silver Point Capital over Passthrough
+Won a $57k deal over Passthrough
+Won a $67.5k deal over Passthrough">6</td><td class="loss" title="Lost Centre Lane Partner to Passthrough
+Lost Hamilton Lane to Passthrough due to UI/UX preference
+Lost InVivium to Passthrough due to pricing
+Lost Mission BioCapital to Passthrough
+Lost NYCA to Passthrough
+Lost TA Associate to Passthrough due to UI/UX preference &amp; Goodwin partnership
+Lost Webster Equity to Passthrough
+Lost a $30k deal to Passthrough due to AML/KYC checking services
+Lost ff Venture Capital to Passthrough">9</td><td class="muted">-3</td></tr><tr><td class="rowname">Subscribe</td><td class="win" title=""></td><td class="loss" title="Lost Adam’s Street to Subscribe
+Lost DWS to Subscribe
+Lost EIG to Subscribe
+Lost GTIS to Subscribe
+Lost HPS to Subscribe">5</td><td class="muted">-5</td></tr><tr><td class="rowname">AtomInvest</td><td class="win" title="Won PAG against AtomInvest">1</td><td class="loss" title="Lost MV Credit to AtomInvest
+Lost OpenOcean to AtomInvest
+Lost a prospect to AtomInvest">3</td><td class="muted">-2</td></tr><tr><td class="rowname">Ontra</td><td class="win" title=""></td><td class="loss" title="Lost Ottawa Capital to Ontra
+Lost Pomona Capital to Ontra">2</td><td class="muted">-2</td></tr><tr><td class="rowname">Funded</td><td class="win" title=""></td><td class="loss" title="Lost NEA to Funded">1</td><td class="muted">-1</td></tr><tr><td class="rowname">K&amp;E</td><td class="win" title=""></td><td class="loss" title="Lost Patients Square Capital to K&amp;E">1</td><td class="muted">-1</td></tr><tr><td class="rowname">Techquity</td><td class="win" title="Won a $29.7k deal over Techquity">1</td><td class="loss" title=""></td><td class="muted">+1</td></tr></tbody></table><p class="muted" style="margin:10px 2px 0;font-size:12px">Anduin's outcome in deals where this competitor was named. Hover a number to see the deals. Renewals counted as wins. <b>Directional, not a complete record</b> — logged intel skews toward losses (teams log competitive losses more often than wins).</p></div>
 
   <div class="grid2">
     <div class="card"><h3>Audience split — sources by target audience</h3><div class="bar-row"><div class="bar-label" title="CS">CS</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">25</div></div>

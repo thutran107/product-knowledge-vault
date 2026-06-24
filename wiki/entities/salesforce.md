@@ -23,11 +23,11 @@ The world's largest CRM platform. Anduin has a full bidirectional integration wi
 The most fully featured CRM integration — all three patterns documented. Serves as the reference architecture for full bidirectional CRM connectivity.
 
 ## Sources
-- [[wiki/sources/neuberger-berman-case-study|Neuberger Berman Case Study]]
-- [[wiki/sources/mission-and-core-components|Mission and Core Components]]
-- [[wiki/sources/ih-sales-deck-feb-2025|Integration Hub Sales Deck (Feb 2025)]]
+- [[sources/neuberger-berman-case-study|Neuberger Berman Case Study]]
+- [[sources/mission-and-core-components|Mission and Core Components]]
+- [[sources/ih-sales-deck-feb-2025|Integration Hub Sales Deck (Feb 2025)]]
 
 ## Related
-- [[wiki/products/investor-data-management|IDM]]
-- [[wiki/entities/dealcloud|DealCloud]]
-- [[wiki/entities/affinity|Affinity]]
+- [[products/investor-data-management|IDM]]
+- [[entities/dealcloud|DealCloud]]
+- [[entities/affinity|Affinity]]

@@ -55,14 +55,14 @@ Integration Hub differentiates Anduin platform stickiness overall — it is a pl
 
 ## Evidence
 
-- [[wiki/products/investor-portal]] — product page
-- [[wiki/products/integration-hub]] — product page
-- [[wiki/sources/investor-portal-pricing-faqs-boston]] — Portal pricing (trust 3) ⭐
-- [[wiki/sources/investor-portal-gtm-primer]] — Portal market positioning and lifecycle map
-- [[wiki/sources/investor-portal-sales-deck]] — Portal capabilities
-- [[wiki/sources/ih-sales-deck-feb-2025]] — Integration Hub positioning and use cases
-- [[wiki/sources/ih-sop]] — IH operational maturity
-- [[wiki/sources/neuberger-berman-case-study]] — IH real-world deployment
+- [[products/investor-portal]] — product page
+- [[products/integration-hub]] — product page
+- [[sources/investor-portal-pricing-faqs-boston]] — Portal pricing (trust 3) ⭐
+- [[sources/investor-portal-gtm-primer]] — Portal market positioning and lifecycle map
+- [[sources/investor-portal-sales-deck]] — Portal capabilities
+- [[sources/ih-sales-deck-feb-2025]] — Integration Hub positioning and use cases
+- [[sources/ih-sop]] — IH operational maturity
+- [[sources/neuberger-berman-case-study]] — IH real-world deployment
 
 ## Caveats
 

@@ -20,7 +20,7 @@ Foundation product. Other products (FundSub, Data Room, IDM, etc.) run on top of
 *None yet.*
 
 ## Related
-- [[wiki/products/fundsub|FundSub]]
-- [[wiki/products/data-room|Data Room]]
-- [[wiki/products/investor-data-management|IDM]]
-- [[wiki/products/integration-hub|Integration Hub]]
+- [[products/fundsub|FundSub]]
+- [[products/data-room|Data Room]]
+- [[products/investor-data-management|IDM]]
+- [[products/integration-hub|Integration Hub]]

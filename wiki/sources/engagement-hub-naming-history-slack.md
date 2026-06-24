@@ -33,13 +33,13 @@ Documents the naming and packaging history of Anduin's **Branded Landing Page** 
 | 2025-08-27 | #marketing | My Anh | "Engagement Hub is live!" — public launch (website, PR, one-pager) | [link](https://anduin.slack.com/archives/C2L0T8B7D/p1756303467307379) |
 
 ## Connections
-- [[wiki/products/engagement-hub]] — names the Aug 2025 repackaging and public launch date.
-- [[wiki/features/engagement-hub-branded-landing-pages]] — supplies the "Also known as / naming history" block.
-- [[wiki/products/landing-page]] — corrects the repackaging-date framing on the redirect pointer.
-- [[wiki/sources/engagement-hub-one-pager]] — the launch one-pager (Drive ID `1P8M3dz…hPZZ`) referenced in the Aug 27 launch post is the *same file* ingested in Batch 9.
+- [[products/engagement-hub]] — names the Aug 2025 repackaging and public launch date.
+- [[features/engagement-hub-branded-landing-pages]] — supplies the "Also known as / naming history" block.
+- [[products/landing-page]] — corrects the repackaging-date framing on the redirect pointer.
+- [[sources/engagement-hub-one-pager]] — the launch one-pager (Drive ID `1P8M3dz…hPZZ`) referenced in the Aug 27 launch post is the *same file* ingested in Batch 9.
 
 ## Conflicts & Supersessions
-- **Profile Sharing dates (minor, not resolved here):** this Aug 2025 thread projected Phase 1 (view/download) ~end-Sept 2025 and Phase 2 (LP updates) ~Oct/Nov 2025. The higher-trust EH spec deck ([[wiki/sources/engagement-hub-product-overview]], as-of Feb 2026) states Dec 2025 / Q3 2026. These are estimates of different vintages; the spec deck wins per §10. Both phases should be GA as of mid-2026 regardless.
+- **Profile Sharing dates (minor, not resolved here):** this Aug 2025 thread projected Phase 1 (view/download) ~end-Sept 2025 and Phase 2 (LP updates) ~Oct/Nov 2025. The higher-trust EH spec deck ([[sources/engagement-hub-product-overview]], as-of Feb 2026) states Dec 2025 / Q3 2026. These are estimates of different vintages; the spec deck wins per §10. Both phases should be GA as of mid-2026 regardless.
 - No conflict on naming — purely additive.
 
 ## Raw Notes

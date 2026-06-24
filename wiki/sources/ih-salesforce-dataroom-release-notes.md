@@ -20,9 +20,9 @@ Release notes entry in the Notion Product Knowledge Library for the Salesforce �
 - External developer documentation available: https://developers.anduintransact.com/docs/automated-onboarding-with-dataroom
 
 ## Connections
-- [[wiki/products/integration-hub]] — Salesforce → Data Room integration
-- [[wiki/products/data-room]] — target object of this integration
-- [[wiki/sources/ih-salesforce-dataroom-implementation-guide]] — companion implementation guide
+- [[products/integration-hub]] — Salesforce → Data Room integration
+- [[products/data-room]] — target object of this integration
+- [[sources/ih-salesforce-dataroom-implementation-guide]] — companion implementation guide
 
 ## Conflicts & Supersessions
 None.

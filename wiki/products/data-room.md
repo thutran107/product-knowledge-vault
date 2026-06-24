@@ -42,27 +42,27 @@ Anduin Data Room is a secure digital document sharing platform for fund managers
 - Salesforce Connected App session limit: max 5 active sessions (customer must create a new Connected App if reached)
 
 ## Features & sub-modules
-- User & Group management (multi-group internal training: [[wiki/sources/data-room-multi-group-training-video]])
-- Public API & Webhooks ([[wiki/sources/data-room-api-implementation-guide]])
+- User & Group management (multi-group internal training: [[sources/data-room-multi-group-training-video]])
+- Public API & Webhooks ([[sources/data-room-api-implementation-guide]])
 
 ## Related customers
-- [[wiki/customers/neuberger-berman]] — Data Room in use alongside FundSub and IDM
+- [[customers/neuberger-berman]] — Data Room in use alongside FundSub and IDM
 
 ## Sources
-- [[wiki/sources/data-room-faq]] — Data Room FAQ (operational limits, notifications, branding, misc)
-- [[wiki/sources/data-room-brochure-v2]] — Data Room Brochure v2 (March 2024, Google Drive)
-- [[wiki/sources/data-room-api-implementation-guide]] — API Access Setup Guide (June 2025)
-- [[wiki/sources/data-room-multi-group-training-video]] — Multi-group training video (June 2025)
-- [[wiki/sources/data-room-system-limits]] — Internal Slide on System Limits (August 2025)
-- [[wiki/sources/data-room-demo-sandbox-guide]] — Demo Sandbox/Simulator Guide
-- [[wiki/sources/fundsub-dataroom-theme-customization]] — Theme Customization (FundSub + Data Room)
-- [[wiki/sources/automated-data-room-insights]] — Automated Data Room Insights (DealCloud integration)
-- [[wiki/sources/configuration-vs-permission]] — Configuration vs Permission
-- [[wiki/sources/neuberger-berman-case-study]] — Neuberger Berman Case Study
+- [[sources/data-room-faq]] — Data Room FAQ (operational limits, notifications, branding, misc)
+- [[sources/data-room-brochure-v2]] — Data Room Brochure v2 (March 2024, Google Drive)
+- [[sources/data-room-api-implementation-guide]] — API Access Setup Guide (June 2025)
+- [[sources/data-room-multi-group-training-video]] — Multi-group training video (June 2025)
+- [[sources/data-room-system-limits]] — Internal Slide on System Limits (August 2025)
+- [[sources/data-room-demo-sandbox-guide]] — Demo Sandbox/Simulator Guide
+- [[sources/fundsub-dataroom-theme-customization]] — Theme Customization (FundSub + Data Room)
+- [[sources/automated-data-room-insights]] — Automated Data Room Insights (DealCloud integration)
+- [[sources/configuration-vs-permission]] — Configuration vs Permission
+- [[sources/neuberger-berman-case-study]] — Neuberger Berman Case Study
 
 ## Related
-- [[wiki/products/integration-hub]] — Salesforce and DealCloud integrations
-- [[wiki/products/fundsub]] — Often deployed alongside FundSub
-- [[wiki/entities/dealcloud]] — DealCloud Data Room alert integration
-- [[wiki/entities/salesforce]] — Salesforce → Data Room automated onboarding (IH paid integration)
-- [[wiki/concepts/integration-patterns]] — Integration patterns
+- [[products/integration-hub]] — Salesforce and DealCloud integrations
+- [[products/fundsub]] — Often deployed alongside FundSub
+- [[entities/dealcloud]] — DealCloud Data Room alert integration
+- [[entities/salesforce]] — Salesforce → Data Room automated onboarding (IH paid integration)
+- [[concepts/integration-patterns]] — Integration patterns

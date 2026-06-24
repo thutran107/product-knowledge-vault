@@ -53,6 +53,6 @@ Standard prerequisites for CRM integrations:
 - Upcoming automatic domain assignment will eliminate Phase 1 manual provisioning.
 
 ## Related
-- [[wiki/concepts/configuration-vs-permission|Configuration vs Permission]]
-- [[wiki/concepts/import-export-templates|Import/Export Templates]]
-- [[wiki/products/integration-hub|Integration Hub]]
+- [[concepts/configuration-vs-permission|Configuration vs Permission]]
+- [[concepts/import-export-templates|Import/Export Templates]]
+- [[products/integration-hub|Integration Hub]]

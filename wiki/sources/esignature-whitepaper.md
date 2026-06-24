@@ -21,8 +21,8 @@ Anduin's e-signature guide whitepaper covering the platform's electronic signatu
 - Content resides in Google Slides — fetch via linked URL for full detail.
 
 ## Connections
-- [[wiki/products/e-signature]] — this whitepaper is the primary security reference for the product
-- [[wiki/concepts/qes-aes-compliance]] — likely covers eIDAS compliance and signature type definitions
+- [[products/e-signature]] — this whitepaper is the primary security reference for the product
+- [[concepts/qes-aes-compliance]] — likely covers eIDAS compliance and signature type definitions
 
 ## Conflicts & Supersessions
 None identified (content not fetchable; metadata only).

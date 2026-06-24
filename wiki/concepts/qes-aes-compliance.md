@@ -42,7 +42,7 @@ The eIDAS regulation (EU 2014/910) governs electronic signatures in the European
 - **QES**: EU entities requiring highest eIDAS compliance, or clients who already use/prefer DocuSign.
 
 ## Evidence & examples
-- Anduin offers a Google Drive folder of sample SES, AES, and QES signed documents for CS demonstrations: [[wiki/sources/esignature-sample-signed-documents]].
+- Anduin offers a Google Drive folder of sample SES, AES, and QES signed documents for CS demonstrations: [[sources/esignature-sample-signed-documents]].
 - DocuSign SES and QES pricing are loaded into Salesforce (per-credit model, not DocuSign envelope pricing). A fund can have both QES and SES within DocuSign on the same fund environment.
 - A fund cannot simultaneously use Anduin native signature (SES) and DocuSign on the same fund — must choose one signature provider.
 
@@ -51,7 +51,7 @@ The eIDAS regulation (EU 2014/910) governs electronic signatures in the European
 - AES via GlobalSign eSeal is mentioned but not deeply documented — no dedicated implementation guide in the vault.
 
 ## Related
-- [[wiki/products/e-signature]] — parent product
-- [[wiki/sources/esignature-docusign-qes-faq]] — most authoritative source (trust 4, Jan 2026)
-- [[wiki/sources/esignature-reuse-signature-pages]] — SES-only constraint documented here
-- [[wiki/entities/docusign]] — QES delivery mechanism
+- [[products/e-signature]] — parent product
+- [[sources/esignature-docusign-qes-faq]] — most authoritative source (trust 4, Jan 2026)
+- [[sources/esignature-reuse-signature-pages]] — SES-only constraint documented here
+- [[entities/docusign]] — QES delivery mechanism

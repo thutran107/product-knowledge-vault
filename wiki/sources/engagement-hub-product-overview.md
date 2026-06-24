@@ -25,15 +25,15 @@ The authoritative capability deck for Anduin's Engagement Hub — an IDM-based i
 - **Reporting Dashboards are Portal-only** (explicitly marked as Investor Portal package, not EH).
 
 ## Connections
-- [[wiki/products/engagement-hub]] — primary capability source for this product.
-- [[wiki/features/engagement-hub-branded-landing-pages]] — the Branded Landing Pages feature defined here.
-- [[wiki/products/investor-portal]] — EH is bundled into Portal by default; Reporting is Portal-only; informs the Portal/EH relationship.
-- [[wiki/products/investor-data-management]] — EH is built on the IDM Firm space.
-- [[wiki/products/data-room]] — objection-handling distinguishes EH from the Data Room homepage.
-- [[wiki/concepts/product-packaging-bundling]] — the lead-with-bundles motion described here.
+- [[products/engagement-hub]] — primary capability source for this product.
+- [[features/engagement-hub-branded-landing-pages]] — the Branded Landing Pages feature defined here.
+- [[products/investor-portal]] — EH is bundled into Portal by default; Reporting is Portal-only; informs the Portal/EH relationship.
+- [[products/investor-data-management]] — EH is built on the IDM Firm space.
+- [[products/data-room]] — objection-handling distinguishes EH from the Data Room homepage.
+- [[concepts/product-packaging-bundling]] — the lead-with-bundles motion described here.
 
 ## Conflicts & Supersessions
-- **Investor Portal pricing structure.** This deck states Portal pricing is being restructured to "annual EH platform fee + annual per-fund Portal fee (lower per-fund than current)." That changes the structure recorded in [[wiki/sources/investor-portal-pricing-faqs-boston]] (pricing, trust 3, as-of 2025-05-14). This deck is newer (as-of 2026-02-02) and the companion [[wiki/sources/engagement-hub-pricing]] is dated 2025-09-18 — both later than the Boston deck. Per §10, later date wins on structure. **Per user decision, the existing Portal AUM table is retained and the conflict is flagged** (see Conflicts note on [[wiki/products/investor-portal]]); exact new per-fund numbers were not captured from the slide tables.
+- **Investor Portal pricing structure.** This deck states Portal pricing is being restructured to "annual EH platform fee + annual per-fund Portal fee (lower per-fund than current)." That changes the structure recorded in [[sources/investor-portal-pricing-faqs-boston]] (pricing, trust 3, as-of 2025-05-14). This deck is newer (as-of 2026-02-02) and the companion [[sources/engagement-hub-pricing]] is dated 2025-09-18 — both later than the Boston deck. Per §10, later date wins on structure. **Per user decision, the existing Portal AUM table is retained and the conflict is flagged** (see Conflicts note on [[products/investor-portal]]); exact new per-fund numbers were not captured from the slide tables.
 - **EH tier naming:** this deck refers to bundling a "higher EH tier" for higher AUM segments; the pricing deck names the tiers Starter/Growth/Unlimited and separately refers to an "Ultimate tier" bundled with Portal. Minor internal inconsistency — no canonical "Ultimate" tier appears in the published 3-tier structure.
 
 ## Raw Notes

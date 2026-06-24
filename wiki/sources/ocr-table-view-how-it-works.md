@@ -22,7 +22,7 @@ How-it-works document explaining the Anduin data extraction table view feature. 
 - Google Slides format.
 
 ## Connections
-- [[wiki/products/ocr-data-extraction|OCR Data Extraction]]
+- [[products/ocr-data-extraction|OCR Data Extraction]]
 
 ## Conflicts & Supersessions
 None identified. Most current how-it-works doc for OCR table view feature.

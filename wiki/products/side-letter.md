@@ -20,4 +20,4 @@ Relevant to complex fund structures and legal counsel workflows. Often relevant 
 *None yet.*
 
 ## Related
-- [[wiki/products/fundsub|FundSub]]
+- [[products/fundsub|FundSub]]

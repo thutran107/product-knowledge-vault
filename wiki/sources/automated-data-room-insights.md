@@ -27,10 +27,10 @@ Describes the DealCloud (Data Room alert) integration that automatically syncs i
 - All mapped fields must use text type — numeric/picklist types break the integration.
 
 ## Connections
-- [[wiki/concepts/integration-patterns|Integration Patterns]] — Data Retrieval pattern.
-- [[wiki/entities/dealcloud|DealCloud]] — the target CRM.
-- [[wiki/products/data-room|Data Room]] — the Anduin source.
-- [[wiki/concepts/configuration-vs-permission|Configuration vs Permission]].
+- [[concepts/integration-patterns|Integration Patterns]] — Data Retrieval pattern.
+- [[entities/dealcloud|DealCloud]] — the target CRM.
+- [[products/data-room|Data Room]] — the Anduin source.
+- [[concepts/configuration-vs-permission|Configuration vs Permission]].
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

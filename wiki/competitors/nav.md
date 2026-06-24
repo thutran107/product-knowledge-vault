@@ -15,13 +15,13 @@ NAV Fund Services is a **fund administrator** that built its own **LP onboarding
 - Surfaced via NorthRock Partners (managing a Coller fund alongside STB, an Anduin client).
 
 ## Why it matters
-- Part of a recurring pattern alongside [[wiki/competitors/flow|Flow (→Apex)]] and [[wiki/competitors/competitor-landscape-watchlist|Dynamo (→InvestHub)]] — fund admins absorbing onboarding to keep it in-house. See [[wiki/concepts/private-markets-competitive-landscape]].
+- Part of a recurring pattern alongside [[competitors/flow|Flow (→Apex)]] and [[competitors/competitor-landscape-watchlist|Dynamo (→InvestHub)]] — fund admins absorbing onboarding to keep it in-house. See [[concepts/private-markets-competitive-landscape]].
 
 ## Products that overlap
-- [[wiki/products/fundsub]]
+- [[products/fundsub]]
 
 ## Sources
-- [[wiki/sources/competitive-intel-tracking-table]] — 2 field-intel entries (2025–2026)
+- [[sources/competitive-intel-tracking-table]] — 2 field-intel entries (2025–2026)
 
 ## Related
-- [[wiki/concepts/private-markets-competitive-landscape]] — fund-admin in-house build trend
+- [[concepts/private-markets-competitive-landscape]] — fund-admin in-house build trend

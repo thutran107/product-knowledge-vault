@@ -22,7 +22,7 @@ Pricing guide and proposal-building reference for Anduin's OCR Data Extraction p
 - For Sales + RM use only.
 
 ## Connections
-- [[wiki/products/ocr-data-extraction|OCR Data Extraction]]
+- [[products/ocr-data-extraction|OCR Data Extraction]]
 
 ## Conflicts & Supersessions
 None identified. Most recent pricing source for OCR as of ingestion date.

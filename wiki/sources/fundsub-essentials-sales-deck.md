@@ -32,10 +32,10 @@ Core FundSub sales deck for the "Anduin Essentials" tier, targeting first-time a
   - Lawrence Wu (Principal, Recharge Capital): praises Anduin team responsiveness as a key retention factor.
 
 ## Connections
-- [[wiki/products/fundsub|FundSub]] — Essentials is the entry-level FundSub packaging
-- [[wiki/products/data-room|Data Room]] — included in both Essentials tiers
-- [[wiki/customers/nxstep|NXSTEP]] — customer quote
-- [[wiki/onboarding|Onboarding]] — must-read for Sales + RM new hires
+- [[products/fundsub|FundSub]] — Essentials is the entry-level FundSub packaging
+- [[products/data-room|Data Room]] — included in both Essentials tiers
+- [[customers/nxstep|NXSTEP]] — customer quote
+- [[onboarding|Onboarding]] — must-read for Sales + RM new hires
 
 ## Conflicts & Supersessions
 None. This is the first source to document the Essentials pricing tiers — fills the "Pricing & packaging" gap in the FundSub product page.

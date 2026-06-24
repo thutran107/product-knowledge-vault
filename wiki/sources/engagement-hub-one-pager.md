@@ -22,11 +22,11 @@ The official customer-facing marketing one-pager for Engagement Hub. Positions E
 - **Outcomes pitched:** boost LP engagement and conversion; strengthen relationships; no coding required; purpose-built for private markets.
 
 ## Connections
-- [[wiki/products/engagement-hub]] — marketing positioning for this product.
-- [[wiki/features/engagement-hub-branded-landing-pages]] — landing pages for upcoming opportunities.
+- [[products/engagement-hub]] — marketing positioning for this product.
+- [[features/engagement-hub-branded-landing-pages]] — landing pages for upcoming opportunities.
 
 ## Conflicts & Supersessions
-None. Consistent with the higher-trust [[wiki/sources/engagement-hub-product-overview]]; this is positioning only and adds no commercial or capability claims that conflict.
+None. Consistent with the higher-trust [[sources/engagement-hub-product-overview]]; this is positioning only and adds no commercial or capability claims that conflict.
 
 ## Raw Notes
 - Original is a ~38.7 MB image-heavy 2-page PDF; only text was extracted (visual layout/screenshots not preserved).

@@ -22,8 +22,8 @@ Step-by-step procedure covering the full CS-DEA-Client implementation journey fo
 - Covers the three-party relationship: CS team, DEA (Data Extraction Analysts), and Client.
 
 ## Connections
-- [[wiki/products/ocr-data-extraction|OCR Data Extraction]]
-- [[wiki/sources/ocr-implementation-guide|OCR Implementation Guide]] — companion implementation training deck.
+- [[products/ocr-data-extraction|OCR Data Extraction]]
+- [[sources/ocr-implementation-guide|OCR Implementation Guide]] — companion implementation training deck.
 
 ## Conflicts & Supersessions
 No as-of date. Companion to the implementation guide; both should be read together.

@@ -55,12 +55,12 @@ The Feb 2025 external-facing sales deck for the Integration Hub. Covers position
 - **Mar 2025 (tentative)**: different orgs sharing the same Integration Hub.
 
 ## Connections
-- [[wiki/products/integration-hub|Integration Hub]] — primary subject.
-- [[wiki/entities/salesforce|Salesforce]] — now has documented full use case.
-- [[wiki/entities/dealcloud|DealCloud]] — implementation requirements confirmed.
-- [[wiki/concepts/integration-patterns|Integration Patterns]] — all three patterns shown for Salesforce.
-- [[wiki/concepts/crm-integration-playbook|CRM Integration Playbook]] — three-step setup flow.
-- [[wiki/concepts/anduin-object-model|Anduin Object Model]] — provisioning model evolution.
+- [[products/integration-hub|Integration Hub]] — primary subject.
+- [[entities/salesforce|Salesforce]] — now has documented full use case.
+- [[entities/dealcloud|DealCloud]] — implementation requirements confirmed.
+- [[concepts/integration-patterns|Integration Patterns]] — all three patterns shown for Salesforce.
+- [[concepts/crm-integration-playbook|CRM Integration Playbook]] — three-step setup flow.
+- [[concepts/anduin-object-model|Anduin Object Model]] — provisioning model evolution.
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

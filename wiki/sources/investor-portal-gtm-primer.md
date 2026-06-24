@@ -51,11 +51,11 @@ Portal launch redefines Anduin from a fund onboarding tool to a full investor re
 - Data backbone → IDM + Integration Hub + Whitelabeling/SSO
 
 ## Connections
-- [[wiki/products/investor-portal]] — primary product page
-- [[wiki/sources/investor-portal-sales-deck]] — companion feature deck
-- [[wiki/sources/investor-portal-pricing-faqs-boston]] — companion pricing deck
-- [[wiki/competitors/investorflow]] — direct competitor
-- [[wiki/competitors/atominvest]] — direct competitor
+- [[products/investor-portal]] — primary product page
+- [[sources/investor-portal-sales-deck]] — companion feature deck
+- [[sources/investor-portal-pricing-faqs-boston]] — companion pricing deck
+- [[competitors/investorflow]] — direct competitor
+- [[competitors/atominvest]] — direct competitor
 
 ## Conflicts & Supersessions
 None found. Earliest dated Portal internal doc (Feb 2025 as-of date).

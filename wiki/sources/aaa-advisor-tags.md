@@ -23,9 +23,9 @@ Release note for the Advisor Tag feature, which lets fund managers post real-tim
   - *Existing funds already using the advisor workflow*: toggle "Enable Advisor workflow" off and on again to activate the column. No data is lost in the process.
 
 ## Connections
-- Documents a named capability of [[wiki/products/aaa|AAA (Advisor Advantage)]] surfaced inside [[wiki/products/fundsub|FundSub]].
-- The same tags feature is shown in the [[wiki/sources/aaa-sales-deck|AAA Sales Deck]] ("Communicate with advisors through tags") — this release note is the authoritative how-to-enable reference.
-- "Custodian approve" tag values tie to the Schwab custodian-signature workflow ([[wiki/products/e-signature|E-signature]]).
+- Documents a named capability of [[products/aaa|AAA (Advisor Advantage)]] surfaced inside [[products/fundsub|FundSub]].
+- The same tags feature is shown in the [[sources/aaa-sales-deck|AAA Sales Deck]] ("Communicate with advisors through tags") — this release note is the authoritative how-to-enable reference.
+- "Custodian approve" tag values tie to the Schwab custodian-signature workflow ([[products/e-signature|E-signature]]).
 
 ## Conflicts & Supersessions
 - None. Additive feature note; corroborates the sales deck.

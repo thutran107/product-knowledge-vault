@@ -43,6 +43,6 @@ Used in **Data Retrieval** integrations to push subscription data to CRM or othe
 - UI currently supports 1-to-1 field mapping only in the integration configuration screen.
 
 ## Related
-- [[wiki/concepts/data-mapping|Data Mapping]]
-- [[wiki/concepts/integration-patterns|Integration Patterns]]
-- [[wiki/products/fundsub|FundSub]]
+- [[concepts/data-mapping|Data Mapping]]
+- [[concepts/integration-patterns|Integration Patterns]]
+- [[products/fundsub|FundSub]]

@@ -35,7 +35,7 @@ Passthrough (PT) is Anduin's most frequently encountered competitor in fund subs
 **AML/KYC:**
 - $75 per entity check (2023); ~$100/yr/investor (2025).
 
-See [[wiki/concepts/competitor-pricing-benchmarks]] for the consolidated table.
+See [[concepts/competitor-pricing-benchmarks]] for the consolidated table.
 
 ## Product & strategy notes
 - **Two-product funnel:** cheap Fundsub to acquire customers, cross-sell downstream into managed AML/KYC (100+ KYC customers by end of 2023). Launched an **AML Compliance Officer (AMLCO)** product (uses ComplyAdvantage + human review) and is building org-level compliance tooling. Streamlining a Cayman KYC managed process (partnership with Leeward).
@@ -52,15 +52,15 @@ See [[wiki/concepts/competitor-pricing-benchmarks]] for the consolidated table.
 - Willkie Farr had a 2FA incident with a PT-adjacent partner and is evaluating Anduin as a result.
 
 ## Products that overlap
-- [[wiki/products/fundsub]] — primary battleground
-- [[wiki/products/investor-data-management|IDM]] — PT expanding into investor data management
-- [[wiki/products/data-room]] — bundled against in some deals
+- [[products/fundsub]] — primary battleground
+- [[products/investor-data-management|IDM]] — PT expanding into investor data management
+- [[products/data-room]] — bundled against in some deals
 
 ## Sources
-- [[wiki/sources/competitive-intel-tracking-table]] — 46 field-intel entries (2022–2026)
+- [[sources/competitive-intel-tracking-table]] — 46 field-intel entries (2022–2026)
 
 ## Related
-- [[wiki/concepts/competitor-pricing-benchmarks]]
-- [[wiki/concepts/competitive-win-loss]]
-- [[wiki/competitors/atominvest]]
-- [[wiki/competitors/subscribe]]
+- [[concepts/competitor-pricing-benchmarks]]
+- [[concepts/competitive-win-loss]]
+- [[competitors/atominvest]]
+- [[competitors/subscribe]]

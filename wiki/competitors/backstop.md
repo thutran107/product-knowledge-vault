@@ -19,11 +19,11 @@ Backstop (Backstop Solutions) provides an **investor portal + CRM** used by allo
 - **"We already have Backstop for our portal"** — lead with engagement, branded LP experience, and reporting/dashboard depth; incumbents cite administration pain and weak engagement.
 
 ## Products that overlap
-- [[wiki/products/investor-portal]]
+- [[products/investor-portal]]
 
 ## Sources
-- [[wiki/sources/competitive-intel-tracking-table]] — 2 field-intel entries (2024)
+- [[sources/competitive-intel-tracking-table]] — 2 field-intel entries (2024)
 
 ## Related
-- [[wiki/concepts/competitive-win-loss]]
-- [[wiki/products/investor-portal]]
+- [[concepts/competitive-win-loss]]
+- [[products/investor-portal]]

@@ -22,11 +22,11 @@ Global, independent investment management firm founded in 1939, headquartered in
 Primary case study demonstrating the full Anduin platform deployed at scale. Validates the IDM + FundSub + Integration Hub combination for large asset managers.
 
 ## Sources
-- [[wiki/sources/neuberger-berman-case-study|Neuberger Berman Case Study]]
+- [[sources/neuberger-berman-case-study|Neuberger Berman Case Study]]
 
 ## Related
-- [[wiki/products/fundsub|FundSub]]
-- [[wiki/products/investor-data-management|IDM]]
-- [[wiki/products/integration-hub|Integration Hub]]
-- [[wiki/entities/salesforce|Salesforce]]
-- [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]
+- [[products/fundsub|FundSub]]
+- [[products/investor-data-management|IDM]]
+- [[products/integration-hub|Integration Hub]]
+- [[entities/salesforce|Salesforce]]
+- [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]

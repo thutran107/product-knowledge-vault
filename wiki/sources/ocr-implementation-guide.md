@@ -22,11 +22,11 @@ Internal implementation guide for Anduin's OCR Data Extraction product, covering
 - Notes: "for internal team training."
 
 ## Connections
-- [[wiki/products/ocr-data-extraction|OCR Data Extraction]]
-- [[wiki/sources/ocr-implementation-journey|Data Extraction Implementation Journey]] — companion SOP covering the CS-DEA-Client journey.
+- [[products/ocr-data-extraction|OCR Data Extraction]]
+- [[sources/ocr-implementation-journey|Data Extraction Implementation Journey]] — companion SOP covering the CS-DEA-Client journey.
 
 ## Conflicts & Supersessions
-No as-of date. Verify currency before use, especially for process steps that may have changed with the new OCR UX (see [[wiki/sources/ocr-new-ux-overview]]).
+No as-of date. Verify currency before use, especially for process steps that may have changed with the new OCR UX (see [[sources/ocr-new-ux-overview]]).
 
 ## Raw Notes
 Google Slides: https://docs.google.com/presentation/d/1D0oN2sxyuWXg9DDEDgjMsUZPT7zm6t0T3BBfqck1uB8. Not fetched (external).
