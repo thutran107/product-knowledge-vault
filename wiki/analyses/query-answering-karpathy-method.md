@@ -46,7 +46,7 @@ Every generator follows the vault's canonical query workflow (`CLAUDE.md` §6):
 1. Read index.md           ← the catalog: find which slugs are relevant
 2. Read 2–4 wiki/ pages    ← the actual source material for the angle
 3. Write the query         ← framed AFTER seeing the sources, so it's specific
-4. Write the response       ← grounded, cites [[wiki/...]] slugs, hedges on gaps
+4. Write the response       ← grounded, cites [[...]] slugs, hedges on gaps
 ```
 
 The query is written *after* the source pages are read — which is why the
@@ -74,7 +74,7 @@ phrasing. If the vault lacks something, the answer says so instead of inventing.
 OCR Data Extraction is Anduin's service for digitizing structured data out of
 investor documents — subscription forms, KYC packets, and fund documents — and
 feeding it downstream into the FundSub processing pipeline (see
-[[wiki/products/ocr-data-extraction]]).
+[[products/ocr-data-extraction]]).
 
 How it works, end to end:
 
@@ -83,19 +83,19 @@ How it works, end to end:
 2. **Human-augmented review:** Textract output isn't shipped as-is. A human
    review layer of Data Extraction Analysts (DEAs) validates and corrects the
    extracted values, which is the accuracy backstop for the AI
-   ([[wiki/products/ocr-data-extraction]]).
+   ([[products/ocr-data-extraction]]).
 3. **Table View:** reviewers see the extracted data in a table format before it
    flows downstream — this is the review/QA interface and is the most current
    "how it works" reference, as-of 2025-09-16
-   ([[wiki/sources/ocr-table-view-how-it-works]]).
+   ([[sources/ocr-table-view-how-it-works]]).
 4. **FundSub handoff:** validated data flows into FundSub document processing;
    the OCR-FundSub intersection is what you'll deliver to clients
-   ([[wiki/sources/ocr-fundsub-process-client-training]]).
+   ([[sources/ocr-fundsub-process-client-training]]).
 
 For your implementation specifically, the canonical SOP is the CS-DEA-Client
 Implementation Journey, which frames it as a three-party process between the CS
 team, the DEAs, and the client — this is an onboarding-required read
-([[wiki/sources/ocr-implementation-journey]]).
+([[sources/ocr-implementation-journey]]).
 
 Two caveats from the vault: a new OCR UX launched in May 2025, so confirm any
 pre-May training reflects the current interface; and the implementation/GTM
@@ -113,8 +113,8 @@ steps open the linked Implementation Journey directly.
 
 Per the Boston Popup pricing deck (as of May 2025), Investor Portal is priced as
 an annual fee per fund/SPV, tiered by AUM, plus a one-time data migration fee.
-See [[wiki/sources/investor-portal-pricing-faqs-boston]] and
-[[wiki/products/investor-portal]].
+See [[sources/investor-portal-pricing-faqs-boston]] and
+[[products/investor-portal]].
 
 At $1.7B AUM the prospect falls in the Enterprise tier ($1B–15B): $15K
 annual/fund and a $7.5K one-time migration/fund. For one fund that's $15K ARR
@@ -150,7 +150,7 @@ You're right on the numbers — per the vault's pricing intel (as of May 2025,
 sourced from an ex-employee), AtomInvest prices per-fund, tiered by AUM:
 ~$10K/fund/yr for $1B+ AUM GPs and ~$6K/fund/yr below $1B. Anduin's Investor
 Portal Enterprise tier ($1B–15B) lists at $15K/fund/yr, so yes, we are higher at
-this tier. (See [[wiki/competitors/atominvest]].)
+this tier. (See [[competitors/atominvest]].)
 
 The recommended response is to reframe from price to total cost of ownership and
 product scope:
@@ -173,8 +173,8 @@ investor-relationship layer and note that accounting tools (e.g., Allvue/FIS)
 can integrate via Integration Hub.
 
 Confidence caveat: the pricing figures rest on a single ex-employee source from
-May 2025, so treat them as directional. (Sources: [[wiki/competitors/atominvest]],
-[[wiki/products/investor-portal]], [[wiki/sources/investor-portal-pricing-faqs-boston]].)
+May 2025, so treat them as directional. (Sources: [[competitors/atominvest]],
+[[products/investor-portal]], [[sources/investor-portal-pricing-faqs-boston]].)
 
 ---
 
@@ -187,7 +187,7 @@ May 2025, so treat them as directional. (Sources: [[wiki/competitors/atominvest]
 
 The Schwab signing workflow has 5 setup components (non-sequential) — walk
 through each to find the gap (see
-[[wiki/sources/esignature-schwab-implementation-guide]]):
+[[sources/esignature-schwab-implementation-guide]]):
 
 1. **RIA + Anduin setup (per RIA):** Anduin creates a unique DocuSign sender
    email per RIA entity (`{ria-name}-docusign-sender@anduintransact.com`); the
@@ -215,7 +215,7 @@ initiated 2–3 weeks before first live use.
 
 The advisor-facing UX (custodian selection triggering the "Alternative
 Investment Letter of Authorization," phone auth for both advisor and investor)
-is documented in [[wiki/sources/esignature-schwab-cerity-training]].
+is documented in [[sources/esignature-schwab-cerity-training]].
 
 ---
 
@@ -228,14 +228,14 @@ is documented in [[wiki/sources/esignature-schwab-cerity-training]].
 Cerity Partners is an RIA running FundSub for subscription management, AAA
 (Advisor Advantage) as the GP/advisor-side interface, and the Schwab DocuSign
 custodian signing workflow under E-signature (see
-[[wiki/customers/cerity-partners]]). Advisors access investor subscriptions from
+[[customers/cerity-partners]]). Advisors access investor subscriptions from
 the Advisor Advantage fund dashboard, select Schwab as custodian, and complete
 signing in DocuSign (not Anduin's native e-signature) with phone-number
 authentication for both advisor and investor; signed docs then auto-forward to
-Schwab ([[wiki/sources/esignature-schwab-cerity-training]]).
+Schwab ([[sources/esignature-schwab-cerity-training]]).
 
 For implementation, the internal CS guide
-([[wiki/sources/esignature-schwab-implementation-guide]]) lays out 5
+([[sources/esignature-schwab-implementation-guide]]) lays out 5
 non-sequential components to flag:
 
 1. **RIA + Anduin setup** — Anduin creates a unique DocuSign sender email per
@@ -257,7 +257,7 @@ before first live use.
 
 Caveat: the vault confirms Cerity uses FundSub/AAA/E-signature but does not
 document whether they use any other Anduin products, and AAA pricing/limitations
-are still pending Batch 8 ingestion ([[wiki/products/aaa]]).
+are still pending Batch 8 ingestion ([[products/aaa]]).
 
 ---
 

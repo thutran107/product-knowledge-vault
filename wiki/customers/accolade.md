@@ -10,8 +10,8 @@ tags: [data-room, fundsub, case-study]
 Accolade Partners is an investment firm and Anduin customer. Known contact: Andrew Salembier, Partner & COO.
 
 ## Products & features in use
-- [[wiki/products/data-room]] — confirmed in use; multi-group access levels noted as a key value
-- [[wiki/products/fundsub]] — one-click Data Room → FundSub transition referenced as a differentiator
+- [[products/data-room]] — confirmed in use; multi-group access levels noted as a key value
+- [[products/fundsub]] — one-click Data Room → FundSub transition referenced as a differentiator
 
 ## Key facts
 - Andrew Salembier (Partner & COO) provided a public quote for the Data Room brochure (March 2024).
@@ -26,8 +26,8 @@ No formal case study. Quote from brochure:
 - Deployment scope (other products, fund count, AUM) unknown — no detailed case study available.
 
 ## Sources
-- [[wiki/sources/data-room-brochure-v2]] — customer quote in March 2024 brochure
+- [[sources/data-room-brochure-v2]] — customer quote in March 2024 brochure
 
 ## Related
-- [[wiki/products/data-room]]
-- [[wiki/products/fundsub]]
+- [[products/data-room]]
+- [[products/fundsub]]

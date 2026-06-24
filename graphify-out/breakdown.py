@@ -49,7 +49,7 @@ for p in (VAULT / "wiki").rglob("*.md"):
 
 # customer <-> product links from wikilinks, in BOTH directions:
 #   customer body links [[wiki/products/X]]  AND  product body links [[wiki/customers/Y]]
-_WIKILINK = re.compile(r"\[\[wiki/(products|customers)/([a-z0-9-]+)")
+_WIKILINK = re.compile(r"\[\[(?:wiki/)?(products|customers)/([a-z0-9-]+)")
 cust2prods = collections.defaultdict(set)   # "wiki/customers/foo.md" -> {product stems}
 for rel, txt in body.items():
     t = meta.get(rel, {}).get("type")

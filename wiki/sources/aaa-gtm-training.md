@@ -28,13 +28,13 @@ The GTM enablement deck delivered ahead of the December 2024 MVP release, equipp
 - **Enablement assets**: four demo decks (Advisor Advantage, custodian-approved signing, one-envelope) plus a customer email template introducing the three offerings.
 
 ## Connections
-- Supports [[wiki/products/aaa|AAA (Advisor Advantage)]]; the roadmap/pricing posture feeds the AAA "Pricing & packaging" section.
-- Signature offerings connect to [[wiki/products/e-signature|E-signature]], the Schwab workflow ([[wiki/sources/esignature-schwab-implementation-guide|Schwab setup]]), and the one-envelope experience ([[wiki/sources/fundsub-one-envelope-experience|FundSub One Envelope]]).
-- Investor-passport auto-fill connects to [[wiki/products/investor-access|Investor Access]].
+- Supports [[products/aaa|AAA (Advisor Advantage)]]; the roadmap/pricing posture feeds the AAA "Pricing & packaging" section.
+- Signature offerings connect to [[products/e-signature|E-signature]], the Schwab workflow ([[sources/esignature-schwab-implementation-guide|Schwab setup]]), and the one-envelope experience ([[sources/fundsub-one-envelope-experience|FundSub One Envelope]]).
+- Investor-passport auto-fill connects to [[products/investor-access|Investor Access]].
 
 ## Conflicts & Supersessions
-- RIA count differs from the [[wiki/sources/aaa-product-brief|product brief]] (630 vs 365) — not a conflict; this deck is later (Oct/Nov 2024) and uses a more current count. The brief's data window was May–Aug 2024.
-- A header note on the deck warns it is partly superseded: "do not use this slide for RIA and AA's content — the most up-to-date enablements are the CS Demo + Training and the Advisor Advantage demo screens." Treat the [[wiki/sources/aaa-cs-training|CS Training (Jan 2026)]] and [[wiki/sources/aaa-sales-deck|Sales Deck]] as more current for feature specifics; this deck remains the best source for the GTM motion, roadmap, and pricing posture.
+- RIA count differs from the [[sources/aaa-product-brief|product brief]] (630 vs 365) — not a conflict; this deck is later (Oct/Nov 2024) and uses a more current count. The brief's data window was May–Aug 2024.
+- A header note on the deck warns it is partly superseded: "do not use this slide for RIA and AA's content — the most up-to-date enablements are the CS Demo + Training and the Advisor Advantage demo screens." Treat the [[sources/aaa-cs-training|CS Training (Jan 2026)]] and [[sources/aaa-sales-deck|Sales Deck]] as more current for feature specifics; this deck remains the best source for the GTM motion, roadmap, and pricing posture.
 
 ## Raw Notes
 - Slide content extracted via Google Drive connector. A walkthrough recording exists (Google Drive, starts 11:33) — not ingested.

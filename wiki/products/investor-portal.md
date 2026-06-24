@@ -42,9 +42,9 @@ Pricing as of May 2025. Annual fee per fund/SPV, tiered by AUM; plus one-time da
 
 If customer already has FundSub + IDM: keep existing pricing, add Portal fees on top.
 
-See [[wiki/sources/investor-portal-pricing-faqs-boston]] for full pricing detail and beta prospect proposals.
+See [[sources/investor-portal-pricing-faqs-boston]] for full pricing detail and beta prospect proposals.
 
-> ⚠️ **Pricing structure conflict (flagged, unresolved).** The Engagement Hub decks ([[wiki/sources/engagement-hub-pricing]], pricing/trust 3, as-of 2025-09-18; and [[wiki/sources/engagement-hub-product-overview]], as-of 2026-02-02) state Portal pricing is being **restructured** to **"annual Engagement Hub platform fee + a *lower* annual per-fund Portal fee."** Those sources are newer than the Boston pricing deck above (as-of 2025-05-14), so per §10 the *structure* is superseded. Per user decision, the AUM table above is **retained as-is** and the conflict flagged here rather than overwritten — the EH decks did **not** include the actual new per-fund figures (data gap). Treat the table above as the legacy structure; confirm current numbers with the EH/Portal pricing slides before quoting to a client. EH is bundled into Portal by default (top/"Ultimate" tier). See [[wiki/concepts/product-packaging-bundling]].
+> ⚠️ **Pricing structure conflict (flagged, unresolved).** The Engagement Hub decks ([[sources/engagement-hub-pricing]], pricing/trust 3, as-of 2025-09-18; and [[sources/engagement-hub-product-overview]], as-of 2026-02-02) state Portal pricing is being **restructured** to **"annual Engagement Hub platform fee + a *lower* annual per-fund Portal fee."** Those sources are newer than the Boston pricing deck above (as-of 2025-05-14), so per §10 the *structure* is superseded. Per user decision, the AUM table above is **retained as-is** and the conflict flagged here rather than overwritten — the EH decks did **not** include the actual new per-fund figures (data gap). Treat the table above as the legacy structure; confirm current numbers with the EH/Portal pricing slides before quoting to a client. EH is bundled into Portal by default (top/"Ultimate" tier). See [[concepts/product-packaging-bundling]].
 
 ## Implementation notes
 Onboarding sequence: Kickoff call (30 min) → IDM setup → Portal setup → Data migration → Live training (1 hr) → Customer testing → Go live.
@@ -62,7 +62,7 @@ Onboarding sequence: Kickoff call (30 min) → IDM setup → Portal setup → Da
 
 **Bulk import** available for large contact onboarding (spreadsheet import for clients, IEs, and contacts).
 
-See [[wiki/sources/investor-portal-customer-training-guide]] for detailed CS training script.
+See [[sources/investor-portal-customer-training-guide]] for detailed CS training script.
 
 ## Known limitations
 - **Reporting dashboards** were not in the initial MVP; available post-launch (live data as of Q1 2026 for capital account + transaction details).
@@ -78,16 +78,16 @@ See [[wiki/sources/investor-portal-customer-training-guide]] for detailed CS tra
 - Q4: Portal AI Agents
 
 ## Competitive positioning
-Direct competitors are standalone investor portals: [[wiki/competitors/investorflow]] and [[wiki/competitors/atominvest]]. Anduin's differentiation:
+Direct competitors are standalone investor portals: [[competitors/investorflow]] and [[competitors/atominvest]]. Anduin's differentiation:
 - End-to-end platform (onboarding → portal → data room → IDM → Integration Hub) vs. point solutions
 - Superior UX/branding customization
 - Existing customer base on FundSub/IDM makes portal adoption lower friction
 - Pricing is competitive vs. InvestorFlow for Enterprise/Whale; higher than AtomInvest at Enterprise but justified by full bundle
 
-See [[wiki/sources/investor-portal-pricing-faqs-boston]] for competitive pricing benchmarks.
+See [[sources/investor-portal-pricing-faqs-boston]] for competitive pricing benchmarks.
 
 ## Features & sub-modules
-- [[wiki/sources/investor-portal-contact-management]] — Contact Management deep dive
+- [[sources/investor-portal-contact-management]] — Contact Management deep dive
 - Financial Reporting (3-layer framework — see sources)
 - Document Distribution (Group Share / Private Share / Split & Share)
 
@@ -97,25 +97,25 @@ See [[wiki/sources/investor-portal-pricing-faqs-boston]] for competitive pricing
 - BlueArc, Nimble, NewVest, Dauntless — beta prospects (see pricing source for details)
 
 ## Sources
-- [[wiki/sources/investor-portal-sales-deck]] — primary capabilities deck (sales-deck, trust 5)
-- [[wiki/sources/investor-portal-pricing-faqs-boston]] — pricing authority (pricing, trust 3) ⭐
-- [[wiki/sources/investor-portal-gtm-primer]] — market context & acquisition targets (gtm-training, trust 5)
-- [[wiki/sources/investor-portal-product-overview]] — competitive category overview (note, trust 10)
-- [[wiki/sources/investor-portal-rfp]] — RFP template (rfp, trust 11, metadata only)
-- [[wiki/sources/investor-portal-prerelease-training-boston]] — Boston Popup GTM training (metadata only)
-- [[wiki/sources/investor-portal-customer-training-guide]] — CS implementation training (client-training, trust 7)
-- [[wiki/sources/investor-portal-contact-management]] — Contact Management spec (spec, trust 1) ⭐
-- [[wiki/sources/investor-portal-training-materials]] — training materials bundle (metadata only)
-- [[wiki/sources/anduin-investor-guide-may-2025]] — LP-facing guide (client-training, trust 7)
+- [[sources/investor-portal-sales-deck]] — primary capabilities deck (sales-deck, trust 5)
+- [[sources/investor-portal-pricing-faqs-boston]] — pricing authority (pricing, trust 3) ⭐
+- [[sources/investor-portal-gtm-primer]] — market context & acquisition targets (gtm-training, trust 5)
+- [[sources/investor-portal-product-overview]] — competitive category overview (note, trust 10)
+- [[sources/investor-portal-rfp]] — RFP template (rfp, trust 11, metadata only)
+- [[sources/investor-portal-prerelease-training-boston]] — Boston Popup GTM training (metadata only)
+- [[sources/investor-portal-customer-training-guide]] — CS implementation training (client-training, trust 7)
+- [[sources/investor-portal-contact-management]] — Contact Management spec (spec, trust 1) ⭐
+- [[sources/investor-portal-training-materials]] — training materials bundle (metadata only)
+- [[sources/anduin-investor-guide-may-2025]] — LP-facing guide (client-training, trust 7)
 
 ## Related
-- [[wiki/products/engagement-hub]] — Portal = Engagement Hub + per-fund instance + Reporting; EH is bundled into Portal by default
-- [[wiki/products/investor-data-management]] — IDM is prerequisite; contact matrix and data profiles shared
-- [[wiki/products/data-room]] — embedded in vehicle landing pages
-- [[wiki/products/fundsub]] — onboarding feeds into Portal; pricing kept separate
-- [[wiki/features/engagement-hub-branded-landing-pages]] — branded landing pages (formerly the "Landing Page" product) used for fund marketing
-- [[wiki/products/integration-hub]] — Portal connectivity layer
-- [[wiki/concepts/product-packaging-bundling]] — EH/Portal/IDM packaging & pricing motion
-- [[wiki/concepts/investor-onboarding-workflow]]
-- [[wiki/competitors/investorflow]]
-- [[wiki/competitors/atominvest]]
+- [[products/engagement-hub]] — Portal = Engagement Hub + per-fund instance + Reporting; EH is bundled into Portal by default
+- [[products/investor-data-management]] — IDM is prerequisite; contact matrix and data profiles shared
+- [[products/data-room]] — embedded in vehicle landing pages
+- [[products/fundsub]] — onboarding feeds into Portal; pricing kept separate
+- [[features/engagement-hub-branded-landing-pages]] — branded landing pages (formerly the "Landing Page" product) used for fund marketing
+- [[products/integration-hub]] — Portal connectivity layer
+- [[concepts/product-packaging-bundling]] — EH/Portal/IDM packaging & pricing motion
+- [[concepts/investor-onboarding-workflow]]
+- [[competitors/investorflow]]
+- [[competitors/atominvest]]

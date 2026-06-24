@@ -19,7 +19,7 @@ RFP document for Investor Portal (Google Sheets). Content not fetched — metada
 - No content available. Source is a Google Sheets RFP template/response — lower trust than specs and pricing docs.
 
 ## Connections
-- [[wiki/products/investor-portal]]
+- [[products/investor-portal]]
 
 ## Conflicts & Supersessions
 N/A — metadata only.

@@ -46,11 +46,11 @@ General knowledge deck covering the Investor Portal concept, market context, com
 - Profiles (investor self-service for contact/wire updates)
 
 ## Connections
-- [[wiki/products/investor-portal]]
-- [[wiki/sources/investor-portal-sales-deck]] — full feature deck
-- [[wiki/sources/investor-portal-gtm-primer]] — deeper market context
-- [[wiki/competitors/investorflow]]
-- [[wiki/competitors/atominvest]]
+- [[products/investor-portal]]
+- [[sources/investor-portal-sales-deck]] — full feature deck
+- [[sources/investor-portal-gtm-primer]] — deeper market context
+- [[competitors/investorflow]]
+- [[competitors/atominvest]]
 
 ## Conflicts & Supersessions
 None. Consistent with other Portal sources.

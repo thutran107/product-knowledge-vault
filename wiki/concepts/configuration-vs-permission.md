@@ -27,6 +27,6 @@ The architectural principle that separates integration setup (owned by the Integ
 - External consultants (Members) need the same permission flow — they must be invited first, then granted access to relevant objects.
 
 ## Related
-- [[wiki/concepts/user-roles|User Roles]] — who can grant permissions.
-- [[wiki/products/integration-hub|Integration Hub]]
-- [[wiki/products/fundsub|FundSub]], [[wiki/products/investor-data-management|IDM]], [[wiki/products/data-room|Data Room]]
+- [[concepts/user-roles|User Roles]] — who can grant permissions.
+- [[products/integration-hub|Integration Hub]]
+- [[products/fundsub|FundSub]], [[products/investor-data-management|IDM]], [[products/data-room|Data Room]]

@@ -21,8 +21,8 @@ Google Drive folder containing sample signed documents for each signature type �
 - Content is in Google Drive; access via the linked folder.
 
 ## Connections
-- [[wiki/products/e-signature]] — reference materials for the product's signature types
-- [[wiki/concepts/qes-aes-compliance]] — SES/AES/QES taxonomy; these samples illustrate each type
+- [[products/e-signature]] — reference materials for the product's signature types
+- [[concepts/qes-aes-compliance]] — SES/AES/QES taxonomy; these samples illustrate each type
 
 ## Conflicts & Supersessions
 None.

@@ -21,8 +21,8 @@ A cloud content management and file sharing platform. Anduin integrates with Box
 Primary example of the Document Retrieval integration pattern. Also the clearest example of self-service credential configuration.
 
 ## Sources
-- [[wiki/sources/automated-document-repository|Automated Document Repository (Box)]]
+- [[sources/automated-document-repository|Automated Document Repository (Box)]]
 
 ## Related
-- [[wiki/products/fundsub|FundSub]]
-- [[wiki/concepts/integration-patterns|Integration Patterns]]
+- [[products/fundsub|FundSub]]
+- [[concepts/integration-patterns|Integration Patterns]]

@@ -23,8 +23,8 @@ Defines the two user roles in the Integration Hub: Admin (default for authentica
 - Members can be removed by admins at any time.
 
 ## Connections
-- [[wiki/concepts/user-roles|User Roles]] — concept page expanding on this.
-- [[wiki/products/integration-hub|Integration Hub]].
+- [[concepts/user-roles|User Roles]] — concept page expanding on this.
+- [[products/integration-hub|Integration Hub]].
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

@@ -18,13 +18,13 @@ bunch is a German (DACH-region) full-suite private-markets platform — onboardi
 - **"bunch covers onboarding through fund accounting"** — note regional concentration; for international/complex GPs, position Anduin's depth and end-to-end integration. Watch UK pipeline.
 
 ## Products that overlap
-- [[wiki/products/investor-portal]]
-- [[wiki/products/fundsub]]
+- [[products/investor-portal]]
+- [[products/fundsub]]
 
 ## Sources
-- [[wiki/sources/competitive-intel-tracking-table]] — 2 field-intel entries (2025–2026)
+- [[sources/competitive-intel-tracking-table]] — 2 field-intel entries (2025–2026)
 
 ## Related
-- [[wiki/concepts/private-markets-competitive-landscape]]
-- [[wiki/competitors/atominvest]]
-- [[wiki/competitors/competitor-landscape-watchlist]] — Vestlane
+- [[concepts/private-markets-competitive-landscape]]
+- [[competitors/atominvest]]
+- [[competitors/competitor-landscape-watchlist]] — Vestlane

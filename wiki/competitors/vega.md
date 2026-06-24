@@ -16,14 +16,14 @@ Vega is an **Apollo-backed** alternative-investment workflow platform pursuing a
 - Retail-distribution focus — as retail-oriented alts products gain traction, expect large firms to ask how Anduin handles distribution to retail investors.
 
 ## Known objections & responses
-- **"Apollo is building Vega"** — monitor; today it's Apollo-internal/MVP, not a broad market product. Watch for 2026 GTM. Related: [[wiki/competitors/competitor-landscape-watchlist|LYRA]] runs on Vega.
+- **"Apollo is building Vega"** — monitor; today it's Apollo-internal/MVP, not a broad market product. Watch for 2026 GTM. Related: [[competitors/competitor-landscape-watchlist|LYRA]] runs on Vega.
 
 ## Products that overlap
-- [[wiki/products/fundsub]] — fund onboarding (via LYRA)
+- [[products/fundsub]] — fund onboarding (via LYRA)
 
 ## Sources
-- [[wiki/sources/competitive-intel-tracking-table]] — 3 field-intel entries (2024–2025)
+- [[sources/competitive-intel-tracking-table]] — 3 field-intel entries (2024–2025)
 
 ## Related
-- [[wiki/concepts/private-markets-competitive-landscape]]
-- [[wiki/competitors/competitor-landscape-watchlist]]
+- [[concepts/private-markets-competitive-landscape]]
+- [[competitors/competitor-landscape-watchlist]]

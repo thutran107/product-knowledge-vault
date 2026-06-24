@@ -20,4 +20,4 @@ Named customer to track. Legal counsel firms interact with Anduin differently th
 *None yet.*
 
 ## Related
-- [[wiki/customers/neuberger-berman|Neuberger Berman]]
+- [[customers/neuberger-berman|Neuberger Berman]]

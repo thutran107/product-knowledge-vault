@@ -28,7 +28,7 @@ Internal-only step-by-step guide for CS to set up API access for customers to th
 - CS should ensure clients understand the API documentation and provide assistance as needed
 
 ## Connections
-- [[wiki/products/data-room]] — API sub-feature, Known limitations
+- [[products/data-room]] — API sub-feature, Known limitations
 
 ## Conflicts & Supersessions
 None identified.

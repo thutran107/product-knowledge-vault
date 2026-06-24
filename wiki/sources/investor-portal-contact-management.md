@@ -71,10 +71,10 @@ Find the departing contact → Clone their permission (pre-fills new contact mod
 For large onboarding: use the spreadsheet import feature to create multiple clients, investment entities, and contacts at once.
 
 ## Connections
-- [[wiki/products/investor-portal]] — Contact Management is a core feature of this product
-- [[wiki/products/investor-data-management]] — IDM stores the underlying data structure
-- [[wiki/sources/investor-portal-sales-deck]] — contact management covered at a high level in the sales deck
-- [[wiki/sources/investor-portal-customer-training-guide]] — CS training on how to set up contacts during onboarding
+- [[products/investor-portal]] — Contact Management is a core feature of this product
+- [[products/investor-data-management]] — IDM stores the underlying data structure
+- [[sources/investor-portal-sales-deck]] — contact management covered at a high level in the sales deck
+- [[sources/investor-portal-customer-training-guide]] — CS training on how to set up contacts during onboarding
 
 ## Conflicts & Supersessions
 None found. This is the most detailed source on the contact matrix model.

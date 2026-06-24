@@ -21,7 +21,7 @@ Customer-facing training deck for IDM, used by CS to onboard clients onto the ID
 - Related customers: All.
 
 ## Connections
-- [[wiki/products/investor-data-management|IDM]]
+- [[products/investor-data-management|IDM]]
 
 ## Conflicts & Supersessions
 None identified.

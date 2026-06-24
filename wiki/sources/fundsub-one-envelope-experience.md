@@ -26,9 +26,9 @@ Feature overview deck (October 2024) covering FundSub's One Envelope experience 
 - **Signing certificate:** Auto-generated and attached to each signed document; issued by DocuSign or AnduinSign depending on the signing method used.
 
 ## Connections
-- [[wiki/products/fundsub|FundSub]] — One Envelope is a core FundSub signing capability
-- [[wiki/products/e-signature|E-signature]] — QES/SES/AES methods and DocuSign integration
-- [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]] — One Envelope is a key step in the LP-facing signing experience
+- [[products/fundsub|FundSub]] — One Envelope is a core FundSub signing capability
+- [[products/e-signature|E-signature]] — QES/SES/AES methods and DocuSign integration
+- [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]] — One Envelope is a key step in the LP-facing signing experience
 
 ## Conflicts & Supersessions
 None. Slide deck dated October 2024; Notion page dated March 2025 — content appears stable across that period.

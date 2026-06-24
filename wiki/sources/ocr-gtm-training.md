@@ -21,10 +21,10 @@ GTM training deck for Anduin's OCR Data Extraction product, used for internal Sa
 - Product sub-category: Data Extraction.
 
 ## Connections
-- [[wiki/products/ocr-data-extraction|OCR Data Extraction]]
+- [[products/ocr-data-extraction|OCR Data Extraction]]
 
 ## Conflicts & Supersessions
-No as-of date. May predate the new OCR UX launched May 2025 — cross-check with [[wiki/sources/ocr-new-ux-overview]].
+No as-of date. May predate the new OCR UX launched May 2025 — cross-check with [[sources/ocr-new-ux-overview]].
 
 ## Raw Notes
 Google Slides: https://docs.google.com/presentation/d/1GkeHtwllHl3VIFTlgHyKRmbDsF4H1CjOJ1Jnf-fDFhY. Not fetched (external).

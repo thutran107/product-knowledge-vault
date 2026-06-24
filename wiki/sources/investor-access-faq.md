@@ -28,11 +28,11 @@ The comprehensive internal FAQ for Investor Access — Anduin's LP-side "subscri
 - **Support**: Helpjuice support page, 8am–8pm ET, 24-hour response; a dedicated implementation manager only for the first 3 months of launch.
 
 ## Connections
-- Primary source for [[wiki/products/investor-access|Investor Access]] (upgrades it from a stub to a documented product).
-- Tightly coupled to [[wiki/products/fundsub|FundSub]] (the subscription flow IA prefills) and positioned as the LP-side mirror of [[wiki/products/investor-data-management|IDM]].
-- AML/KYC handling connects to [[wiki/products/investor-data-management|IDM]]'s AML/KYC feature and the [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]].
-- Import/export themes connect to [[wiki/concepts/import-export-templates|Import/Export Templates]].
-- AAA advisors leverage the investor passport for subscription auto-fill — connects to [[wiki/products/aaa|AAA]].
+- Primary source for [[products/investor-access|Investor Access]] (upgrades it from a stub to a documented product).
+- Tightly coupled to [[products/fundsub|FundSub]] (the subscription flow IA prefills) and positioned as the LP-side mirror of [[products/investor-data-management|IDM]].
+- AML/KYC handling connects to [[products/investor-data-management|IDM]]'s AML/KYC feature and the [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]].
+- Import/export themes connect to [[concepts/import-export-templates|Import/Export Templates]].
+- AAA advisors leverage the investor passport for subscription auto-fill — connects to [[products/aaa|AAA]].
 
 ## Conflicts & Supersessions
 - **Terminology note (not a conflict)**: the objection-handling section refers to the fund-side product as "Fund Data Management (FDM)," whereas the vault and current materials use "Investor Data Management (IDM)." FDM appears to be an older internal name for IDM. Flag for CS so they don't treat FDM and IDM as separate products.

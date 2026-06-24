@@ -32,12 +32,12 @@ The most current (last updated Jan 2026) and most detailed internal CS enablemen
 - Includes a **Knowledge Validation** self-assessment covering five areas (advisor ecosystem, features, support readiness).
 
 ## Connections
-- Primary implementation/troubleshooting source for [[wiki/products/aaa|AAA (Advisor Advantage)]]; feeds the product page's "Implementation notes" and "Known limitations."
-- The advisor data model (temporary group → entity → active fund group) connects to [[wiki/concepts/anduin-object-model|Anduin Object Model]] and [[wiki/concepts/user-roles|User Roles]].
-- Setup via Admin Portal feature switch connects to [[wiki/concepts/configuration-vs-permission|Configuration vs Permission Model]].
+- Primary implementation/troubleshooting source for [[products/aaa|AAA (Advisor Advantage)]]; feeds the product page's "Implementation notes" and "Known limitations."
+- The advisor data model (temporary group → entity → active fund group) connects to [[concepts/anduin-object-model|Anduin Object Model]] and [[concepts/user-roles|User Roles]].
+- Setup via Admin Portal feature switch connects to [[concepts/configuration-vs-permission|Configuration vs Permission Model]].
 
 ## Conflicts & Supersessions
-- Supersedes the [[wiki/sources/aaa-gtm-training|Nov 2024 GTM deck]] for feature/process specifics (that deck explicitly points here as the up-to-date enablement). No factual conflicts; this deck is more current and more detailed.
+- Supersedes the [[sources/aaa-gtm-training|Nov 2024 GTM deck]] for feature/process specifics (that deck explicitly points here as the up-to-date enablement). No factual conflicts; this deck is more current and more detailed.
 
 ## Raw Notes
 - Slide content extracted via Google Drive connector. Help-doc links and demo recordings referenced but not ingested.

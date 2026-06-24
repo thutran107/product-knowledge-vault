@@ -30,9 +30,9 @@ User guide for the "Reuse Signature Pages" feature, which allows post-signing mo
 - Feature is for **online subscriptions only**.
 
 ## Connections
-- [[wiki/products/e-signature]] — describes this feature and its constraints
-- [[wiki/products/fundsub]] — feature applies within FundSub subscription workflow
-- [[wiki/concepts/qes-aes-compliance]] — limitations tied to SES-only scope; AES/QES not compatible
+- [[products/e-signature]] — describes this feature and its constraints
+- [[products/fundsub]] — feature applies within FundSub subscription workflow
+- [[concepts/qes-aes-compliance]] — limitations tied to SES-only scope; AES/QES not compatible
 
 ## Conflicts & Supersessions
 None. No prior wiki page covered this feature.

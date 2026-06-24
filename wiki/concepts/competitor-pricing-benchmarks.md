@@ -20,23 +20,23 @@ Consolidated, directional benchmarks of what Anduin's competitors charge, drawn 
 **Fundsub — per fund / per deal (directional):**
 | Competitor | Quote | Context |
 |---|---|---|
-| [[wiki/competitors/passthrough]] | $5–7.5K | emerging fund (InVivium) |
+| [[competitors/passthrough]] | $5–7.5K | emerging fund (InVivium) |
 | Passthrough | $10K + $7K OFAC | emerging fund, Jan 2023 |
 | Passthrough | $7–15K / $15–20K per fundraise | general 2023–24 |
 | Passthrough | $18K one-time (3 vehicles) | NYCA, vs Anduin $61.5K |
 | Passthrough | $22K one-time | Centre Lane |
 | Passthrough | $40K + $7.5K impl → $20K annual | Blue Torch ($7.2B) |
 | Passthrough | $11,500 all-in subdocs + $275/LP KYC; $250/LP managed review | Raine ($3B), 2026 |
-| [[wiki/competitors/atominvest]] | $10K setup + $5–10K/yr | per fund, modular |
+| [[competitors/atominvest]] | $10K setup + $5–10K/yr | per fund, modular |
 | AtomInvest | $20K (Fundsub + 1 fund) | Indico; also $20K vs Anduin $60K |
 | AtomInvest | $45K + $7.5K impl → $28.4K annual | Blue Torch (enterprise) |
-| [[wiki/competitors/subscribe]] | $45K all-in platform fee | incl. managed services + API + 3-mo trial |
+| [[competitors/subscribe]] | $45K all-in platform fee | incl. managed services + API + 3-mo trial |
 
 **AML/KYC:**
 - Passthrough: $75/entity check (2023); ~$100/yr/investor (2025); $275–250/LP managed (2026).
 
 **Side letter / terms tracking:**
-- [[wiki/competitors/ontra]]: ~$75–80K/yr (priced on AUM, # docs, complexity).
+- [[competitors/ontra]]: ~$75–80K/yr (priced on AUM, # docs, complexity).
 
 **Anduin reference (from pricing FAQ):** Emerging $6K/fund/yr · Established $8K · Enterprise $15K/fund/yr — plus itemized data import, data room, API, OCR, KYC/AML lines.
 
@@ -46,7 +46,7 @@ Consolidated, directional benchmarks of what Anduin's competitors charge, drawn 
 - Competitor one-time-fee models vs. Anduin recurring: how to defend recurring value (CS, maturity, updates) at the emerging tier.
 
 ## Related
-- [[wiki/concepts/competitive-win-loss]]
-- [[wiki/concepts/product-packaging-bundling]]
-- [[wiki/competitors/passthrough]] · [[wiki/competitors/atominvest]] · [[wiki/competitors/subscribe]] · [[wiki/competitors/ontra]]
-- [[wiki/sources/competitive-intel-tracking-table]]
+- [[concepts/competitive-win-loss]]
+- [[concepts/product-packaging-bundling]]
+- [[competitors/passthrough]] · [[competitors/atominvest]] · [[competitors/subscribe]] · [[competitors/ontra]]
+- [[sources/competitive-intel-tracking-table]]

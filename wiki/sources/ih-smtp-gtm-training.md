@@ -23,8 +23,8 @@ GTM training deck and internal guide covering the SMTP Integration — a custom 
 - Session recording available on Google Drive.
 
 ## Connections
-- [[wiki/products/integration-hub]] — SMTP is a custom integration within the Hub
-- [[wiki/products/fundsub]] — primary product that benefits from custom SMTP email routing
+- [[products/integration-hub]] — SMTP is a custom integration within the Hub
+- [[products/fundsub]] — primary product that benefits from custom SMTP email routing
 
 ## Conflicts & Supersessions
 - No conflicts found.

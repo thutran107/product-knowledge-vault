@@ -43,6 +43,6 @@ The process of specifying which fields in an external system (CRM, storage) corr
 - No self-service Import Template yet — all import mapping requires Anduin involvement upfront.
 
 ## Related
-- [[wiki/concepts/import-export-templates|Import/Export Templates]]
-- [[wiki/concepts/integration-patterns|Integration Patterns]]
-- [[wiki/entities/dealcloud|DealCloud]], [[wiki/entities/affinity|Affinity]]
+- [[concepts/import-export-templates|Import/Export Templates]]
+- [[concepts/integration-patterns|Integration Patterns]]
+- [[entities/dealcloud|DealCloud]], [[entities/affinity|Affinity]]

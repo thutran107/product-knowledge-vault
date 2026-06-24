@@ -75,10 +75,10 @@ Internal Boston Popup deck (May 14 2025) covering Investor Portal pricing struct
 - Q4 2025: Public launch (press releases, marketing landing page)
 
 ## Connections
-- [[wiki/products/investor-portal]] — primary pricing source for this product
-- [[wiki/competitors/investorflow]] — pricing benchmarked here
-- [[wiki/competitors/atominvest]] — pricing benchmarked here
-- [[wiki/sources/investor-portal-sales-deck]] — companion capabilities deck
+- [[products/investor-portal]] — primary pricing source for this product
+- [[competitors/investorflow]] — pricing benchmarked here
+- [[competitors/atominvest]] — pricing benchmarked here
+- [[sources/investor-portal-sales-deck]] — companion capabilities deck
 
 ## Conflicts & Supersessions
 None found. This is the first pricing source for Investor Portal.

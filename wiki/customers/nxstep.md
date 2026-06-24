@@ -10,7 +10,7 @@ tags: [fundsub, case-study, emerging-manager]
 NXSTEP is an emerging/first-time fund manager and Anduin FundSub customer. Known contact: Chris Earthman, Managing Director & Co-Founder.
 
 ## Products & features in use
-- [[wiki/products/fundsub]] — confirmed via customer quote; positioned as an Anduin Essentials use case
+- [[products/fundsub]] — confirmed via customer quote; positioned as an Anduin Essentials use case
 
 ## Key facts
 - Chris Earthman (MD & Co-Founder) provided a public quote in the Anduin Essentials sales deck (Jun 2025).
@@ -27,7 +27,7 @@ No formal case study. Quote from Essentials sales deck:
 - Full deployment scope (fund structure, AUM, other products) unknown.
 
 ## Sources
-- [[wiki/sources/fundsub-essentials-sales-deck]] — customer quote in Jun 2025 Essentials deck
+- [[sources/fundsub-essentials-sales-deck]] — customer quote in Jun 2025 Essentials deck
 
 ## Related
-- [[wiki/products/fundsub]]
+- [[products/fundsub]]

@@ -18,12 +18,12 @@ Primary OCR/AI Managed Services sales deck for introducing OCR capabilities to p
 ## Key Takeaways
 - Onboarding required: Yes — Sales + RM new hires must read this.
 - Notes: "can be used to introduce OCR capabilities to prospects."
-- Part of the same Google Slides deck as [[wiki/sources/ocr-data-extraction-sales-deck]] — this entry covers the Managed Services section.
+- Part of the same Google Slides deck as [[sources/ocr-data-extraction-sales-deck]] — this entry covers the Managed Services section.
 - Key use case: initial prospect introduction to OCR/AI capabilities.
 
 ## Connections
-- [[wiki/products/ocr-data-extraction|OCR Data Extraction]]
-- [[wiki/sources/ocr-data-extraction-sales-deck|Data Extraction Sales Deck]] — same underlying deck, different slide section.
+- [[products/ocr-data-extraction|OCR Data Extraction]]
+- [[sources/ocr-data-extraction-sales-deck|Data Extraction Sales Deck]] — same underlying deck, different slide section.
 
 ## Conflicts & Supersessions
 Same deck as the Data Extraction Sales Deck (Aug 2025 version). The Sales Deck entry (Aug 2025) is the more recently tagged entry — prefer that for current positioning. This entry represents the original (Feb 2025) version of the same deck.

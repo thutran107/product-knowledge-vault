@@ -9,15 +9,15 @@ tags: [engagement-hub, landing-page, investor-engagement, branding]
 ---
 
 ## What it does
-Branded Landing Pages are the self-service, fully white-labeled investor-facing pages at the core of [[wiki/products/engagement-hub|Engagement Hub]]. GPs build private, permissioned pages to showcase fund opportunities, share resources and data rooms, surface subscription workflows, and present high-level reporting — all under the firm's own branding and (optionally) its own custom domain. The number of *published* landing pages is the metering unit for Engagement Hub pricing.
+Branded Landing Pages are the self-service, fully white-labeled investor-facing pages at the core of [[products/engagement-hub|Engagement Hub]]. GPs build private, permissioned pages to showcase fund opportunities, share resources and data rooms, surface subscription workflows, and present high-level reporting — all under the firm's own branding and (optionally) its own custom domain. The number of *published* landing pages is the metering unit for Engagement Hub pricing.
 
-> **Note:** This page consolidates what was previously the standalone "Landing Page" product. Per the Engagement Hub sources, Branded Landing Pages are a feature *of* Engagement Hub, not a separate product. The [[wiki/products/landing-page]] entry now redirects here.
+> **Note:** This page consolidates what was previously the standalone "Landing Page" product. Per the Engagement Hub sources, Branded Landing Pages are a feature *of* Engagement Hub, not a separate product. The [[products/landing-page]] entry now redirects here.
 
 ## Also known as / naming history
 - **"Landing page" = "Branded Landing Page" = the same thing.** "Landing page" is just shorthand; the full name is Branded Landing Page. (Watch context: people sometimes say "landing page" when they mean the whole Engagement Hub bundle — but the feature itself is the Branded Landing Page.)
 - **Originally "IDM Branding"** — the internal working name when the feature was first introduced (Oct 2024) before "Branded Landing Page" was adopted.
 - **Repackaged under Engagement Hub (Aug 2025).** Marketing initially proposed renaming Branded Landing Page → "Engagement Hub" outright; the final outcome was that Branded Landing Page became **one of four features** within the Engagement Hub solution (alongside Inbox, Document Sharing, and Profile Sharing) rather than a straight rename.
-- Source: [[wiki/sources/engagement-hub-naming-history-slack]] (internal Slack, low trust — naming/history only).
+- Source: [[sources/engagement-hub-naming-history-slack]] (internal Slack, low trust — naming/history only).
 
 ## How it works
 - **Self-serve web builder** — full control over page content; ready-to-use templates; intuitive DIY UX, no technical skills needed.
@@ -36,8 +36,8 @@ Branded Landing Pages are the self-service, fully white-labeled investor-facing 
 - Advisory committee engagement via member-only permissioned spaces.
 
 ## Pricing & availability
-- Part of [[wiki/products/engagement-hub|Engagement Hub]]; the **published-page count** drives EH's tier (Starter ≤5 / Growth ≤10 / Unlimited). See [[wiki/sources/engagement-hub-pricing]].
-- Bundled into [[wiki/products/investor-portal|Investor Portal]] by default.
+- Part of [[products/engagement-hub|Engagement Hub]]; the **published-page count** drives EH's tier (Starter ≤5 / Growth ≤10 / Unlimited). See [[sources/engagement-hub-pricing]].
+- Bundled into [[products/investor-portal|Investor Portal]] by default.
 - Sellable as a standalone SKU but not recommended (first-year discount, year-2 increase).
 
 ## Known limitations
@@ -45,13 +45,13 @@ Branded Landing Pages are the self-service, fully white-labeled investor-facing 
 - Reporting *dashboards* surfaced via pages are an Investor Portal capability, not EH.
 
 ## Sources
-- [[wiki/sources/engagement-hub-product-overview]] — capability detail (spec, trust 1)
-- [[wiki/sources/engagement-hub-pricing]] — published-page metering (pricing, trust 3)
-- [[wiki/sources/engagement-hub-one-pager]] — positioning (one-pager, trust 10)
-- [[wiki/sources/engagement-hub-naming-history-slack]] — naming & repackaging history (internal Slack, note, trust 10)
+- [[sources/engagement-hub-product-overview]] — capability detail (spec, trust 1)
+- [[sources/engagement-hub-pricing]] — published-page metering (pricing, trust 3)
+- [[sources/engagement-hub-one-pager]] — positioning (one-pager, trust 10)
+- [[sources/engagement-hub-naming-history-slack]] — naming & repackaging history (internal Slack, note, trust 10)
 
 ## Related
-- [[wiki/products/engagement-hub]] — parent product
-- [[wiki/products/investor-portal]] — bundles this feature
-- [[wiki/products/data-room]] — embedded within landing pages
-- [[wiki/concepts/investor-onboarding-workflow]]
+- [[products/engagement-hub]] — parent product
+- [[products/investor-portal]] — bundles this feature
+- [[products/data-room]] — embedded within landing pages
+- [[concepts/investor-onboarding-workflow]]

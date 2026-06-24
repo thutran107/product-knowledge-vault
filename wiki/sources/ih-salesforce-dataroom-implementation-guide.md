@@ -31,9 +31,9 @@ Full internal CS rollout guide for the Salesforce → Data Room automated onboar
 - If target dataroom not listed in IH: customer needs admin role, or a team member with admin access performs the linking step via Settings > Integrations in the Data Room app
 
 ## Connections
-- [[wiki/products/integration-hub]] — this is one of the IH Paid integrations
-- [[wiki/products/data-room]] — target system
-- [[wiki/sources/ih-salesforce-dataroom-release-notes]] — companion release notes entry
+- [[products/integration-hub]] — this is one of the IH Paid integrations
+- [[products/data-room]] — target system
+- [[sources/ih-salesforce-dataroom-release-notes]] — companion release notes entry
 
 ## Conflicts & Supersessions
 None identified.

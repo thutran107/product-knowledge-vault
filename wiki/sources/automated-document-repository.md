@@ -23,10 +23,10 @@ Describes the Box integration that automatically transfers subscription and supp
 - Prerequisite: customer must retrieve Box credentials; customer must have admin access to intended funds (or know someone who does).
 
 ## Connections
-- [[wiki/concepts/integration-patterns|Integration Patterns]] — Document Retrieval pattern.
-- [[wiki/entities/box|Box]] — the third-party system.
-- [[wiki/products/fundsub|FundSub]] — the Anduin source.
-- [[wiki/concepts/configuration-vs-permission|Configuration vs Permission]] — permission flow applies here.
+- [[concepts/integration-patterns|Integration Patterns]] — Document Retrieval pattern.
+- [[entities/box|Box]] — the third-party system.
+- [[products/fundsub|FundSub]] — the Anduin source.
+- [[concepts/configuration-vs-permission|Configuration vs Permission]] — permission flow applies here.
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

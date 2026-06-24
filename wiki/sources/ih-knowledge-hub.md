@@ -27,10 +27,10 @@ A Notion database listing every integration use case available through the Integ
 - Each integration card in the Hub includes a "View setup guide" button.
 
 ## Connections
-- [[wiki/products/integration-hub]] — this is the canonical capability reference for the Hub
-- [[wiki/concepts/integration-patterns]] — the card naming conventions described here define patterns
-- [[wiki/sources/ih-setup-guide]] — companion guide for how to set up the Hub platform itself
-- [[wiki/sources/mission-and-core-components]] — broader architectural overview
+- [[products/integration-hub]] — this is the canonical capability reference for the Hub
+- [[concepts/integration-patterns]] — the card naming conventions described here define patterns
+- [[sources/ih-setup-guide]] — companion guide for how to set up the Hub platform itself
+- [[sources/mission-and-core-components]] — broader architectural overview
 
 ## Conflicts & Supersessions
 - No conflicts. Extends the integration patterns concept with operational naming conventions.

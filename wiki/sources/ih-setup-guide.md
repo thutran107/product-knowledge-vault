@@ -29,9 +29,9 @@ Step-by-step playbook for CS to provision, configure, enable premium integration
 - **Monitoring**: Monitor tab → Execution → filter by date/time for troubleshooting failed runs.
 
 ## Connections
-- [[wiki/products/integration-hub]] — operational setup for this product
-- [[wiki/sources/ih-knowledge-hub]] — reference for what integrations are available
-- [[wiki/sources/ih-intro-overview]] — conceptual overview that complements this setup guide
+- [[products/integration-hub]] — operational setup for this product
+- [[sources/ih-knowledge-hub]] — reference for what integrations are available
+- [[sources/ih-intro-overview]] — conceptual overview that complements this setup guide
 
 ## Conflicts & Supersessions
 - No conflicts. Adds CS provisioning steps not covered in existing implementation guides.

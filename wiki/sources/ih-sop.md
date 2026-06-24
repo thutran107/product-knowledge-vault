@@ -27,11 +27,11 @@ Comprehensive internal SOP for the Digitization and CS teams covering all Integr
 - OOTB standard path: AE+RM Demo → kick-off call → customer self-service.
 
 ## Connections
-- [[wiki/products/integration-hub]] — defines all integration types available
-- [[wiki/concepts/integration-patterns]] — elaborates on Order Creation, Data Retrieval, Document Retrieval patterns
-- [[wiki/concepts/data-mapping]] — the "data mapping template" central to premium/internal integrations
-- [[wiki/products/fundsub]] — source/destination for most integration workflows
-- [[wiki/products/investor-data-management]] — IDM as Anduin object in Internal Integration
+- [[products/integration-hub]] — defines all integration types available
+- [[concepts/integration-patterns]] — elaborates on Order Creation, Data Retrieval, Document Retrieval patterns
+- [[concepts/data-mapping]] — the "data mapping template" central to premium/internal integrations
+- [[products/fundsub]] — source/destination for most integration workflows
+- [[products/investor-data-management]] — IDM as Anduin object in Internal Integration
 
 ## Conflicts & Supersessions
 - No conflicts. Adds more granularity (free vs. paid tiers, internal integration) not covered in existing sources.

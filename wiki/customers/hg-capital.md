@@ -19,4 +19,4 @@ Named customer to track for Sales + RM context.
 *None yet.*
 
 ## Related
-- [[wiki/customers/neuberger-berman|Neuberger Berman]]
+- [[customers/neuberger-berman|Neuberger Berman]]

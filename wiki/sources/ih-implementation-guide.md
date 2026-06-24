@@ -27,10 +27,10 @@ Internal Customer Success playbook for rolling out the Integration Hub to custom
 - Upcoming change: automatic domain assignment to all existing customers (no manual step needed in future).
 
 ## Connections
-- [[wiki/products/integration-hub|Integration Hub]].
-- [[wiki/concepts/crm-integration-playbook|CRM Integration Playbook]].
-- [[wiki/concepts/integration-patterns|Integration Patterns]] — card suffix naming convention.
-- [[wiki/concepts/user-roles|User Roles]] — Member invite flow.
+- [[products/integration-hub|Integration Hub]].
+- [[concepts/crm-integration-playbook|CRM Integration Playbook]].
+- [[concepts/integration-patterns|Integration Patterns]] — card suffix naming convention.
+- [[concepts/user-roles|User Roles]] — Member invite flow.
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

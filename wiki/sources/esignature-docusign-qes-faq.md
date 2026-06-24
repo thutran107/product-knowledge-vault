@@ -76,10 +76,10 @@ Comprehensive internal FAQ covering Anduin's DocuSign integration for SES and QE
 - **Test bot suffix**: append `X-MANUALTEST-HAPPYPATH` to signer name when testing QES with a bot in DocuSign.
 
 ## Connections
-- [[wiki/products/e-signature]] — primary product reference for DocuSign and QES capabilities
-- [[wiki/concepts/qes-aes-compliance]] — eIDAS framework, SES/AES/QES definitions
-- [[wiki/entities/docusign]] — DocuSign as the integration partner and QES certification path
-- [[wiki/sources/esignature-docusign-sales-deck]] — referenced in FAQ as the enablement slide deck
+- [[products/e-signature]] — primary product reference for DocuSign and QES capabilities
+- [[concepts/qes-aes-compliance]] — eIDAS framework, SES/AES/QES definitions
+- [[entities/docusign]] — DocuSign as the integration partner and QES certification path
+- [[sources/esignature-docusign-sales-deck]] — referenced in FAQ as the enablement slide deck
 
 ## Conflicts & Supersessions
 None. This is the most current and detailed source on QES/DocuSign (updated Jan 2026, trust level 4).

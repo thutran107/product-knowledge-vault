@@ -18,12 +18,12 @@ Sales-focused OCR deck for prospect conversations, as of August 2025. Part of th
 ## Key Takeaways
 - Notes: "sales-focused OCR deck."
 - As-of date: 2025-08-20 — more recently tagged than the Managed Services entry (Feb 2025).
-- Same underlying Google Slides deck as [[wiki/sources/ocr-managed-services-sales-deck]].
+- Same underlying Google Slides deck as [[sources/ocr-managed-services-sales-deck]].
 - Preferred version for current sales conversations.
 
 ## Connections
-- [[wiki/products/ocr-data-extraction|OCR Data Extraction]]
-- [[wiki/sources/ocr-managed-services-sales-deck|OCR Managed Services Sales Deck]] — same deck, different slide section / older registration.
+- [[products/ocr-data-extraction|OCR Data Extraction]]
+- [[sources/ocr-managed-services-sales-deck|OCR Managed Services Sales Deck]] — same deck, different slide section / older registration.
 
 ## Conflicts & Supersessions
 More recent than the Managed Services entry. Use this entry's link for current sales use.

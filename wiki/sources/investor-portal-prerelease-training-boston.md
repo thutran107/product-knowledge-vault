@@ -19,8 +19,8 @@ Pre-release GTM training deck for Investor Portal delivered at the Boston Popup 
 - No content available. Recording link exists in Notion.
 
 ## Connections
-- [[wiki/products/investor-portal]]
-- [[wiki/sources/investor-portal-pricing-faqs-boston]] — companion pricing deck from the same event
+- [[products/investor-portal]]
+- [[sources/investor-portal-pricing-faqs-boston]] — companion pricing deck from the same event
 
 ## Conflicts & Supersessions
 N/A — metadata only.

@@ -26,11 +26,11 @@ Internal overview document explaining what the Integration Hub is, how customers
 - Admin flow: grant access by adding customer's email domain to their Entity in the admin portal → set quota on premium integrations to unlock them.
 
 ## Connections
-- [[wiki/products/integration-hub]] — this document is the primary introduction
-- [[wiki/concepts/integration-patterns]] — describes the workflow patterns referenced
-- [[wiki/products/fundsub]] — entry point for Hub discovery
-- [[wiki/products/data-room]] — Anduin object type for Document Retrieval integrations
-- [[wiki/products/investor-data-management]] — Anduin object type for IDM integrations
+- [[products/integration-hub]] — this document is the primary introduction
+- [[concepts/integration-patterns]] — describes the workflow patterns referenced
+- [[products/fundsub]] — entry point for Hub discovery
+- [[products/data-room]] — Anduin object type for Document Retrieval integrations
+- [[products/investor-data-management]] — Anduin object type for IDM integrations
 
 ## Conflicts & Supersessions
 - No conflicts found. Aligns with existing integration-hub product page on access model and URLs.

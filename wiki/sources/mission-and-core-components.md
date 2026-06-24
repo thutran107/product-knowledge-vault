@@ -24,9 +24,9 @@ Describes the Integration Hub's purpose — a centralized self-service platform 
 - "Anduin Object" = a fund (FundSub), data room (Data Room), or entity (IDM) that integrations connect to.
 
 ## Connections
-- [[wiki/products/integration-hub|Integration Hub]] — primary subject of this source.
-- [[wiki/concepts/anduin-object-model|Anduin Object Model]] — defines what "Anduin Object" means across products.
-- [[wiki/products/fundsub|FundSub]], [[wiki/products/data-room|Data Room]], [[wiki/products/investor-data-management|IDM]] — the Anduin objects referenced.
+- [[products/integration-hub|Integration Hub]] — primary subject of this source.
+- [[concepts/anduin-object-model|Anduin Object Model]] — defines what "Anduin Object" means across products.
+- [[products/fundsub|FundSub]], [[products/data-room|Data Room]], [[products/investor-data-management|IDM]] — the Anduin objects referenced.
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

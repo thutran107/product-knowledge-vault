@@ -21,7 +21,7 @@ Internal slide documenting the platform-level system limits for Data Room. Conte
 - As-of August 2025 — these limits may have been introduced around this time
 
 ## Connections
-- [[wiki/products/data-room]] — Known limitations section
+- [[products/data-room]] — Known limitations section
 
 ## Conflicts & Supersessions
 None identified. No prior source in the vault documented these system limits.

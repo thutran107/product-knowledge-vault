@@ -45,8 +45,8 @@ Concise internal guide clarifying the distinction between Primary Investor and C
 4. This ensures subscription form data accurately reflects the real investor while allowing multiple parties to assist.
 
 ## Connections
-- [[wiki/products/fundsub]]
-- [[wiki/sources/anduin-investor-guide-may-2025]] — LP-facing guide also covers collaborator invitation flow
+- [[products/fundsub]]
+- [[sources/anduin-investor-guide-may-2025]] — LP-facing guide also covers collaborator invitation flow
 
 ## Conflicts & Supersessions
 None found. First dedicated source on this distinction.

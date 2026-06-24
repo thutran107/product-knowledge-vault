@@ -19,11 +19,11 @@ Fenergo is an **enterprise compliance / KYC-AML** software vendor with a large e
 - **"Fenergo already does our compliance"** — position Anduin's purpose-built private-markets onboarding depth; Fenergo's subscription/portal product is early and horizontal.
 
 ## Products that overlap
-- [[wiki/products/fundsub]]
-- [[wiki/products/investor-portal]]
+- [[products/fundsub]]
+- [[products/investor-portal]]
 
 ## Sources
-- [[wiki/sources/competitive-intel-tracking-table]] — 2 field-intel entries (2026)
+- [[sources/competitive-intel-tracking-table]] — 2 field-intel entries (2026)
 
 ## Related
-- [[wiki/concepts/private-markets-competitive-landscape]]
+- [[concepts/private-markets-competitive-landscape]]

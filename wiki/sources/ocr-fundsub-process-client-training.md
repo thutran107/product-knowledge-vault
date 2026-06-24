@@ -21,8 +21,8 @@ CS-delivered client training guide covering the OCR data extraction process spec
 - Customer-facing — omits internal process detail.
 
 ## Connections
-- [[wiki/products/ocr-data-extraction|OCR Data Extraction]]
-- [[wiki/products/fundsub|FundSub]]
+- [[products/ocr-data-extraction|OCR Data Extraction]]
+- [[products/fundsub|FundSub]]
 
 ## Conflicts & Supersessions
 No as-of date. Verify currency against the OCR implementation guides.

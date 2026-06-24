@@ -21,7 +21,7 @@ Release notes for the AAA feature allowing GPs/advisors to assign or unassign su
 - As-of October 2025.
 
 ## Connections
-- [[wiki/products/aaa|AAA]]
+- [[products/aaa|AAA]]
 
 ## Conflicts & Supersessions
 No conflicts. First assign/unassign subscription release note ingested.

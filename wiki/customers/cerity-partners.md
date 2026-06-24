@@ -10,8 +10,8 @@ tags: [ria, e-signature, schwab, fundsub]
 Cerity Partners is an RIA (Registered Investment Advisor) using Anduin's FundSub with Advisor Advantage (AAA) and the Schwab DocuSign custodian signing workflow for fund subscriptions.
 
 ## Products & features in use
-- [[wiki/products/fundsub|FundSub]] — subscription management
-- [[wiki/products/aaa|AAA]] — Advisor Advantage interface for the advisor/GP side
+- [[products/fundsub|FundSub]] — subscription management
+- [[products/aaa|AAA]] — Advisor Advantage interface for the advisor/GP side
 - E-signature: Schwab DocuSign custodian workflow (Alternative Investment Letter of Authorization)
 
 ## Key facts
@@ -25,9 +25,9 @@ Cerity Partners is an RIA (Registered Investment Advisor) using Anduin's FundSub
 - Schwab workflow may expand to other advisor-model customers.
 
 ## Sources
-- [[wiki/sources/esignature-schwab-implementation-guide|Internal Guide: How to Set Up Schwab Signature Workflow]] — internal CS setup guide (trust 2)
-- [[wiki/sources/esignature-schwab-cerity-training|Schwab Integration — External Training Flow for Cerity Partners]] — external training (trust 7)
+- [[sources/esignature-schwab-implementation-guide|Internal Guide: How to Set Up Schwab Signature Workflow]] — internal CS setup guide (trust 2)
+- [[sources/esignature-schwab-cerity-training|Schwab Integration — External Training Flow for Cerity Partners]] — external training (trust 7)
 
 ## Related
-- [[wiki/products/e-signature|E-signature]]
-- [[wiki/products/fundsub|FundSub]]
+- [[products/e-signature|E-signature]]
+- [[products/fundsub|FundSub]]

@@ -24,9 +24,9 @@ The foundational product brief for Advisor Advantage (internally "RIA"), explain
 - **Three goals**: (1) let RIA advisors efficiently create/manage orders across multiple funds, (2) let RIA managers manage their advisors, (3) let GPs onboard more RIAs to their funds.
 
 ## Connections
-- Primary source for [[wiki/products/aaa|AAA (Advisor Advantage)]] — establishes the "what" and "why."
-- Closely related to [[wiki/products/fundsub|FundSub]] (the advisor workflow lives inside FundSub) and [[wiki/products/investor-access|Investor Access]] (the LP-side passport advisors leverage for auto-fill).
-- The "do not over-expose fund info to RIA" concern connects to [[wiki/concepts/configuration-vs-permission|Configuration vs Permission Model]] and [[wiki/concepts/user-roles|User Roles]].
+- Primary source for [[products/aaa|AAA (Advisor Advantage)]] — establishes the "what" and "why."
+- Closely related to [[products/fundsub|FundSub]] (the advisor workflow lives inside FundSub) and [[products/investor-access|Investor Access]] (the LP-side passport advisors leverage for auto-fill).
+- The "do not over-expose fund info to RIA" concern connects to [[concepts/configuration-vs-permission|Configuration vs Permission Model]] and [[concepts/user-roles|User Roles]].
 
 ## Conflicts & Supersessions
 - None. This is the earliest authoritative framing of AAA; later decks (sales, GTM, CS training) extend it with feature detail and updated stats (the Oct 2024 GTM deck cites 630 RIAs / 13,670 subscriptions, a more recent count than this brief's 365).

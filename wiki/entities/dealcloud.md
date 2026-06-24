@@ -25,13 +25,13 @@ A CRM platform commonly used by private equity, credit, and real estate investme
 The primary CRM integration target. Represents the full bidirectional data flow pattern: CRM → Anduin (onboarding) and Anduin → CRM (post-subscription sync + engagement data).
 
 ## Sources
-- [[wiki/sources/automated-onboarding-fundsub-primary|DealCloud Order Creation]]
-- [[wiki/sources/retrieve-subscription-data|DealCloud Data Retrieval]]
-- [[wiki/sources/automated-data-room-insights|DealCloud Data Room Insights]]
+- [[sources/automated-onboarding-fundsub-primary|DealCloud Order Creation]]
+- [[sources/retrieve-subscription-data|DealCloud Data Retrieval]]
+- [[sources/automated-data-room-insights|DealCloud Data Room Insights]]
 
 ## Related
-- [[wiki/products/fundsub|FundSub]]
-- [[wiki/products/data-room|Data Room]]
-- [[wiki/concepts/integration-patterns|Integration Patterns]]
-- [[wiki/concepts/data-mapping|Data Mapping]]
-- [[wiki/concepts/crm-integration-playbook|CRM Integration Playbook]]
+- [[products/fundsub|FundSub]]
+- [[products/data-room|Data Room]]
+- [[concepts/integration-patterns|Integration Patterns]]
+- [[concepts/data-mapping|Data Mapping]]
+- [[concepts/crm-integration-playbook|CRM Integration Playbook]]

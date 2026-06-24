@@ -27,7 +27,7 @@ The index of published end-user help articles for Advisor Advantage, mirrored fr
 - Public help content lives on HelpJuice at `support.anduintransact.com/en_US/advisor-advantage`.
 
 ## Connections
-- Implementation/how-to backbone for [[wiki/products/aaa|AAA (Advisor Advantage)]]; complements the deeper [[wiki/sources/aaa-cs-training|CS Training]] (which explains the concepts the user guides operationalize).
+- Implementation/how-to backbone for [[products/aaa|AAA (Advisor Advantage)]]; complements the deeper [[sources/aaa-cs-training|CS Training]] (which explains the concepts the user guides operationalize).
 - The "whitelist email domain" and "Advisor Permission" articles map to the email-domain automation and permission model documented in the sales/CS decks.
 
 ## Conflicts & Supersessions

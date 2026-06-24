@@ -22,8 +22,8 @@ Overview of the new OCR user experience launched around May 2025. Client feedbac
 - Google Slides format.
 
 ## Connections
-- [[wiki/products/ocr-data-extraction|OCR Data Extraction]]
-- [[wiki/sources/ocr-table-view-how-it-works|OCR Table View — How It Works]] — the how-it-works doc for the table view that is part of this UX.
+- [[products/ocr-data-extraction|OCR Data Extraction]]
+- [[sources/ocr-table-view-how-it-works|OCR Table View — How It Works]] — the how-it-works doc for the table view that is part of this UX.
 
 ## Conflicts & Supersessions
 As a client feedback page this is directional. For authoritative capability claims, use the how-it-works doc or implementation guide.

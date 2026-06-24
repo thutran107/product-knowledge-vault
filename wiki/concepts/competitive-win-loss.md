@@ -12,17 +12,17 @@ Recurring reasons Anduin **wins** and **loses** competitive deals, synthesized f
 
 ## Key dynamics
 **Why Anduin WINS:**
-- **UI/UX + SSO** — sleek UI and single sign-on repeatedly win even when the competitor is cheaper (e.g., Lattice Capital over [[wiki/competitors/passthrough]]).
+- **UI/UX + SSO** — sleek UI and single sign-on repeatedly win even when the competitor is cheaper (e.g., Lattice Capital over [[competitors/passthrough]]).
 - **Platform maturity** — won Silver Point over Passthrough despite quoting 2× ($30K vs $15K); Apollo found Passthrough "not mature enough."
-- **Relationships / references** — won S32 ($30K) via a champion (Allison Pavlick); strong regional proof (Nordics: CapMan over [[wiki/competitors/competitor-landscape-watchlist|Techquity]]; ANZ: Blackbird $57K, Stripes $67.5K).
+- **Relationships / references** — won S32 ($30K) via a champion (Allison Pavlick); strong regional proof (Nordics: CapMan over [[competitors/competitor-landscape-watchlist|Techquity]]; ANZ: Blackbird $57K, Stripes $67.5K).
 - **Investor experience / digitized-doc flow** — cited in multiple enterprise wins.
 
 **Why Anduin LOSES:**
 - **Price** — especially Passthrough's one-time non-recurring fee (Centre Lane, NYCA, InVivium); AtomInvest undercutting ($20K vs $60K).
 - **AML/KYC checking** — lost a $30K deal to Passthrough on its in-app AML/KYC; lack of in-app OFAC (ff Venture Capital).
-- **Side-letter / MFN tracking** — lost Ottawa Capital and Pomona Capital to [[wiki/competitors/ontra]]; Carta stronger on side letters.
-- **LP Profile / API gaps** — lost Adam's Street, GTIS, HPS, Adam's Street to [[wiki/competitors/subscribe]] on API + LP Profile.
-- **Law-firm channel** — Goodwin (Passthrough) and [[wiki/competitors/kirkland-ellis|K&E]] push their preferred tooling; Goodwin even advocated replacing Anduin at 2150 VC's renewal.
+- **Side-letter / MFN tracking** — lost Ottawa Capital and Pomona Capital to [[competitors/ontra]]; Carta stronger on side letters.
+- **LP Profile / API gaps** — lost Adam's Street, GTIS, HPS, Adam's Street to [[competitors/subscribe]] on API + LP Profile.
+- **Law-firm channel** — Goodwin (Passthrough) and [[competitors/kirkland-ellis|K&E]] push their preferred tooling; Goodwin even advocated replacing Anduin at 2150 VC's renewal.
 - **Incumbency / existing footprint** — prospect already on a competitor's data room/CRM (MV Credit on AtomInvest; OpenOcean).
 
 ## Evidence & examples
@@ -38,6 +38,6 @@ Recurring reasons Anduin **wins** and **loses** competitive deals, synthesized f
 - AML/KYC and side-letter tracking are the two recurring **capability** losses (vs. pure price) — product gaps to close or neutralize.
 
 ## Related
-- [[wiki/concepts/competitor-pricing-benchmarks]]
-- [[wiki/competitors/passthrough]] · [[wiki/competitors/subscribe]] · [[wiki/competitors/ontra]] · [[wiki/competitors/atominvest]]
-- [[wiki/sources/competitive-intel-tracking-table]]
+- [[concepts/competitor-pricing-benchmarks]]
+- [[competitors/passthrough]] · [[competitors/subscribe]] · [[competitors/ontra]] · [[competitors/atominvest]]
+- [[sources/competitive-intel-tracking-table]]

@@ -55,13 +55,13 @@ Primary Investor Portal sales deck covering the full product vision, investor ex
 - **Q4:** Portal AI Agents
 
 ## Connections
-- [[wiki/products/investor-portal]] — primary capabilities reference
-- [[wiki/sources/investor-portal-pricing-faqs-boston]] — companion pricing deck
-- [[wiki/sources/investor-portal-contact-management]] — detailed Contact Management feature deck
-- [[wiki/products/data-room]] — Data Room embedded in Portal vehicle pages
-- [[wiki/products/investor-data-management]] — contact matrix / data profiles shared with Portal
-- [[wiki/products/integration-hub]] — Portal integration layer
-- [[wiki/products/landing-page]] — Landing Pages positioned as Portal complement
+- [[products/investor-portal]] — primary capabilities reference
+- [[sources/investor-portal-pricing-faqs-boston]] — companion pricing deck
+- [[sources/investor-portal-contact-management]] — detailed Contact Management feature deck
+- [[products/data-room]] — Data Room embedded in Portal vehicle pages
+- [[products/investor-data-management]] — contact matrix / data profiles shared with Portal
+- [[products/integration-hub]] — Portal integration layer
+- [[products/landing-page]] — Landing Pages positioned as Portal complement
 
 ## Conflicts & Supersessions
 None found. First full capabilities source for Investor Portal.

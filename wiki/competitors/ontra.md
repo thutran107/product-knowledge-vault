@@ -8,7 +8,7 @@ tags: [competitive, sales-motion, pricing]
 ---
 
 ## Overview
-Ontra is the leading competitor in **side-letter / terms tracking and MFN management** — the area where Anduin's [[wiki/products/side-letter]] product overlaps least maturely. Ontra's "Terms Tracking" product uses AI (it integrated OpenAI GPT-4 to power **Insight**) to log side letters, sort provisions, and prepare MFN elections. It is positioned at the enterprise tier with AUM/document-volume-based pricing and set a goal of selling Terms Tracking to 100 customers in year one.
+Ontra is the leading competitor in **side-letter / terms tracking and MFN management** — the area where Anduin's [[products/side-letter]] product overlaps least maturely. Ontra's "Terms Tracking" product uses AI (it integrated OpenAI GPT-4 to power **Insight**) to log side letters, sort provisions, and prepare MFN elections. It is positioned at the enterprise tier with AUM/document-volume-based pricing and set a goal of selling Terms Tracking to 100 customers in year one.
 
 ## How they compare to Anduin
 **Where Ontra is strong:**
@@ -24,7 +24,7 @@ Ontra is the leading competitor in **side-letter / terms tracking and MFN manage
 - ~**$75–80K/yr** for Terms Tracking: a European fund-of-funds ($20B+ AUM, early adopter) pays ~$80K/yr; a US real-estate manager ($4B AUM) ~$75K/yr.
 - Pricing driven by **AUM, number of docs, and document complexity**.
 
-See [[wiki/concepts/competitor-pricing-benchmarks]].
+See [[concepts/competitor-pricing-benchmarks]].
 
 ## Partnerships & strategy
 - Ontra is **partnering with Passthrough** for side letters / MFNs (March 2025) — consolidating the side-letter + subscription surface against Anduin.
@@ -36,13 +36,13 @@ See [[wiki/concepts/competitor-pricing-benchmarks]].
 - **"Ontra tracks our side letters / MFNs"** — acknowledge Ontra's maturity here; position Anduin's end-to-end onboarding + the law-firm-collaborative angle where Ontra is weak. Watch the Ontra×Passthrough partnership as a combined threat.
 
 ## Products that overlap
-- [[wiki/products/side-letter]] — direct overlap (Ontra is the category leader)
-- [[wiki/products/fundsub]] — adjacent
+- [[products/side-letter]] — direct overlap (Ontra is the category leader)
+- [[products/fundsub]] — adjacent
 
 ## Sources
-- [[wiki/sources/competitive-intel-tracking-table]] — 11 field-intel entries (2023–2025)
+- [[sources/competitive-intel-tracking-table]] — 11 field-intel entries (2023–2025)
 
 ## Related
-- [[wiki/concepts/competitor-pricing-benchmarks]]
-- [[wiki/concepts/competitive-win-loss]]
-- [[wiki/competitors/competitor-landscape-watchlist]] — Pro-Vision, Carta, Robin AI (side-letter rivals)
+- [[concepts/competitor-pricing-benchmarks]]
+- [[concepts/competitive-win-loss]]
+- [[competitors/competitor-landscape-watchlist]] — Pro-Vision, Carta, Robin AI (side-letter rivals)

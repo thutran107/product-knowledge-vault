@@ -31,6 +31,6 @@ The abstraction Anduin uses to refer to connection points across its product sui
 - No documentation yet on whether one integration can span multiple object types simultaneously.
 
 ## Related
-- [[wiki/concepts/configuration-vs-permission|Configuration vs Permission]]
-- [[wiki/products/fundsub|FundSub]], [[wiki/products/investor-data-management|IDM]], [[wiki/products/data-room|Data Room]]
-- [[wiki/products/integration-hub|Integration Hub]]
+- [[concepts/configuration-vs-permission|Configuration vs Permission]]
+- [[products/fundsub|FundSub]], [[products/investor-data-management|IDM]], [[products/data-room|Data Room]]
+- [[products/integration-hub|Integration Hub]]

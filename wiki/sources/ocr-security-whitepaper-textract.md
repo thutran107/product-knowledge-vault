@@ -22,8 +22,8 @@ Customer-facing security whitepaper covering how Anduin secures the Amazon Textr
 - Hosted as a Notion page (fetchable for full content).
 
 ## Connections
-- [[wiki/products/ocr-data-extraction|OCR Data Extraction]]
-- [[wiki/sources/ocr-security-whitepaper-human-augmented|Security Whitepaper — Human-Augmented Processing]] — companion security paper covering the human review layer.
+- [[products/ocr-data-extraction|OCR Data Extraction]]
+- [[sources/ocr-security-whitepaper-human-augmented|Security Whitepaper — Human-Augmented Processing]] — companion security paper covering the human review layer.
 
 ## Conflicts & Supersessions
 No as-of date. Pair with the Human-Augmented whitepaper for full security coverage.

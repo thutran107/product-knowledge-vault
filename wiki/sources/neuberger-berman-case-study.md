@@ -26,10 +26,10 @@ Case study of Neuberger Berman — a $460B AUM global investment firm — adopti
 - Results: ~3,000 LPs onboarded, 90% initiation rate, 78% completion rate within days, $5.4B raised.
 
 ## Connections
-- [[wiki/customers/neuberger-berman|Neuberger Berman]].
-- [[wiki/products/fundsub|FundSub]], [[wiki/products/data-room|Data Room]], [[wiki/products/investor-data-management|IDM]], [[wiki/products/investor-access|Investor Access]], [[wiki/products/integration-hub|Integration Hub]].
-- [[wiki/entities/salesforce|Salesforce]] — integrated for subscription tracking.
-- [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]].
+- [[customers/neuberger-berman|Neuberger Berman]].
+- [[products/fundsub|FundSub]], [[products/data-room|Data Room]], [[products/investor-data-management|IDM]], [[products/investor-access|Investor Access]], [[products/integration-hub|Integration Hub]].
+- [[entities/salesforce|Salesforce]] — integrated for subscription tracking.
+- [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]].
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

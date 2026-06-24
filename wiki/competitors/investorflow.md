@@ -30,16 +30,16 @@ InvestorFlow is a standalone investor portal and CRM platform for private market
 - Whale tiers: $20–30K/fund/yr — comparable or better depending on fund count
 
 ## Products that overlap
-- [[wiki/products/investor-portal]] — direct overlap on investor portal functionality
+- [[products/investor-portal]] — direct overlap on investor portal functionality
 
 ## Known objections & responses
 - **"InvestorFlow has an established track record"** — Anduin's portal is built on a proven platform (FundSub, IDM, Data Room already deployed); integration is native, not bolted on.
 - **"InvestorFlow is already in our stack"** — Anduin's full bundle (FundSub + IDM + Portal) may replace multiple point solutions at lower total cost.
 
 ## Sources
-- [[wiki/sources/investor-portal-pricing-faqs-boston]] — pricing benchmarks from Boston Popup deck
-- [[wiki/sources/investor-portal-product-overview]] — competitive category positioning
+- [[sources/investor-portal-pricing-faqs-boston]] — pricing benchmarks from Boston Popup deck
+- [[sources/investor-portal-product-overview]] — competitive category positioning
 
 ## Related
-- [[wiki/competitors/atominvest]]
-- [[wiki/products/investor-portal]]
+- [[competitors/atominvest]]
+- [[products/investor-portal]]

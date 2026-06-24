@@ -45,6 +45,6 @@ The three standard workflow types available in the Integration Hub, each named w
 - Data Room permission management for Integration Hub listed as "TBD."
 
 ## Related
-- [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]] — uses Order Creation.
-- [[wiki/concepts/import-export-templates|Import/Export Templates]] — defines what data flows.
-- [[wiki/entities/dealcloud|DealCloud]], [[wiki/entities/affinity|Affinity]], [[wiki/entities/box|Box]]
+- [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]] — uses Order Creation.
+- [[concepts/import-export-templates|Import/Export Templates]] — defines what data flows.
+- [[entities/dealcloud|DealCloud]], [[entities/affinity|Affinity]], [[entities/box|Box]]

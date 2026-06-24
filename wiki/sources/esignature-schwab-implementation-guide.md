@@ -29,12 +29,12 @@ Internal CS implementation guide for setting up the Schwab custodian signing wor
 - `@anduin.fund` is an alias for `@anduintransact.com` — email notifications arrive at the `@anduintransact.com` inbox.
 
 ## Connections
-- [[wiki/products/e-signature]] — primary implementation guide for the Schwab signing sub-feature
-- [[wiki/products/fundsub]] — subscription context; digitization setup is per-fund engagement
-- [[wiki/customers/cerity-partners]] — named in guide as primary implementation reference alongside Blue Arc
+- [[products/e-signature]] — primary implementation guide for the Schwab signing sub-feature
+- [[products/fundsub]] — subscription context; digitization setup is per-fund engagement
+- [[customers/cerity-partners]] — named in guide as primary implementation reference alongside Blue Arc
 
 ## Conflicts & Supersessions
-- More detailed and authoritative than [[wiki/sources/esignature-schwab-cerity-training]] (trust level 2 vs. 7). The Cerity training covers the advisor-facing UX flow; this guide covers the internal CS setup process. Complementary, no conflicts.
+- More detailed and authoritative than [[sources/esignature-schwab-cerity-training]] (trust level 2 vs. 7). The Cerity training covers the advisor-facing UX flow; this guide covers the internal CS setup process. Complementary, no conflicts.
 
 ## Raw Notes
 - Lives under: E-signature Home → DocuSign Integration → PRD: Schwab DocuSign - Custodian Signing

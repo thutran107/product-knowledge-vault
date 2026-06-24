@@ -21,12 +21,12 @@ May 2025 version of the joint IDM + FundSub sales and enablement deck on streaml
 - Google Slides format.
 
 ## Connections
-- [[wiki/products/investor-data-management|IDM]]
-- [[wiki/products/fundsub|FundSub]]
-- [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]
+- [[products/investor-data-management|IDM]]
+- [[products/fundsub|FundSub]]
+- [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]
 
 ## Conflicts & Supersessions
-Superseded by [[wiki/sources/idm-fundsub-onboarding-deck-oct2025]] (October 2025). Use that version for current sales conversations.
+Superseded by [[sources/idm-fundsub-onboarding-deck-oct2025]] (October 2025). Use that version for current sales conversations.
 
 ## Raw Notes
 Google Slides: https://docs.google.com/presentation/d/11tCxzsi1_J1233CYxDbuSmYGCIdKQLZ_yBKQYNXqPl0. Not fetched (external).

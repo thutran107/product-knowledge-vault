@@ -29,7 +29,7 @@ AtomInvest is a standalone, full-suite private-markets platform (CRM, LP onboard
 
 **Anduin comparison (from pricing FAQ):** Emerging $6K/fund/yr (matches), Established $8K (slightly above AtomInvest's $6K), Enterprise $15K (above AtomInvest's $10K) — justified by the broader bundle.
 
-See [[wiki/concepts/competitor-pricing-benchmarks]].
+See [[concepts/competitor-pricing-benchmarks]].
 
 ## Security signal
 - **Password reset bypasses SSO:** AtomInvest let LPs reset passwords via email, bypassing the customer's IdP/SSO and logging in with email + password.
@@ -42,20 +42,20 @@ See [[wiki/concepts/competitor-pricing-benchmarks]].
 
 ## Known objections & responses
 - **"AtomInvest is cheaper at our tier"** — Anduin's full bundle replaces multiple point solutions; TCO favors Anduin when counting all tools replaced.
-- **"AtomInvest has accounting / is all-in-one"** — Anduin focuses on the investor-relationship layer with superior data integrity; accounting can integrate via [[wiki/products/integration-hub]]. Lead with the documented data-structure and post-execution data-usability problems.
+- **"AtomInvest has accounting / is all-in-one"** — Anduin focuses on the investor-relationship layer with superior data integrity; accounting can integrate via [[products/integration-hub]]. Lead with the documented data-structure and post-execution data-usability problems.
 
 ## Products that overlap
-- [[wiki/products/investor-portal]] — direct overlap
-- [[wiki/products/fundsub]] — onboarding/subscription overlap
+- [[products/investor-portal]] — direct overlap
+- [[products/fundsub]] — onboarding/subscription overlap
 
 ## Sources
-- [[wiki/sources/investor-portal-pricing-faqs-boston]] — pricing benchmarks from Boston Popup deck
-- [[wiki/sources/investor-portal-product-overview]] — competitive category positioning
-- [[wiki/sources/competitive-intel-tracking-table]] — 24 field-intel entries (2022–2025)
+- [[sources/investor-portal-pricing-faqs-boston]] — pricing benchmarks from Boston Popup deck
+- [[sources/investor-portal-product-overview]] — competitive category positioning
+- [[sources/competitive-intel-tracking-table]] — 24 field-intel entries (2022–2025)
 
 ## Related
-- [[wiki/competitors/investorflow]]
-- [[wiki/competitors/passthrough]]
-- [[wiki/concepts/competitor-pricing-benchmarks]]
-- [[wiki/concepts/competitive-win-loss]]
-- [[wiki/products/investor-portal]]
+- [[competitors/investorflow]]
+- [[competitors/passthrough]]
+- [[concepts/competitor-pricing-benchmarks]]
+- [[concepts/competitive-win-loss]]
+- [[products/investor-portal]]

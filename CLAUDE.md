@@ -532,8 +532,9 @@ Run a lint automatically:
 
 ## 8. Naming & Linking
 
-- All internal links use Obsidian wiki-link format: `[[wiki/products/idm]]`.
-- Display text can differ: `[[wiki/products/idm|IDM]]`.
+- All internal links use Obsidian wiki-link format with the target path **relative to `wiki/`** (no `wiki/` prefix): `[[products/idm]]`.
+- Display text can differ: `[[products/idm|IDM]]`.
+- Note: paths are relative to the `wiki/` root so the link graph resolves in knowledge-graph tooling and in an Obsidian vault rooted at `wiki/`. (Earlier pages used a `[[wiki/...]]` prefix; normalized 2026-06-23.)
 - Slugs: lowercase, hyphens only, descriptive.
 - Tag taxonomy is open — add tags as needed, but reuse existing tags before creating new ones.
 - Preferred tags: `#pricing`, `#onboarding`, `#compliance`, `#implementation`, `#security`, `#sales-motion`, `#case-study`, `#competitive`, `#integration`, `#digitization`.

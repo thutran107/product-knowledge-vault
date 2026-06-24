@@ -20,7 +20,7 @@ Internal training video covering multi-group configuration in Data Room. Content
 - Published June 2025 — reflects current multi-group functionality as of that date
 
 ## Connections
-- [[wiki/products/data-room]] — User & Group feature
+- [[products/data-room]] — User & Group feature
 
 ## Conflicts & Supersessions
 None identified (video content not extracted).

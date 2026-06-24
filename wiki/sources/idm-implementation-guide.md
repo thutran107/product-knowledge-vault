@@ -22,8 +22,8 @@ Internal CS implementation guide for IDM, structured as a Notion hub page linkin
 - Highest trust-level IDM source for process and setup guidance.
 
 ## Connections
-- [[wiki/products/investor-data-management|IDM]] — primary implementation reference.
-- [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]] — implementation steps likely overlap.
+- [[products/investor-data-management|IDM]] — primary implementation reference.
+- [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]] — implementation steps likely overlap.
 
 ## Conflicts & Supersessions
 None identified. If a newer implementation guide is created, this should be compared.

@@ -22,9 +22,9 @@ GTM training hub for IDM, linking to Google Slides training decks and reference 
 - Intended for CS and Sales + RM internal enablement.
 
 ## Connections
-- [[wiki/products/investor-data-management|IDM]]
-- [[wiki/concepts/user-roles|User Roles]] — permission and client group content is relevant.
-- [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]
+- [[products/investor-data-management|IDM]]
+- [[concepts/user-roles|User Roles]] — permission and client group content is relevant.
+- [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]
 
 ## Conflicts & Supersessions
 None identified. Training materials reference a 2024 sandbox — verify currency before use.

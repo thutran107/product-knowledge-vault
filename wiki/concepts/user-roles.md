@@ -34,5 +34,5 @@ The two roles within an Integration Hub: Admin (default for all authenticated An
 - No documented way to restrict Members to specific integrations or objects only.
 
 ## Related
-- [[wiki/concepts/configuration-vs-permission|Configuration vs Permission]]
-- [[wiki/products/integration-hub|Integration Hub]]
+- [[concepts/configuration-vs-permission|Configuration vs Permission]]
+- [[products/integration-hub|Integration Hub]]

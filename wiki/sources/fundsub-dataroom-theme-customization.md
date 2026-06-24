@@ -29,8 +29,8 @@ Internal CS guide for configuring environment-level theme (brand color) customiz
 - **KKR example**: Primary5 `#46124A`, Primary4 `#49004B`, Primary3 `#9F5A9F`, Primary2 `#C7B1C8`, Primary1 `#F2EDF2`.
 
 ## Connections
-- [[wiki/products/fundsub|FundSub]]
-- [[wiki/products/data-room|Data Room]]
+- [[products/fundsub|FundSub]]
+- [[products/data-room|Data Room]]
 
 ## Conflicts & Supersessions
 No conflicts. First theme/white-labeling configuration guide ingested.

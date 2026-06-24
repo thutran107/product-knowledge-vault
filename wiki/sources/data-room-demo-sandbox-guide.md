@@ -26,8 +26,8 @@ Internal guide for Sales and CS on how to access and use the Data Room demo sand
 - Known limitation: separate URLs for each demo sandbox (DR, FS Normal, FS Flexible, FS Wire) — consolidation was being considered
 
 ## Connections
-- [[wiki/products/data-room]] — demo and sales motion
-- [[wiki/products/fundsub]] — FS demo sandbox also maintained
+- [[products/data-room]] — demo and sales motion
+- [[products/fundsub]] — FS demo sandbox also maintained
 
 ## Conflicts & Supersessions
 None identified.

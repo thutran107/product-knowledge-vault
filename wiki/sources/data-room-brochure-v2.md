@@ -27,9 +27,9 @@ External-facing brochure for Anduin Data Room as of March 2024. Positions Data R
 - **Customer quote:** Andrew Salembier (Partner & COO, Accolade Partners) — singles out multi-group access levels and the Data Room → FundSub one-click flow as unique differentiators.
 
 ## Connections
-- [[wiki/products/data-room]] — core product page; adds custom URL / white-label detail
-- [[wiki/products/fundsub]] — one-click FundSub handoff is a named differentiator
-- [[wiki/customers/accolade]] — Accolade Partners quote (Andrew Salembier)
+- [[products/data-room]] — core product page; adds custom URL / white-label detail
+- [[products/fundsub]] — one-click FundSub handoff is a named differentiator
+- [[customers/accolade]] — Accolade Partners quote (Andrew Salembier)
 
 ## Conflicts & Supersessions
 None. "Unlimited data rooms" in the brochure refers to creating multiple rooms, not per-room limits; consistent with existing product page. As a 2024 brochure, newer sources supersede any pricing or feature specifics.

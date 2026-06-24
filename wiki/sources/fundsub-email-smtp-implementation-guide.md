@@ -26,9 +26,9 @@ CS-facing internal training deck (March 2025) covering FundSub email configurati
 - **Configured in:** Admin tool (not self-serve for GPs).
 
 ## Connections
-- [[wiki/products/fundsub|FundSub]] — email configuration is a FundSub admin capability
-- [[wiki/sources/ih-smtp-gtm-training|IH SMTP GTM Training]] — covers IH-level SMTP integration (different scope)
-- [[wiki/sources/fundsub-duplicate-fund-config]] — SMTP/email config is among items that can be duplicated to a new fund
+- [[products/fundsub|FundSub]] — email configuration is a FundSub admin capability
+- [[sources/ih-smtp-gtm-training|IH SMTP GTM Training]] — covers IH-level SMTP integration (different scope)
+- [[sources/fundsub-duplicate-fund-config]] — SMTP/email config is among items that can be duplicated to a new fund
 
 ## Conflicts & Supersessions
 None. This is FundSub-specific; IH SMTP guide covers a different integration layer.

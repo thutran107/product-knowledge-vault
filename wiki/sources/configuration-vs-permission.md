@@ -24,9 +24,9 @@ Explains the architectural separation between Integration Hub (which manages con
 - Once permission is granted, the Integration Hub shows the object with a "Linked" tag.
 
 ## Connections
-- [[wiki/concepts/configuration-vs-permission|Configuration vs Permission]] — concept page for this pattern.
-- [[wiki/concepts/anduin-object-model|Anduin Object Model]] — defines the objects referenced.
-- [[wiki/products/integration-hub|Integration Hub]], [[wiki/products/fundsub|FundSub]], [[wiki/products/investor-data-management|IDM]], [[wiki/products/data-room|Data Room]].
+- [[concepts/configuration-vs-permission|Configuration vs Permission]] — concept page for this pattern.
+- [[concepts/anduin-object-model|Anduin Object Model]] — defines the objects referenced.
+- [[products/integration-hub|Integration Hub]], [[products/fundsub|FundSub]], [[products/investor-data-management|IDM]], [[products/data-room|Data Room]].
 
 ## Conflicts & Supersessions
 None identified at time of ingest.

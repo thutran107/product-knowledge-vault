@@ -21,12 +21,12 @@ Joint IDM + FundSub sales deck covering how IDM profiles streamline the investor
 - Audience: Sales + RM (external prospect use).
 
 ## Connections
-- [[wiki/products/investor-data-management|IDM]]
-- [[wiki/products/fundsub|FundSub]]
-- [[wiki/concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]
+- [[products/investor-data-management|IDM]]
+- [[products/fundsub|FundSub]]
+- [[concepts/investor-onboarding-workflow|Investor Onboarding Workflow]]
 
 ## Conflicts & Supersessions
-A May 2025 version also exists — see [[wiki/sources/idm-fundsub-investor-onboarding-may-2025]]. This October 2025 version is more recent and should be preferred.
+A May 2025 version also exists — see [[sources/idm-fundsub-investor-onboarding-may-2025]]. This October 2025 version is more recent and should be preferred.
 
 ## Raw Notes
 Google Slides: https://docs.google.com/presentation/d/1ALbwSS7DCYNlPDwGfAl1IfKoyLzZNu1MA11MAgKSVz4. Not fetched (external). Created in Notion registry: 2025-10-06.

@@ -11,9 +11,9 @@ tags: [competitive, sales-motion]
 The structural shape of Anduin's competitive market and the macro trends shaping it — beyond any single competitor. Captures the cross-cutting themes and the general/market intel that doesn't map to one company.
 
 ## Key dynamics (structural threats & trends)
-1. **Fund admins building in-house onboarding** — eroding Anduin's Fundsub channel. Examples: [[wiki/competitors/nav|NAV Fund Services]] launching e-subscription, [[wiki/competitors/flow|Flow]] acquired by Apex (admin distribution), Dynamo acquiring InvestHub to bring sub-doc in-house and drop its Passthrough integration. Distribution is ~90% through fund admins for some low-end players (Arc).
-2. **AI-native / LP-side entrants** — a new competitive surface Anduin doesn't yet fully cover: [[wiki/competitors/juniper-square|Juniper Square]]'s JunieAI + Headless GPX (MCP), Vantager (LP intelligence), Daphne (fund-data AI), BlueFlame.ai (→Datasite), Ontra's GPT-4 Insight. Recommendation recurring in the intel: **Anduin should build LP-facing tools** to avoid being outflanked as the interface shifts toward AI assistants/MCP.
-3. **Consolidation, rebrands & funding (2025–26)** — [[wiki/competitors/idr|IDR→Sonata One]], [[wiki/competitors/bitestream|BiteStream→Investor Pointe]] ($25M), Intralinks→InvestorVision, [[wiki/competitors/icapital-cais|iCapital]] acquiring Parallel Markets, [[wiki/competitors/bunch|bunch]] $35M Series B, [[wiki/competitors/juniper-square|Juniper]] $130M Series D. Motive Partners and Apollo recur as investors across multiple competitors ([[wiki/competitors/vega|Vega]], Daphne, bunch). Enterprise-compliance incumbent [[wiki/competitors/fenergo|Fenergo]] also entered with a digital-subscription + portal launch.
+1. **Fund admins building in-house onboarding** — eroding Anduin's Fundsub channel. Examples: [[competitors/nav|NAV Fund Services]] launching e-subscription, [[competitors/flow|Flow]] acquired by Apex (admin distribution), Dynamo acquiring InvestHub to bring sub-doc in-house and drop its Passthrough integration. Distribution is ~90% through fund admins for some low-end players (Arc).
+2. **AI-native / LP-side entrants** — a new competitive surface Anduin doesn't yet fully cover: [[competitors/juniper-square|Juniper Square]]'s JunieAI + Headless GPX (MCP), Vantager (LP intelligence), Daphne (fund-data AI), BlueFlame.ai (→Datasite), Ontra's GPT-4 Insight. Recommendation recurring in the intel: **Anduin should build LP-facing tools** to avoid being outflanked as the interface shifts toward AI assistants/MCP.
+3. **Consolidation, rebrands & funding (2025–26)** — [[competitors/idr|IDR→Sonata One]], [[competitors/bitestream|BiteStream→Investor Pointe]] ($25M), Intralinks→InvestorVision, [[competitors/icapital-cais|iCapital]] acquiring Parallel Markets, [[competitors/bunch|bunch]] $35M Series B, [[competitors/juniper-square|Juniper]] $130M Series D. Motive Partners and Apollo recur as investors across multiple competitors ([[competitors/vega|Vega]], Daphne, bunch). Enterprise-compliance incumbent [[competitors/fenergo|Fenergo]] also entered with a digital-subscription + portal launch.
 4. **Marketplaces** — Subscribe's Altscape (no-fee fund marketplace, 50K+ advisors) and Privatize (Europe) raise the question of whether Anduin should build its own marketplace given existing GP relationships.
 5. **Hybrid automation reality** — even Passthrough concedes 100% automation is hard; a hybrid (manual-input-where-needed) approach is the realistic norm (Tim Flannery).
 
@@ -30,8 +30,8 @@ The structural shape of Anduin's competitive market and the macro trends shaping
 - Fund-admin channel: partner vs. compete? Some admins (NAV, Apex/Flow) are becoming competitors while others are integration partners.
 
 ## Related
-- [[wiki/concepts/competitive-win-loss]]
-- [[wiki/concepts/competitor-pricing-benchmarks]]
-- [[wiki/competitors/competitor-landscape-watchlist]]
-- [[wiki/competitors/juniper-square]] · [[wiki/competitors/nav]] · [[wiki/competitors/flow]] · [[wiki/competitors/icapital-cais]]
-- [[wiki/sources/competitive-intel-tracking-table]]
+- [[concepts/competitive-win-loss]]
+- [[concepts/competitor-pricing-benchmarks]]
+- [[competitors/competitor-landscape-watchlist]]
+- [[competitors/juniper-square]] · [[competitors/nav]] · [[competitors/flow]] · [[competitors/icapital-cais]]
+- [[sources/competitive-intel-tracking-table]]
