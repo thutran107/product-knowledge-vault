@@ -532,3 +532,29 @@ Append-only record of all operations. Format: `## [YYYY-MM-DD] <operation> | <ti
 **Operation:** note
 **Summary:** Resumed the 2026-06-25 retrieval roadmap at P2. Discovered the "dirty tags" issue was actually a correctness bug: 26 of 155 wiki pages had unparseable YAML frontmatter. Fixed (1) 23 pages where a `#`-prefixed tag in a `tags: [...]` flow sequence made YAML treat the rest of the line as a comment and drop the closing `]` — stripped `#` from all frontmatter tags (collapsing split counts: sales-motion 24+8→32, onboarding 6+6→12, implementation 21+3→24, integration 11+4→15, pricing 11+1→12, security 1+2→3); (2) 3 AAA pages with an unquoted `: ` inside `original_file:` — wrapped in quotes. All 155 pages now parse (0 failures). Also canonicalized `target_audience` to pipe-delimited ordered `CS | Sales + RM | Digi | All teams` (8 pages: comma/reordered variants collapsed to 10×`CS | Sales + RM`, 3×`CS | Digi`). Added the §3-mandated tag-grouped "Topic Index (by tag)" section to `index.md` (138 wikilinks across 10 preferred tags, all validated to resolve). Updated CLAUDE.md §8 to forbid `#` in frontmatter tags, set the preferred-tag list to bare tokens, and document the `target_audience` canonical form. `index.md` last_updated → 2026-06-29.
 **Pages touched:** 30 wiki/ pages (frontmatter), CLAUDE.md (§8), index.md (Topic Index section + date), log.md
+
+## [2026-06-29] ingest | Platform mini-batch — Environment SSO & Advanced White-Labeling (3 entries)
+
+**Operation:** ingest
+**Source file:** Notion — 3 entries deferred from Batch 8 (master-view rows blank; content fetched from linked Platform Home pages)
+**Document type:** implementation-guide (trust 2), General Knowledge Page → note (trust 10), FAQ (trust 4)
+**Product(s):** Platform
+**As-of date:** 2025-08-01 (SSO setup guide), 2025-06-23 (enforcement context), 2026-05-03 (white-labeling FAQ)
+**Conflicts found:** none. The two SSO docs frame the legacy user-account-bound auth model as superseded by environment-bound enforcement (internal supersession, not a wiki conflict). White-labeling FAQ carries stale "April 2023" availability text — flagged as legacy in Raw Notes, not treated as current.
+**Summary:** Seeded the previously 0-source `wiki/products/platform.md` with its first 3 real sources. Created 2 feature pages (Environment-Based SSO & Authentication Policies; Advanced White-Labeling), the `environment-object` concept tying both to the platform Environment boundary, and enriched the `kkr` customer stub with the Global Enforcement / custom-login stop-gap documented in the SSO guide. Notion master-view rows were blank; real content lives at the linked Platform Home content pages (fetched and de-noised of S3 image URLs). Neither doc was flagged onboarding_required, so onboarding.md untouched.
+**Pages touched:**
+- wiki/sources/platform-environment-sso-setup-guide.md (created — implementation-guide, trust 2)
+- wiki/sources/platform-environment-auth-enforcement.md (created — note, trust 10)
+- wiki/sources/platform-advanced-white-labeling-faq.md (created — faq, trust 4)
+- wiki/features/platform-environment-sso.md (created)
+- wiki/features/platform-advanced-white-labeling.md (created)
+- wiki/concepts/environment-object.md (created)
+- wiki/products/platform.md (rebuilt; source_count 0→3)
+- wiki/customers/kkr.md (enriched; source_count 0→1)
+- index.md (Sources 84→87, Products: Platform 0→3, Features 1→3, Concepts 13→14, Customers: KKR 0→1; Topic Index #security 3→8, #implementation 24→27, #sales-motion 32→34)
+
+## [2026-06-29] lint | 0 issues found
+
+**Operation:** lint
+**Summary:** Auto-triggered per §7 (a trust-2 implementation guide — the Environment SSO setup guide — was ingested in the Platform mini-batch). Scoped to the 8 touched pages + index. Results: all 6 new pages present on disk and in index.md; every wikilink target in the touched pages resolves (0 broken); all 6 new pages have ≥3 inbound links (0 orphans); frontmatter complete per §2 templates. No issues to fix.
+**Pages touched:** none (clean).
