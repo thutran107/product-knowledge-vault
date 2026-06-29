@@ -9,7 +9,7 @@ original_file: notion://1ff3f653-b1df-805e-b56f-cd0983421480
 products: [IDM]
 target_audience: Sales + RM
 onboarding_required: No
-tags: [idm, #sales-motion]
+tags: [idm, sales-motion]
 ---
 
 ## Summary

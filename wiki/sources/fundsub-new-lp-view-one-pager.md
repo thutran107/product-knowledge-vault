@@ -9,7 +9,7 @@ original_file: notion://2bc3f653-b1df-80d0-8bb9-def76451ffeb
 products: [Fundsub]
 target_audience: All teams
 onboarding_required: No
-tags: [fundsub, lp-experience, #onboarding]
+tags: [fundsub, lp-experience, onboarding]
 ---
 
 ## Summary

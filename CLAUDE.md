@@ -537,7 +537,9 @@ Run a lint automatically:
 - Note: paths are relative to the `wiki/` root so the link graph resolves in knowledge-graph tooling and in an Obsidian vault rooted at `wiki/`. (Earlier pages used a `[[wiki/...]]` prefix; normalized 2026-06-23.)
 - Slugs: lowercase, hyphens only, descriptive.
 - Tag taxonomy is open — add tags as needed, but reuse existing tags before creating new ones.
-- Preferred tags: `#pricing`, `#onboarding`, `#compliance`, `#implementation`, `#security`, `#sales-motion`, `#case-study`, `#competitive`, `#integration`, `#digitization`.
+- **Frontmatter tags are bare tokens — never prefix with `#`.** The `#x` notation below names a tag conceptually, but in a YAML `tags: [...]` flow sequence a `#` is read as a comment indicator and silently eats the rest of the line (including the closing `]`), breaking the frontmatter. Write `tags: [pricing, onboarding]`, not `tags: [#pricing, #onboarding]`. (23 pages were de-hashed 2026-06-29.)
+- Preferred tags: `pricing`, `onboarding`, `compliance`, `implementation`, `security`, `sales-motion`, `case-study`, `competitive`, `integration`, `digitization`.
+- `target_audience` is pipe-delimited and ordered `CS | Sales + RM | Digi | All teams` (use only the values that apply). Never comma-delimit.
 
 ---
 

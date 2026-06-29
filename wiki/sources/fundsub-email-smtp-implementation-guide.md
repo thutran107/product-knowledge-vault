@@ -9,7 +9,7 @@ original_file: notion://26f3f653-b1df-80f0-8961-c20fcad84352
 products: [Fundsub]
 target_audience: CS
 onboarding_required: No
-tags: [fundsub, smtp, email-configuration, #implementation]
+tags: [fundsub, smtp, email-configuration, implementation]
 ---
 
 ## Summary

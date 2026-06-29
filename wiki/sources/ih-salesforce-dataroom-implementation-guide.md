@@ -7,9 +7,9 @@ source_type: implementation-guide
 trust_level: 2
 original_file: raw/notion-fetch
 products: [Integration Hub]
-target_audience: CS, Sales + RM
+target_audience: CS | Sales + RM
 onboarding_required: No
-tags: [integration-hub, salesforce, data-room, implementation, #integration]
+tags: [integration-hub, salesforce, data-room, implementation, integration]
 ---
 
 ## Summary

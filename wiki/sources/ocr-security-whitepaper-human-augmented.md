@@ -9,7 +9,7 @@ original_file: notion://19d3f653-b1df-801f-99d8-eb06b1d9984f
 products: [OCR Data Extraction]
 target_audience: Sales + RM
 onboarding_required: No
-tags: [ocr, data-extraction, #security, compliance]
+tags: [ocr, data-extraction, security, compliance]
 ---
 
 ## Summary

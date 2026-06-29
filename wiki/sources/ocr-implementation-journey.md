@@ -7,9 +7,9 @@ source_type: implementation-guide
 trust_level: 2
 original_file: notion://19f3f653-b1df-80e0-8867-da834afc7d58
 products: [OCR Data Extraction]
-target_audience: Digi | CS
+target_audience: CS | Digi
 onboarding_required: Yes
-tags: [ocr, data-extraction, implementation, sop, #onboarding]
+tags: [ocr, data-extraction, implementation, sop, onboarding]
 ---
 
 ## Summary

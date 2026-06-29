@@ -5,7 +5,7 @@ date_ingested: 2026-06-15
 as_of_date: 2026-01-01
 source_type: client-training
 trust_level: 7
-original_file: Google Slides — Product x CS Demo + Training: Advisor Advantage (1OlXLo4_FhAx4DtWzUF0Gisihyro2_tG-KByzgxe7hBY)
+original_file: "Google Slides — Product x CS Demo + Training: Advisor Advantage (1OlXLo4_FhAx4DtWzUF0Gisihyro2_tG-KByzgxe7hBY)"
 products: [AAA]
 target_audience: CS
 onboarding_required: No

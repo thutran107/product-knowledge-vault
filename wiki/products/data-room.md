@@ -4,7 +4,7 @@ title: "Data Room"
 status: GA
 source_count: 10
 last_updated: 2026-05-11
-tags: [data-room, anduin, investor-engagement, #integration]
+tags: [data-room, anduin, investor-engagement, integration]
 ---
 
 ## What it does

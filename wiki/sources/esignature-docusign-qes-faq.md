@@ -7,7 +7,7 @@ source_type: faq
 trust_level: 4
 original_file: notion://d0f6cb7c7a9d4400a3e78bb474d15f46
 products: [E-signature]
-target_audience: Sales + RM, CS
+target_audience: CS | Sales + RM
 onboarding_required: No
 tags: [e-signature, docusign, qes, aes, compliance, signature]
 ---

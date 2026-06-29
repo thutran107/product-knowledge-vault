@@ -9,7 +9,7 @@ original_file: notion://2813f653-b1df-8070-a7b5-c4925c5663b0
 products: [IDM, Fundsub]
 target_audience: Sales + RM
 onboarding_required: No
-tags: [idm, fundsub, #sales-motion, investor-onboarding]
+tags: [idm, fundsub, sales-motion, investor-onboarding]
 ---
 
 ## Summary

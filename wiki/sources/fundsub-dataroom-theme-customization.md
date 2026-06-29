@@ -9,7 +9,7 @@ original_file: notion://2653f653-b1df-80e0-a0f9-d96aa43747cc
 products: [Fundsub, Data Room]
 target_audience: CS
 onboarding_required: No
-tags: [fundsub, data-room, branding, white-labeling, #implementation]
+tags: [fundsub, data-room, branding, white-labeling, implementation]
 ---
 
 ## Summary

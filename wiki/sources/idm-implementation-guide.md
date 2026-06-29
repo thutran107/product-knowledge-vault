@@ -9,7 +9,7 @@ original_file: notion://1bb3f653-b1df-8090-979a-e47ab9b97bc4
 products: [IDM]
 target_audience: All teams
 onboarding_required: No
-tags: [idm, implementation, #onboarding]
+tags: [idm, implementation, onboarding]
 ---
 
 ## Summary
