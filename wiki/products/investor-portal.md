@@ -2,8 +2,8 @@
 type: product
 title: "Investor Portal"
 status: GA
-source_count: 9
-last_updated: 2026-06-10
+source_count: 17
+last_updated: 2026-06-30
 tags: [investor-portal, investor-access, sales-motion]
 ---
 
@@ -64,6 +64,8 @@ Onboarding sequence: Kickoff call (30 min) → IDM setup → Portal setup → Da
 
 See [[sources/investor-portal-customer-training-guide]] for detailed CS training script.
 
+**Portal-plan settings** (configure before workflows run): **document types** (Anduin category + keywords → drive AI auto-classification on upload), **communication types** (set at FLE + contact level → the recipient-permissioning filter; default toggle auto-adds to new FLEs), **Terms of Access** (versioned consent; a blocking modal with no decline option on every route — editing the body after acceptance forces a re-acceptance policy choice), and **email settings** (design preset + content template per outbound email type, with send-test). See [[sources/investor-portal-settings-portal-plan-training-video]].
+
 ## Known limitations
 - **Reporting dashboards** were not in the initial MVP; available post-launch (live data as of Q1 2026 for capital account + transaction details).
 - **Profile updates** (investor edits to contact matrix/wire info) are Q2 2026.
@@ -87,9 +89,14 @@ Direct competitors are standalone investor portals: [[competitors/investorflow]]
 See [[sources/investor-portal-pricing-faqs-boston]] for competitive pricing benchmarks.
 
 ## Features & sub-modules
+- [[features/investor-portal-document-distribution]] — Group / Private / Split & Share (also an EH feature)
+- [[features/investor-portal-communications]] — GP-to-investor messaging (also an EH feature)
+- [[features/investor-portal-profile-sharing]] — LP visibility into their records (also an EH feature)
+- [[features/investor-portal-reporting-dashboards]] — Datasets → Widgets → Pages (**Portal-only**)
 - [[sources/investor-portal-contact-management]] — Contact Management deep dive
-- Financial Reporting (3-layer framework — see sources)
-- Document Distribution (Group Share / Private Share / Split & Share)
+- [[features/idm-contacts]] — underlying contact matrix (incl. the Portal-exclusive Financial Data permission)
+
+> **Layering note:** Document Distribution, Communications, and Profile Sharing are Engagement Hub features that Portal inherits (Portal = EH + per-fund instance + Reporting); their feature pages are filed under Investor Portal for this training batch and cross-link EH. **Reporting Dashboards** are the key Portal-only capability.
 
 ## Related customers
 - PFG (Principal Financial Group) — beta prospect, $30K/fund/yr × 12 funds = $360K/yr ARR target
@@ -107,6 +114,14 @@ See [[sources/investor-portal-pricing-faqs-boston]] for competitive pricing benc
 - [[sources/investor-portal-contact-management]] — Contact Management spec (spec, trust 1) ⭐
 - [[sources/investor-portal-training-materials]] — training materials bundle (metadata only)
 - [[sources/anduin-investor-guide-may-2025]] — LP-facing guide (client-training, trust 7)
+- [[sources/investor-portal-document-distribution-training-video]] — Document Distribution (cs-training, trust 6)
+- [[sources/investor-portal-communications-training-video]] — Communications (cs-training, trust 6)
+- [[sources/investor-portal-profile-sharing-training-video]] — Profile Sharing (cs-training, trust 6)
+- [[sources/investor-portal-settings-portal-plan-training-video]] — Settings Part 2 / Portal plan (cs-training, trust 6)
+- [[sources/investor-portal-lp-end-to-end-training-video]] — LP end-to-end demo walkthrough (cs-training, trust 6)
+- [[sources/investor-portal-reporting-overview-training-video]] — Reporting architecture + investor experience (cs-training, trust 6)
+- [[sources/investor-portal-reporting-datasets-training-video]] — Reporting datasets (cs-training, trust 6)
+- [[sources/investor-portal-reporting-pages-widgets-training-video]] — Reporting pages & widgets (cs-training, trust 6)
 
 ## Related
 - [[products/engagement-hub]] — Portal = Engagement Hub + per-fund instance + Reporting; EH is bundled into Portal by default

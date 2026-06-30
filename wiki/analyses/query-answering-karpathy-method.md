@@ -46,7 +46,7 @@ Every generator follows the vault's canonical query workflow (`CLAUDE.md` §6):
 1. Read index.md           ← the catalog: find which slugs are relevant
 2. Read 2–4 wiki/ pages    ← the actual source material for the angle
 3. Write the query         ← framed AFTER seeing the sources, so it's specific
-4. Write the response       ← grounded, cites [[...]] slugs, hedges on gaps
+4. Write the response       ← grounded, cites wiki-link slugs, hedges on gaps
 ```
 
 The query is written *after* the source pages are read — which is why the

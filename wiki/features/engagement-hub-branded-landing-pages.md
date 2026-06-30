@@ -3,8 +3,8 @@ type: feature
 title: "Branded Landing Pages"
 parent_product: "Engagement Hub"
 status: GA
-source_count: 4
-last_updated: 2026-06-16
+source_count: 6
+last_updated: 2026-06-30
 tags: [engagement-hub, landing-page, investor-engagement, branding]
 ---
 
@@ -25,7 +25,18 @@ Branded Landing Pages are the self-service, fully white-labeled investor-facing 
 - **Custom / white-label URLs** — apply your own domain and meaningful per-page paths (e.g. `invest.ada-capital.com/#/Fintech-Fund-III`).
 - **Invitation & permission** — send invitation emails to selected contacts; generate invite links with pre-defined permissions per investor group; fine-tune which contacts can access which pages.
 - **Granular access controls** — ensure the right audience sees the right page; tailor experiences per audience group while maintaining security.
-- **Publish lifecycle** — draft pages are unlimited and free; a page only "counts" once published (visible to LPs); pages can be unpublished or retired to drop back under tier limits.
+- **Publish lifecycle** — draft pages are unlimited and free; a page only "counts" once published (visible to LPs); pages can be unpublished or retired to drop back under tier limits. **Publish before navigating away in the builder — unsaved changes are silently discarded.**
+
+### Custom vs. System pages
+- **Custom pages** (firm homepage, fund pages) — fully editable, access-gated; built for differentiated storytelling per fund/opportunity.
+- **System pages** (Resources, Documents, Inbox, Profile) — auto-populated from each investor's permissions, always-on, zero upkeep; color-themeable (separate System Pages theming modal that auto-generates complements — review for contrast) and can be **unpublished** if unused.
+
+### Two-level access control + three mechanisms
+- **Two levels:** (1) which **pages** a contact can reach; (2) which **dynamic content/widgets** (subscriptions, data rooms, opportunities, reporting) render inside — filtered in real time by that investor's permissions. "Same login screen, completely different experience."
+- **Three ways to grant page access:** **direct** (manual per-contact), **invitation link** (shareable; optional password + expiry), and **auto access** (syncs with investment relationships via the contact matrix — the only one that scales; used for reporting pages).
+
+### Demo-prep mechanics
+- **Set global brand colors first** (three Primary slots in Site Settings) — every linked widget across all pages updates automatically (no per-page recoloring). Replace logo / set max-height / hide irrelevant nav items; swap unavailable imagery for solid brand-color sections.
 
 ## Use cases
 - Market funds early — showcase funds in advance and collect IOIs to gauge demand / pre-filter.
@@ -49,9 +60,14 @@ Branded Landing Pages are the self-service, fully white-labeled investor-facing 
 - [[sources/engagement-hub-pricing]] — published-page metering (pricing, trust 3)
 - [[sources/engagement-hub-one-pager]] — positioning (one-pager, trust 10)
 - [[sources/engagement-hub-naming-history-slack]] — naming & repackaging history (internal Slack, note, trust 10)
+- [[sources/landing-page-concepts-training-video]] — concepts & positioning (cs-training, trust 6)
+- [[sources/landing-page-customize-demo-training-video]] — demo customization walkthrough (cs-training, trust 6)
 
 ## Related
 - [[products/engagement-hub]] — parent product
 - [[products/investor-portal]] — bundles this feature
 - [[products/data-room]] — embedded within landing pages
+- [[features/investor-portal-reporting-dashboards]] — the "dynamic reporting" referenced in landing-page packaging (Portal-only)
+- [[features/idm-contacts]] — contact matrix that powers auto access
+- [[concepts/product-packaging-bundling]] — Portal/EH/standalone tiers & page-cap upsell
 - [[concepts/investor-onboarding-workflow]]

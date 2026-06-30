@@ -558,3 +558,66 @@ Append-only record of all operations. Format: `## [YYYY-MM-DD] <operation> | <ti
 **Operation:** lint
 **Summary:** Auto-triggered per §7 (a trust-2 implementation guide — the Environment SSO setup guide — was ingested in the Platform mini-batch). Scoped to the 8 touched pages + index. Results: all 6 new pages present on disk and in index.md; every wikilink target in the touched pages resolves (0 broken); all 6 new pages have ≥3 inbound links (0 orphans); frontmatter complete per §2 templates. No issues to fix.
 **Pages touched:** none (clean).
+
+## [2026-06-30] ingest | Product training-video batch — IDM cluster (8 videos → 6 sources)
+
+**Operation:** ingest
+**Source file:** raw/product-training-videos/idm-public-api/ + investor-data-management/ (1-introduction, 2-funds-tab-introduction, 3-funds-tab-demo, 4-clients-tab-introduction-and-demo, 5.1-contacts-concepts, 5.2-contacts-demo, 6-settings-part-1-idm-plan) — each video has a transcript (.transcript.md, authoritative) + summary (.md) + screenshots.
+**Document type:** cs-training (internal enablement; trust 6)
+**Product(s):** IDM (primary); cross-touches Investor Portal, Platform, Integration Hub
+**As-of date:** undated (all videos headed "Unknown"; runtimes only)
+**Conflicts found:** none. Net-new capability/limitation detail. Notable new facts captured: (1) Financial Data permission is Investor Portal–exclusive (packaging gate inside the IDM contact matrix); (2) no granular fund-level access control within a single IDM → multi-IDM for team data boundaries; (3) email is an immutable contact identifier; (4) DG form-to-form mapping is front-loaded (historical funds manual, future funds auto). Discussed-before-write with user; per user decision consolidated intro+demo pairs (funds-tab 2+3, contacts 5.1+5.2) into single source pages, and will parent the Portal-cluster feature pages to Investor Portal (pending cluster).
+**Summary:** First cluster of the 20-video training batch. Upgraded the previously substandard IDM product page (was a thin "Key Facts" stub) to the full §2 product template, weaving in the three-workflow framing, the fund/client/contact/API/settings capabilities, scoping discipline, and known limitations; source_count 12→18. Created 6 source pages and 5 IDM feature pages; enriched 3 concept pages. Checkpoint reached — Portal (10 videos) and Landing Page (2 videos) clusters pending user review of this pattern. Topic Index full refresh + auto-lint deferred to batch end.
+**Pages touched:**
+- wiki/sources/idm-introduction-training-video.md, idm-funds-tab-training-video.md, idm-clients-tab-training-video.md, idm-contacts-training-video.md, idm-settings-training-video.md, idm-public-api-training-video.md (created)
+- wiki/features/idm-funds-tab.md, idm-clients-tab.md, idm-contacts.md, idm-public-api.md, idm-firm-settings.md (created)
+- wiki/products/investor-data-management.md (rebuilt to §2 template; source_count 12→18)
+- wiki/concepts/anduin-object-model.md (IDM internal object model; 2→3), data-mapping.md (DG mapping + doc exact-match; 4→5), product-packaging-bundling.md (Financial Data permission gate; 2→3)
+- index.md (Sources 87→93, Features 3→8, IDM 12→18, date)
+
+## [2026-06-30] ingest | Product training-video batch — Investor Portal cluster (10 videos → 8 sources)
+
+**Operation:** ingest
+**Source file:** raw/product-training-videos/investor-portal/ (1-document-distribution-and-management, 2-communications, 3-profile-sharing, 4-settings-portal-plan, lp-end-to-end-experience, reporting/{1-investor-experience, 2-layers-architecture, 3-datasets-overview, 4-datasets-details, 5-pages-and-widgets})
+**Document type:** cs-training (internal enablement; trust 6)
+**Product(s):** Investor Portal (primary); cross-touches Engagement Hub (Doc Distribution/Comms/Profile Sharing are EH features Portal inherits), IDM, Data Room, FundSub
+**As-of date:** undated (videos headed "Unknown"). Reporting series cites "March ships tables" + "Q3 charts/metrics" + metric computation "later" — year not stated, inferred 2026 (consistent with Portal reporting live Q1 2026). Flagged on pages, not asserted.
+**Conflicts found:** none. No contradictions with the existing 9-source Portal page — the videos deepen capabilities it already summarized (Group/Private/Split-and-Share, 3-layer reporting). Reporting Dashboards confirmed Portal-only (not EH), matching the EH page. Minor cross-deck timeline nuance on LP profile-update workflow (EH Q3 2026 vs Portal Q2 2026) flagged, not overwritten. Per user decision, the three EH-shared feature pages (Doc Distribution, Communications, Profile Sharing) were parented to Investor Portal and cross-linked from the EH page so its feature list stays consistent.
+**Summary:** Consolidated 10 videos into 8 source pages (merged Datasets Overview+Details; merged Reporting Investor-Experience+Layers-Architecture). Created 4 feature pages (Document Distribution, Communications, Profile Sharing, and the umbrella Reporting Dashboards fed by 3 reporting sources). Folded Settings Part 2 into the Portal product page's Implementation notes. Enriched the Portal product page (source_count 9→17, feature links, settings + reporting detail) and the EH page (cross-links to the 3 shared features). Settings Part 2 source resolved the two forward-references left by the IDM cluster.
+**Pages touched:**
+- wiki/sources/investor-portal-{document-distribution,communications,profile-sharing,settings-portal-plan,lp-end-to-end,reporting-overview,reporting-datasets,reporting-pages-widgets}-training-video.md (created)
+- wiki/features/investor-portal-{document-distribution,communications,profile-sharing,reporting-dashboards}.md (created)
+- wiki/products/investor-portal.md (source_count 9→17; features, settings, reporting), engagement-hub.md (feature cross-links)
+- index.md (Sources, Features 8→12, Portal 9→17)
+
+## [2026-06-30] ingest | Product training-video batch — Landing Page cluster (2 videos → 2 sources)
+
+**Operation:** ingest
+**Source file:** raw/product-training-videos/landing-page/ (part-1-concepts, part-2-customize-demo)
+**Document type:** cs-training (sales enablement / demo prep; trust 6)
+**Product(s):** Engagement Hub (the videos' "Landing Pages" = the Branded Landing Pages feature of EH)
+**As-of date:** undated
+**Conflicts found:** none — and the content *resolves* the standing Landing-Page-as-product question: it treats "Landing Pages" as a feature spanning three packages (Investor Portal = full + auto-access + dynamic reporting; Engagement Hub = branded without the suite; standalone = discouraged), built within IDM — matching the vault's deprecated products/landing-page → products/engagement-hub stance. Did NOT revive the standalone product page.
+**Summary:** Created 2 source pages (products=[Engagement Hub], slugs kept as landing-page-* for findability) and enriched features/engagement-hub-branded-landing-pages (source_count 4→6) with custom-vs-system pages, two-level access control, the three access mechanisms (direct/invite/auto), dynamic widgets, and demo-prep mechanics (global-color propagation, system-page theming, publish-before-navigate). Reinforced the Portal/EH/standalone packaging tiers + page-cap upsell on concepts/product-packaging-bundling (via the feature page links).
+**Pages touched:**
+- wiki/sources/landing-page-concepts-training-video.md, landing-page-customize-demo-training-video.md (created)
+- wiki/features/engagement-hub-branded-landing-pages.md (source_count 4→6; how-it-works + sources)
+- index.md (Sources →105, Landing Pages feature 4→6), Topic Index refreshed (#pricing 14, #onboarding 13, #compliance 11, #security 11, #integration 21, #sales-motion 42, #implementation 51)
+
+## [2026-06-30] note | Onboarding must-reads — IDM training videos flagged
+
+**Operation:** note
+**Summary:** Per user decision, flagged 4 IDM training videos onboarding_required: Yes and added to wiki/onboarding.md — IDM Introduction (CS + Sales must-reads) and the Funds/Clients/Contacts walkthroughs (CS must-reads).
+**Pages touched:** wiki/onboarding.md, wiki/sources/idm-{introduction,funds-tab,clients-tab,contacts}-training-video.md
+
+## [2026-06-30] lint | 1 issue found & fixed (training-video batch)
+
+**Operation:** lint
+**Summary:** Auto-triggered per §7 (large batch — 16 sources + 9 feature pages — and spec-grade reporting content). Ran a vault-wide check. Findings: (1) **Critical, fixed** — 3 broken wikilinks: the IDM cluster forward-referenced `[[sources/investor-portal-settings-portal-plan]]` but the Portal-cluster file was created as `…-settings-portal-plan-training-video` (suffix convention); repointed all 3 (idm-settings-training-video.md ×2, idm-firm-settings.md ×1). Post-fix vault-wide broken-link count = **0** (verified with a checker that handles `\|`-escaped table links). (2) **0 orphans** among the 25 new pages (all have inbound links). (3) **0 frontmatter issues** — source pages carry the full §2 source-template field set (date_ingested/as_of_date/source_type/trust_level/original_file/products/target_audience/onboarding_required), feature pages the §2 feature set. (4) Counts reconciled in index.md (Sources 105, Features 12, Products: IDM 18 / Portal 17). **Note:** wiki/overview.md (source_count 75, re-synthesized 2026-06-10) is intentionally behind across multiple prior batches and was left for a future full re-synthesis rather than a piecemeal count bump.
+**Pages touched:** wiki/sources/idm-settings-training-video.md, wiki/features/idm-firm-settings.md (link fixes), log.md
+
+## [2026-06-30] note | Overview re-synthesis + flagged-link cleanup
+
+**Operation:** note
+**Summary:** Investigated the two "pre-existing broken links" flagged after the training-video batch — both were **false positives** of an early bash scan (a `sed` missing its global flag), confirmed by a `\|`-aware checker (vault-wide real broken links = 0). overview.md line 23 is a valid escaped-pipe table link; the karpathy analysis line 49 was a literal `[[...]]` prose example — reworded to "wiki-link slugs" so graph tooling doesn't treat `...` as a dangling node. Then fully **re-synthesized wiki/overview.md** (was source_count 75 / 2026-06-10, behind by ~30 sources across several batches): updated to 105 sources + 12 feature pages; corrected stale product counts (AAA 1→7, IDM 12→18, EH 3→4, Portal 9→17, Investor Access →2, Platform 0→3); added a Feature-Level Coverage section and the Financial Data packaging gate; expanded Concepts 10→14; moved KKR to documented customers; refreshed onboarding must-reads (added the 4 IDM videos) and the data-gaps list (AAA closed, Platform seeded, reporting-roadmap noted). Final vault-wide broken-link check: 0.
+**Pages touched:** wiki/overview.md (re-synthesized; source_count 75→105, last_updated→2026-06-30), wiki/analyses/query-answering-karpathy-method.md (literal-link reword), log.md
