@@ -9,7 +9,7 @@ original_file: notion://26f3f653-b1df-807d-b5d0-d8c3b9f587d4
 products: [Fundsub]
 target_audience: CS
 onboarding_required: No
-tags: [fundsub, duplicate-fund, configuration, #implementation]
+tags: [fundsub, duplicate-fund, configuration, implementation]
 ---
 
 ## Summary

@@ -7,9 +7,9 @@ source_type: gtm-training
 trust_level: 5
 original_file: notion://1ac3f653-b1df-8009-8fc5-d4800ed618c9
 products: [OCR Data Extraction]
-target_audience: Sales + RM | CS
+target_audience: CS | Sales + RM
 onboarding_required: No
-tags: [ocr, data-extraction, gtm-training, #sales-motion]
+tags: [ocr, data-extraction, gtm-training, sales-motion]
 ---
 
 ## Summary

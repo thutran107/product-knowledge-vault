@@ -7,7 +7,7 @@ source_type: faq
 trust_level: 4
 original_file: raw/notion-fetch
 products: [Data Room]
-target_audience: CS, Sales + RM
+target_audience: CS | Sales + RM
 onboarding_required: No
 tags: [data-room, faq]
 ---

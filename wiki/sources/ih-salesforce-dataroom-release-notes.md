@@ -9,7 +9,7 @@ original_file: raw/notion-fetch
 products: [Integration Hub]
 target_audience: All teams
 onboarding_required: No
-tags: [integration-hub, salesforce, data-room, #integration]
+tags: [integration-hub, salesforce, data-room, integration]
 ---
 
 ## Summary

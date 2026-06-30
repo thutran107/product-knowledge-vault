@@ -9,7 +9,7 @@ original_file: notion://1a13f653-b1df-80f4-9882-d696987a7dae
 products: [OCR Data Extraction]
 target_audience: CS | Digi
 onboarding_required: Yes
-tags: [ocr, data-extraction, implementation, #onboarding]
+tags: [ocr, data-extraction, implementation, onboarding]
 ---
 
 ## Summary

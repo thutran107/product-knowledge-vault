@@ -5,7 +5,7 @@ date_ingested: 2026-06-15
 as_of_date: 2024-11-01
 source_type: gtm-training
 trust_level: 5
-original_file: Google Slides — GTM onboarding: RIA & Wealth Management offerings (1m6dUi6MzhLTBKbrk3GmQISqQFcKHKnGSsExT8lNA-Vc)
+original_file: "Google Slides — GTM onboarding: RIA & Wealth Management offerings (1m6dUi6MzhLTBKbrk3GmQISqQFcKHKnGSsExT8lNA-Vc)"
 products: [AAA]
 target_audience: CS | Sales + RM
 onboarding_required: No

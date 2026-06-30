@@ -9,7 +9,7 @@ original_file: notion://2703f653-b1df-80e8-99d5-d32839504364
 products: [OCR Data Extraction]
 target_audience: All teams
 onboarding_required: No
-tags: [ocr, data-extraction, #how-it-works]
+tags: [ocr, data-extraction, how-it-works]
 ---
 
 ## Summary

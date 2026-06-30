@@ -5,7 +5,7 @@ date_ingested: 2026-06-15
 as_of_date: 2025-08-14
 source_type: release-notes
 trust_level: 10
-original_file: Notion — AAA Feature: Advisor's tags (24f3f653b1df80909aa7e4b8f663a23f)
+original_file: "Notion — AAA Feature: Advisor's tags (24f3f653b1df80909aa7e4b8f663a23f)"
 products: [AAA]
 target_audience: All teams
 onboarding_required: No

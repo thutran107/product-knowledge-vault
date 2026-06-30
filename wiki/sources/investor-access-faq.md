@@ -7,7 +7,7 @@ source_type: faq
 trust_level: 4
 original_file: Notion — Investor Access Internal FAQs (ae975bab40ae47d29510de4226b0fee2)
 products: [Investor Access]
-target_audience: Sales + RM | CS
+target_audience: CS | Sales + RM
 onboarding_required: Yes
 tags: [investor-access, lp, subscription-passport, aml-kyc, data-management, pricing]
 ---

@@ -7,9 +7,9 @@ source_type: implementation-guide
 trust_level: 2
 original_file: raw/notion-fetch
 products: [Data Room]
-target_audience: CS, Sales + RM
+target_audience: CS | Sales + RM
 onboarding_required: No
-tags: [data-room, api, implementation, #integration]
+tags: [data-room, api, implementation, integration]
 ---
 
 ## Summary

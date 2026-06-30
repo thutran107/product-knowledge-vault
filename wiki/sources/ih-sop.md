@@ -7,7 +7,7 @@ source_type: sop
 trust_level: 2
 original_file: notion://1ab3f653-b1df-80a2-8410-ebbe8a976dea
 products: [Integration Hub]
-target_audience: CS, Digi
+target_audience: CS | Digi
 onboarding_required: No
 tags: [integration-hub, implementation, sop]
 ---

@@ -9,7 +9,7 @@ original_file: notion://1fc3f653-b1df-80d8-8271-f0305f5b039f
 products: [Fundsub]
 target_audience: Sales + RM
 onboarding_required: Yes
-tags: [fundsub, #sales-motion, #onboarding, workflows]
+tags: [fundsub, sales-motion, onboarding, workflows]
 ---
 
 ## Summary

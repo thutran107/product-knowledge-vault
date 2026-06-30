@@ -7,9 +7,9 @@ source_type: sales-deck
 trust_level: 5
 original_file: notion://2393f653-b1df-80b2-8272-cb2cf0ba8b44
 products: [IDM, Fundsub]
-target_audience: Sales + RM | CS
+target_audience: CS | Sales + RM
 onboarding_required: No
-tags: [idm, fundsub, #sales-motion, investor-onboarding]
+tags: [idm, fundsub, sales-motion, investor-onboarding]
 ---
 
 ## Summary
