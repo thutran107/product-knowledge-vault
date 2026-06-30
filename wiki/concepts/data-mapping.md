@@ -1,9 +1,9 @@
 ---
 type: concept
 title: "Data Mapping"
-source_count: 4
-last_updated: 2026-04-20
-tags: [data-mapping, integration, templates, configuration]
+source_count: 5
+last_updated: 2026-06-30
+tags: [data-mapping, integration, templates, configuration, idm]
 ---
 
 ## Definition
@@ -28,6 +28,12 @@ The process of specifying which fields in an external system (CRM, storage) corr
 - Customer specifies which subscription data points map to which CRM object fields.
 - All CRM target fields must be text type — numeric/picklist types break the integration.
 
+### IDM historical-fund mapping (DG form-to-form)
+- Importing past subscription data into IDM requires the back-end **DG (data governance) team** to complete **form-to-form field mapping** for each *historical* fund before profiles populate correctly.
+- **Front-loaded by design:** once IDM is live, **all future funds map automatically** — no further mapping configuration.
+- An IDM setup request must therefore also **name which existing funds to map**; this is the most common onboarding miscommunication ("not just 'I want an IDM' — you also need to tell them which existing funds to map to").
+- **Document-name exact-match rule:** the documents tab matches by exact name; the same KYC requirement appearing under two funds with even a slight name difference is stored as **two separate documents**, polluting the record. AI scanning only activates for pre-configured document types. See [[features/idm-clients-tab]].
+
 ### Data Mapping Prerequisites
 - CRM object/list must be prepared with the correct fields before mapping (customer does this with Anduin guidance).
 - Import/Export template must exist before mapping configuration.
@@ -46,3 +52,5 @@ The process of specifying which fields in an external system (CRM, storage) corr
 - [[concepts/import-export-templates|Import/Export Templates]]
 - [[concepts/integration-patterns|Integration Patterns]]
 - [[entities/dealcloud|DealCloud]], [[entities/affinity|Affinity]]
+- [[features/idm-clients-tab]] — IDM profile/import scoping & DG mapping
+- [[sources/idm-clients-tab-training-video]]

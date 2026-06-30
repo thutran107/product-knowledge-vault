@@ -60,6 +60,11 @@ Pricing as of **2025-09-18** (see [[sources/engagement-hub-pricing]]). Annual su
 
 ## Features & sub-modules
 - [[features/engagement-hub-branded-landing-pages]] — Branded Landing Pages (the metered, self-service web-builder feature; folded in from the former Landing Page product).
+- [[features/investor-portal-document-distribution]] — Document Distribution (Group / Private / Split & Share). *EH feature; feature page filed under Investor Portal for the training-video batch.*
+- [[features/investor-portal-communications]] — Communication / inbox. *EH feature; page filed under Investor Portal.*
+- [[features/investor-portal-profile-sharing]] — Profile Sharing. *EH feature; page filed under Investor Portal.*
+
+> Reporting Dashboards are **Portal-only** and are *not* an EH feature — see [[features/investor-portal-reporting-dashboards]].
 
 ## Related customers
 None documented yet.
