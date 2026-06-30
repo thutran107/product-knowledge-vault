@@ -3,6 +3,7 @@ type: customer
 title: "Neuberger Berman"
 source_count: 1
 last_updated: 2026-04-20
+confidence: medium
 tags: [case-study, customer, private-equity, asset-management]
 ---
 

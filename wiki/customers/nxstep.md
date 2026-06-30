@@ -3,6 +3,7 @@ type: customer
 title: "NXSTEP"
 source_count: 1
 last_updated: 2026-05-12
+confidence: medium
 tags: [fundsub, case-study, emerging-manager]
 ---
 

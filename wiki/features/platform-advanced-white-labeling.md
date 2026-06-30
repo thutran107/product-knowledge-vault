@@ -5,6 +5,7 @@ parent_product: "Platform"
 status: GA
 source_count: 1
 last_updated: 2026-06-29
+confidence: medium
 tags: [platform, branding, white-labeling, custom-domain, sales-motion]
 ---
 

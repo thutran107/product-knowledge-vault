@@ -5,6 +5,7 @@ parent_product: "IDM"
 status: GA
 source_count: 1
 last_updated: 2026-06-30
+confidence: medium
 tags: [idm, implementation, security, integration]
 ---
 
