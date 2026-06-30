@@ -5,6 +5,7 @@ parent_product: "Investor Portal"
 status: GA
 source_count: 1
 last_updated: 2026-06-30
+confidence: medium
 tags: [investor-portal, implementation, compliance]
 ---
 

@@ -3,6 +3,7 @@ type: customer
 title: "Accolade Partners"
 source_count: 1
 last_updated: 2026-05-12
+confidence: medium
 tags: [data-room, fundsub, case-study]
 ---
 

@@ -3,6 +3,7 @@ type: customer
 title: "KKR"
 source_count: 1
 last_updated: 2026-06-29
+confidence: low
 tags: [customer, pe, kkr, platform, sso]
 ---
 
